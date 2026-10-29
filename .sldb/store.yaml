@@ -1,0 +1,183 @@
+version: 1
+links:
+- name: deskops
+  path: ../deskops/.sldb
+models:
+- name: CrossroadDoc
+  model_ref: deskops.models:CrossroadDoc
+  origin: deskops
+- name: AtomDoc
+  model_ref: deskops.models:AtomDoc
+  origin: deskops
+- name: BoardDoc
+  model_ref: deskops.models:BoardDoc
+  origin: deskops
+- name: DeskFAQDoc
+  model_ref: deskops.models:DeskFAQDoc
+  origin: deskops
+- name: InboxNoteDoc
+  model_ref: deskops.models:InboxNoteDoc
+  origin: deskops
+- name: MaterializationContractDoc
+  model_ref: deskops.models:MaterializationContractDoc
+  origin: deskops
+- name: PillDoc
+  model_ref: deskops.models:PillDoc
+  origin: deskops
+- name: ProtoAtomDoc
+  model_ref: deskops.models:ProtoAtomDoc
+  origin: deskops
+- name: RepositoryDoc
+  model_ref: deskops.models:RepositoryDoc
+  origin: deskops
+- name: RitualDoc
+  model_ref: deskops.models:RitualDoc
+  origin: deskops
+- name: RoleDoc
+  model_ref: deskops.models:RoleDoc
+  origin: deskops
+- name: RunDoc
+  model_ref: deskops.models:RunDoc
+  origin: deskops
+- name: RuntimeProfileDoc
+  model_ref: deskops.models:RuntimeProfileDoc
+  origin: deskops
+- name: StepDoc
+  model_ref: deskops.models:StepDoc
+  origin: deskops
+- name: TaskDoc
+  model_ref: deskops.models:TaskDoc
+  origin: deskops
+- name: RelationTypeDoc
+  model_ref: sldb.models.relation_type_doc:RelationTypeDoc
+- name: RelationDoc
+  model_ref: sldb.models.relation_doc:RelationDoc
+predicates:
+  applies_to_source:
+    axis: WHAT
+    description: 'Instances of this model may be the source of edges of this relation type: the verbs
+      a class can be subject of.'
+  applies_to_target:
+    axis: WHAT
+    description: Instances of this model may be the target of edges of this relation type.
+  composes:
+    axis: WHAT
+    description: A composed field of the source (`__compositions__`) renders this document's payload into
+      the source's text; the edge carries the composed field, the field holding the refs and the ref as
+      authored.
+  contains:
+    axis: WHERE
+    description: A field the model declared in `__containment__` holds this document as a child; the edge
+      carries the field name and the models the declaration allows.
+  defines:
+    axis: WHAT
+    description: Defines the target concept.
+  explains_failure_of:
+    axis: WHY
+    description: Explains why the target fails.
+  extends:
+    axis: WHAT
+    description: The model inherits from that model (base_models); instances of the source are instances
+      of the target.
+  grounded_by:
+    axis: PROVENANCE
+    description: Identifies supporting provenance.
+  has_document:
+    axis: WHAT
+    description: The model has this document as an instance.
+  has_field:
+    axis: WHAT
+    description: The model declares this field; the field node carries its type and description.
+  has_model:
+    axis: WHAT
+    description: 'The store registers this model: its own, or one it inherits from the linked store that
+      owns it.'
+  has_section:
+    axis: WHERE
+    description: The document contains this section.
+  implements:
+    axis: HOW
+    description: Identifies what the source implements.
+  is_solved_by:
+    axis: HOW
+    description: Identifies how the source is solved.
+  links_to:
+    axis: WHERE
+    description: 'The store links that store under an alias (`stores add`): it reads its documents and
+      inherits its models.'
+  mathematically_proves:
+    axis: WHY
+    description: Provides a mathematical proof.
+  names:
+    axis: WHAT
+    description: The anchor (an alias word) names this model, field, relation type or document.
+  references:
+    axis: WHAT
+    description: A field the model declared in `__references__` holds this document's id; the edge carries
+      the field name.
+  restricts:
+    axis: WHEN_WHERE
+    description: Restricts the target context.
+  semantic_equivalent:
+    axis: WHAT
+    description: This local tag maps to that global tag across linked stores.
+  semantic_parent:
+    axis: WHAT
+    description: This tag is a child of that tag in the semantic DAG.
+  tagged_as:
+    axis: WHAT
+    description: The model, document or section carries this semantic tag.
+generate: []
+derived: []
+include:
+- model: RelationDoc
+  paths:
+  - desk/lifecycle/closeout-task_completes.md
+  - desk/lifecycle/execution-task_activates.md
+  - desk/lifecycle/testing-task_hands_to_closeout.md
+- model: RelationTypeDoc
+  paths:
+  - desk/lifecycle/type-task_activates.md
+  - desk/lifecycle/type-task_completes.md
+  - desk/lifecycle/type-task_hands_to_closeout.md
+- model: RelationTypeDoc
+  paths:
+  - path: sldb/relation_types/applies_to_source.md
+    name: reltype-applies_to_source
+  - path: sldb/relation_types/applies_to_target.md
+    name: reltype-applies_to_target
+  - path: sldb/relation_types/composes.md
+    name: reltype-composes
+  - path: sldb/relation_types/contains.md
+    name: reltype-contains
+  - path: sldb/relation_types/extends.md
+    name: reltype-extends
+  - path: sldb/relation_types/has_document.md
+    name: reltype-has_document
+  - path: sldb/relation_types/has_field.md
+    name: reltype-has_field
+  - path: sldb/relation_types/has_model.md
+    name: reltype-has_model
+  - path: sldb/relation_types/has_section.md
+    name: reltype-has_section
+  - path: sldb/relation_types/links_to.md
+    name: reltype-links_to
+  - path: sldb/relation_types/names.md
+    name: reltype-names
+  - path: sldb/relation_types/references.md
+    name: reltype-references
+  - path: sldb/relation_types/semantic_equivalent.md
+    name: reltype-semantic_equivalent
+  - path: sldb/relation_types/semantic_parent.md
+    name: reltype-semantic_parent
+  - path: sldb/relation_types/tagged_as.md
+    name: reltype-tagged_as
+- model: RitualDoc
+  paths:
+  - path: desk/rituals/closeout.md
+    name: ritual-closeout
+  - path: desk/rituals/execution.md
+    name: ritual-execution
+  - path: desk/rituals/testing.md
+    name: ritual-testing
+policy: {}

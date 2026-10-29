@@ -100,3 +100,11 @@ __pycache__/
 
 # Local scratch space (not tracked)
 /scratch/
+
+# deskops desk: derived store halves and logs stay out of git (same split as deskops/.gitignore)
+.sldb/runtime/
+.sldb/core/
+.deskops.log
+__pycache__/
+*.pyc
+.pytest_cache/
