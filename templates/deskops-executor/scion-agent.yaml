@@ -8,6 +8,7 @@ system_prompt: system-prompt.md
 default_harness_config: claude
 # RoleDoc.model is "openai-codex/gpt-5.4". A template carries a portable size alias; the harness-config 'claude' resolves it to a concrete model (Scion local/templates.md).
 model: medium
+auth_selectedType: oauth-token
 max_turns: 200
 max_duration: 2h
 # Omitted on purpose (nothing is dropped silently):
