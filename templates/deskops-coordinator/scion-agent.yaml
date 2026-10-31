@@ -8,8 +8,8 @@ system_prompt: system-prompt.md
 default_harness_config: claude
 # RoleDoc.model is "anthropic/claude-opus-4-8". A template carries a portable size alias; the harness-config 'claude' resolves it to a concrete model (Scion local/templates.md).
 model: medium
-max_turns: 200
-max_duration: 2h
+max_turns: 1000
+max_duration: 24h
 # RoleDoc.tools, folded through the runtime profile's tools flag:
 command_args: ["--allowedTools", "read", "--allowedTools", "grep", "--allowedTools", "find", "--allowedTools", "ls", "--allowedTools", "bash"]
 # Omitted on purpose (nothing is dropped silently):

@@ -18,7 +18,7 @@ git status --short --branch
 1. **Triage the inbox.** Informational or duplicate -> `deskops message ack`. Bounded work for this repo ->
    `deskops promote inbox-to-drawer-task`, then `deskops add task --from-drawer ...` when it is next.
    Work for another repo -> `deskops message send --to <repo>`. A decision only the owner can make ->
-   leave the note open and say so with `sciontool status waiting_for_input "<the question>"`.
+   leave the note open and say so with `sciontool status ask_user "<the question>"`.
 2. **Dispatch one executor per active task that has none.** Build the prompt from `deskops show task <id>`:
    the task id, the repo, what to verify or implement, the validation command, the evidence files, and the
    three prohibitions (no desk/ writes, no closeout, no commits unless the task says so). Then:
@@ -35,7 +35,7 @@ git status --short --branch
    Then `scion stop <agent>`: an executor that reported completed keeps its container alive until stopped,
    and Scion counts that idle time against its duration limit.
 6. **Do not push.** Commits stay local; the owner pushes. Report what you committed.
-7. **Report.** When the desk has nothing dispatchable left, `sciontool status completed "<one-line summary>"`.
+7. **Report.** When the desk has nothing dispatchable left, `sciontool status task_completed "<one-line summary>"`.
 
 ## Never
 
