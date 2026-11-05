@@ -180,4 +180,7 @@ include:
     name: ritual-execution
   - path: desk/rituals/testing.md
     name: ritual-testing
+- model: InboxNoteDoc
+  paths:
+  - desk/inbox/20261104-233658-suggestion-sldb-el-store-pasa-a-sldb-versionado-y-sldb-cache-ignorada-journal-retirado.md
 policy: {}
