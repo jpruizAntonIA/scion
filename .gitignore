@@ -102,8 +102,7 @@ __pycache__/
 /scratch/
 
 # deskops desk: derived store halves and logs stay out of git (same split as deskops/.gitignore)
-.sldb/runtime/
-.sldb/core/
+.sldb_cache/
 .deskops.log
 __pycache__/
 *.pyc
