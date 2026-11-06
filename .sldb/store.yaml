@@ -52,6 +52,30 @@ models:
   model_ref: sldb.models.relation_type_doc:RelationTypeDoc
 - name: RelationDoc
   model_ref: sldb.models.relation_doc:RelationDoc
+- name: ReviewDoc
+  model_ref: deskops.models:ReviewDoc
+  origin: deskops
+- name: TaskAggregateDoc
+  model_ref: deskops.models:TaskAggregateDoc
+  origin: deskops
+- name: TaskCodeDoc
+  model_ref: deskops.models:TaskCodeDoc
+  origin: deskops
+- name: TaskDebugDoc
+  model_ref: deskops.models:TaskDebugDoc
+  origin: deskops
+- name: TaskDecisionDoc
+  model_ref: deskops.models:TaskDecisionDoc
+  origin: deskops
+- name: TaskDocsDoc
+  model_ref: deskops.models:TaskDocsDoc
+  origin: deskops
+- name: TaskExternalDoc
+  model_ref: deskops.models:TaskExternalDoc
+  origin: deskops
+- name: TaskRefactorDoc
+  model_ref: deskops.models:TaskRefactorDoc
+  origin: deskops
 predicates:
   applies_to_source:
     axis: WHAT
@@ -183,4 +207,5 @@ include:
 - model: InboxNoteDoc
   paths:
   - desk/inbox/20261104-233658-suggestion-sldb-el-store-pasa-a-sldb-versionado-y-sldb-cache-ignorada-journal-retirado.md
+graph_backend: networkx
 policy: {}
