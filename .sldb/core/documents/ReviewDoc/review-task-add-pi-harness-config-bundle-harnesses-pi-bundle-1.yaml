@@ -1,0 +1,34 @@
+name: review-task-add-pi-harness-config-bundle-harnesses-pi-bundle-1
+path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/bundle-1.md
+source_hash: 2851c43f3d02a2cc748724500d71be2988c442d46c3e5fb3e31af14f93a4e6b3
+content_hash: 544cab70fbfdc6d7f5fea272b050ac4020b146d7b9e12a37cabf7dd501da61bd
+field_hashes:
+  id: 2c838c3a04e8374eaf4d0bf46dc14f9d9494984fc3ae86144888097361738499
+  title: 1584e271f5e4d42eb118fabbab8e878377b088ed5c6af46c06d216e90b8efabd
+  kind: 4c522949265daa3973b2389b594a235b5c6e47c70d2af6e23bd14f8173f56280
+  subject: c847147cea8c8f2613a1295c6c8e29f80656c2b2bdfbbddcee46dca4dd3ba2e3
+  subject_ref: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  engine: 6874c40de9971944b9706ccc769074b7f77cb595ed78bafba748db5266461238
+  actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  run_dir: d23767e612a4f76b21bb0c5447159847c10503fe30c1874cfc9c04cf85168e4d
+  input_sha256: 7dab39928c84514aa93280432c2f13d1b7a103965807d6ab2e85f27ef401f2ab
+  output_sha256: c0a9e80f3ae99606cb859e7edec8f9d49608a18a87d0b90025b3419cdffcfbc3
+  verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
+  reason: 9d86810d5579f959d1c178a0c18c5496ff928842481c9c6508ade5c00e460749
+  created_at: a6bb6997c3a7f806e0dfc0191f48038a969392c3263d1080ac768459471eb08f
+  disposed_at: d96e222a80c32e1ebf69d3de31fb3bd63172640444ae39fcdb4e9505b057034e
+  disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  summary: 65fb433118d9a5848d76710eac26d2a8060b1c3a3c818d17bf654264b424e785
+  disposition: 82aace1a58f6241680436072bfcbda99ae5e7d098dac0016e2a11e40d3391a3a
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.review
+- workspace.desk.runs
+- workspace:desk
+provenance:
+  by: agent
+  at: '2026-11-09T18:26:26Z'
+  authority: generated
+  via: save_document_payload

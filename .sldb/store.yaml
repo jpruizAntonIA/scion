@@ -214,5 +214,7 @@ include:
   paths:
   - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/preflight-1.md
     name: review-task-add-pi-harness-config-bundle-harnesses-pi-preflight-1
+  - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/bundle-1.md
+    name: review-task-add-pi-harness-config-bundle-harnesses-pi-bundle-1
 graph_backend: networkx
 policy: {}
