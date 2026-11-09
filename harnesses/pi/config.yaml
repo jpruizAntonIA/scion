@@ -1,0 +1,105 @@
+# Copyright 2026 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# pi (@mariozechner/pi-coding-agent) — a Node CLI installed by npm, modelled on
+# the opencode bundle. DeepSeek Flash is the default model.
+harness: pi
+image: scion-pi:latest
+user: scion
+provisioner:
+  type: container-script
+  interface_version: 1
+  lib: vendored
+  command: ["python3", "/home/scion/.scion/harness/provision.py"]
+  timeout: 30s
+  lifecycle_events:
+    - pre-start
+  required_image_tools:
+    - python3
+    - pi
+config_dir: .pi/agent
+interrupt_key: C-c
+# pi has no hook surface scion can listen to, so readiness is a fixed settle.
+ready:
+  strategy: delay
+  settle: 8s
+delivery:
+  submit_keys: [Enter]
+  extra_submits: 1
+  extra_submit_delay: 300ms
+# pi reads AGENTS.md (cwd and parents, plus ~/.pi/agent/AGENTS.md).
+instructions_file: AGENTS.md
+system_prompt_file: AGENTS.md
+system_prompt_mode: prepend_to_instructions
+# provision.py resolves SCION_MODEL through these aliases and writes the result
+# to ~/.pi/agent/settings.json (defaultProvider/defaultModel). The model is NOT
+# pinned on the command line: a --model flag there would override the alias.
+model_aliases:
+  small: deepseek-flash
+  medium: deepseek-flash
+  large: deepseek-v4-pro
+  extra-large: deepseek-v4-pro
+command:
+  # `pi [messages...]`: an initial task is a positional message, so it goes
+  # after the base args. Provider/model come from settings.json (see above).
+  base: ["pi"]
+  resume_flag: "--continue"
+  task_position: after_base_args
+capabilities:
+  limits:
+    max_turns: { support: "no", reason: "pi emits no hook events scion can count turns from" }
+    max_model_calls: { support: "no", reason: "pi emits no model-start/model-end hook events" }
+    max_duration: { support: "yes" }
+  telemetry:
+    enabled: { support: "no", reason: "pi has no hook or OTel bridge wired for scion" }
+    native_emitter: { support: "no", reason: "pi has no native OTel emitter" }
+  prompts:
+    system_prompt: { support: "partial", reason: "System prompt is downgraded into AGENTS.md" }
+    agent_instructions: { support: "yes" }
+  auth:
+    api_key: { support: "yes" }
+    auth_file: { support: "yes" }
+    oauth_token: { support: "no", reason: "scion does not stage pi OAuth tokens; use an auth-file captured from `pi /login`" }
+    vertex_ai: { support: "no", reason: "The pi bundle only configures the DeepSeek provider" }
+  mcp:
+    stdio: { support: "no", reason: "pi has no MCP client" }
+    sse: { support: "no", reason: "pi has no MCP client" }
+    streamable_http: { support: "no", reason: "pi has no MCP client" }
+    project_scope: { support: "no", reason: "pi has no MCP client" }
+  resume: { support: "yes" }
+no_auth:
+  behavior: drop-to-shell
+  command: pi
+  message: |
+    This agent started without credentials.
+    Either restart it with DEEPSEEK_API_KEY available to scion, or
+    run `pi`, use /login, then run:
+      python3 /home/scion/.scion/harness/capture_auth.py
+auth:
+  default_type: api-key
+  types:
+    api-key:
+      required_env:
+        - any_of: ["DEEPSEEK_API_KEY"]
+    auth-file:
+      required_files:
+        - name: PI_AUTH
+          type: file
+          target_suffix: "/.pi/agent/auth.json"
+          field: PiAuthFile
+  autodetect:
+    env:
+      DEEPSEEK_API_KEY: api-key
+    files:
+      PI_AUTH: auth-file
