@@ -4,7 +4,8 @@ id: board-001
 # Affected workspace or domain
 scope: desk
 # List of task-xxx paths
-tasks: []
+tasks:
+- desk/tasks/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor.md
 # List of pill-xxx paths
 pills:
 - desk/contexts/pills.md
@@ -36,3 +37,5 @@ Bootstrap complete. Add active task docs under `desk/tasks/` and route them here
 ## Task Details
 
 _Generated from the task references above._
+
+- Harness pi en desk real: red bridge para ejecutores, imagen con pytest/dagster/spec2viz, .sldb en el worktree [draft] - Los ejecutores pi corren en red bridge sin alcanzar servicios del host, con la imagen ya equipada para los desks de SLDB_1 y con el store .sldb disponible en su worktree de tarea.
