@@ -207,5 +207,6 @@ include:
 - model: InboxNoteDoc
   paths:
   - desk/inbox/20261104-233658-suggestion-sldb-el-store-pasa-a-sldb-versionado-y-sldb-cache-ignorada-journal-retirado.md
+  - desk/inbox/20261111-010459-suggestion-harness-pi-en-un-desk-real-piloto-mepu-11-11-1-aislamiento-de-red.md
 graph_backend: networkx
 policy: {}
