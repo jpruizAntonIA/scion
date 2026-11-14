@@ -1,0 +1,9 @@
+{
+  "key": "task-add-pi-harness-config-bundle-harnesses-pi/preflight",
+  "technical_ok": true,
+  "returncode": 0,
+  "input_sha256": "7976afe7c8222d075e05b442acfce84c40fb2e4936f9f7b8dde96020ea8c395a",
+  "output_sha256": "a16c0676057ba34cd2e8a7dcdfda7249669f1f207ccb632c92a0fec026e1ec3e",
+  "start": "2026-11-09T18:24:34.112402+00:00",
+  "end": "2026-11-09T18:24:44.013673+00:00"
+}
