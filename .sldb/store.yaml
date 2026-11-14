@@ -76,6 +76,8 @@ models:
 - name: TaskRefactorDoc
   model_ref: deskops.models:TaskRefactorDoc
   origin: deskops
+- name: RuleDoc
+  model_ref: sldb.models.rule_doc:RuleDoc
 predicates:
   applies_to_source:
     axis: WHAT
@@ -204,11 +206,61 @@ include:
     name: ritual-execution
   - path: desk/rituals/testing.md
     name: ritual-testing
+  - path: desk/rituals/phase.md
+    name: ritual-phase
 - model: InboxNoteDoc
   paths:
   - desk/inbox/20261104-233658-suggestion-sldb-el-store-pasa-a-sldb-versionado-y-sldb-cache-ignorada-journal-retirado.md
 - model: TaskCodeDoc
   paths:
   - desk/tasks/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor.md
+  - desk/tasks/task-add-pi-harness-config-bundle-harnesses-pi.md
+- model: ReviewDoc
+  paths:
+  - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/preflight-1.md
+    name: review-task-add-pi-harness-config-bundle-harnesses-pi-preflight-1
+  - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/bundle-1.md
+    name: review-task-add-pi-harness-config-bundle-harnesses-pi-bundle-1
+- model: RuleDoc
+  paths:
+  - desk/lifecycle/rule-activation-task-aggregate.md
+  - desk/lifecycle/rule-activation-task-code.md
+  - desk/lifecycle/rule-activation-task-debug.md
+  - desk/lifecycle/rule-activation-task-decision.md
+  - desk/lifecycle/rule-activation-task-docs.md
+  - desk/lifecycle/rule-activation-task-external.md
+  - desk/lifecycle/rule-activation-task-refactor.md
+  - desk/lifecycle/rule-closeout-alert-implicit-code.md
+  - desk/lifecycle/rule-closeout-alert-pill-graduation.md
+  - desk/lifecycle/rule-closeout-task-aggregate.md
+  - desk/lifecycle/rule-closeout-task-code.md
+  - desk/lifecycle/rule-closeout-task-debug.md
+  - desk/lifecycle/rule-closeout-task-decision.md
+  - desk/lifecycle/rule-closeout-task-docs.md
+  - desk/lifecycle/rule-closeout-task-external.md
+  - desk/lifecycle/rule-closeout-task-refactor.md
+- model: BoardDoc
+  paths:
+  - desk/tasks/Board.md
 graph_backend: networkx
 policy: {}
+tag_models:
+- AtomDoc
+- ProtoAtomDoc
+tag_namespaces:
+- name: domain
+  hierarchical: true
+  folder_axis: false
+  anchored_by:
+    model: CrossroadDoc
+    field: path
+    value: bare
+- name: layer
+  hierarchical: true
+  folder_axis: false
+- name: system
+  hierarchical: true
+  folder_axis: false
+- name: topic
+  hierarchical: true
+  folder_axis: false

@@ -1,0 +1,25 @@
+name: Board
+path: desk/tasks/Board.md
+source_hash: 86e86af53bb620d79169a62fe43854be6130abb2aef05e0f8589e22b85f52998
+content_hash: 57642778f91e01efabd7f34278bb6ab94fc8218577ae6c60a7a71b53a870bee4
+field_hashes:
+  title: 3e41b1c93986e34bdb8b9ef09716fcae74f12ccd5e51ff81af8c9802655767e2
+  id: 14fdd56a1f61a067259a59a534c546cea3a3c3dc109c1faa2ead67d4628306d4
+  status: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  current_node: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  scope: 8dd9eb39c08f415cb0b2eb9865c7138305ce0d35c97ef11240e28f1c5d0e7f1e
+  purpose: 9bc52dfba74eddeb1502146e5f62230739dfb525ca848de48e7da084209964b1
+  tasks: 90afac0a7c779c1b635a627d13b6d30e01057d40c2d6176e3595c8bdbf62c4ae
+  pills: 33d5c69693f756e07ee806628cab3bfcc86535c31bf3d7fa73d7aa31f3d5952b
+  rituals: b0e8ba36cc0694c83ced9cd33014463abfe0f0dfdc7ed16b2cae92403c5db73e
+  notes: fc501d88b9c50306874483fdab016e2772f0a47c6739d38428ccab2201315014
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.board
+- workspace.desk
+- workspace:desk
+provenance: null

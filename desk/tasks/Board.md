@@ -6,6 +6,7 @@ scope: desk
 # List of task-xxx paths
 tasks:
 - desk/tasks/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor.md
+- desk/tasks/task-add-pi-harness-config-bundle-harnesses-pi.md
 # List of pill-xxx paths
 pills:
 - desk/contexts/pills.md
@@ -39,3 +40,4 @@ Bootstrap complete. Add active task docs under `desk/tasks/` and route them here
 _Generated from the task references above._
 
 - Harness pi en desk real: red bridge para ejecutores, imagen con pytest/dagster/spec2viz, .sldb en el worktree [draft] - Los ejecutores pi corren en red bridge sin alcanzar servicios del host, con la imagen ya equipada para los desks de SLDB_1 y con el store .sldb disponible en su worktree de tarea.
+- Add pi harness-config bundle (harnesses/pi) [draft] - A new harness-config bundle harnesses/pi/ that scion can install, build into an image, provision inside the container, and run as an agent with DeepSeek Flash by default, including stop + resume of the pi session.

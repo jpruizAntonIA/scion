@@ -233,6 +233,18 @@ models:
   family: null
   semantics: []
   origin: deskops
+- name: RuleDoc
+  model_ref: sldb.models.rule_doc:RuleDoc
+  path: /home/robocop/herramientas/sldb/src/sldb/models/rule_doc.py
+  models_index: .sldb/core/models/RuleDoc.yaml
+  version: 1
+  canonical: false
+  family: rule
+  semantics:
+  - layer.governance
+  - representation.markdown
+  - source.document.markdown
+  - type.rule
 predicates:
 - name: is_solved_by
   axis: HOW
@@ -311,4 +323,4 @@ predicates:
   description: A composed field of the source (`__compositions__`) renders this document's
     payload into the source's text; the edge carries the composed field, the field
     holding the refs and the ref as authored.
-store_hash: 6b92085017a5e5e9df2474d87fb912291a66efa5b213460171fb50c68156d40b
+store_hash: 3acbeefea724a3b8373eaf347f6c6eb61bf0032b9b862735063b1092dea23e17
