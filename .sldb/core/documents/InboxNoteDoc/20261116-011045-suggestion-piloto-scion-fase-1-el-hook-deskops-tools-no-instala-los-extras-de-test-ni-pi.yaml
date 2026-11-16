@@ -1,0 +1,24 @@
+name: 20261116-011045-suggestion-piloto-scion-fase-1-el-hook-deskops-tools-no-instala-los-extras-de-test-ni-pi
+path: desk/inbox/20261116-011045-suggestion-piloto-scion-fase-1-el-hook-deskops-tools-no-instala-los-extras-de-test-ni-pi.md
+source_hash: f11f4d1804cb40ceba1a1332fcf7d3fa4c26dc82f6d42483cbe6d1146e9b524d
+content_hash: c0c6a0dd421ee05aa1516b7e85a4ada30a265cc9fe9bb4999102d9a50a0bdfae
+field_hashes:
+  kind: f4accece99081750b6b8b5089a3f24b11d5ceba70797c3eb49000d84b98344fc
+  sender_project: be1a918d36a26b50ff05a32144905fa0851e3a2c55c93b05726d8a3bab97b3e7
+  target_project: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  created_at: 0833cac1046f6f85ab72e4a4f5f640c960ebebabd2c923c8b621b71afb878ca6
+  status: 02e31f51aa8b1b6a622c4f7c30fab328d711cad4c9da74b9965ada8aa15d9df2
+  acknowledged_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  acknowledged_at: 61d9d0d44f5f7fc20cdebfb9e5dea969f4d4a7003a3f53e4b65375b4945f84f1
+  title: e5ea8042342ee54c12e7a72ba8b2ff20770afb15a50ca3e7e35a2ee9207c9661
+  body: 2c37846276089ba20c909253627e4eacfdba2e7f667290dccdcd42ee7245b79c
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.desk.inbox-note
+- workspace.desk.inbox
+provenance:
+  by: agent
+  at: '2026-11-16T04:13:06Z'
+  authority: generated
+  via: save_document_payload

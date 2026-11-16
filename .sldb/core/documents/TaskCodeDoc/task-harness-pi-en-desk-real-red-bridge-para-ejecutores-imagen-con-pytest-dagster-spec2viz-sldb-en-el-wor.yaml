@@ -1,9 +1,9 @@
 name: task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor
 path: desk/tasks/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor.md
-source_hash: 3ba08e55497928a64eceecf40b790072aedeb45497e2e8460cac2141db4be7fb
-content_hash: 49c46141eb60d589f496f231b1d228ffc408c83629fb90501c0cf2ef5c8fda5e
+source_hash: b361d311666eb6dc2f494e5cadf056c4ba2bf44c448bccd5cff4b00538aa5069
+content_hash: 30e8c71e455b2d76d915c726b4435ece9721003952f1b69a039d76d211b96839
 field_hashes:
-  title: dabf3a7d4abf42c8caaa02aa84134a92eec71208d800ce96fbebb0d7f824276c
+  title: aeb9d85bae771108f46f459c9a44724d4e85d7cd2ccf5a81589ac3e880a98491
   id: bcb6f226495230b6c8abf3eb99181402c9e9d918120e3f14b33d4cc04e2bf511
   status: 6ae048f08fcab44bfbc8463f074bfdb40f94c6bdf56d3aad9a7e1c05e5d5b5c1
   summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
@@ -12,14 +12,14 @@ field_hashes:
   history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   why: 01457a407627760fc295c2b66ba79de8cc32c03c139dd282e17ce3fdf18161d5
   goal: 0124acb3a96171679762597e00037d1136128ede542af1f261a2976f95ed6adb
-  scope: 0f47a61276a61aecf04e20edd1f72329cf2a4e9cf37286b9edd80ce1764c219f
-  references: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  scope: 0a7248cbc2f3a6567aef2d07be8dc0ca1a0abb655dca9deb221ce6948cb312c8
+  references: a9a1826b793f76ea69c4f7f0c4faa84c6f6c4acc222aa50c2cbd95ebcd3db39f
   depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
-  files: 9493b2d4ded95880bd13f9502c689490bd7c78ca85e3e7f0bc06008c17c2a7ff
-  implementation_path: 01cfe5ca01ac47390c6335e423a389a852a34436025a0b2ccf14bef4d1c73aa1
-  validation: 4ed44eeb049f977b50603d2542246bb3ed5e2808c45d5b50d9d141b2ab618908
-  done_when: bc1de737cfeadee15cf79e191ad8f64437262a2e043f1ddda176a84d486abe19
+  files: b9f0827fc6aac1d6eafe652fe8c02539c7815a0d1d7df1d8f9d61b7fcf8f8596
+  implementation_path: 5fe1045533c822e6534ff6045578edf78f7b3b1adb678e61f5786df2142b0a49
+  validation: 8b4ad17d894288294c2f0fb0c38c1c8fe8510c488663dce0147e77837017bb13
+  done_when: e946107db235142ee667ef8e3c79f4acdcd395db55bd0bfef5d0534ef4514815
   task_type: 430e281fc3506e5a61bf187bc4220dab834ca38806ca4f603f817cc82f9791bb
   inherits_from: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   inherit_acceptance_context: fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa
@@ -34,6 +34,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-11T04:07:03Z'
+  at: '2026-11-16T04:11:18Z'
   authority: generated
-  via: create_document
+  via: save_document_payload

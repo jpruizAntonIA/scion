@@ -1,0 +1,36 @@
+name: review-task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor-preflight-1
+path: desk/reviews/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor/preflight-1.md
+source_hash: 2d6c2d50c179d07be97b5c566db997bc14db7301fb003624df647b6fe1cb72f1
+content_hash: a451d91f4ae3262cb6868b6a6f53f598280cfeb5c4aef690630371101d49ac1f
+field_hashes:
+  id: 5b20af7f67c470e43f3ae989a1f1fad4e6f0e9c92423ac7898206b60b93adf5a
+  title: be6676f30e645a678c73f918a8b463a10df2b7a5025b6f479c9a4bef9dbaa8c3
+  kind: b7aa467a101908787d614f7bfc1dadd75a976b85a3bf6022dd451c30158bbff2
+  fact: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  value: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  subject: a22791ad21618088e1dac3f545bd933d80f6941d00cc80ca0dd66801bc6075f1
+  subject_ref: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  engine: 6874c40de9971944b9706ccc769074b7f77cb595ed78bafba748db5266461238
+  actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  run_dir: b86e8a569ced5730d6aad16ed43ff5853b09a78507bee23332403831ca6fa1cd
+  input_sha256: 8f203d8ee3c7dd3dd5e3c6616652bb7efdc352d7878b9caef8243787830d3bca
+  output_sha256: 505800358e1eea444136fdbfa568608c51dc6a5bae1b7d1a4594afd8562453ab
+  verdict: b93e167bbe964a29c927882c2bc868922a912d6e74592730258b222da98b8c6c
+  reason: 8b26d19fd63a704d9c9f01bf0382f177ffe537c30d7f5ff25732e835bb0394d5
+  created_at: 513d0e1b503db9fa010cd0471547740152db5785de94a7e374ac88db5ae5232d
+  disposed_at: e007eb6e84521c62b0fda1341edad6354eaea75dd0d3904a496ae8dd8b749155
+  disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  summary: d771ecc03ed35cf1ac2c4e892bb5b0a01002dcad706ea86d638d47944cfcecdc
+  disposition: 2cab5fa41b6b779c9f231e975632ebdedd8e11afae1e5d1d7baad017d19cf619
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.review
+- workspace.desk.runs
+- workspace:desk
+provenance:
+  by: agent
+  at: '2026-11-16T03:53:36Z'
+  authority: generated
+  via: save_document_payload

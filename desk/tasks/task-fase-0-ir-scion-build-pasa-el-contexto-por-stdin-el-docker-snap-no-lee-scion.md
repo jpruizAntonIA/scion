@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T00:52:36Z'
+  at: '2026-11-16T03:39:17Z'
   authority: generated
   via: save_document_payload
 id: task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion
@@ -12,7 +12,9 @@ tags:
 - artifact:task
 current_node: ritual-execution
 history: []
-references: []
+references:
+- f6e623c69
+- cmd/build_context_test.go
 depends_on: []
 pills: []
 files:

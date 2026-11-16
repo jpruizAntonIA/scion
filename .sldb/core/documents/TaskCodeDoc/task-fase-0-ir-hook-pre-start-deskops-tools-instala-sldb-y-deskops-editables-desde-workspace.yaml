@@ -1,7 +1,7 @@
 name: task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace
 path: desk/tasks/task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace.md
-source_hash: 20cf5bf6731284f52947ca221efc15b5010e17782a1e47dbfdc6acc6e5905642
-content_hash: 7beb029b5971427d0ba3a1f0354f1381bc7cf973bce58da46a5b3b33515a0ef4
+source_hash: 25a20b318673bfa649a8704e298ecf40c1a3a1d4e9ac48e8525b5f99a24bc29e
+content_hash: c94a12edc3374e1d4813b275e2c163c18906c196a704974adbc4dfcf5fc1f839
 field_hashes:
   title: 04cf6fcd0dbdbccba7a323e7e2c2dcf30551757628d778763dc6c1c4112ae970
   id: 1dc2a0a61b15cf88e713d48b0c53cba813342831758c3249622ac934a0efc5b9
@@ -13,7 +13,7 @@ field_hashes:
   why: 2a760d63d4501731501dc9572a6e103ae936e2b2ef31b62551422edeebc379bf
   goal: 04703717511f9d0b9e7b061191962acae3441f893ec50921181a595148fb695d
   scope: b45c07fbd2e93329ffcc66af2b646291e9c9863817857eb0413e9a5fce23b688
-  references: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  references: ae747df5571e24a0d3754b20cc59f11baa67e4b0489f5eca42f3ebf29363dd84
   depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: d5d2448cafb6f3d47ba1ab8604c3859d3fe4971a77fd07a862ef44d252f83354
@@ -33,6 +33,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-16T00:52:42Z'
+  at: '2026-11-16T03:39:20Z'
   authority: generated
   via: save_document_payload
