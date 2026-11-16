@@ -1,0 +1,49 @@
+---
+sldb:
+  by: agent
+  at: '2026-11-16T05:42:38Z'
+  authority: generated
+  via: create_document
+# review-<task>-<kind>-<n>
+id: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-bundle-1
+# preflight | bundle | reproduction | goldens | owner | node | evidence
+kind: bundle
+# kind evidence only: tests | commit | atom | materialization | document | external
+fact: ''
+# kind evidence only: what the producer verified, one item per line
+value: ''
+# doc:<Model>:<id> or empty for reviews of plan nodes
+subject: doc:TaskCodeDoc:task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth
+# <plan>/dag.yaml#node:<ID>; empty when subject names a document
+subject_ref: ''
+# RuntimeProfileDoc name or "human"
+engine: runtime-pi-deepseek-flash
+actor: scion
+# Run evidence directory under runs/, relative to the project root
+run_dir: runs/subagents/20261116-054222/context-review/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth/bundle/d1fb5d5e385a0fce106cbaa300b6193372d4692f6eb83f7586dc0b7fe08ce837/attempt-1
+input_sha256: d1fb5d5e385a0fce106cbaa300b6193372d4692f6eb83f7586dc0b7fe08ce837
+output_sha256: d1d12b13e365d7052a25121046aee6b831d7540fa960563bc631e4dd7a1003ed
+# pending | accepted | rejected | incomplete
+verdict: pending
+reason: ''
+# ISO 8601 timestamp
+created_at: '2026-11-16T05:42:37.570606+00:00'
+# ISO 8601 timestamp, empty while pending
+disposed_at: ''
+disposed_by: ''
+# e.g. workspace:desk
+tags:
+- workspace:desk
+---
+
+# Bundle review of task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth
+
+## Summary
+
+_Summarize what was reviewed and the evidence this receipt records._
+
+bundle review; engine runtime-pi-deepseek-flash; evidence under runs/subagents/20261116-054222/context-review/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth/bundle/d1fb5d5e385a0fce106cbaa300b6193372d4692f6eb83f7586dc0b7fe08ce837/attempt-1.
+
+## Disposition
+
+_Record the verdict rationale and who disposed of the review._
