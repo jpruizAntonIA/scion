@@ -16,6 +16,21 @@
 # Source of truth:  this file in the scion fork; edit it, then `scion project hook update deskops-tools --script ...`.
 set -euo pipefail
 
+# Scion runs project pre-start hooks as root (sciontool is PID 1 and only drops
+# privileges for the harness). Installed as root, uv leaves root-owned files in
+# the agent home, which is bind-mounted from the host (so `scion delete` cannot
+# remove it: "permission denied"), and a root-owned PKG-INFO in the workspace
+# egg-info. So, as root, the hook re-runs itself as the workload user for the
+# install, and keeps only the /usr/local/bin links for root.
+WORKLOAD_USER="${SCION_WORKLOAD_USER:-scion}"
+if [ "$(id -u)" = 0 ] && [ -z "${PRE_START_DESKOPS_AS_USER:-}" ] && id "$WORKLOAD_USER" >/dev/null 2>&1; then
+  runuser -u "$WORKLOAD_USER" -- env PRE_START_DESKOPS_AS_USER=1 HOME="$HOME" PATH="$PATH" bash "$0" "$@"
+  for tool in sldb deskops; do
+    [ -e "/usr/local/bin/$tool" ] || ln -s "$HOME/.local/bin/$tool" "/usr/local/bin/$tool"
+  done
+  exit 0
+fi
+
 WORKSPACE="${SCION_WORKSPACE:-/workspace}"
 SLDB_SRC="$WORKSPACE/sldb"
 DESKOPS_SRC="$WORKSPACE/deskops"
