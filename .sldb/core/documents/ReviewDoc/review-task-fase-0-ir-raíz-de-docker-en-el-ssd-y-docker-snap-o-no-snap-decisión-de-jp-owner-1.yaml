@@ -1,27 +1,27 @@
 name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-owner-1
 path: desk/reviews/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp/owner-1.md
-source_hash: 4681971af0ff82d0d27320eaafd482591c15cf32cf7edc6aa85af01324cf3f45
-content_hash: ae4e17b5171d01dc4e7becc2ead224b7174342ae93fb39cb3c446af2563ec6e5
+source_hash: 527c69e884758f8b4a7150516524466ceac4cf6748cc2cc7dea8c5c32dfd4f51
+content_hash: 33073e940a98744abbd99770756364693ce2cf246b927c6e4f29d5f7d1505db0
 field_hashes:
   id: 9f285658eb105b976f5aa7c3729af253dabe992e68837b56f1d62f0831480bbd
   title: ab9039ab5885af5da4bf9cc67de41c6d2e8d0a06c17cb62365961ecb8e1830d6
   kind: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
   fact: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   value: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
-  subject: 13e7fd99c572fa71c7f19289a596294acaedf6bbcf5c19aebc23d75f5e349f2d
+  subject: 867f623f83ce05670df45f1fd138094affa5df391b62ffd07474582aec6f8a51
   subject_ref: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   engine: 11e25bab0df4bb9f63c6dde985fea5de0ef16abdb2ec640dc08e7e97ec6b1d15
   actor: 8a04ba293c5c2684429ebca3f43b247095ee4428cc59bb2ccb2174f19e719a39
   run_dir: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   input_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
-  verdict: 12adac54ac6f7140109391b670b3cbcd51f083d8f5ee62ce26857c794ed67d36
-  reason: 31c75bb79ed176427cad6f70433c7ea069e14911ec86d3266ea62da712ece8ab
+  verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
+  reason: 636da6e58bde1c3a1656c641c9333745304ca57b2f27bfc16bb6a97e69395fe3
   created_at: e96f2af7db4a8ca265f29a8e3aa9cfd6bf02f1e5f281f83fcfd4f903b1011819
-  disposed_at: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
-  disposed_by: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  disposed_at: ba026008e3ed559c74eb1b329827e1f187b6459ef4f97247452835a63751dad3
+  disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: 2cb7f8015b12fdbee39bb7bbfefc93b3e0889c5b6ccee5e873e08014b6fa67fe
-  disposition: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  disposition: f1f665913e635cbcdd1262b3a1f5ba02bfb8a4968b9332e2040ccfbb8800e97b
   tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
 semantic_tags:
 - representation.markdown
@@ -31,6 +31,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-16T00:53:48Z'
+  at: '2026-11-16T05:13:19Z'
   authority: generated
-  via: create_document
+  via: save_document_payload

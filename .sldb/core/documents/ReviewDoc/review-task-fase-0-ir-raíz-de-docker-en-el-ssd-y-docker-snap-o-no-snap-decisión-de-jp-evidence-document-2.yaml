@@ -1,0 +1,36 @@
+name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-evidence-document-2
+path: desk/reviews/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp/evidence-document-2.md
+source_hash: 7e5598cdef737a55fb7983d7f9160c60dd8cf3207146666339c8d11d53d522da
+content_hash: 6d30875f0f06efd2d362647eb4947c989acdcfaff553fc1527e25025c378f877
+field_hashes:
+  id: bf3205607316940bfff0609e434705e10e119d53365393b0da6dcd144ddaf090
+  title: 6e8dcf25c81a8f9fc0cadbca304183a6386b127334c297be289f55856f0a1b82
+  kind: edecec53ab11f560816e75a17681eb83886beace01d7fb927d99707d3d031aac
+  fact: 64ac8e615520cd1ae43ab0d47cfc9e750a82d13f9c47d468dab7cd8c982b7859
+  value: 9ed8eb23222fced55121bd06a62169ce7665f091f3d67d4f060560506c30c49a
+  subject: 867f623f83ce05670df45f1fd138094affa5df391b62ffd07474582aec6f8a51
+  subject_ref: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  engine: 9eeef991471c47a0f748cc581c93b036c7560af99f0fcdf1ed75357a5551f1ac
+  actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  run_dir: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  input_sha256: 5a9af53744a49286fe737af95fb16fa3f1e874cccf1b07cfdefcb743bd213398
+  output_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
+  reason: a08e50de6e54ab29e2f8cf7b65c667e483f9e1e576533b3681a464bf195289b9
+  created_at: 13572efe219019e8299fdcb688528444d905945cb2d2278661b11fa126f4d2cb
+  disposed_at: 13572efe219019e8299fdcb688528444d905945cb2d2278661b11fa126f4d2cb
+  disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  summary: a862991169918b6e2c0f1d123238a0c439b1922f362b757e5104b7f584f177fc
+  disposition: 84c88cd9c0f2f121387a58c0afb8a94b2b7bcb930e3c91fedf9b9f9e0f799939
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.review
+- workspace.desk.runs
+- workspace:desk
+provenance:
+  by: agent
+  at: '2026-11-16T05:13:42Z'
+  authority: generated
+  via: save_document_payload

@@ -317,6 +317,10 @@ include:
     name: review-task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del-preflight-5
   - path: desk/reviews/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del/bundle-3.md
     name: review-task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del-bundle-3
+  - path: desk/reviews/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp/evidence-commit-2.md
+    name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-evidence-commit-2
+  - path: desk/reviews/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp/evidence-document-2.md
+    name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-evidence-document-2
 - model: RuleDoc
   paths:
   - desk/lifecycle/rule-activation-task-aggregate.md
@@ -340,8 +344,13 @@ include:
   - desk/tasks/Board.md
 - model: TaskDecisionDoc
   paths:
-  - desk/tasks/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp.md
   - desk/tasks/task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp.md
+- model: RunDoc
+  paths:
+  - path: runs/subagents/20261116-050552-hook-venv-test/run.md
+    name: run-deskops-e-a6de4211680d
+  - path: runs/subagents/20261116-050552-hook-venv-test-testing/run.md
+    name: run-deskops-t-df963d64464a
 graph_backend: networkx
 policy: {}
 tag_models:
