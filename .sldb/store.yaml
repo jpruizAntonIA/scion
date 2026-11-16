@@ -356,6 +356,18 @@ include:
     name: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-preflight-2
   - path: desk/reviews/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth/bundle-2.md
     name: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-bundle-2
+  - path: desk/reviews/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth/evidence-tests-1.md
+    name: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-evidence-tests-1
+  - path: desk/reviews/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth/evidence-commit-1.md
+    name: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-evidence-commit-1
+  - path: desk/reviews/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth/evidence-atom-1.md
+    name: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-evidence-atom-1
+  - path: desk/reviews/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth/evidence-commit-2.md
+    name: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-evidence-commit-2
+  - path: desk/reviews/task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp/evidence-commit-1.md
+    name: review-task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp-evidence-commit-1
+  - path: desk/reviews/task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp/evidence-document-1.md
+    name: review-task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp-evidence-document-1
 - model: RuleDoc
   paths:
   - desk/lifecycle/rule-activation-task-aggregate.md
@@ -379,7 +391,6 @@ include:
   - desk/tasks/Board.md
 - model: TaskDecisionDoc
   paths:
-  - desk/tasks/task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp.md
   - desk/tasks/task-regla-ufw-que-abre-en-docker0-solo-el-listener-de-agentes-del-hub-de-scion-acción-de-jp-con-sudo.md
 - model: RunDoc
   paths:
@@ -391,6 +402,10 @@ include:
     name: run-deskops-e-20f39328c207
   - path: runs/subagents/20261116-052313-harness-pi-red-bridge-testing/run.md
     name: run-deskops-t-e2f0d5d6a151
+  - path: runs/subagents/20261116-054630-hub-agent-listener/run.md
+    name: run-deskops-e-c4d00f2df486
+  - path: runs/subagents/20261116-054630-hub-agent-listener-testing/run.md
+    name: run-deskops-t-84111236a008
 graph_backend: networkx
 policy: {}
 tag_models:

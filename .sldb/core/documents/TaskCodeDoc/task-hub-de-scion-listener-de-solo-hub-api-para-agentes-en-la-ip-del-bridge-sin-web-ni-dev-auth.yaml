@@ -1,7 +1,7 @@
 name: task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth
 path: desk/tasks/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth.md
-source_hash: b1be99d980106536d0ac3c3dc3afedf1cc1713c0a2e2f229a96c74744984d8f2
-content_hash: dc1000fd3bf61136b4f15504d774587e319504e9749afa2ff706990f02549d89
+source_hash: f4c6ad5ff1be0c6bdfbc7f744c0d93ec3014de7d8b25d878bd3207390dffd0fa
+content_hash: ada3d6a869dfab200971cb55af45f866c73da1e3ddd9ae3613288887f2b3c653
 field_hashes:
   title: a4ba9072607efd6dc5660ab8cd753cecf063adc61b58334de6ea4701331e37f5
   id: 0e088e3ac943d5ec844009ec522f0cb87d27013630810bfe63900edbc5fe4b55
@@ -13,7 +13,7 @@ field_hashes:
   why: 815035eda7429ee82615b8b6b6225126e3aacb3b9a626ca7ec420f8de9e1cf0e
   goal: 80071bce4785a9447ac7d2c6225aa62bd86dcd56b03066b6e4c5a3fa09601cbe
   scope: e94af90cb21e24aea9f7076d50a8806da56b5ed288f347a449fc940dd899950e
-  references: 74859ef27cf73524bd1b23b845eed77bcaae74d64efa94876d93f5583dd3527e
+  references: 0a91fd162fcce7cffc78fdf2b8d15fdbfae2f3700e289bd912bac919ad16d45e
   depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: f2621e64e8fdb6744ef4e4dc8cb7cb7ae136bd23cf4417fe1e6285870e4e5b95
@@ -34,6 +34,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-16T05:43:42Z'
+  at: '2026-11-16T06:30:39Z'
   authority: generated
   via: save_document_payload
