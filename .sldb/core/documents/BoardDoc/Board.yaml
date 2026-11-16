@@ -1,7 +1,7 @@
 name: Board
 path: desk/tasks/Board.md
-source_hash: 2fbae7ae058535f59b51c6ab5bc3ba941f554cbd96c6b3383365e7d2a27f6b90
-content_hash: 2e645be80f9f79658175e25635fe866ed60925c168b569ae36426e3e09331e76
+source_hash: 192a02041ded9503d24de44c9208ff0e864ae5883448df70c7ee673a8a5f26e0
+content_hash: 5456cef7d0f19c0eba30e0d44d45928bca6be5168631d44e0ee752967c8830f6
 field_hashes:
   title: 3e41b1c93986e34bdb8b9ef09716fcae74f12ccd5e51ff81af8c9802655767e2
   id: 14fdd56a1f61a067259a59a534c546cea3a3c3dc109c1faa2ead67d4628306d4
@@ -12,7 +12,7 @@ field_hashes:
   history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   scope: 8dd9eb39c08f415cb0b2eb9865c7138305ce0d35c97ef11240e28f1c5d0e7f1e
   purpose: 9bc52dfba74eddeb1502146e5f62230739dfb525ca848de48e7da084209964b1
-  tasks: 52938ac9a1fb121b49c50410e58bf46b0ab498ef64c0803de91298e8d2d57860
+  tasks: 0fc13067187b6535e401a0456b2583bad670780a92c8c94c8663b567b6c43664
   pills: 33d5c69693f756e07ee806628cab3bfcc86535c31bf3d7fa73d7aa31f3d5952b
   rituals: b0e8ba36cc0694c83ced9cd33014463abfe0f0dfdc7ed16b2cae92403c5db73e
   notes: fc501d88b9c50306874483fdab016e2772f0a47c6739d38428ccab2201315014
@@ -24,6 +24,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-16T00:45:40Z'
+  at: '2026-11-16T03:38:33Z'
   authority: generated
   via: save_document_payload
