@@ -1,0 +1,7 @@
+Task: task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth
+Title: Hub de scion: listener de solo Hub API para agentes en la IP del bridge, sin web ni dev-auth
+Status: draft
+Current node: ritual-execution
+Task type: task.code
+Lifecycle gates:
+- task_activates -> ritual-testing: open [(none)]
