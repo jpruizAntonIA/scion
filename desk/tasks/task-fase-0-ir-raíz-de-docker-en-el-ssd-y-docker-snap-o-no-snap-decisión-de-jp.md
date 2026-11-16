@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T00:54:39Z'
+  at: '2026-11-16T05:04:08Z'
   authority: generated
   via: save_document_payload
 id: task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp
@@ -10,6 +10,7 @@ summary: ''
 tags:
 - workspace:desk
 - artifact:task
+- host:robocop2
 current_node: ritual-execution
 history: []
 references: []

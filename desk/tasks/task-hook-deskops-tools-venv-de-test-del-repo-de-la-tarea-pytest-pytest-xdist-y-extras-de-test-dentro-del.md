@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T04:32:51Z'
+  at: '2026-11-16T05:03:41Z'
   authority: generated
   via: save_document_payload
 id: task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del
@@ -10,6 +10,7 @@ summary: ''
 tags:
 - workspace:desk
 - artifact:task
+- host:robocop2
 current_node: ritual-execution
 history: []
 references:

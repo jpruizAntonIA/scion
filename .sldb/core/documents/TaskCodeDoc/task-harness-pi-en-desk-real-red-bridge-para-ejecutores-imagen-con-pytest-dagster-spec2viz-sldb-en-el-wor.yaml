@@ -1,13 +1,13 @@
 name: task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor
 path: desk/tasks/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor.md
-source_hash: b361d311666eb6dc2f494e5cadf056c4ba2bf44c448bccd5cff4b00538aa5069
-content_hash: 30e8c71e455b2d76d915c726b4435ece9721003952f1b69a039d76d211b96839
+source_hash: 17ecc73d9abd6af58d6dc56c1e609a985a41947d8fac47ac7b3e88e8f9dcdafe
+content_hash: 079d45d76e240d85c0beb4b5264643baa9522b9faa805eb496c012cf0068b5ad
 field_hashes:
   title: aeb9d85bae771108f46f459c9a44724d4e85d7cd2ccf5a81589ac3e880a98491
   id: bcb6f226495230b6c8abf3eb99181402c9e9d918120e3f14b33d4cc04e2bf511
   status: 6ae048f08fcab44bfbc8463f074bfdb40f94c6bdf56d3aad9a7e1c05e5d5b5c1
   summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
-  tags: 9e7e8be2998f87dfcbb538781d827f202722ef7dad630b93bca343e20f247db8
+  tags: cdc41ecb0faeea4fd54d89a0af9704fa317051793e9578e08cc68ba3342d3caa
   current_node: ff5161892aac34735bf10c411f7230b62b7b56446e230a5d26fb75afde4704b6
   history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   why: 01457a407627760fc295c2b66ba79de8cc32c03c139dd282e17ce3fdf18161d5
@@ -27,6 +27,7 @@ field_hashes:
   from_drawer: e0fe74e34eb572dc764ae4947e9c8d2bb8f00ece644cedff595f066ecadcdcfb
 semantic_tags:
 - artifact:task
+- host:robocop2
 - representation.markdown
 - source.document.markdown
 - type.workflow.task
@@ -34,6 +35,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-16T04:11:18Z'
+  at: '2026-11-16T05:04:18Z'
   authority: generated
   via: save_document_payload

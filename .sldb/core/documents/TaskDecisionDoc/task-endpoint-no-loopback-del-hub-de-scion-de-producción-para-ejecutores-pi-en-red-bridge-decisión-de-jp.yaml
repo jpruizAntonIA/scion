@@ -1,13 +1,13 @@
 name: task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp
 path: desk/tasks/task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp.md
-source_hash: efb68db404bb9a7aadac678e6fd7aed5de6243d2a0630494fc0541065b83c753
-content_hash: a3a9a7de428c20b8a3a6418f77ce30e606d7b2161ab22186861224534aae92d5
+source_hash: 2a7d7b5e87dfb3ee07989fc7b53bd449ebc53ccca04d5b65182b7707aba7d680
+content_hash: 5e988490e2fecea9150ef9faba96c66e524e040d4456ec811ad8d9bfa890cbba
 field_hashes:
   title: fc99b0ae911d4b378049738854e9bed7db7982c4f3f28f5971784b0a67aec73a
   id: 11acc25a2636732516d2fe4fa944deee01dacd4bfcf1a9eb3652d460655fbb28
   status: 6ae048f08fcab44bfbc8463f074bfdb40f94c6bdf56d3aad9a7e1c05e5d5b5c1
   summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
-  tags: 9e7e8be2998f87dfcbb538781d827f202722ef7dad630b93bca343e20f247db8
+  tags: cdc41ecb0faeea4fd54d89a0af9704fa317051793e9578e08cc68ba3342d3caa
   current_node: ff5161892aac34735bf10c411f7230b62b7b56446e230a5d26fb75afde4704b6
   history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   why: 94a1038c436be243c53fb0219ef774d1a0daff98f2777c353f6aa8a9c6b0ded5
@@ -26,6 +26,7 @@ field_hashes:
   atoms: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - artifact:task
+- host:robocop2
 - representation.markdown
 - source.document.markdown
 - type.workflow.task
@@ -33,6 +34,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-16T03:41:00Z'
+  at: '2026-11-16T05:03:59Z'
   authority: generated
-  via: create_document
+  via: save_document_payload

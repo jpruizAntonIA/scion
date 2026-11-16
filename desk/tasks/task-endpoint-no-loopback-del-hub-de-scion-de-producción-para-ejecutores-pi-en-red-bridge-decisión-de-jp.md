@@ -1,15 +1,16 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T03:41:00Z'
+  at: '2026-11-16T05:03:59Z'
   authority: generated
-  via: create_document
+  via: save_document_payload
 id: task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp
 status: draft
 summary: ''
 tags:
 - workspace:desk
 - artifact:task
+- host:robocop2
 current_node: ritual-execution
 history: []
 references: []

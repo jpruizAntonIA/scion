@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T03:39:20Z'
+  at: '2026-11-16T05:04:04Z'
   authority: generated
   via: save_document_payload
 id: task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace
@@ -10,6 +10,7 @@ summary: ''
 tags:
 - workspace:desk
 - artifact:task
+- host:robocop2
 current_node: ritual-execution
 history: []
 references:

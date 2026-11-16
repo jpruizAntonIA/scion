@@ -1,13 +1,13 @@
 name: task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion
 path: desk/tasks/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion.md
-source_hash: 8aa84a1dc4f76590c428fbc61e3a54802e79e8a0c7e1529bbfe57dce7208b8ba
-content_hash: dc21c3a0448fd41102e7d21820cb0b7259bbc6751f9a31e462ff9cedbb5aa772
+source_hash: ef5d4b26bd5ea5bc4b90f204e82a5ef9b6fa4abf552f1c4f13e48c1b352e9fb1
+content_hash: 86794e902c6a0c83e63e4e0cb946367bf61962901581f95c8098a320cd69af39
 field_hashes:
   title: ba24d45e36a96aa59199941ab76ab8dbf8a45a79d257e9c16248ea64c14ee609
   id: 85ce2ea526c508d286199b5f735005491f634c2bc9fbe7ba496a3cf09def87a2
   status: 6ae048f08fcab44bfbc8463f074bfdb40f94c6bdf56d3aad9a7e1c05e5d5b5c1
   summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
-  tags: 9e7e8be2998f87dfcbb538781d827f202722ef7dad630b93bca343e20f247db8
+  tags: cdc41ecb0faeea4fd54d89a0af9704fa317051793e9578e08cc68ba3342d3caa
   current_node: ff5161892aac34735bf10c411f7230b62b7b56446e230a5d26fb75afde4704b6
   history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   why: 4bf74f72ca359b80a55e89102148adb5558b78d650e681171ed96d0a3920ca3f
@@ -26,6 +26,7 @@ field_hashes:
   atoms: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - artifact:task
+- host:robocop2
 - representation.markdown
 - source.document.markdown
 - type.workflow.task
@@ -33,6 +34,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-16T03:39:17Z'
+  at: '2026-11-16T05:04:11Z'
   authority: generated
   via: save_document_payload
