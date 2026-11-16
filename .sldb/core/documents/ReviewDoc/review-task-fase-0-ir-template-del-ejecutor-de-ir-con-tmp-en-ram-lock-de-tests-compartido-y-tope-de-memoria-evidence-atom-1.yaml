@@ -1,0 +1,36 @@
+name: review-task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria-evidence-atom-1
+path: desk/reviews/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria/evidence-atom-1.md
+source_hash: 0458370bf6bd85d732807ec992764df9c7e8e507f8e4ca3ef58950ded0982015
+content_hash: eed8b98047d6db7abe46e38ad945e852618f9ceebc51e627ea2f7a0c058c935a
+field_hashes:
+  id: 19765857663e28f54f247e34fe37614225462dfc07f3f6907b087a3f3e79da92
+  title: 132c5c04db8eca6738cffc3935b5f4a7a2936e6aca69f0a1cb34fea168508c7e
+  kind: edecec53ab11f560816e75a17681eb83886beace01d7fb927d99707d3d031aac
+  fact: c833c202b5b45ac10909767bb422916db457ddd48188a4ee591f0618893df0ba
+  value: 6c275e110973fcea9042973188d309425a69710ae03022399dabd64f8ee109ad
+  subject: 618f64760b0a1144aa8a41ccbe43a2fa90a2ab0823782639435e6ac97aae1a24
+  subject_ref: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  engine: 9eeef991471c47a0f748cc581c93b036c7560af99f0fcdf1ed75357a5551f1ac
+  actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  run_dir: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  input_sha256: 2fe5c90c261ce8355e6a96d4943d2f45a31f3d000b168242551a20d5e581b28e
+  output_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
+  reason: b1ca18094837220b6b2ec9dd6f69c42b54806da60ca5c97a955461e096eb27cf
+  created_at: 1375f6e31ce969e6d9b56ed9784a6221c5b2757a74cbed9a8d41b86234993f71
+  disposed_at: 1375f6e31ce969e6d9b56ed9784a6221c5b2757a74cbed9a8d41b86234993f71
+  disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  summary: e718b8e0881b116a14b9b102c9fd06204158abc16e3d46d53e593885c0fb6230
+  disposition: 85f2b46dfd8307e611d4c369beb987bddda1c2bb42f3ead2dea1505edb4304e8
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.review
+- workspace.desk.runs
+- workspace:desk
+provenance:
+  by: agent
+  at: '2026-11-16T03:34:52Z'
+  authority: generated
+  via: save_document_payload

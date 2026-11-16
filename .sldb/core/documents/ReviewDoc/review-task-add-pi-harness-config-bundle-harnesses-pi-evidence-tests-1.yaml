@@ -1,0 +1,36 @@
+name: review-task-add-pi-harness-config-bundle-harnesses-pi-evidence-tests-1
+path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/evidence-tests-1.md
+source_hash: 4177046b1e70f154a94c3a8b77129f7093ac808316585b5277add7dc08b8a008
+content_hash: d56acb093740584d85d6b3b3f82e4edc228a8efee10bdf52c7f1211d86b23229
+field_hashes:
+  id: 760d5a3ba2e201aa783821182c88f13b6e3216082b08c2d3c335e76188a9c10c
+  title: 60474ec51e6d9f3fcbf4fc880834b0d6141d1aaae564632333f18edd0481d0cc
+  kind: edecec53ab11f560816e75a17681eb83886beace01d7fb927d99707d3d031aac
+  fact: 68f05093bc600659c0aecd265fad80c71a658cc857e91cdfeeee782eb670c200
+  value: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  subject: c847147cea8c8f2613a1295c6c8e29f80656c2b2bdfbbddcee46dca4dd3ba2e3
+  subject_ref: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  engine: 9eeef991471c47a0f748cc581c93b036c7560af99f0fcdf1ed75357a5551f1ac
+  actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  run_dir: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  input_sha256: f7c514c78b342987c4769107750b17f084c9b9adaefea0a513f0e07809e6f3ee
+  output_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  verdict: d5a7606c75f86f5046e5c8312a9819e4778be8ab33a7e8950d62f7ba620684fe
+  reason: f157cb654d2277ca28c611e61b07ee267ce42159ff7043c8fde40c598122ab7b
+  created_at: 3361c00723cd9fc1310c96a0d08497cb0e60759d15d366a0dd3c6fe25278b1cd
+  disposed_at: 3361c00723cd9fc1310c96a0d08497cb0e60759d15d366a0dd3c6fe25278b1cd
+  disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  summary: 669717fa858046ea937fd9744f662e023d2df3fd2ace1881eeeec1fb6cc8ec81
+  disposition: bece2f59242fb27903eccf458b3d9c510eae8f1d832f65f19e0062ea7beaf059
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.review
+- workspace.desk.runs
+- workspace:desk
+provenance:
+  by: agent
+  at: '2026-11-16T03:34:18Z'
+  authority: generated
+  via: save_document_payload

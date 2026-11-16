@@ -246,6 +246,46 @@ include:
     name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-bundle-1
   - path: desk/reviews/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp/owner-1.md
     name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-owner-1
+  - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/evidence-tests-1.md
+    name: review-task-add-pi-harness-config-bundle-harnesses-pi-evidence-tests-1
+  - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/evidence-commit-1.md
+    name: review-task-add-pi-harness-config-bundle-harnesses-pi-evidence-commit-1
+  - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/evidence-atom-1.md
+    name: review-task-add-pi-harness-config-bundle-harnesses-pi-evidence-atom-1
+  - path: desk/reviews/task-fase-0-ir-binario-de-scion-e-imágenes-del-mismo-commit-del-fork-registry-ghcr-io-jpruizantonia/evidence-external-1.md
+    name: review-task-fase-0-ir-binario-de-scion-e-imágenes-del-mismo-commit-del-fork-registry-ghcr-io-jpruizantonia-evidence-external-1
+  - path: desk/reviews/task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace/evidence-tests-1.md
+    name: review-task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace-evidence-tests-1
+  - path: desk/reviews/task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace/evidence-commit-1.md
+    name: review-task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace-evidence-commit-1
+  - path: desk/reviews/task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace/evidence-atom-1.md
+    name: review-task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace-evidence-atom-1
+  - path: desk/reviews/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp/evidence-commit-1.md
+    name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-evidence-commit-1
+  - path: desk/reviews/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp/evidence-document-1.md
+    name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-evidence-document-1
+  - path: desk/reviews/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion/evidence-tests-1.md
+    name: review-task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion-evidence-tests-1
+  - path: desk/reviews/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion/evidence-commit-1.md
+    name: review-task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion-evidence-commit-1
+  - path: desk/reviews/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion/evidence-atom-1.md
+    name: review-task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion-evidence-atom-1
+  - path: desk/reviews/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria/evidence-tests-1.md
+    name: review-task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria-evidence-tests-1
+  - path: desk/reviews/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria/evidence-commit-1.md
+    name: review-task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria-evidence-commit-1
+  - path: desk/reviews/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria/evidence-atom-1.md
+    name: review-task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria-evidence-atom-1
+  - path: desk/reviews/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor/evidence-tests-1.md
+    name: review-task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor-evidence-tests-1
+  - path: desk/reviews/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor/evidence-commit-1.md
+    name: review-task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor-evidence-commit-1
+  - path: desk/reviews/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor/evidence-atom-1.md
+    name: review-task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor-evidence-atom-1
+  - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/evidence-tests-2.md
+    name: review-task-add-pi-harness-config-bundle-harnesses-pi-evidence-tests-2
+  - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/evidence-commit-2.md
+    name: review-task-add-pi-harness-config-bundle-harnesses-pi-evidence-commit-2
 - model: RuleDoc
   paths:
   - desk/lifecycle/rule-activation-task-aggregate.md

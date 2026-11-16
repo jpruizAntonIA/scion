@@ -1,7 +1,7 @@
 name: task-add-pi-harness-config-bundle-harnesses-pi
 path: desk/tasks/task-add-pi-harness-config-bundle-harnesses-pi.md
-source_hash: a09cc6770bf394a8a47f6fd80df8c8943401d086d81af1d7497353740a051f6a
-content_hash: 9ac5f94393cb6e18e8e76cbbab6fe6fa3a26b23ab65f1c46eea2585972b54431
+source_hash: f2f7bdf8386fe3c7dbbd09f366d4351dbf353033ea6d0836e4755103817c6853
+content_hash: dcd67f8f54d401901e52dff0becc517f409e0970380fd9a7f27f3655271878e5
 field_hashes:
   title: a4c9f48fa569574e8d7185632fe96dd349124a21bd7cd869cb4a8ff2aff2432a
   id: eb5b085e445adc9812c93c3126cb250bae0e469051279959cfe75d8accacae94
@@ -13,7 +13,7 @@ field_hashes:
   why: 6b36972c80291f272508f5eb5aa24a493fc53a51da281fe3d4559ba637f0dd17
   goal: ddbb18810b51cbf01d23aa2f887fd25c9ee35adc23f3af7a81bb98eafab86eba
   scope: 89633856ac7d38ad5511f62090d24b10e5863a69943900d4e4039033cfccee94
-  references: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  references: 0a8ad7aa99b9de2365bf4c405232ed0e2dcf761b196eecf97a8a600ebbc22723
   depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: d1ecc21d2efeda39d24ee2b5efc945980bd31ad2d1312553612f61bf1766c71c
@@ -33,6 +33,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-09T18:26:24Z'
+  at: '2026-11-16T03:38:03Z'
   authority: generated
   via: save_document_payload

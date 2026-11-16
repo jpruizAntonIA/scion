@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: agent
+  at: '2026-11-16T03:37:55Z'
+  authority: generated
+  via: save_document_payload
 # unclear | suggestion
 kind: suggestion
 # e.g., other_repo
@@ -8,9 +13,11 @@ target_project: scion
 # ISO 8601 timestamp
 created_at: '2026-11-04T23:36:58'
 # open | closed
-status: open
+status: closed
 # project identity that acknowledged the note
+acknowledged_by: scion
 # ISO 8601 timestamp, set when acknowledged
+acknowledged_at: '2026-11-16T00:37:55'
 ---
 
 # sldb: el store pasa a .sldb versionado y .sldb_cache ignorada; journal retirado

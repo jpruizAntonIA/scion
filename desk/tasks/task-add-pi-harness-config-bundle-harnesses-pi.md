@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-09T18:26:24Z'
+  at: '2026-11-16T03:38:03Z'
   authority: generated
   via: save_document_payload
 id: task-add-pi-harness-config-bundle-harnesses-pi
@@ -12,7 +12,10 @@ tags:
 - artifact:task
 current_node: ritual-execution
 history: []
-references: []
+references:
+- 7163525f9
+- 4f3108cd8
+- harnesses/pi/provision_test.py
 depends_on: []
 pills: []
 files:

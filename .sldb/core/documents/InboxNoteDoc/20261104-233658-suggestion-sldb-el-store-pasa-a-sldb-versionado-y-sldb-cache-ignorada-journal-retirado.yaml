@@ -1,13 +1,15 @@
 name: 20261104-233658-suggestion-sldb-el-store-pasa-a-sldb-versionado-y-sldb-cache-ignorada-journal-retirado
 path: desk/inbox/20261104-233658-suggestion-sldb-el-store-pasa-a-sldb-versionado-y-sldb-cache-ignorada-journal-retirado.md
-source_hash: 89fff5cbea5bde9a4b0b8138814233ff2597ddaa261e83d075701fc314906b21
-content_hash: cd12cfa31dc364a94562f471b7cc72a1542e01195a0e2097a69f2b14a9f07580
+source_hash: c77ae71eec6f652c94a5cdbe2b8f2a1f113637833737d3d563ff7282e7dc5d61
+content_hash: 76f5df887395205f871dc80b5bada3598e71d67cf9f301c763a263cd5843e81c
 field_hashes:
   kind: f4accece99081750b6b8b5089a3f24b11d5ceba70797c3eb49000d84b98344fc
   sender_project: adf8f4fb55456ba91d0b029904c49d4d1b85540b989a86435dfb80c0a89f7efb
   target_project: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   created_at: ca1e69f81bce7968ed7a4f330993b308950b219a47cfbf2da761f2d66bd47022
-  status: 35ff74aeea25311f4fe759a6b762c8cd41a79adb23dd5615b92cf215175a63e5
+  status: 02e31f51aa8b1b6a622c4f7c30fab328d711cad4c9da74b9965ada8aa15d9df2
+  acknowledged_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  acknowledged_at: b92edb1c19e958d1b6d78eab0dae4cda3be5ab4aab8e75d6da6ac5f7e378b685
   title: acf999864ea8430e37db5907961e5f872a342b589f85412ed3a57218d04c0419
   body: 5931006a99d3190124aee8ccb636b1296345621f8032748a318d835d67c959ed
 semantic_tags:
@@ -15,4 +17,8 @@ semantic_tags:
 - source.document.markdown
 - type.desk.inbox-note
 - workspace.desk.inbox
-provenance: null
+provenance:
+  by: agent
+  at: '2026-11-16T03:37:55Z'
+  authority: generated
+  via: save_document_payload
