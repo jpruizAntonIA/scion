@@ -657,3 +657,62 @@ func TestComputeContainerHubEndpointHostGatewayLogLevel(t *testing.T) {
 		})
 	}
 }
+
+func TestComputeContainerHubEndpoint_AgentAPIListener(t *testing.T) {
+	base := containerHubEndpointInputs{
+		HubEnabled:        true,
+		BrokerHubEndpoint: "http://localhost:8080",
+		RuntimeName:       "docker",
+		HubListenPort:     8080,
+	}
+	probeCalled := false
+	noGateway := func() bool { probeCalled = true; return false }
+
+	t.Run("listener wins over host.docker.internal", func(t *testing.T) {
+		in := base
+		in.AgentAPIEndpoint = "http://172.17.0.1:18090"
+		got := computeContainerHubEndpoint(in, nil)
+		assert.Equal(t, containerHubEndpointResult{Endpoint: "http://172.17.0.1:18090", HubListenPort: 8080}, got)
+	})
+	t.Run("listener wins over a public domain and IAP", func(t *testing.T) {
+		for _, src := range []hubEndpointSource{hubEndpointSourceIAPAudience, hubEndpointSourceConfig} {
+			in := base
+			in.AgentAPIEndpoint = "http://172.17.0.1:18090"
+			in.PublicHubEndpoint = "https://scion.example.com"
+			in.PublicHubEndpointSource = src
+			in.HostGatewaySupported = noGateway
+			got := computeContainerHubEndpoint(in, nil)
+			assert.Equal(t, "http://172.17.0.1:18090", got.Endpoint)
+			assert.Empty(t, got.ColocatedRuntimeHubEndpoints)
+		}
+		assert.False(t, probeCalled, "host-gateway probe is not needed with the listener")
+	})
+	t.Run("configured wins over the listener", func(t *testing.T) {
+		in := base
+		in.AgentAPIEndpoint = "http://172.17.0.1:18090"
+		in.Configured = "http://hub.example:9999"
+		got := computeContainerHubEndpoint(in, nil)
+		assert.Equal(t, "http://hub.example:9999", got.Endpoint)
+	})
+	t.Run("without the listener nothing changes", func(t *testing.T) {
+		got := computeContainerHubEndpoint(base, nil)
+		assert.Equal(t, "http://host.docker.internal:8080", got.Endpoint)
+	})
+	t.Run("brokerContainerHubConfig reads the flags", func(t *testing.T) {
+		oldHost, oldPort, oldHub := agentAPIHost, agentAPIPort, enableHub
+		t.Cleanup(func() { agentAPIHost, agentAPIPort, enableHub = oldHost, oldPort, oldHub })
+		agentAPIHost, agentAPIPort, enableHub = "172.17.0.1", 18090, true
+		got := brokerContainerHubConfig(&config.GlobalConfig{}, brokerContainerHubParams{
+			RuntimeName:       "docker",
+			BrokerHubEndpoint: "http://localhost:8080",
+		}, nil)
+		assert.Equal(t, "http://172.17.0.1:18090", got.Endpoint)
+
+		agentAPIHost, agentAPIPort = "", 0
+		got = brokerContainerHubConfig(&config.GlobalConfig{}, brokerContainerHubParams{
+			RuntimeName:       "docker",
+			BrokerHubEndpoint: "http://localhost:8080",
+		}, nil)
+		assert.NotEqual(t, "http://172.17.0.1:18090", got.Endpoint)
+	})
+}

@@ -248,6 +248,8 @@ func init() {
 	serverStartCmd.Flags().BoolVar(&enableHub, "enable-hub", false, "Enable the Hub API")
 	serverStartCmd.Flags().IntVar(&hubPort, "port", 9810, "Hub API port (standalone mode only; ignored when --enable-web is set, use --web-port instead)")
 	serverStartCmd.Flags().StringVar(&hubHost, "host", "0.0.0.0", "Listen address for the Hub API and web server; the runtime broker listener is set by server.broker.host (workstation default 127.0.0.1; 0.0.0.0 counts as unset)")
+	serverStartCmd.Flags().StringVar(&agentAPIHost, "agent-api-host", "", "Listen address of an extra listener that serves only the Hub API to agents (agent token required; no web, no dev auth), e.g. the docker bridge IP; requires --agent-api-port")
+	serverStartCmd.Flags().IntVar(&agentAPIPort, "agent-api-port", 0, "Port of the agents-only Hub API listener; requires --agent-api-host")
 	serverStartCmd.Flags().StringVar(&dbURL, "db", "", "Database URL/path")
 	serverStartCmd.Flags().BoolVar(&noAutoMigrate, "no-auto-migrate", false, "Skip automatic in-process upgrade of a legacy raw-SQL hub.db to the Ent schema (operator opt-out)")
 

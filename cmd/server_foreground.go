@@ -331,6 +331,11 @@ func runServerStart(cmd *cobra.Command, args []string) error {
 		return err
 	}
 
+	// The agents-only Hub API listener: both flags or neither.
+	if err := validateAgentAPIFlags(agentAPIHost, agentAPIPort, enableHub); err != nil {
+		return err
+	}
+
 	// 6. Check ports
 	if err := checkServerPorts(cfg); err != nil {
 		return err
@@ -394,7 +399,7 @@ func runServerStart(cmd *cobra.Command, args []string) error {
 	}
 
 	var wg sync.WaitGroup
-	errCh := make(chan error, 3)
+	errCh := make(chan error, 4)
 
 	// Server boot hook: warn about legacy environment variables scion no
 	// longer reads, before project discovery and storage init. This is the
@@ -722,6 +727,17 @@ func runServerStart(cmd *cobra.Command, args []string) error {
 				errCh <- fmt.Errorf("web server error: %w", err)
 			}
 		}()
+	}
+
+	// 12b. The agents-only Hub API listener (--agent-api-host/
+	// --agent-api-port): the same Hub API handler as standalone mode,
+	// behind agentAPIGuard. It opens after the hub's own front (standalone
+	// Hub API or web), once the hub's background services and event
+	// publisher are wired, and before the broker registers.
+	if enableHub && hubSrv != nil {
+		if _, err := startAgentAPIListener(ctx, agentAPIHost, agentAPIPort, hubSrv.Handler(), hubAgentTokenValidator(hubSrv.GetAgentTokenService()), &wg, errCh); err != nil {
+			return err
+		}
 	}
 
 	// 13. Start Broker

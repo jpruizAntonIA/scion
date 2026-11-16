@@ -1,0 +1,127 @@
+# Lab agent API listener — tester deskops-t-84111236a008 — 2026-11-16T03:18:20-03:00
+binario: /dev/shm/scion-agentapi-test/scion (go build -buildvcs=false ./cmd/scion desde el árbol con el diff, HEAD 34f2118fe)
+arranque: HOME=/dev/shm/scion-agentapi-test/home scion server start --foreground --web-port 18080 --runtime-broker-port 19800 --host 127.0.0.1 --agent-api-host 172.17.0.1 --agent-api-port 18090 & (PID 2835907 en /dev/shm/scion-agentapi-test/main.pid)
+nota: el runtime broker no arrancó (image_registry sin configurar en el HOME efímero), por eso 19800 no escucha; no afecta al listener.
+## ss -ltn (puertos de lab)
+LISTEN 0      4096                                127.0.0.1:18080      0.0.0.0:*          
+LISTEN 0      4096                               172.17.0.1:18090      0.0.0.0:*          
+## Contrato
+PASS  esperado=200 obtenido=200  healthz sin auth  | curl http://172.17.0.1:18090/healthz
+PASS  esperado=401 obtenido=401  raíz (web) sin auth  | curl http://172.17.0.1:18090/
+PASS  esperado=401 obtenido=401  auth/login sin auth  | curl http://172.17.0.1:18090/api/v1/auth/login
+PASS  esperado=401 obtenido=401  Bearer scion_dev_x  | curl -H Authorization: Bearer scion_dev_x http://172.17.0.1:18090/api/v1/agents
+## Revisión de seguridad: credenciales no-agente
+FAIL  esperado=200 obtenido=404  health sin auth  | curl http://172.17.0.1:18090/health
+PASS  esperado=200 obtenido=200  readyz sin auth  | curl http://172.17.0.1:18090/readyz
+PASS  esperado=401 obtenido=401  sin token /api/v1/agents  | curl http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  dev token REAL del lab en Bearer  | curl -H Authorization: Bearer <dev_token> http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  dev token REAL en X-Scion-Agent-Token  | curl -H X-Scion-Agent-Token: <dev_token> http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  PAT REAL (hub, válido en loopback) en Bearer  | curl -H Authorization: Bearer <pat> http://172.17.0.1:18090/api/v1/auth/me
+PASS  esperado=401 obtenido=401  PAT REAL en X-Scion-Agent-Token  | curl -H X-Scion-Agent-Token: <pat> http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  Cookie de sesión (scion_session/sid) sola  | curl -H Cookie: scion_session=abc; sid=abc http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  Cookie + dev token REAL  | curl -H Cookie: scion_session=abc -H Authorization: Bearer <dev_token> http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  Bearer JWT no de agente (iss/aud de usuario)  | curl -H Authorization: Bearer eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJpc3MiOiAic2Npb24taHViLXVzZXIiLCAiYXVkIjogWyJzY2lvbi1odWItd2ViIl0sICJzdWIiOiAiYWdlbnQteCIsICJpYXQiOiAxNzk0ODA5OTAwLCAiZXhwIjogMTc5NDgxMzUwMCwgInNjb3BlcyI6IFsiYWdlbnQ6c3RhdHVzOnVwZGF0ZSJdfQ.TXlrt4k2q3pjHaxV01t9lCPdZdapnN5TaOPxiarHhuo http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  Bearer JWT con iss/aud de agente pero firmado con otra clave  | curl -H Authorization: Bearer eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJpc3MiOiAic2Npb24taHViIiwgImF1ZCI6IFsic2Npb24taHViLWFwaSJdLCAic3ViIjogImFnZW50LXgiLCAiaWF0IjogMTc5NDgwOTkwMCwgImV4cCI6IDE3OTQ4MTM1MDAsICJzY29wZXMiOiBbImFnZW50OnN0YXR1czp1cGRhdGUiXX0.sjixXzR-uvAzmvjCtZLq0QG-2Mw2oz0cTeNK11VVSmg http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  X-Scion-Agent-Token JWT alg=none  | curl -H X-Scion-Agent-Token: eyJhbGciOiAibm9uZSIsICJ0eXAiOiAiSldUIn0.eyJpc3MiOiAic2Npb24taHViIiwgImF1ZCI6IFsic2Npb24taHViLWFwaSJdLCAic3ViIjogImFnZW50LXgiLCAiaWF0IjogMTc5NDgwOTkwMCwgImV4cCI6IDE3OTQ4MTM1MDAsICJzY29wZXMiOiBbImFnZW50OnN0YXR1czp1cGRhdGUiXX0. http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  X-Scion-Issuer-Delegation solo  | curl -H X-Scion-Issuer-Delegation: x http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  X-Scion-Federation-Token solo  | curl -H X-Scion-Federation-Token: x http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  X-Scion-Broker-ID (HMAC broker) solo  | curl -H X-Scion-Broker-ID: b -H X-Scion-Timestamp: 1 -H X-Scion-Signature: x http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  X-Forwarded-User-* (proxy) solo  | curl -H X-Forwarded-User-Email: admin@x -H X-Forwarded-User-Id: u http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  token de agente inválido (header) + dev token REAL (Bearer)  | curl -H X-Scion-Agent-Token: bogus -H Authorization: Bearer <dev_token> http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  JWT agente forjado (header) + dev token REAL (Bearer)  | curl -H X-Scion-Agent-Token: eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJpc3MiOiAic2Npb24taHViIiwgImF1ZCI6IFsic2Npb24taHViLWFwaSJdLCAic3ViIjogImFnZW50LXgiLCAiaWF0IjogMTc5NDgwOTkwMCwgImV4cCI6IDE3OTQ4MTM1MDAsICJzY29wZXMiOiBbImFnZW50OnN0YXR1czp1cGRhdGUiXX0.sjixXzR-uvAzmvjCtZLq0QG-2Mw2oz0cTeNK11VVSmg -H Authorization: Bearer <dev_token> http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  dev token REAL (Bearer) + X-Scion-Federation-Token  | curl -H Authorization: Bearer <dev_token> -H X-Scion-Federation-Token: x http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  esquema Basic con dev token  | curl -H Authorization: Basic <dev_token> http://172.17.0.1:18090/api/v1/agents
+PASS  esperado=401 obtenido=401  dev token en query ?token=  | curl http://172.17.0.1:18090/api/v1/agents?token=<dev_token>
+## /api/v1/auth/* y web
+PASS  esperado=401 obtenido=401  GET /api/v1/auth/login sin auth  | curl http://172.17.0.1:18090/api/v1/auth/login
+PASS  esperado=401 obtenido=401  GET /api/v1/auth/providers sin auth  | curl http://172.17.0.1:18090/api/v1/auth/providers
+PASS  esperado=401 obtenido=401  GET /api/v1/auth/me sin auth  | curl http://172.17.0.1:18090/api/v1/auth/me
+PASS  esperado=401 obtenido=401  GET /api/v1/auth/token sin auth  | curl http://172.17.0.1:18090/api/v1/auth/token
+PASS  esperado=401 obtenido=401  GET /api/v1/auth/cli/device sin auth  | curl http://172.17.0.1:18090/api/v1/auth/cli/device
+PASS  esperado=401 obtenido=401  GET /api/v1/auth/test-login sin auth  | curl http://172.17.0.1:18090/api/v1/auth/test-login
+PASS  esperado=401 obtenido=401  GET /api/v1/auth/validate sin auth  | curl http://172.17.0.1:18090/api/v1/auth/validate
+PASS  esperado=401 obtenido=401  GET /api/v1/auth/tokens sin auth  | curl http://172.17.0.1:18090/api/v1/auth/tokens
+PASS  esperado=401 obtenido=401  GET /index.html sin auth  | curl http://172.17.0.1:18090/index.html
+PASS  esperado=401 obtenido=401  GET /login sin auth  | curl http://172.17.0.1:18090/login
+PASS  esperado=401 obtenido=401  GET /assets/ sin auth  | curl http://172.17.0.1:18090/assets/
+PASS  esperado=401 obtenido=401  GET /auth/login sin auth  | curl http://172.17.0.1:18090/auth/login
+PASS  esperado=401 obtenido=401  GET /favicon.ico sin auth  | curl http://172.17.0.1:18090/favicon.ico
+PASS  esperado=401 obtenido=401  POST /api/v1/auth/tokens con dev token REAL  | curl -X POST -H Authorization: Bearer <dev_token> -H Content-Type: application/json -d {"name":"x","boundary":{"kind":"hub"},"scopes":["access_constraint:read"]} http://172.17.0.1:18090/api/v1/auth/tokens
+PASS  esperado=401 obtenido=401  GET /api/v1/auth/me con dev token REAL  | curl -H Authorization: Bearer <dev_token> http://172.17.0.1:18090/api/v1/auth/me
+## Normalización de ruta (health como prefijo)
+INFO obtenido=401  /healthz/../api/v1/agents --path-as-is | curl --path-as-is http://172.17.0.1:18090/healthz/../api/v1/agents
+INFO obtenido=401  /healthz/x | curl http://172.17.0.1:18090/healthz/x
+INFO obtenido=401  //api/v1/agents | curl --path-as-is http://172.17.0.1:18090//api/v1/agents
+INFO obtenido=401  /healthz%2f..%2fapi/v1/agents | curl --path-as-is http://172.17.0.1:18090/healthz%2f..%2fapi/v1/agents
+## Body de la raíz (para confirmar que no es la web)
+{"error":{"code":"unauthorized","message":"agent token required on the agent API listener"}}
+
+## Control: la web y el dev token siguen en loopback
+PASS  esperado=200 obtenido=200  loopback 18080 /api/v1/agents con dev token REAL  | curl -H Authorization: Bearer <dev_token> http://127.0.0.1:18080/api/v1/agents
+FAIL  esperado=200 obtenido=401  loopback 18080 / (web)  | curl http://127.0.0.1:18080/
+## Aclaraciones de los 2 FAIL de expectativa del tester
+curl http://127.0.0.1:18080/health -> 200
+curl http://127.0.0.1:18080/healthz -> 200
+curl http://172.17.0.1:18090/health -> 404
+body 18090/: {"error":{"code":"unauthorized","message":"agent token required on the agent API listener"}}
+loopback web 18080/ -> 401 ctype=application/json body: {"error":"authentication required"}
+loopback web 18080/login -> 200 ctype=text/html; charset=utf-8
+18090/login -> 401 ctype=application/json
+main PID 2835907 detenido
+{"time":"2026-11-16T06:17:11.893135653Z","level":"INFO","msg":"Developer token: export SCION_DEV_TOKEN=$(cat '/dev/shm/scion-agentapi-test/home/.scion/dev-token')","component":"scion-server"}
+{"time":"2026-11-16T06:17:15.130062382Z","level":"INFO","msg":"membership standing sweep: measured before holding","component":"scion-server","pairs":0,"not_admitted_pairs":0,"agents_to_hold":0,"walks_incomplete":0,"agents_unresolved":0,"lookups_failed":0,"first_sweep_since_start":true,"report_only":false}
+{"time":"2026-11-16T06:17:29.77081596Z","level":"INFO","msg":"API client error","component":"scion-server","status":400,"code":"validation_error","message":"project ID is required"}
+nota del tester: el pidfile registró el PID del subshell (2835907), no del binario; el server real (PID 2835908, exe /dev/shm/scion-agentapi-test/scion, PPid 1 al leerlo: huérfano del subshell 2835907) se detuvo con kill 2835908. Script corregido (setsid sin subshell; se verifica /proc/PID/exe).
+## ss tras detener main
+(ninguno de 18080/18090/19800)
+
+## Un solo flag: --agent-api-host 172.17.0.1 sin --agent-api-port
+cmd: HOME=/dev/shm/scion-agentapi-test/home scion server start --foreground --web-port 18080 --runtime-broker-port 19800 --host 127.0.0.1 --agent-api-host 172.17.0.1
+proceso terminó (no arrancó)
+salida:
+Error: --agent-api-host and --agent-api-port must be set together (got --agent-api-host="172.17.0.1" --agent-api-port=0)
+ss: ninguno de 18080/18090/19800
+
+## Un solo flag: --agent-api-port 18090 sin --agent-api-host
+proceso terminó (no arrancó)
+salida:
+Error: --agent-api-host and --agent-api-port must be set together (got --agent-api-host="" --agent-api-port=18090)
+ss: ninguno de 18080/18090/19800
+
+## Guard intacto: --host 172.17.0.1 --dev-auth=true (sin flags de agentes) debe fallar
+cmd: HOME=/dev/shm/scion-agentapi-test/home scion server start --foreground --web-port 18080 --runtime-broker-port 19800 --host 172.17.0.1 --dev-auth=true
+proceso terminó (no arrancó)
+salida:
+Error: dev auth cannot be enabled when the server is bound to a non-loopback address (172.17.0.1). Dev auth signs browsers in as admin and must only be used on localhost. Either bind to 127.0.0.1/::1/localhost (--host 127.0.0.1) or disable dev auth
+ss: ninguno de 18080/18090/19800
+
+## Guard intacto: --host 172.17.0.1 --dev-auth=true CON --agent-api-host/port debe fallar igual
+proceso terminó (no arrancó)
+salida:
+Error: dev auth cannot be enabled when the server is bound to a non-loopback address (172.17.0.1). Dev auth signs browsers in as admin and must only be used on localhost. Either bind to 127.0.0.1/::1/localhost (--host 127.0.0.1) or disable dev auth
+ss: ninguno de 18080/18090/19800
+
+## Guard intacto: --host 172.17.0.1 --dev-auth=false (web con base URL no https fuera de loopback) debe fallar
+proceso terminó (no arrancó)
+salida:
+Error: refusing to start the web server: its base URL http://localhost:18080 (from default) is not https, and it listens on 172.17.0.1:18080, which is not a loopback address, so OAuth callbacks and session cookies would cross the network unencrypted. Use an https base URL (--base-url, SCION_SERVER_BASE_URL or server.hub.public_url in the global settings file), or listen on a loopback host (--host 127.0.0.1)
+ss: ninguno de 18080/18090/19800
+
+## Sin flags de agentes: arranca y no abre 18090
+cmd: HOME=/dev/shm/scion-agentapi-test/home scion server start --foreground --web-port 18080 --runtime-broker-port 19800 --host 127.0.0.1
+pid=2847494 exe=/dev/shm/scion-agentapi-test/scion
+ss -ltn:
+LISTEN 0      4096                                127.0.0.1:18080      0.0.0.0:*          
+PASS: 18090 no escucha sin flags
+líneas "Agent API listener" en el log: 0
+noflags pid 2847494 detenido
+ss: ninguno de 18080/18090/19800
+
+## Limpieza
+rm -rf /dev/shm/scion-agentapi-test
+ls: cannot access '/dev/shm/scion-agentapi-test': No such file or directory
+ls rc=2
+ls: cannot access '/dev/shm/scion-agentapi-lab': No such file or directory
+ls rc=2
+ss: ninguno de 18080/18090/19800
+producción intacta (solo se lista): 2 listeners en 127.0.0.1:8080/9800

@@ -1,0 +1,161 @@
+=== RUN   TestDeleteCleanupOnly_PreserveBranch
+=== RUN   TestDeleteCleanupOnly_PreserveBranch/--preserve-branch_keeps_the_branch
+    delete_cleanup_only_test.go:327: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/delete_cleanup_only_test.go:327
+        	Error:      	Received unexpected error:
+        	            	failed to create worktree: error: unknown option `relative-paths'
+        	            	usage: git worktree add [-f] [--detach] [--checkout] [--lock [--reason <string>]]
+        	            	                        [--orphan] [(-b | -B) <new-branch>] <path> [<commit-ish>]
+        	            	
+        	            	    -f, --[no-]force      checkout <branch> even if already checked out in other worktree
+        	            	    -b <branch>           create a new branch
+        	            	    -B <branch>           create or reset a branch
+        	            	    --[no-]orphan         create unborn/orphaned branch
+        	            	    -d, --[no-]detach     detach HEAD at named commit
+        	            	    --[no-]checkout       populate the new working tree
+        	            	    --[no-]lock           keep the new working tree locked
+        	            	    --[no-]reason <string>
+        	            	                          reason for locking
+        	            	    -q, --[no-]quiet      suppress progress reporting
+        	            	    --[no-]track          set up tracking mode (see git-branch(1))
+        	            	    --[no-]guess-remote   try to match the new branch name with a remote-tracking branch
+        	Test:       	TestDeleteCleanupOnly_PreserveBranch/--preserve-branch_keeps_the_branch
+=== RUN   TestDeleteCleanupOnly_PreserveBranch/default_deletes_the_branch
+    delete_cleanup_only_test.go:327: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/delete_cleanup_only_test.go:327
+        	Error:      	Received unexpected error:
+        	            	failed to create worktree: error: unknown option `relative-paths'
+        	            	usage: git worktree add [-f] [--detach] [--checkout] [--lock [--reason <string>]]
+        	            	                        [--orphan] [(-b | -B) <new-branch>] <path> [<commit-ish>]
+        	            	
+        	            	    -f, --[no-]force      checkout <branch> even if already checked out in other worktree
+        	            	    -b <branch>           create a new branch
+        	            	    -B <branch>           create or reset a branch
+        	            	    --[no-]orphan         create unborn/orphaned branch
+        	            	    -d, --[no-]detach     detach HEAD at named commit
+        	            	    --[no-]checkout       populate the new working tree
+        	            	    --[no-]lock           keep the new working tree locked
+        	            	    --[no-]reason <string>
+        	            	                          reason for locking
+        	            	    -q, --[no-]quiet      suppress progress reporting
+        	            	    --[no-]track          set up tracking mode (see git-branch(1))
+        	            	    --[no-]guess-remote   try to match the new branch name with a remote-tracking branch
+        	Test:       	TestDeleteCleanupOnly_PreserveBranch/default_deletes_the_branch
+--- FAIL: TestDeleteCleanupOnly_PreserveBranch (0.04s)
+    --- FAIL: TestDeleteCleanupOnly_PreserveBranch/--preserve-branch_keeps_the_branch (0.02s)
+    --- FAIL: TestDeleteCleanupOnly_PreserveBranch/default_deletes_the_branch (0.02s)
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/message:_--in_and_--at
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/message:_--thread-id_without_--channel
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/start:_telemetry_flags
+    root_test.go:560: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:560
+        	Error:      	"git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)" does not contain "--enable-telemetry and --disable-telemetry are mutually exclusive"
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_telemetry_flags
+    root_test.go:564: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:564
+        	Error:      	Should be true
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_telemetry_flags
+        	Messages:   	error: git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)
+    root_test.go:565: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:565
+        	Error:      	Should be true
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_telemetry_flags
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/create:_bad_--harness-auth
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/list:_bad_--sort
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/hub_env_set:_bad_KEY=VALUE
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/hub_secret_set:_bad_key
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/schedule_create-recurring:_no_--name
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/skills_publish:_no_--version
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/sync_to:_no_agent
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/sync:_project_mode_removed
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/sync_push:_project_mode_removed
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/sync_pull:_project_mode_removed
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/sync_<agent>:_no_direction
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/sync:_unknown_direction
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/start:_negative_--wait-timeout
+    root_test.go:560: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:560
+        	Error:      	"git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)" does not contain "--wait-timeout must not be negative"
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_negative_--wait-timeout
+    root_test.go:564: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:564
+        	Error:      	Should be true
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_negative_--wait-timeout
+        	Messages:   	error: git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)
+    root_test.go:565: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:565
+        	Error:      	Should be true
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_negative_--wait-timeout
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/service-accounts_list:_--assignable_with_--global
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/project_skills_add:_skill_URI_with_--from-directory
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--template-scope
+    root_test.go:560: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:560
+        	Error:      	"git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)" does not contain "unknown template scope \"bogus\""
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--template-scope
+    root_test.go:564: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:564
+        	Error:      	Should be true
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--template-scope
+        	Messages:   	error: git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)
+    root_test.go:565: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:565
+        	Error:      	Should be true
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--template-scope
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--agent-log-level
+    root_test.go:560: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:560
+        	Error:      	"git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)" does not contain "invalid --agent-log-level value"
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--agent-log-level
+    root_test.go:564: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:564
+        	Error:      	Should be true
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--agent-log-level
+        	Messages:   	error: git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)
+    root_test.go:565: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/root_test.go:565
+        	Error:      	Should be true
+        	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--agent-log-level
+=== RUN   TestExecuteUsageOnError_RunEUsageErrors/create:_bad_--template-scope
+--- FAIL: TestExecuteUsageOnError_RunEUsageErrors (0.08s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/message:_--in_and_--at (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/message:_--thread-id_without_--channel (0.00s)
+    --- FAIL: TestExecuteUsageOnError_RunEUsageErrors/start:_telemetry_flags (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/create:_bad_--harness-auth (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/list:_bad_--sort (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/hub_env_set:_bad_KEY=VALUE (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/hub_secret_set:_bad_key (0.01s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/schedule_create-recurring:_no_--name (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/skills_publish:_no_--version (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/sync_to:_no_agent (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/sync:_project_mode_removed (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/sync_push:_project_mode_removed (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/sync_pull:_project_mode_removed (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/sync_<agent>:_no_direction (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/sync:_unknown_direction (0.00s)
+    --- FAIL: TestExecuteUsageOnError_RunEUsageErrors/start:_negative_--wait-timeout (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/service-accounts_list:_--assignable_with_--global (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/project_skills_add:_skill_URI_with_--from-directory (0.00s)
+    --- FAIL: TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--template-scope (0.00s)
+    --- FAIL: TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--agent-log-level (0.00s)
+    --- PASS: TestExecuteUsageOnError_RunEUsageErrors/create:_bad_--template-scope (0.00s)
+=== RUN   TestRunSkillsList_TagsReachRequest
+--- PASS: TestRunSkillsList_TagsReachRequest (0.01s)
+=== RUN   TestStartHub400OnCreate_NoUsage
+    start_hub_400_usage_test.go:92: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/start_hub_400_usage_test.go:92
+        	Error:      	Not equal: 
+        	            	expected: 1
+        	            	actual  : 0
+        	Test:       	TestStartHub400OnCreate_NoUsage
+        	Messages:   	the error must come from the hub's create response
+    start_hub_400_usage_test.go:94: 
+        	Error Trace:	/dev/shm/scion-baseline/cmd/start_hub_400_usage_test.go:94
+        	Error:      	"git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)" does not contain "invalid agent configuration: harness is required"
+        	Test:       	TestStartHub400OnCreate_NoUsage
+        	Messages:   	the hub's error is reported
+--- FAIL: TestStartHub400OnCreate_NoUsage (0.00s)
+FAIL
+FAIL	github.com/GoogleCloudPlatform/scion/cmd	0.440s
+FAIL

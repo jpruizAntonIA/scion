@@ -1,0 +1,2934 @@
+Using hub: http://127.0.0.1:44099
+Using hub: http://127.0.0.1:42091
+Attaching to agent 'cc-agent' via Hub...
+Using hub: http://127.0.0.1:40279
+Starting agent 'start-cc-agent'...
+Waiting for agent 'start-cc-agent' to start...
+  start-cc-agent: running
+Agent 'start-cc-agent' started via Hub.
+Agent Slug: 
+Phase: running
+Attaching to agent 'start-cc-agent' via Hub...
+Using hub: http://127.0.0.1:44375
+Resuming agent 'start-cc-agent'...
+Waiting for agent 'start-cc-agent' to start...
+  start-cc-agent: running
+Agent 'start-cc-agent' resumed via Hub.
+Agent Slug: 
+Phase: running
+Attaching to agent 'start-cc-agent' via Hub...
+Using hub: http://127.0.0.1:36027
+Using hub: http://127.0.0.1:39643
+Attaching to agent 'no-path' via Hub...
+Attaching to agent 'a1' via Hub...
+Using hub: http://127.0.0.1:41413
+Attaching to agent 'managed-agent' via Hub...
+Using hub: http://127.0.0.1:36009
+Starting agent 'start-managed-agent'...
+Waiting for agent 'start-managed-agent' to start...
+  start-managed-agent: running
+Agent 'start-managed-agent' started via Hub.
+Agent Slug: 
+Phase: running
+Attaching to agent 'start-managed-agent' via Hub...
+Using hub: http://127.0.0.1:40187
+Resuming agent 'start-managed-agent'...
+Waiting for agent 'start-managed-agent' to start...
+  start-managed-agent: running
+Agent 'start-managed-agent' resumed via Hub.
+Agent Slug: 
+Phase: running
+Attaching to agent 'start-managed-agent' via Hub...
+Using hub: http://127.0.0.1:35827
+Using hub: http://127.0.0.1:41201
+Attaching to agent 'iap-agent' via Hub...
+Using hub: http://127.0.0.1:33697
+Starting agent 'start-plain-agent'...
+Waiting for agent 'start-plain-agent' to start...
+  start-plain-agent: running
+Agent 'start-plain-agent' started via Hub.
+Agent Slug: 
+Phase: running
+Using hub: http://127.0.0.1:41247
+Starting agent 'start-noattach-agent'...
+Waiting for agent 'start-noattach-agent' to start...
+  start-noattach-agent: running
+Agent 'start-noattach-agent' started via Hub.
+Agent Slug: 
+Phase: running
+Attaching to agent 'start-noattach-agent' via Hub...
+Using hub: http://127.0.0.1:41651
+Starting agent 'start-noattach-site1-agent'...
+Uploading workspace (1 files)...
+  Uploaded: hello.txt
+Workspace uploaded: 1 files
+Waiting for agent 'start-noattach-site1-agent' to start...
+  start-noattach-site1-agent: running
+Agent 'start-noattach-site1-agent' started via Hub.
+Agent Slug: 
+Phase: running
+Attaching to agent 'start-noattach-site1-agent' via Hub...
+Using hub: http://127.0.0.1:45175
+Attaching to agent 'noattach-agent' via Hub...
+Using hub: http://127.0.0.1:41481
+Attaching to agent 'docker-agent' via Hub...
+Using hub: http://127.0.0.1:40771
+Starting agent 'start-iap-agent'...
+Waiting for agent 'start-iap-agent' to start...
+  start-iap-agent: running
+Agent 'start-iap-agent' started via Hub.
+Agent Slug: 
+Phase: running
+Attaching to agent 'start-iap-agent' via Hub...
+2026/11/16 03:19:46 WARN message dispatch: row entered pending message_id=b51c889d-2203-4599-a950-6f61112b5506 sender=user:dbd4f9e1-70fa-4b1b-95ae-a8bc8c866a38 recipient=agent:5c190059-f47c-494b-bd4d-e4e2930b83bd type=instruction creation_path=store_default
+Using hub: http://127.0.0.1:36209
+Broadcast accepted (2 running agents targeted).
+Using hub: http://127.0.0.1:41591
+Using hub: http://127.0.0.1:35977
+No running agents found to broadcast to.
+Using hub: http://127.0.0.1:46633
+Broadcast accepted (1 running agents targeted).
+
+This will remove this host's broker registration from the Hub.
+Broker ID: 22222222-2222-2222-2222-222222222222
+
+
+Continue with deregistration?: auto-confirmed Yes
+Warning: settings file /dev/shm/TestBrokerDeregister_LegacySettingsKeepV1OnlyKeys2992880807/001/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+  Migration warning: hub.brokerId is deprecated; moved to server.broker.broker_id
+  Migration warning: harnesses is deprecated; renamed to harness_configs with a required 'harness' field
+
+This will remove this host's broker registration from the Hub.
+Broker ID: 22222222-2222-2222-2222-222222222222
+
+
+Continue with deregistration?: auto-confirmed Yes
+
+This will remove this host's broker registration from the Hub.
+Broker ID: 22222222-2222-2222-2222-222222222222
+
+
+Continue with deregistration?: auto-confirmed Yes
+
+This will remove this host's broker registration from the Hub.
+Broker ID: 22222222-2222-2222-2222-222222222222
+
+
+Continue with deregistration?: auto-confirmed Yes
+Warning: settings file /dev/shm/TestBrokerDeregister_LegacySettingsKeepMeaning3507664737/001/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+  Migration warning: hub.brokerId is deprecated; moved to server.broker.broker_id
+  Migration warning: harnesses is deprecated; renamed to harness_configs with a required 'harness' field
+Warning: broker server not running on port 42475; start it with 'scion runtime-broker start' after joining
+Warning: broker server not running on port 33165; start it with 'scion runtime-broker start' after joining
+Warning: broker server not running on port 39729; start it with 'scion runtime-broker start' after joining
+
+This will register this host as a Runtime Broker with the Hub.
+Hub endpoint: http://127.0.0.1:43677
+
+The broker will be able to:
+  - Execute agents on behalf of authorized Hub users
+  - Open long lived control channel to receive Hub commands
+  - Update agent lifecycle status on the Hub
+
+Continue with broker registration?: auto-confirmed Yes
+
+Add this broker as a provider to project 'scion'?
+This will allow the broker to execute agents for this project.
+Continue?: auto-confirmed Yes
+
+This will register this host as a Runtime Broker with the Hub.
+Hub endpoint: http://127.0.0.1:42633
+
+The broker will be able to:
+  - Execute agents on behalf of authorized Hub users
+  - Open long lived control channel to receive Hub commands
+  - Update agent lifecycle status on the Hub
+
+Continue with broker registration?: auto-confirmed Yes
+
+Add this broker as a provider to project 'scion'?
+This will allow the broker to execute agents for this project.
+Continue?: auto-confirmed Yes
+
+This will register this host as a Runtime Broker with the Hub.
+Hub endpoint: http://127.0.0.1:42633
+
+The broker will be able to:
+  - Execute agents on behalf of authorized Hub users
+  - Open long lived control channel to receive Hub commands
+  - Update agent lifecycle status on the Hub
+
+Continue with broker registration?: auto-confirmed Yes
+
+Add this broker as a provider to project 'scion'?
+This will allow the broker to execute agents for this project.
+Continue?: auto-confirmed Yes
+
+This will register this host as a Runtime Broker with the Hub.
+Hub endpoint: http://127.0.0.1:42085
+
+The broker will be able to:
+  - Execute agents on behalf of authorized Hub users
+  - Open long lived control channel to receive Hub commands
+  - Update agent lifecycle status on the Hub
+
+Continue with broker registration?: auto-confirmed Yes
+
+Add this broker as a provider to project 'scion'?
+This will allow the broker to execute agents for this project.
+Continue?: auto-confirmed Yes
+
+This will register this host as a Runtime Broker with the Hub.
+Hub endpoint: http://127.0.0.1:34927
+
+The broker will be able to:
+  - Execute agents on behalf of authorized Hub users
+  - Open long lived control channel to receive Hub commands
+  - Update agent lifecycle status on the Hub
+
+Continue with broker registration?: auto-confirmed Yes
+
+Add this broker as a provider to project 'scion'?
+This will allow the broker to execute agents for this project.
+Continue?: auto-confirmed Yes
+
+This will register this host as a Runtime Broker with the Hub.
+Hub endpoint: http://127.0.0.1:41313
+
+The broker will be able to:
+  - Execute agents on behalf of authorized Hub users
+  - Open long lived control channel to receive Hub commands
+  - Update agent lifecycle status on the Hub
+
+Continue with broker registration?: auto-confirmed Yes
+
+Add this broker as a provider to project 'scion'?
+This will allow the broker to execute agents for this project.
+Continue?: auto-confirmed Yes
+
+This will register this host as a Runtime Broker with the Hub.
+Hub endpoint: http://127.0.0.1:33359
+
+The broker will be able to:
+  - Execute agents on behalf of authorized Hub users
+  - Open long lived control channel to receive Hub commands
+  - Update agent lifecycle status on the Hub
+
+Continue with broker registration?: auto-confirmed Yes
+
+Add this broker as a provider to project 'scion'?
+This will allow the broker to execute agents for this project.
+Continue?: auto-confirmed Yes
+Warning: settings file /dev/shm/TestPersistBrokerName_ServerStartReadsItlegacy_file2422626939/001/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+No broker registration found; removing local broker state only.
+Local broker state left in place:
+  /dev/shm/TestPurgeLocalBrokerStateOnly_RefusesWhileConnectionsRemain2634265811/001/.scion/broker.log
+  /dev/shm/TestPurgeLocalBrokerStateOnly_RefusesWhileConnectionsRemain2634265811/001/.scion/cache/templates
+No broker registration found; removing local broker state only.
+Removed empty /dev/shm/TestPurgeLocalBrokerStateOnly_PurgesWithNoConnections1977863242/001/.scion/hub-credentials
+Removed /dev/shm/TestPurgeLocalBrokerStateOnly_PurgesWithNoConnections1977863242/001/.scion/broker.log
+Warning: could not read global settings for kubernetes_service_account_mappings and runtime types; the Hub will treat this broker's mappings as unknown and see each profile's runtime key as its type: boom
+Add broker 'server' as a provider for project 'proj': auto-confirmed Yes
+
+Broker 'server' added as provider for project 'proj'
+No local path sent; an existing provider path for this broker is kept (a stored global-directory path is cleared), otherwise the broker uses its hub-managed project directory.
+Add broker 'server' as a provider for project 'proj': auto-confirmed Yes
+
+Broker 'server' added as provider for project 'proj'
+No local path sent; an existing provider path for this broker is kept (a stored global-directory path is cleared), otherwise the broker uses its hub-managed project directory.
+Add broker 'server' as a provider for project 'linked': auto-confirmed Yes
+
+Broker 'server' added as provider for project 'proj'
+Requested local project path: /dev/shm/TestRunBrokerProvide_RegisteredPathno_flags_from_inside_the_lin851898952/001/linked/.scion
+Add broker 'remote-host' as a provider for project 'linked': auto-confirmed Yes
+
+Broker 'remote-host' added as provider for project 'proj'
+No local path sent; an existing provider path for this broker is kept (a stored global-directory path is cleared), otherwise the broker uses its hub-managed project directory.
+Add broker 'remote-host' as a provider for project 'proj': auto-confirmed Yes
+
+Broker 'remote-host' added as provider for project 'proj'
+No local path sent; an existing provider path for this broker is kept (a stored global-directory path is cleared), otherwise the broker uses its hub-managed project directory.
+Add broker 'remote-host' as a provider for project 'proj': auto-confirmed Yes
+
+Broker 'remote-host' added as provider for project 'proj'
+Requested project path on remote-host: /dev/shm/TestRunBrokerProvide_RegisteredPathremote_--broker_with_an_expl3968601356/001/linked
+Add broker 'remote-host' as a provider for project 'linked': auto-confirmed Yes
+
+Broker 'remote-host' added as provider for project 'proj'
+Requested project path on remote-host: /dev/shm/TestRunBrokerProvide_RegisteredPathremote_--broker,_no_--projec1479496758/001/linked
+Add broker 'local-host' as a provider for project 'linked': auto-confirmed Yes
+
+Broker 'local-host' added as provider for project 'proj'
+Requested local project path: /dev/shm/TestRunBrokerProvide_RegisteredPath--broker_naming_this_hosts_2799088070/001/linked/.scion
+Add broker 'local-host' as a provider for project 'linked': auto-confirmed Yes
+
+Broker 'local-host' added as provider for project 'proj'
+Requested local project path: /dev/shm/TestRunBrokerProvide_RegisteredPath--broker_by_name_this_host2711220680/001/linked/.scion
+Add broker 'remote-host' as a provider for project 'linked': auto-confirmed Yes
+
+Broker 'remote-host' added as provider for project 'proj'
+No local path sent; an existing provider path for this broker is kept (a stored global-directory path is cleared), otherwise the broker uses its hub-managed project directory.
+Add broker 'local-host' as a provider for project 'linked': auto-confirmed Yes
+
+Broker 'local-host' added as provider for project 'proj'
+No local path sent; an existing provider path for this broker is kept (a stored global-directory path is cleared), otherwise the broker uses its hub-managed project directory.
+Add broker 'remote-host' as a provider for project 'proj': auto-confirmed Yes
+
+Broker 'remote-host' added as provider for project 'proj'
+Requested project path on remote-host: /srv/remote-only/checkout
+Add broker 'remote-host' as a provider for project 'proj': auto-confirmed Yes
+
+Broker 'remote-host' added as provider for project 'proj'
+Requested project path on remote-host: /srv/remote-only/checkout
+Add broker 'remote-host' as a provider for project 'proj': auto-confirmed Yes
+
+Broker 'remote-host' added as provider for project 'proj'
+Requested project path on remote-host: /dev/shm/TestRunBrokerProvide_RemoteExplicitPathSentUnchangedremote_brok2903276114/001/linked
+Add broker 'local-host' as a provider for project 'proj': auto-confirmed Yes
+
+Broker 'local-host' added as provider for project 'proj'
+Requested local project path: /dev/shm/TestRunBrokerProvide_RemoteExplicitPathSentUnchangedthis_hosts1467569056/001/linked/.scion
+Add broker 'server' as a provider for project 'web-app': auto-confirmed Yes
+
+Broker 'server' added as provider for project 'web-app'
+No local path sent; an existing provider path for this broker is kept (a stored global-directory path is cleared), otherwise the broker uses its hub-managed project directory.
+Add broker 'server' as a provider for project 'web-app': auto-confirmed Yes
+
+Broker 'server' added as provider for project 'web-app'
+Requested local project path: /dev/shm/TestRunBrokerProvide_ProjectFlagWithPathSendsPath158776602/002/web-app/.scion
+Add broker 'server' as a provider for project 'global': auto-confirmed Yes
+
+Broker 'server' added as provider for project 'global'
+Requested local project path: /dev/shm/TestRunBrokerProvide_GlobalProjectFromHomeSendsGlobalDir1171696816/001/.scion
+
+This will link project 'web-app' to the Hub.
+Hub endpoint: http://127.0.0.1:34281
+
+When linked:
+  - Agent operations will be coordinated through the Hub
+  - Agents can be managed from any connected broker
+  - Local agents will be synced to the Hub
+
+Continue with linking?: auto-confirmed Yes
+Created new project: web-app (ID: p-linked)
+Warning: settings file /dev/shm/TestRunHubLink_AddsProviderWithProjectPath3875850670/002/web-app/.scion/settings.json uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+Registered hub '127-0-0-1' (http://127.0.0.1:34281); rename with 'scion hub rename'.
+
+Project 'web-app' is now linked to the Hub.
+Add broker 'server' as a provider for project 'web-app': auto-confirmed Yes
+
+Broker 'server' added as provider for project 'web-app'
+Requested local project path: /dev/shm/TestRunBrokerProvide_CurrentLinkedProjectSendsItsPath2549006837/002/web-app/.scion
+Add broker 'server' as a provider for project 'global': auto-confirmed Yes
+
+Broker 'server' added as provider for project 'global'
+Requested local project path: /dev/shm/TestRunBrokerProvide_PathToGlobalDirAllowedForGlobalProject327928211/001/.scion
+Add broker 'server' as a provider for project 'web-app': auto-confirmed Yes
+
+Broker 'server' added as provider for project 'web-app'
+No local path sent; an existing provider path for this broker is kept (a stored global-directory path is cleared), otherwise the broker uses its hub-managed project directory.
+
+Project 'web-app' already has a default broker: 'broker-o'
+Change default broker to 'server'?: auto-confirmed Yes
+Default broker for project 'web-app' changed from 'broker-o' to 'server'
+Add broker 'server' as a provider for project 'web-app': auto-confirmed Yes
+
+Broker 'server' added as provider for project 'web-app'
+No local path sent; an existing provider path for this broker is kept (a stored global-directory path is cleared), otherwise the broker uses its hub-managed project directory.
+Broker 'server' is already the default for project 'web-app'
+Registered flat Runtime Broker instance "remote-docker" as Runtime Broker 4966f1a3-8ddc-44ed-95d3-eebf76d85f20 (example-remote), runtime target 7ed67ad6-b4d2-4367-84c2-74661cf68b02
+Instance credentials saved to /dev/shm/TestBrokerRegisterInstance_PassesTheEndpointItRegistersThrough403706826/001/.scion/runtime-brokers/remote-docker/hub-credentials
+Registered flat Runtime Broker instance "remote-docker" as Runtime Broker 3fa8e823-e16e-4dee-935d-b34c65aecc88 (example-remote), runtime target cd747261-76fa-4fb5-9f58-6b15cb0dcb49
+Instance credentials saved to /dev/shm/TestBrokerRegisterInstance_LabelsTheRowAsARemoteBroker3720858641/001/.scion/runtime-brokers/remote-docker/hub-credentials
+Registering broker with Hub...
+Broker created (ID: 11111111-2222-3333-4444-555555555555), completing join...
+Broker credentials saved to /dev/shm/TestRegisterBrokerWithHub_HubTokenCreatesJoinsAndSavesCredential2814263053/002/broker-credentials
+Registering broker with Hub...
+Warning: could not read global settings for kubernetes_service_account_mappings and runtime types; the Hub will treat this broker's mappings as unknown and see each profile's runtime key as its type: bad settings
+Registered flat Runtime Broker instance "remote-docker" as Runtime Broker 61bbf2a1-028d-451d-8557-e0eda658d340 (example-remote), runtime target 314b2706-c53d-4c1f-9f77-e8a0c3b0052a
+Instance credentials saved to /dev/shm/TestBrokerRegisterInstance_SendsBuildToken2689863308/001/.scion/runtime-brokers/remote-docker/hub-credentials
+Warning: settings file /dev/shm/TestMarkProjectUnlinkedno_hub.enabled_key_none_is_written4151516700/002/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+Warning: settings file /dev/shm/TestMarkProjectUnlinkedhub.enabled=true_stays_true1964424577/002/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+Warning: SCION_CLI_MODE="assistant": the "assistant" CLI mode has been removed and is ignored; running in "human" mode
+Warning: unrecognized SCION_CLI_MODE="bogus", defaulting to "human"
+
+Required variables for this agent were not provided in the template, hub, or broker, but are available in our current environment:
+  TEST_SECRET_KEY — found in local environment
+Sending 1 environment value(s) to the Hub: TEST_SECRET_KEY
+
+Environment variables already provided:
+  GEMINI_API_KEY — provided by Hub (project)
+Warning: failed to save lastSyncedAt to state.yaml: failed to create directory /dev/shm/TestStartAgentViaHub_GlobalProjectSkipsWorkspaceBootstrap1195331625/001/settings.yaml: mkdir /dev/shm/TestStartAgentViaHub_GlobalProjectSkipsWorkspaceBootstrap1195331625/001/settings.yaml: not a directory
+Warning: failed to add synced agent to state.yaml: failed to create directory /dev/shm/TestStartAgentViaHub_GlobalProjectSkipsWorkspaceBootstrap1195331625/001/settings.yaml: mkdir /dev/shm/TestStartAgentViaHub_GlobalProjectSkipsWorkspaceBootstrap1195331625/001/settings.yaml: not a directory
+{
+  "status": "success",
+  "command": "start",
+  "agent": "global-agent",
+  "message": "Agent 'global-agent' started via Hub.",
+  "details": {
+    "phase": "running",
+    "runtimeBrokerId": "ee10fe53-0459-52db-bf16-cd6f256d96f0",
+    "slug": "8de2cea5-95b0-5ee2-a75a-c4d168aff6a7"
+  }
+}
+  Enter value for MY_SECRET: 
+Sending 1 environment value(s) to the Hub: MY_SECRET
+  Enter value for MY_SECRET: 
+
+Required variables for this agent were not provided in the template, hub, or broker, but are available in our current environment:
+  TEST_SLOW_SUBMIT_KEY — found in local environment
+Sending 1 environment value(s) to the Hub: TEST_SLOW_SUBMIT_KEY
+Removed global setting 'image_registry'
+Now: image_registry: <unset>
+Removed global setting 'image_registry'
+Now: image_registry: <unset>
+Removed global setting 'image_registry'
+Now: image_registry: <unset>
+Removed global setting 'image_registry'
+Now: image_registry: <unset>
+Updated global setting 'server.auth.email' to 'dev@example.com'
+Updated global setting 'server.auth.email' to 'dev@example.com'
+Updated local setting 'server.auth.email' to 'dev@example.com'
+/dev/shm/TestConfigValidateCmd_SubstrateEgressTrustBundleValid3081224710/001/.scion/settings.yaml (versioned v1)
+  Valid
+
+Delete thread group "Release" (22222222-0000-0000-0000-000000000001)? Its 1 thread(s) become ungrouped: answered No (stdin is not a terminal; re-run with --yes to confirm)
+Delete thread group "Release" (22222222-0000-0000-0000-000000000001)? Its 1 thread(s) become ungrouped: auto-confirmed Yes
+warning: created conversation new-conv but could not add you as a participant; it won't appear in `scion conversation list` or be readable via `scion conversation show` yet
+warning: created conversation new-conv but could not add you as a participant; it won't appear in `scion conversation list` or be readable via `scion conversation show` yet
+{
+  "id": "new-conv-id",
+  "kind": "group",
+  "surface": "native",
+  "driftState": "active",
+  "lastActivityAt": "0001-01-01T00:00:00Z",
+  "createdAt": "0001-01-01T00:00:00Z"
+}
+{
+  "id": "new-conv-id-2",
+  "kind": "group",
+  "surface": "native",
+  "driftState": "active",
+  "lastActivityAt": "0001-01-01T00:00:00Z",
+  "createdAt": "0001-01-01T00:00:00Z"
+}
+{
+  "conversations": []
+}
+{
+  "conversations": []
+}
+{
+  "conversations": []
+}
+{
+  "conversations": []
+}
+{
+  "items": []
+}
+
+Agent 'po-agent' is provisioned but not started. Run 'scion start po-agent' to start it.
+scion dev (commit unknown)
+--- FAIL: TestDeleteCleanupOnly_PreserveBranch (0.03s)
+    --- FAIL: TestDeleteCleanupOnly_PreserveBranch/--preserve-branch_keeps_the_branch (0.02s)
+        delete_cleanup_only_test.go:327: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/delete_cleanup_only_test.go:327
+            	Error:      	Received unexpected error:
+            	            	failed to create worktree: error: unknown option `relative-paths'
+            	            	usage: git worktree add [-f] [--detach] [--checkout] [--lock [--reason <string>]]
+            	            	                        [--orphan] [(-b | -B) <new-branch>] <path> [<commit-ish>]
+            	            	
+            	            	    -f, --[no-]force      checkout <branch> even if already checked out in other worktree
+            	            	    -b <branch>           create a new branch
+            	            	    -B <branch>           create or reset a branch
+            	            	    --[no-]orphan         create unborn/orphaned branch
+            	            	    -d, --[no-]detach     detach HEAD at named commit
+            	            	    --[no-]checkout       populate the new working tree
+            	            	    --[no-]lock           keep the new working tree locked
+            	            	    --[no-]reason <string>
+            	            	                          reason for locking
+            	            	    -q, --[no-]quiet      suppress progress reporting
+            	            	    --[no-]track          set up tracking mode (see git-branch(1))
+            	            	    --[no-]guess-remote   try to match the new branch name with a remote-tracking branch
+            	Test:       	TestDeleteCleanupOnly_PreserveBranch/--preserve-branch_keeps_the_branch
+    --- FAIL: TestDeleteCleanupOnly_PreserveBranch/default_deletes_the_branch (0.02s)
+        delete_cleanup_only_test.go:327: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/delete_cleanup_only_test.go:327
+            	Error:      	Received unexpected error:
+            	            	failed to create worktree: error: unknown option `relative-paths'
+            	            	usage: git worktree add [-f] [--detach] [--checkout] [--lock [--reason <string>]]
+            	            	                        [--orphan] [(-b | -B) <new-branch>] <path> [<commit-ish>]
+            	            	
+            	            	    -f, --[no-]force      checkout <branch> even if already checked out in other worktree
+            	            	    -b <branch>           create a new branch
+            	            	    -B <branch>           create or reset a branch
+            	            	    --[no-]orphan         create unborn/orphaned branch
+            	            	    -d, --[no-]detach     detach HEAD at named commit
+            	            	    --[no-]checkout       populate the new working tree
+            	            	    --[no-]lock           keep the new working tree locked
+            	            	    --[no-]reason <string>
+            	            	                          reason for locking
+            	            	    -q, --[no-]quiet      suppress progress reporting
+            	            	    --[no-]track          set up tracking mode (see git-branch(1))
+            	            	    --[no-]guess-remote   try to match the new branch name with a remote-tracking branch
+            	Test:       	TestDeleteCleanupOnly_PreserveBranch/default_deletes_the_branch
+Using hub: http://127.0.0.1:44003
+Deleting agent 'test-agent'...
+Cleaned up locally: test-agent
+Agent 'test-agent' deleted via Hub.
+Using hub: http://127.0.0.1:39433
+Deleting agent 'agent-one'...
+Deleting agent 'agent-two'...
+Cleaned up locally: agent-one
+Agent 'agent-one' deleted via Hub.
+Cleaned up locally: agent-two
+Agent 'agent-two' deleted via Hub.
+Using hub: http://127.0.0.1:43709
+Deleting agent 'missing-agent'...
+Using hub: http://127.0.0.1:35735
+Deleting agent 'hub-only-agent'...
+Cleaned up locally: hub-only-agent
+Agent 'hub-only-agent' deleted via Hub.
+Using hub: http://127.0.0.1:43077
+Deleting agent 'stale-agent'...
+Cleaned up locally: stale-agent
+Agent 'stale-agent' deleted via Hub.
+Using hub: http://127.0.0.1:44287
+Deleting agent 'agent-a'...
+Deleting agent 'agent-b'...
+Cleaned up locally: agent-a
+Agent 'agent-a' deleted via Hub.
+Cleaned up locally: agent-b
+Agent 'agent-b' deleted via Hub.
+Using hub: http://127.0.0.1:38451
+Deleting agent 'agent-a'...
+Cleaned up locally: agent-a
+Agent 'agent-a' deleted via Hub.
+Using hub: http://127.0.0.1:38591
+Using hub: http://127.0.0.1:38591
+Deleting agent 'stopped-one'...
+Deleting agent 'stopped-two'...
+Cleaned up locally: stopped-one
+Agent 'stopped-one' deleted via Hub.
+Cleaned up locally: stopped-two
+Agent 'stopped-two' deleted via Hub.
+Fetching remote source: https://github.com/acme-corp/private.configs/tree/main/harness-configs/custom
+Scanning harness-config files in /dev/shm/TestSyncHarnessConfigToHub_RetriesFinalizeOnceOnConflictone_con3899050851/001...
+Found 1 files
+Creating harness-config 'codex' in Hub scope global...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config was changed by another commit during finalize; retrying once...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Scanning harness-config files in /dev/shm/TestSyncHarnessConfigToHub_RetriesFinalizeOnceOnConflicttwo_con1475478100/001...
+Found 1 files
+Creating harness-config 'codex' in Hub scope global...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config was changed by another commit during finalize; retrying once...
+Requesting download URLs for harness-config 'codex'...
+Downloading 1 files to /dev/shm/TestPullHarnessConfigFromHub_FallsBackToHubFileAPIForLocalStorag3868628047/001/pulled-harness-config...
+  Downloaded: config.yaml
+Harness-config 'codex' pulled successfully to /dev/shm/TestPullHarnessConfigFromHub_FallsBackToHubFileAPIForLocalStorag3868628047/001/pulled-harness-config
+Scanning harness-config files in /dev/shm/TestSyncHarnessConfigToHub_FallsBackToHubFileAPIForLocalStorageU3126840234/001...
+Found 1 files
+Creating harness-config 'codex' in Hub scope global...
+Harness-config created with ID: local-storage-hc-id
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: local-storage-hc-id
+  Status: active
+  Content Hash: sha256:abc123
+Scanning harness-config files in /dev/shm/TestSyncHarnessConfigToHub_SkipsBackupAndTempFiles2564519391/001...
+Found 2 files
+Creating harness-config 'codex' in Hub scope global...
+Harness-config created with ID: local-storage-hc-id
+Requesting upload URLs for 2 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+  Uploaded: dialect.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: local-storage-hc-id
+  Status: active
+  Content Hash: sha256:abc123
+Scanning harness-config files in /dev/shm/TestSyncHarnessConfigToHub_DropsStaleBackupEntriesFromHub3605179397/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Removing 1 file(s) no longer present locally from the Hub:
+  - config.yaml.bak.20261003T193320Z
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: existing-hc-id
+  Status: active
+  Content Hash: sha256:new
+Scanning harness-config files in /dev/shm/TestSyncHarnessConfigToHub_DropsStaleTransientDirectoryFromHub297453953/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Removing 1 file(s) no longer present locally from the Hub:
+  - scripts.bak.20261003T193320Z/provision.py
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: existing-hc-id
+  Status: active
+  Content Hash: sha256:new
+Scanning harness-config files in /dev/shm/TestSyncHarnessConfigToHub_RefusesEmptyLocalDirectory1649742370/001...
+Found 0 files
+Using hub: http://127.0.0.1:41961
+Scanning harness-config files in /dev/shm/TestInstallToHub_RecordsSourceURLglobal_install_from_a_remote_s406971608/001...
+Found 1 files
+Creating harness-config 'codex' in Hub scope global...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:40741
+Scanning harness-config files in /dev/shm/TestInstallToHub_RecordsSourceURLglobal_install_--force_over_an3996439647/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Harness-config 'codex' exists but has no files. Uploading all files...
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-global
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:42143
+Scanning harness-config files in /dev/shm/TestInstallToHub_RecordsSourceURLunchanged_files_with_a_new_sou201762442/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-global
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:40353
+Scanning harness-config files in /dev/shm/TestInstallToHub_RecordsSourceURLunchanged_files_with_the_same_2332624356/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Harness-config 'codex' is already up to date.
+  Scope: global
+  ID: hc-global
+  Content Hash: 
+Using hub: http://127.0.0.1:46831
+Scanning harness-config files in /dev/shm/TestInstallToHub_RecordsSourceURLproject-scoped_install_from_a_3219481867/001...
+Found 1 files
+Creating harness-config 'codex' in Hub scope project (proj-1913)...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: project (proj-1913)
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:42445
+Scanning harness-config files in /dev/shm/TestInstallToHub_RecordsSourceURLglobal_install_from_a_local_so723021945/001...
+Found 1 files
+Creating harness-config 'codex' in Hub scope global...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Scanning harness-config files in /dev/shm/TestSyncLocalHarnessConfigToHub_SendsNoSourceURL3361216055/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Harness-config 'codex' exists but has no files. Uploading all files...
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-global
+  Status: active
+  Content Hash: sha256:abc
+Fetching remote source: http://127.0.0.1:43091/configs/codex.tar.gz
+Warning: settings file /dev/shm/TestRunHarnessConfigInstall_RecordsSourceURLproject_scope3130313184/001/project/.scion/settings.json uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+Using hub: http://127.0.0.1:37979
+Scanning harness-config files in /dev/shm/TestRunHarnessConfigInstall_RecordsSourceURLproject_scope3130313184/001/.scion/cache/remote-templates/9ccaab98abc6bb9c...
+Found 1 files
+Creating harness-config 'codex' in Hub scope project (proj-3853)...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: project (proj-3853)
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Fetching remote source: http://127.0.0.1:43091/configs/codex.tar.gz
+Using hub: http://127.0.0.1:43873
+Scanning harness-config files in /dev/shm/TestRunHarnessConfigInstall_RecordsSourceURLglobal_scope939861106/001/.scion/cache/remote-templates/9ccaab98abc6bb9c...
+Found 1 files
+Creating harness-config 'codex' in Hub scope global...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Scanning harness-config files in /dev/shm/TestSyncLocalHarnessConfigToHub_ScopeSelectiondefault_is_projec2958041019/001...
+Found 1 files
+Creating harness-config 'codex' in Hub scope project (proj-1913)...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: project (proj-1913)
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Scanning harness-config files in /dev/shm/TestSyncLocalHarnessConfigToHub_ScopeSelection--global_selects_2252869962/001...
+Found 1 files
+Creating harness-config 'codex' in Hub scope global...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Scanning harness-config files in /dev/shm/TestSyncLocalHarnessConfigToHub_UpdatesExistingWithoutForce1633390529/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Harness-config 'codex' exists but has no files. Uploading all files...
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: project (proj-1913)
+  ID: hc-existing
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:41653
+Scanning harness-config files in /dev/shm/TestInstallToHub_Forcenew_name_installs_without_--force3256359380/001...
+Found 1 files
+Creating harness-config 'codex' in Hub scope project (proj-1913)...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: project (proj-1913)
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:43361
+Using hub: http://127.0.0.1:37519
+Scanning harness-config files in /dev/shm/TestInstallToHub_Forceexisting_name_with_--force_updates_in_pla2883504735/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Harness-config 'codex' exists but has no files. Uploading all files...
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: project (proj-1913)
+  ID: hc-existing
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:39527
+Scanning harness-config files in /dev/shm/TestInstallToHub_Forcesame_name_in_global_scope_does_not_block_549703197/001...
+Found 1 files
+Creating harness-config 'codex' in Hub scope project (proj-1913)...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: project (proj-1913)
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:40709
+Scanning harness-config files in /dev/shm/TestSyncHarnessConfigToHub_SendsUploadID428839077/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Found 1 changed file(s), updating...
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-1
+  Status: active
+  Content Hash: sha256:new
+Scanning harness-config files in /dev/shm/TestSyncHarnessConfigToHub_OldHubWithoutUploadID4089583685/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Found 1 changed file(s), updating...
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-1
+  Status: active
+  Content Hash: sha256:new
+Scanning harness-config files in /dev/shm/TestSyncHarnessConfigToHub_MissingFileRetryUsesNewUploadID2160527414/001...
+Found 1 files
+Checking for changes in harness-config 'codex'...
+Found 1 changed file(s), updating...
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Some files missing from storage, re-uploading all files...
+  Re-uploaded: config.yaml
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-1
+  Status: active
+  Content Hash: sha256:new
+Linking project 'global' to the local hub at http://127.0.0.1:42457
+Created new project: global (ID: 53b05b10-d1da-4cfa-a55b-f5666e5c2f9e)
+Linking project 'global' to the local hub at http://127.0.0.1:34917
+Created new project: global (ID: 43d4d956-288a-4b24-9ee3-1914fa47c7a7)
+Linking project '003' to the local hub at http://127.0.0.1:38773
+Created new project: global (ID: dir-project-id)
+revoke?: answered No (stdin is not a terminal; re-run with --yes to confirm)
+revoke?: auto-confirmed Yes
+Using hub: http://127.0.0.1:41655
+Deleting agent 'slow-agent'...
+Agent 'slow-agent': the Hub is still deleting it; waiting for the delete to finish...
+Cleaned up locally: slow-agent
+Agent 'slow-agent' deleted via Hub.
+Using hub: http://127.0.0.1:39465
+Deleting agent 'slow-agent'...
+Agent 'slow-agent': the Hub is still deleting it; waiting for the delete to finish...
+Cleaned up locally: slow-agent
+Agent 'slow-agent' deleted via Hub.
+Using hub: http://127.0.0.1:35773
+Deleting agent 'slow-agent'...
+Agent 'slow-agent': the Hub is still deleting it; waiting for the delete to finish...
+Agent 'slow-agent': delete accepted; cannot observe completion; local worktree kept (the Hub did not allow reading the agent).
+Using hub: http://127.0.0.1:39517
+Deleting agent 'slow-agent'...
+Agent 'slow-agent': the Hub is still deleting it; waiting for the delete to finish...
+Agent 'slow-agent': delete accepted; cannot observe completion; local worktree kept (still running when the wait ended).
+Using hub: http://127.0.0.1:35825
+Deleting agent 'bad-agent'...
+Agent 'bad-agent': the Hub is still deleting it; waiting for the delete to finish...
+Using hub: http://127.0.0.1:44543
+Deleting agent 'bad-agent'...
+Agent 'bad-agent': the Hub is still deleting it; waiting for the delete to finish...
+Using hub: http://127.0.0.1:33013
+Deleting agent 'ghost-agent'...
+Agent 'ghost-agent': the Hub is still deleting it; waiting for the delete to finish...
+Using hub: http://127.0.0.1:36665
+Deleting agent 'fast-agent'...
+Cleaned up locally: fast-agent
+Agent 'fast-agent' deleted via Hub.
+Using hub: http://127.0.0.1:39935
+Stopping agent 'stop-agent'...
+Agent 'stop-agent' stopped; removal in progress...
+Agent 'stop-agent' stopped and removed via Hub.
+Using hub: http://127.0.0.1:34061
+Stopping agent 'stop-agent'...
+Agent 'stop-agent' stopped; removal in progress...
+Using hub: http://127.0.0.1:40339
+Stopping agent 'stop-agent'...
+Agent 'stop-agent' stopped; removal in progress...
+Using hub: http://127.0.0.1:44819
+Stopping agent 'stop-agent'...
+Agent 'stop-agent' stopped; removal in progress...
+Agent 'stop-agent' stopped via Hub; removal accepted; cannot observe completion (the Hub did not allow reading the agent).
+Using hub: http://127.0.0.1:35071
+Stopping agent 'stop-agent'...
+Agent 'stop-agent' stopped; removal in progress...
+Agent 'stop-agent' stopped via Hub; removal accepted; cannot observe completion (still running when the wait ended).
+Continue?: auto-confirmed Yes
+Continue?: auto-confirmed Yes
+Continue?: auto-confirmed Yes
+Using hub: http://127.0.0.1:46033
+Deleting agent 'bad-agent'...
+Agent 'bad-agent': the Hub is still deleting it; waiting for the delete to finish...
+Using hub: http://127.0.0.1:36725
+Deleting agent 'bad-agent'...
+Agent 'bad-agent': the Hub is still deleting it; waiting for the delete to finish...
+Environment variables (scope: user):
+  API_URL=https://api.example.com (always)
+  LOG_LEVEL=debug (as-needed)
+No environment variables found (scope: user)
+{
+  "envVars": [
+    {
+      "id": "",
+      "key": "MY_VAR",
+      "value": "hello",
+      "scope": "user",
+      "scopeId": "",
+      "created": "0001-01-01T00:00:00Z",
+      "updated": "0001-01-01T00:00:00Z"
+    }
+  ],
+  "scope": "user",
+  "scopeId": ""
+}
+Environment variables (scope: project):
+  PROJECT_VAR=project-value
+Environment variables (scope: project):
+  PROJECT_VAR=project-value
+Warning: this directory is linked to hub 'linked' (https://linked.example.com), but --hub selects https://flag.example.com; the directory's project may not exist there.
+
+This will unlink project '003' from the Hub locally.
+
+The project and its agents will remain on the Hub for other brokers.
+You can re-link this project later with 'scion hub link'.
+
+Continue with unlinking?: auto-confirmed Yes
+Warning: settings file /dev/shm/TestHubUnlink_RemovesLinkEntry3974370936/003/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+
+This will unlink project 'relinkrepo' from the Hub locally.
+
+The project and its agents will remain on the Hub for other brokers.
+You can re-link this project later with 'scion hub link'.
+
+Continue with unlinking?: auto-confirmed Yes
+Linking project 'initrepo' to the local hub at http://127.0.0.1:38927
+Created new project: initrepo (ID: 0b5e6a1c-0000-4000-8000-0000000000c1)
+Warning: settings file /dev/shm/TestRunHubLink_FollowUpsUseHubProjectIDlinks_to_an_existing_hub3552543320/001/.scion/settings.json uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+  Migration warning: hub.brokerId is deprecated; moved to server.broker.broker_id
+
+This will link project 'global' to the Hub.
+Hub endpoint: http://127.0.0.1:36827
+
+When linked:
+  - Agent operations will be coordinated through the Hub
+  - Agents can be managed from any connected broker
+  - Local agents will be synced to the Hub
+
+Continue with linking?: auto-confirmed Yes
+
+Found 1 existing project(s) with the name 'global' on the Hub:
+
+  [1] global (ID: hub-id)
+  [2] Register as a new project (will be created as 'global-1')
+
+Auto-linking to: global (ID: hub-id)
+Created new project: global (ID: hub-id)
+Linked to existing project (ID: hub-id)
+Registered hub '127-0-0-1' (http://127.0.0.1:36827); rename with 'scion hub rename'.
+
+Project 'global' is now linked to the Hub.
+
+Warning: This project has no active runtime brokers.
+Register one with 'scion runtime-broker register'
+Warning: settings file /dev/shm/TestRunHubLink_FollowUpsUseHubProjectIDhub_returns_a_different_368012984/001/.scion/settings.json uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+  Migration warning: hub.brokerId is deprecated; moved to server.broker.broker_id
+
+This will link project 'global' to the Hub.
+Hub endpoint: http://127.0.0.1:32945
+
+When linked:
+  - Agent operations will be coordinated through the Hub
+  - Agents can be managed from any connected broker
+  - Local agents will be synced to the Hub
+
+Continue with linking?: auto-confirmed Yes
+Created new project: global (ID: p-linked)
+Registered hub '127-0-0-1' (http://127.0.0.1:32945); rename with 'scion hub rename'.
+
+Project 'global' is now linked to the Hub.
+
+Warning: This project has no active runtime brokers.
+Register one with 'scion runtime-broker register'
+Created new project: widgets (ID: p1)
+Created new project: widgets (ID: p1)
+Created new project: widgets (ID: p1)
+Created new project: widgets (ID: p1)
+Linking project 'global' to the local hub at http://127.0.0.1:33249
+Created new project: global (ID: b761c2cb-631c-4872-85d4-cc02abd190e0)
+Registered hub 'local' (http://127.0.0.1:33249); rename with 'scion hub rename'.
+
+Project 'global' is now linked to the Hub.
+
+Warning: This project has no active runtime brokers.
+The local server runs the broker: start or restart it with 'scion server start' (or 'scion server restart').
+
+This will link project 'global' to the Hub.
+Hub endpoint: http://127.0.0.1:43149
+
+When linked:
+  - Agent operations will be coordinated through the Hub
+  - Agents can be managed from any connected broker
+  - Local agents will be synced to the Hub
+
+Continue with linking?: answered No (stdin is not a terminal; re-run with --yes to confirm)
+Project created:
+  ID:     p-1
+  Slug:   scratch-pad
+  Name:   Scratch Pad
+  Workspace mode: per-agent (each agent starts in an empty private directory)
+
+Next steps:
+  Start an agent:
+     scion start my-agent --project scratch-pad "your task"
+Project created:
+  ID:     p-1
+  Slug:   notes
+  Name:   notes
+  Workspace mode: shared
+
+Next steps:
+  Start an agent:
+     scion start my-agent --project notes "your task"
+Project created:
+  ID:     p-1
+  Slug:   acme-widgets-main
+  Name:   widgets
+  Remote: github.com/acme/widgets
+  Branch: main
+  Workspace mode: worktree-per-agent
+
+Next steps:
+  1. Set git credentials:
+     scion hub secret set GITHUB_TOKEN --project acme-widgets-main <your-pat>
+
+  2. Start an agent:
+     scion start my-agent --project acme-widgets-main "your task"
+Project created:
+  ID:     p-1
+  Slug:   acme-widgets-main
+  Name:   widgets
+  Remote: github.com/acme/widgets
+  Branch: main
+
+Next steps:
+  1. Set git credentials:
+     scion hub secret set GITHUB_TOKEN --project acme-widgets-main <your-pat>
+
+  2. Start an agent:
+     scion start my-agent --project acme-widgets-main "your task"
+Starting agent 'agent-1'...
+Starting agent 'agent-1'...
+Starting agent 'agent-1'...
+Starting agent 'agent-1'...
+Project created:
+  ID:     p-1
+  Slug:   widgets-main
+  Name:   widgets
+  Remote: github.com/acme/widgets
+  Branch: main
+
+Next steps:
+  1. Set git credentials:
+     scion hub secret set GITHUB_TOKEN --project widgets-main <your-pat>
+
+  2. Start an agent:
+     scion start my-agent --project widgets-main "your task"
+Project created:
+  ID:     p-1
+  Slug:   widgets-main
+  Name:   widgets
+  Remote: github.com/acme/widgets
+  Branch: main
+
+Next steps:
+  1. Set git credentials:
+     scion hub secret set GITHUB_TOKEN --project widgets-main <your-pat>
+
+  2. Start an agent:
+     scion start my-agent --project widgets-main "your task"
+Project created:
+  ID:     p-1
+  Slug:   widgets-main
+  Name:   widgets
+  Remote: github.com/acme/widgets
+  Branch: main
+
+Next steps:
+  1. Set git credentials:
+     scion hub secret set GITHUB_TOKEN --project widgets-main <your-pat>
+
+  2. Start an agent:
+     scion start my-agent --project widgets-main "your task"
+
+This will permanently delete project 'My Project' from the Hub.
+
+The following will be removed:
+  - 0 agents
+
+This action cannot be undone.
+
+Delete this project?: auto-confirmed Yes
+Project 'My Project' deleted successfully.
+
+This will permanently delete project 'My Project' from the Hub.
+
+The following will be removed:
+  - 0 agents
+
+This action cannot be undone.
+
+Delete this project?: auto-confirmed Yes
+Project 'My Project' deleted successfully.
+
+This will permanently delete project 'tools' from the Hub.
+
+The following will be removed:
+  - 0 agents
+
+This action cannot be undone.
+
+Delete this project?: auto-confirmed Yes
+Project 'tools' deleted successfully.
+
+This will permanently delete project '2c3d4e5f-6a7b-4c8d-9e0f-1a2b3c4d5e6f' from the Hub.
+
+The following will be removed:
+  - 0 agents
+
+This action cannot be undone.
+
+Delete this project?: auto-confirmed Yes
+Project '2c3d4e5f-6a7b-4c8d-9e0f-1a2b3c4d5e6f' deleted successfully.
+
+This will permanently delete project 'tools' from the Hub.
+
+The following will be removed:
+  - 0 agents
+
+This action cannot be undone.
+
+Delete this project?: answered No (stdin is not a terminal; re-run with --yes to confirm)
+
+This will permanently delete project 'My Project' from the Hub.
+
+The following will be removed:
+  - 0 agents
+
+This action cannot be undone.
+
+Delete this project?: auto-confirmed Yes
+Project 'My Project' deleted successfully.
+
+This will permanently delete project 'My Project' from the Hub.
+
+The following will be removed:
+  - 0 agents
+
+This action cannot be undone.
+
+Delete this project?: answered No (stdin is not a terminal; re-run with --yes to confirm)
+
+This will permanently delete project 'My Project' from the Hub.
+
+The following will be removed:
+  - 0 agents
+
+This action cannot be undone.
+
+Delete this project?: auto-confirmed Yes
+
+This will permanently delete project 'My Project' from the Hub.
+
+The following will be removed:
+  - 0 agents
+
+This action cannot be undone.
+
+Delete this project?: auto-confirmed Yes
+
+This will permanently delete project 'My Project' from the Hub.
+
+The following will be removed:
+  - 0 agents
+
+This action cannot be undone.
+
+Delete this project?: auto-confirmed Yes
+Project 'My Project' deleted successfully.
+No environment variables found (scope: project)
+No secrets found (scope: project)
+Secrets (scope: user):
+KEY                             TYPE          PROGENY   VERSION   UPDATED
+------------------------------  ------------  --------  --------  -----------------------
+API_KEY                         environment   -         v1        2025-12-31 21:00:00 -03
+DB_PASSWORD                     environment   -         v2        2026-01-01 21:00:00 -03
+Created secret API_KEY (scope: user, type: environment)
+Created secret TLS_CERT (scope: user, type: environment)
+
+This will unlink project 'repo' from the Hub locally.
+
+The project and its agents will remain on the Hub for other brokers.
+You can re-link this project later with 'scion hub link'.
+
+Continue with unlinking?: auto-confirmed Yes
+Warning: settings file /dev/shm/TestHubUnlink_WritesOnlyLinkedAndProjectID3528386387/002/repo/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+
+This will unlink project 'repo' from the Hub locally.
+
+The project and its agents will remain on the Hub for other brokers.
+You can re-link this project later with 'scion hub link'.
+
+Continue with unlinking?: auto-confirmed Yes
+Warning: settings file /dev/shm/TestHubUnlink_Gatestale_hub_off,_linked_unset3248811530/002/repo/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+
+This will unlink project 'repo' from the Hub locally.
+
+The project and its agents will remain on the Hub for other brokers.
+You can re-link this project later with 'scion hub link'.
+
+Continue with unlinking?: auto-confirmed Yes
+Warning: settings file /dev/shm/TestHubUnlink_Gatenever_linked,_nothing_on_a_hub3907888021/002/repo/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+
+This will unlink project 'global' from the Hub locally.
+
+The project and its agents will remain on the Hub for other brokers.
+You can re-link this project later with 'scion hub link'.
+
+Continue with unlinking?: auto-confirmed Yes
+Linking project 'global' to the local hub at http://127.0.0.1:43045
+Created new project: global (ID: a9b23615-ccd8-450e-9408-b220d52f6bbe)
+
+This will unlink project 'global' from the Hub locally.
+
+The project and its agents will remain on the Hub for other brokers.
+You can re-link this project later with 'scion hub link'.
+
+Continue with unlinking?: auto-confirmed Yes
+
+Project 'global' is not linked to the Hub.
+Link project with Hub?: auto-confirmed Yes
+Created new project: global (ID: 173b4ba9-9e8b-4feb-8bef-f908d4adfbfc)
+
+This will unlink project 'global' from the Hub locally.
+
+The project and its agents will remain on the Hub for other brokers.
+You can re-link this project later with 'scion hub link'.
+
+Continue with unlinking?: auto-confirmed Yes
+
+This will unlink project 'splitrepo' from the Hub locally.
+
+The project and its agents will remain on the Hub for other brokers.
+You can re-link this project later with 'scion hub link'.
+
+Continue with unlinking?: auto-confirmed Yes
+Warning: settings file /dev/shm/TestPersistentPreRun_ConfigSubcommandGlobalCountsAsGlobal2013709892/001/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+Updated global setting 'image_registry' to 'registry.example.test/team'
+Continue?: auto-confirmed Yes
+Using hub: http://127.0.0.1:42945
+Sending keys to agent 'target-agent'...
+Keys dispatched to agent 'target-agent' (terminal injection acknowledged; this does not confirm the agent processed it).
+Using hub: http://127.0.0.1:33445
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:39845
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:39357
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:42463
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:46513
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:45091
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:45837
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:46067
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:35121
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:34517
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:42911
+Sending keys to agent 'target-agent'...
+Using hub: http://127.0.0.1:42521
+Using hub: http://127.0.0.1:36199
+Using hub: http://127.0.0.1:39169
+Using hub: http://127.0.0.1:36217
+Using hub: http://127.0.0.1:36217
+Using hub: http://127.0.0.1:36217
+Using hub: http://127.0.0.1:36217
+Using hub: http://127.0.0.1:38555
+Using hub: http://127.0.0.1:45399
+Using hub: http://127.0.0.1:35579
+Using hub: http://127.0.0.1:38727
+Using hub: http://127.0.0.1:34641
+Using hub: http://127.0.0.1:39199
+Using hub: http://127.0.0.1:44545
+Using hub: http://127.0.0.1:41521
+Using hub: http://127.0.0.1:38485
+Using hub: http://127.0.0.1:46411
+Using hub: http://127.0.0.1:35659
+Using hub: http://127.0.0.1:35463
+Using hub: http://127.0.0.1:40509
+Using hub: http://127.0.0.1:34587
+Using hub: http://127.0.0.1:34029
+Using hub: http://127.0.0.1:46791
+Using hub: http://127.0.0.1:41925
+Using hub: http://127.0.0.1:43659
+Using hub: http://127.0.0.1:35175
+Using hub: http://127.0.0.1:42177
+Using hub: http://127.0.0.1:44383
+Using hub: http://127.0.0.1:38811
+Using hub: http://127.0.0.1:39691
+Using hub: http://127.0.0.1:35915
+Using hub: http://127.0.0.1:38201
+Using hub: http://127.0.0.1:44749
+Using hub: http://127.0.0.1:37369
+Using hub: http://127.0.0.1:41507
+Using hub: http://127.0.0.1:36047
+Using hub: http://127.0.0.1:41417
+Using hub: http://127.0.0.1:36475
+Using hub: http://127.0.0.1:44075
+Using hub: http://127.0.0.1:40839
+Using hub: http://127.0.0.1:33033
+Using hub: http://127.0.0.1:34447
+Using hub: http://127.0.0.1:42641
+Sending message to agent 'my-agent'...
+Message accepted for agent 'my-agent'.
+Warning: attachment path "/etc/hostname" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/etc/hostname" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/etc/passwd" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/etc/passwd" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/etc/passwd" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/etc/passwd" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/etc/passwd" is outside allowed roots (/workspace, /scion-volumes); skipping
+Using hub: http://127.0.0.1:44605
+Message accepted for agent 'builder'.
+Using hub: http://127.0.0.1:39059
+Message accepted for agent 'builder'.
+Using hub: http://127.0.0.1:39493
+Note: @bystander is not an agent in this project; no agent was notified.
+Message accepted for agent 'builder'.
+Using hub: http://127.0.0.1:39243
+Message sent to #general (message msg-test-outbound).
+Using hub: http://127.0.0.1:37079
+Message sent to conv:7f3a91c2-1234-5678-9abc-def012345678 (message msg-test-outbound).
+Using hub: http://127.0.0.1:33289
+Message sent to @user@example.com (message msg-test-outbound).
+Using hub: http://127.0.0.1:41393
+Using hub: http://127.0.0.1:40527
+Sending message to agent 'old-agent-name'...
+Message accepted for agent 'old-agent-name'.
+Using hub: http://127.0.0.1:36965
+Using hub: http://127.0.0.1:35755
+Using hub: http://127.0.0.1:36647
+Message sent to @user@example.com (message msg-test-outbound).
+Using hub: http://127.0.0.1:33123
+Message sent to @user@example.com (message msg-test-outbound).
+Using hub: http://127.0.0.1:33123
+Using hub: http://127.0.0.1:39759
+Message sent to conv:aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (message msg-test-outbound).
+Using hub: http://127.0.0.1:45443
+Message sent to conv:aaaaaaaa-bbbb-cccc-dddd-111111111111 (message msg-test-outbound).
+Using hub: http://127.0.0.1:45443
+Message sent to conv:aaaaaaaa-bbbb-cccc-dddd-111111111111 (message msg-test-outbound).
+Using hub: http://127.0.0.1:38017
+Message sent to conv:aaaaaaaa-bbbb-cccc-dddd-222222222222 (message msg-test-outbound).
+Using hub: http://127.0.0.1:41121
+Message sent to conv:aaaaaaaa-bbbb-cccc-dddd-333333333333 (message msg-test-outbound).
+Using hub: http://127.0.0.1:45449
+Message sent to conv:gggggggg-rrrr-oooo-uuuu-pppppppppppp (message msg-test-outbound).
+Using hub: http://127.0.0.1:34299
+Message sent to conv:aaaaaaaa-bbbb-cccc-dddd-444444444444 (message msg-test-outbound).
+Using hub: http://127.0.0.1:43767
+Using hub: http://127.0.0.1:39663
+Using hub: http://127.0.0.1:34707
+Using hub: http://127.0.0.1:36421
+Using hub: http://127.0.0.1:37823
+Message to agent 'test-agent' scheduled for -
+Using hub: http://127.0.0.1:39453
+Message to agent 'test-agent' scheduled for -
+Using hub: http://127.0.0.1:34137
+Sending message to agent 'test-agent'...
+Message accepted for agent 'test-agent'.
+Subscribed to notifications for agent 'test-agent'.
+Using hub: http://127.0.0.1:38225
+Sending message to agent 'test-agent'...
+Message accepted for agent 'test-agent'.
+Using hub: http://127.0.0.1:37439
+Sending message to agent 'test-agent'...
+Message accepted for agent 'test-agent'.
+Using hub: http://127.0.0.1:33639
+Using hub: http://127.0.0.1:38489
+Using hub: http://127.0.0.1:38425
+Using hub: http://127.0.0.1:35551
+Using hub: http://127.0.0.1:36259
+Mention notification sent to @agent-cc.
+Using hub: http://127.0.0.1:42161
+Using hub: http://127.0.0.1:43465
+Using hub: http://127.0.0.1:43919
+Using hub: http://127.0.0.1:41041
+Using hub: http://127.0.0.1:38785
+Using hub: http://127.0.0.1:33629
+Using hub: http://127.0.0.1:33611
+Using hub: http://127.0.0.1:35759
+Using hub: http://127.0.0.1:35193
+Using hub: http://127.0.0.1:38909
+Using hub: http://127.0.0.1:40497
+Using hub: http://127.0.0.1:39383
+Sending message to agent 'ghost'...
+Using hub: http://127.0.0.1:45487
+Using hub: http://127.0.0.1:39121
+Using hub: http://127.0.0.1:43333
+Sending message to agent 'ghost'...
+Using hub: http://127.0.0.1:43333
+Using hub: http://127.0.0.1:45215
+Sending message to agent 'ghost'...
+Using hub: http://127.0.0.1:45215
+Using hub: http://127.0.0.1:35289
+Sending message to agent 'my-agent'...
+Message accepted for agent 'my-agent'.
+Using hub: http://127.0.0.1:45665
+Sending message to agent 'my-agent'...
+Message accepted for agent 'my-agent'.
+Using hub: http://127.0.0.1:32951
+Sending message to agent 'my-agent'...
+Using hub: http://127.0.0.1:36929
+Sending message to agent 'my-agent'...
+Message accepted for agent 'my-agent'.
+Subscribed to notifications for agent 'my-agent'.
+Using hub: http://127.0.0.1:33331
+Sending message to agent 'my-agent'...
+Message accepted for agent 'my-agent'.
+Using hub: http://127.0.0.1:37901
+Message sent to user:alice via Hub (message msg-test-1).
+Using hub: http://127.0.0.1:33293
+Warning: attachment path "/etc/passwd" is outside allowed roots (/workspace, /scion-volumes); skipping
+Using hub: http://127.0.0.1:46027
+Sending message to 2 recipients...
+  Accepted: agent:agent-b
+  Accepted: agent:agent-a
+Group send complete: 2/2 accepted.
+Using hub: http://127.0.0.1:35325
+Sending message to 1 recipients...
+  Accepted: user:alice (message msg-test-conv)
+Group send complete: 1/1 accepted.
+Using hub: http://127.0.0.1:34417
+Sending message to agent 'my-agent'...
+Message accepted for agent 'my-agent'.
+Warning: attachment path "/etc/shadow" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/tmp/secret.txt" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/workspace/../etc/passwd" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/workspace-evil/secret.txt" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/scion-volumes-other/data.txt" is outside allowed roots (/workspace, /scion-volumes); skipping
+Warning: attachment path "/workspacefoo" is outside allowed roots (/workspace, /scion-volumes); skipping
+Using hub: http://127.0.0.1:38515
+Sending message to agent 'builder'...
+Message accepted for agent 'builder' (message old-hub-msg-1).
+Message sent to conv:11111111-1111-1111-1111-111111111111 (message outbound-msg-1).
+Message sent to user:alice@example.com via Hub (message outbound-msg-2).
+Using hub: http://127.0.0.1:39189
+Sending message to agent 'primary-agent'...
+Mention notification sent to @mentioned-agent.
+Message accepted for agent 'primary-agent'.
+Using hub: http://127.0.0.1:44053
+Sending message to agent 'my-agent'...
+Mention notification sent to @other-agent.
+Message accepted for agent 'my-agent'.
+Sending message to agent 'my-agent'...
+Message accepted for agent 'my-agent'.
+Using hub: http://127.0.0.1:35001
+Sending message to agent 'primary-agent'...
+Mention notification sent to @cc-agent-1.
+Mention notification sent to @cc-agent-2.
+Message accepted for agent 'primary-agent'.
+Using hub: http://127.0.0.1:39965
+Sending message to agent 'primary-agent'...
+Mention notification sent to @mention-agent.
+Mention notification sent to @cc-agent.
+Message accepted for agent 'primary-agent'.
+Using hub: http://127.0.0.1:36859
+Sending message to agent 'primary-agent'...
+Mention notification sent to @shared-agent.
+Message accepted for agent 'primary-agent'.
+Using hub: http://127.0.0.1:45911
+Sending message to agent 'my-agent'...
+Message accepted for agent 'my-agent'.
+Using hub: http://127.0.0.1:37231
+Sending message to 2 recipients...
+  Accepted: agent:agent-b
+  Accepted: agent:agent-a
+Mention notification sent to @agent-c.
+Group send complete: 2/2 accepted.
+Using hub: http://127.0.0.1:33467
+Using hub: http://127.0.0.1:41361
+Sending message to 2 recipients...
+  Failed: agent:agent-bad: INTERNAL: boom (status: 500)
+  Accepted: agent:agent-ok (message m1)
+Group send incomplete: 1 accepted, 0 deferred, 1 failed (of 2 total).
+Accepted (1): agent:agent-ok
+Failed (1):
+  agent:agent-bad: INTERNAL: boom (status: 500)
+To retry only the failed recipients, send to "agent:agent-bad".
+Using hub: http://127.0.0.1:41793
+Sending cross-project message to agent 'target-agent' in project 'project-b'...
+Message accepted for agent 'target-agent' in project 'project-b'.
+Sending cross-project message to agent 'target-agent' in project 'project-b'...
+Message accepted for agent 'target-agent' in project 'project-b'.
+Using hub: http://127.0.0.1:43219
+Using hub: http://127.0.0.1:40289
+Message sent to conv:conv-uuid-5678 (message msg-test-outbound).
+Using hub: http://127.0.0.1:42219
+Sending cross-project message to agent 'cpm-probe-b' in project 'cpm-uat-b-20260919'...
+Message accepted for agent 'cpm-probe-b' in project 'cpm-uat-b-20260919'.
+Using hub: http://127.0.0.1:33961
+Sending cross-project message to agent 'remote-agent' in project 'remote-project'...
+Message accepted for agent 'remote-agent' in project 'remote-project'.
+Using hub: http://127.0.0.1:40927
+Sending cross-project message to agent 'target-agent' in project 'other-project'...
+Message accepted for agent 'target-agent' in project 'other-project'.
+Using hub: http://127.0.0.1:38491
+Sending message to agent 'target-agent'...
+Message accepted for agent 'target-agent'.
+Using hub: http://127.0.0.1:39991
+Message accepted for agent 'target-agent'.
+Using hub: http://127.0.0.1:40025
+Sending message to agent 'target-agent'...
+Message accepted for agent 'target-agent'.
+Using hub: http://127.0.0.1:45311
+Message sent to conv:conv-uuid-attach-wake (message msg-test-outbound).
+Using hub: http://127.0.0.1:45311
+Message sent to conv:conv-uuid-attach-wake (message msg-test-outbound).
+Using hub: http://127.0.0.1:45311
+Message sent to conv:conv-uuid-attach-wake (message msg-test-outbound).
+Using hub: http://127.0.0.1:42643
+Using hub: http://127.0.0.1:42277
+Using hub: http://127.0.0.1:43199
+Using hub: http://127.0.0.1:40907
+Using hub: http://127.0.0.1:33253
+Warning: settings file /dev/shm/TestRunHubLink_ScopedTokenWithoutProjectRead2287335930/001/.scion/settings.json uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+
+This will link project 'global' to the Hub.
+Hub endpoint: http://127.0.0.1:36011
+
+When linked:
+  - Agent operations will be coordinated through the Hub
+  - Agents can be managed from any connected broker
+  - Local agents will be synced to the Hub
+
+Continue with linking?: auto-confirmed Yes
+Warning: settings file /dev/shm/TestRunHubLink_JSONStdoutParseableWithAutoConfirm3582742019/001/.scion/settings.json uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+
+This will link project 'global' to the Hub.
+Hub endpoint: http://127.0.0.1:35055
+
+When linked:
+  - Agent operations will be coordinated through the Hub
+  - Agents can be managed from any connected broker
+  - Local agents will be synced to the Hub
+
+Continue with linking?: auto-confirmed Yes
+
+Found 1 existing project(s) with the name 'global' on the Hub:
+
+  [1] global (ID: hub-id)
+  [2] Register as a new project (will be created as 'global-1')
+
+Auto-linking to: global (ID: hub-id)
+Linked to existing project: global (ID: hub-id)
+Linked to existing project (ID: hub-id)
+Registered hub '127-0-0-1' (http://127.0.0.1:35055); rename with 'scion hub rename'.
+Warning: settings file /dev/shm/TestRunHubLink_NonInteractiveAmbiguousProject3785419798/001/.scion/settings.json uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+
+This will link project 'global' to the Hub.
+Hub endpoint: http://127.0.0.1:34073
+
+When linked:
+  - Agent operations will be coordinated through the Hub
+  - Agents can be managed from any connected broker
+  - Local agents will be synced to the Hub
+
+Continue with linking?: auto-confirmed Yes
+[]
+Using hub: http://127.0.0.1:38199
+Scanning harness-config files in /dev/shm/TestHarnessConfigInstall_ProjectSlugBindsExistingProjectnon-git133340165/003/codex...
+Found 1 files
+Creating harness-config 'codex' in Hub scope project (aplive-hub-id)...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: project (aplive-hub-id)
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:36683
+Scanning harness-config files in /dev/shm/TestHarnessConfigInstall_ProjectSlugBindsExistingProjectgit_cwd387032936/003/codex...
+Found 1 files
+Creating harness-config 'codex' in Hub scope project (aplive-hub-id)...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: project (aplive-hub-id)
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:42543
+Scanning harness-config files in /dev/shm/TestHarnessConfigInstall_ContextProjectIDBinds1375497813/003/codex...
+Found 1 files
+Creating harness-config 'codex' in Hub scope project (6f1c2d3e-4a5b-4c6d-8e9f-0a1b2c3d4e5f)...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: project (6f1c2d3e-4a5b-4c6d-8e9f-0a1b2c3d4e5f)
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Using hub: http://127.0.0.1:45933
+Scanning harness-config files in /dev/shm/TestHarnessConfigInstall_GlobalDoesNotLinkGlobalProject3282935869/003/codex...
+Found 1 files
+Creating harness-config 'codex' in Hub scope global...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Warning: settings file /dev/shm/TestRequireHubForUpload_ProjectGlobalKeepsLinkFlow579949349/001/.scion/settings.yaml uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+
+Found 1 existing project(s) with the name 'global' on the Hub:
+
+  [1] Global (ID: global-hub-id)
+  [2] Register as a new project (will be created as 'global-1')
+
+Auto-linking to: Global (ID: global-hub-id)
+Created new project: global (ID: global-hub-id)
+Using hub: http://127.0.0.1:44899
+Scanning harness-config files in /dev/shm/TestHarnessConfigSync_HubRefReadsGlobalOnly2959343661/001/.scion/harness-configs/foo...
+Found 1 files
+Creating harness-config 'foo' in Hub scope project (aplive-hub-id)...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'foo' synced successfully!
+  Scope: project (aplive-hub-id)
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Scanning harness-config files in /dev/shm/TestSyncBuildToHub_GlobalDoesNotLink3206261442/003/codex...
+Found 1 files
+Creating harness-config 'codex' in Hub scope global...
+Harness-config created with ID: hc-new
+Requesting upload URLs for 1 file(s)...
+Uploading 1 file(s)...
+  Uploaded: config.yaml
+Finalizing harness-config...
+Harness-config 'codex' synced successfully!
+  Scope: global
+  ID: hc-new
+  Status: active
+  Content Hash: sha256:abc
+Updated global setting 'image_registry' to 'registry.example.test/team'
+Updated global setting 'image_registry' to 'registry.example.test/team'
+Updated global setting 'image_registry' to 'registry.example.test/team'
+Updated global setting 'image_registry' to 'registry.example.test/team'
+Updated local setting 'image_registry' to 'registry.example.test/team'
+Updated global setting 'image_registry' to 'registry.example.test/team'
+Updated global setting 'image_registry' to 'registry.example.test/team'
+[hubsync] EnsureHubReady: projectPath=, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:false HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.616 [DEBUG] Hub client auth: none (source: )
+03:20:24.616 [DEBUG] Hub endpoint: http://127.0.0.1:40271
+03:20:24.616 [DEBUG] No dev auth token found
+[hubsync] EnsureHubReady: projectPath=global, opts={AutoConfirm:false NonInteractive:false EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.826 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:33223, projectID=global-local-id (local=global-local-id), brokerID=, projectPath=/dev/shm/TestRequireHub_ProjectFlagPrecedence-g_global_beats_env3153115151/001/.scion, isGlobal=true
+[hubsync] EnsureHubReady: projectPath=global, opts={AutoConfirm:false NonInteractive:false EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] hub context without project_id — project-scoped operations may fail
+03:20:24.828 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:45783, projectID=hub-global-project-id (local=hub-global-project-id), brokerID=, projectPath=/dev/shm/TestRequireHub_ProjectFlagPrecedence-g_global_beats_env,_hub_Gl2801457580/001/.scion, isGlobal=true
+[hubsync] EnsureHubReady: projectPath=global, opts={AutoConfirm:false NonInteractive:false EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] hub context without project_id — project-scoped operations may fail
+03:20:24.830 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:42095, projectID=hub-global-project-id (local=hub-global-project-id), brokerID=, projectPath=/dev/shm/TestRequireHub_ProjectFlagPrecedence-g_global,_no_env,_hub_Glob3554993292/001/.scion, isGlobal=true
+[hubsync] EnsureHubReady: projectPath=, opts={AutoConfirm:false NonInteractive:false EndpointOverride: ExplicitProject:false HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.832 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:45227, projectID=env-project-id (local=env-project-id), brokerID=, projectPath=/dev/shm/TestRequireHub_ProjectFlagPrecedenceno_flag,_env_wins549907051/001/.scion, isGlobal=true
+[hubsync] EnsureHubReady: projectPath=, opts={AutoConfirm:false NonInteractive:false EndpointOverride: ExplicitProject:false HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.834 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:43591, projectID=global-local-id (local=global-local-id), brokerID=, projectPath=/dev/shm/TestRequireHub_ProjectFlagPrecedenceno_flag,_no_env,_global_set2393689804/001/.scion, isGlobal=true
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRequireHub_ProjectFlagPrecedenceno_flag,_resolved_cwd_dir,_3641050313/001/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride: ExplicitProject:false HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.836 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:36953, projectID=env-project-id (local=env-project-id), brokerID=, projectPath=/dev/shm/TestRequireHub_ProjectFlagPrecedenceno_flag,_resolved_cwd_dir,_3641050313/001/.scion, isGlobal=true
+03:20:24.840 [DEBUG] Hub client auth: Dev auth (source: SCION_DEV_TOKEN env var)
+03:20:24.840 [DEBUG] Hub endpoint: http://hub.invalid
+03:20:24.842 [DEBUG] Hub client auth: Dev auth (source: SCION_DEV_TOKEN env var)
+03:20:24.842 [DEBUG] Hub endpoint: http://hub.invalid
+[hubsync] EnsureHubReady: projectPath=, opts={AutoConfirm:false NonInteractive:false EndpointOverride: ExplicitProject:false HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.843 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:39835, projectID=env-project-id (local=env-project-id), brokerID=, projectPath=/dev/shm/TestRequireHub_ClearedPathKeepsEnvProjecthub_Global_true2323741728/001/.scion, isGlobal=true
+[hubsync] EnsureHubReady: projectPath=, opts={AutoConfirm:false NonInteractive:false EndpointOverride: ExplicitProject:false HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.845 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:38269, projectID=env-project-id (local=env-project-id), brokerID=, projectPath=/dev/shm/TestRequireHub_ClearedPathKeepsEnvProjecthub_Global_false518276264/001/.scion, isGlobal=true
+03:20:24.846 [DEBUG] Hub client auth: Dev auth (source: SCION_DEV_TOKEN env var)
+03:20:24.846 [DEBUG] Hub endpoint: http://hub.invalid
+03:20:24.849 [DEBUG] Hub client auth: Dev auth (source: SCION_DEV_TOKEN env var)
+03:20:24.849 [DEBUG] Hub endpoint: http://hub.invalid
+03:20:24.850 [DEBUG] Hub client auth: Dev auth (source: SCION_DEV_TOKEN env var)
+03:20:24.850 [DEBUG] Hub endpoint: http://hub.invalid
+03:20:24.856 [DEBUG] Hub client auth: Dev auth (source: SCION_DEV_TOKEN env var)
+03:20:24.856 [DEBUG] Hub endpoint: http://127.0.0.1:42489
+03:20:24.856 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+{
+  "crossProjectInbound": "none",
+  "revision": 0,
+  "effectiveCrossProjectInbound": "",
+  "hubCrossProjectEnabled": false
+}
+03:20:24.859 [DEBUG] Hub client auth: Dev auth (source: SCION_DEV_TOKEN env var)
+03:20:24.859 [DEBUG] Hub endpoint: http://127.0.0.1:41841
+03:20:24.859 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+{
+  "crossProjectInbound": "none",
+  "revision": 0,
+  "effectiveCrossProjectInbound": "",
+  "hubCrossProjectEnabled": false
+}
+03:20:24.861 [DEBUG] Hub client auth: Dev auth (source: SCION_DEV_TOKEN env var)
+03:20:24.861 [DEBUG] Hub endpoint: http://127.0.0.1:42941
+03:20:24.861 [DEBUG] Dev auth token: test-dev-token (source: SCION_DEV_TOKEN env var)
+{
+  "crossProjectInbound": "none",
+  "revision": 0,
+  "effectiveCrossProjectInbound": "",
+  "hubCrossProjectEnabled": false
+}
+03:20:24.863 [DEBUG] Hub client auth: none (source: )
+03:20:24.863 [DEBUG] Hub endpoint: http://127.0.0.1:39543
+03:20:24.863 [DEBUG] No dev auth token found
+03:20:24.865 [DEBUG] Hub client auth: none (source: )
+03:20:24.865 [DEBUG] Hub endpoint: http://127.0.0.1:41411
+03:20:24.865 [DEBUG] No dev auth token found
+03:20:24.866 [DEBUG] Hub client auth: none (source: )
+03:20:24.866 [DEBUG] Hub endpoint: http://127.0.0.1:40847
+03:20:24.866 [DEBUG] No dev auth token found
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsList_Empty903372050/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:42267 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.869 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:42267, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsList_Empty903372050/001/proj/.scion, isGlobal=false
+No injected skills configured for this project.
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsList_WithEntries3821560015/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:42461 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.872 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:42461, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsList_WithEntries3821560015/001/proj/.scion, isGlobal=false
+ID                                    SKILL URI          ALIAS   OPTIONAL  ORDER  NAME
+11111111-2222-3333-4444-555555555555  skill://skill-one  skill1  no        0      Skill One
+66666666-7777-8888-9999-aaaaaaaaaaaa  skill://skill-two  -       yes       1      -
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsList_JSONOutput3806059405/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:43763 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.875 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:43763, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsList_JSONOutput3806059405/001/proj/.scion, isGlobal=false
+{
+  "entries": [
+    {
+      "id": "11111111-2222-3333-4444-555555555555",
+      "skillUri": "skill://skill-one",
+      "skillAs": "skill1",
+      "skillName": "Skill One"
+    },
+    {
+      "id": "66666666-7777-8888-9999-aaaaaaaaaaaa",
+      "skillUri": "skill://skill-two",
+      "optional": true,
+      "sortOrder": 1
+    }
+  ]
+}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsAdd_Success615120630/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:38041 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.878 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:38041, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsAdd_Success615120630/001/proj/.scion, isGlobal=false
+Added injected skill (ID: new-entry-uuid)
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsAdd_WithAlias1531927102/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:38121 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.881 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:38121, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsAdd_WithAlias1531927102/001/proj/.scion, isGlobal=false
+Added injected skill (ID: new-entry-uuid)
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsAdd_BareSkillName441582520/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:41533 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.884 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:41533, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsAdd_BareSkillName441582520/001/proj/.scion, isGlobal=false
+Added injected skill (ID: new-entry-uuid)
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsRemove_ByID637446688/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:43699 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.887 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:43699, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsRemove_ByID637446688/001/proj/.scion, isGlobal=false
+Removed injected skill (ID: 11111111-2222-3333-4444-555555555555)
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsRemove_ByURI680542610/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:40307 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.890 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:40307, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsRemove_ByURI680542610/001/proj/.scion, isGlobal=false
+Removed injected skill (ID: 11111111-2222-3333-4444-555555555555)
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsRemove_URINotFound2761261377/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:39467 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.893 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:39467, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsRemove_URINotFound2761261377/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsList_APIError1496051010/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:39201 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.900 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:39201, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsList_APIError1496051010/001/proj/.scion, isGlobal=false
+ID  SKILL URI  ALIAS  OPTIONAL  ORDER  NAME
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_NonTTY_AddsAll1610241517/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:33829 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.903 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:33829, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_NonTTY_AddsAll1610241517/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_TTY_Yes_AddsAll1139525504/001/proj/.scion, opts={AutoConfirm:true NonInteractive:false EndpointOverride:http://127.0.0.1:42701 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.906 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:42701, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_TTY_Yes_AddsAll1139525504/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_TTY_Abort2085829727/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:39563 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.909 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:39563, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_TTY_Abort2085829727/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_NoSkills678107442/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:44037 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.912 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:44037, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_NoSkills678107442/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_PartialFailure2982691066/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:36921 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.915 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:36921, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_PartialFailure2982691066/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_DiscoverError138285892/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:44021 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.918 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:44021, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_DiscoverError138285892/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_StripsUserinfo2467253489/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:46123 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.921 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:46123, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_StripsUserinfo2467253489/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_TotalFailure3427050822/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:37903 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:24.928 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:37903, projectID=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee (local=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunProjectSkillsFromDirectory_TotalFailure3427050822/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=1dfdd6c7-0000-4000-8000-000000000001, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:42269 ExplicitProject:true HubFromContext:true RecordLink:0x581adc0 SkipProjectLink:false}
+[hubsync] resolveHubProjectRef: ref=1dfdd6c7-0000-4000-8000-000000000001
+[hubsync] resolveHubProjectRef: fallbackPath=/dev/shm/TestUseThenHubAvailability4193310480/001/.scion, isGlobal=true
+03:20:25.675 [DEBUG] Dev auth token: scion_dev_test (source: SCION_DEV_TOKEN env var)
+[hubsync] resolveHubProjectRef: resolved project Foo (ID: 1dfdd6c7-0000-4000-8000-000000000001) via hub
+Requesting download URLs for template 'tpl'...
+Requesting download URLs for template 'tpl'...
+Requesting download URLs for template 'tpl'...
+Requesting download URLs for template 'tpl'...
+Requesting download URLs for template 'tpl'...
+Requesting download URLs for template 'tpl'...
+Requesting download URLs for template 'tpl'...
+Requesting download URLs for template 'tpl'...
+Requesting download URLs for template 'tpl'...
+Requesting download URLs for harness-config 'hc'...
+Downloading 2 files to /dev/shm/TestPullFromHub_RejectsNonCanonicalEntryharness-config..sibli3197807421/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 2 files to /dev/shm/TestPullFromHub_RejectsNonCanonicalEntryharness-configa....1398580207/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 2 files to /dev/shm/TestPullFromHub_RejectsNonCanonicalEntryharness-config..file.472265081/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 2 files to /dev/shm/TestPullFromHub_RejectsNonCanonicalEntryharness-config.file.t90933094/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 2 files to /dev/shm/TestPullFromHub_RejectsNonCanonicalEntryharness-configafile.3729291080/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 2 files to /dev/shm/TestPullFromHub_RejectsNonCanonicalEntryharness-configafile.t3031099682/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 2 files to /dev/shm/TestPullFromHub_RejectsNonCanonicalEntryharness-configfilex003515931022/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 2 files to /dev/shm/TestPullFromHub_RejectsNonCanonicalEntryharness-config#002216723633/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 1 files to /dev/shm/TestPullFromHub_RejectsNonCanonicalEntryharness-configabsolute389048247/001/dest...
+Requesting download URLs for template 'tpl'...
+Downloading 1 files to /dev/shm/TestPullFromHub_StaysInsideDestThroughSymlinkedDirtemplate2821731299/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 1 files to /dev/shm/TestPullFromHub_StaysInsideDestThroughSymlinkedDirharness-confi3866031620/001/dest...
+Requesting download URLs for template 'tpl'...
+Downloading 1 files to /dev/shm/TestPullFromHub_CreatesDirsOnlyInsideDesttemplate2680904985/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 1 files to /dev/shm/TestPullFromHub_CreatesDirsOnlyInsideDestharness-config1631152978/001/dest...
+Requesting download URLs for template 'tpl'...
+Downloading 1 files to /dev/shm/TestPullFromHub_WritesOnlyInsideDestThroughSymlinkedFiletemplat3284783565/001/dest...
+Requesting download URLs for harness-config 'hc'...
+Downloading 1 files to /dev/shm/TestPullFromHub_WritesOnlyInsideDestThroughSymlinkedFileharness1435849715/001/dest...
+Requesting download URLs for template 'tpl'...
+Downloading 3 files to /dev/shm/TestPullFromHub_WritesNestedEntriestemplate4173228649/001/dest...
+  Downloaded: a/b/c.txt
+  Downloaded: top.txt
+  Downloaded: .claude/settings.json
+Template 'tpl' pulled successfully to /dev/shm/TestPullFromHub_WritesNestedEntriestemplate4173228649/001/dest
+Requesting download URLs for harness-config 'hc'...
+Downloading 3 files to /dev/shm/TestPullFromHub_WritesNestedEntriesharness-config4169955302/001/dest...
+  Downloaded: a/b/c.txt
+  Downloaded: top.txt
+  Downloaded: .claude/settings.json
+Harness-config 'hc' pulled successfully to /dev/shm/TestPullFromHub_WritesNestedEntriesharness-config4169955302/001/dest
+Using hub: http://127.0.0.1:35599
+Checking that 'agent-1' can move to broker 'b2'...
+Using hub: http://127.0.0.1:33121
+Resolving reincarnation plan for 'agent-1'...
+Using hub: http://127.0.0.1:43283
+Checking that 'agent-1' can move to broker 'b2'...
+Reincarnating 'agent-1'...
+Reincarnation plan:
+  Template:      (not configured) (unchanged)
+  Image:         (not configured) (unchanged)
+  Harness cfg:   (not configured) (unchanged)
+  Model:         (not configured) (unchanged)
+  Branch:        (not configured)
+
+Agent 'agent-1' is reincarnating: generation 2, state=pending.
+Using hub: http://127.0.0.1:37383
+Resolving reincarnation plan for 'agent-1'...
+Move eligibility: b1 -> b2
+Reincarnation plan:
+  Template:      (not configured) (unchanged)
+  Image:         (not configured) (unchanged)
+  Harness cfg:   (not configured) (unchanged)
+  Model:         (not configured) (unchanged)
+  Branch:        (not configured)
+
+Dry run only; nothing was changed.
+Using hub: http://127.0.0.1:33813
+Resolving reincarnation plan for 'agent-1'...
+Using hub: http://127.0.0.1:43983
+Checking that 'agent-1' can move to broker 'b2'...
+Using hub: http://127.0.0.1:43983
+Resolving reincarnation plan for 'agent-1'...
+Using hub: http://127.0.0.1:43983
+Resolving reincarnation plan for 'agent-1'...
+Reincarnation plan:
+  Template:      (not configured) (unchanged)
+  Image:         (not configured) (unchanged)
+  Harness cfg:   (not configured) (unchanged)
+  Model:         (not configured) (unchanged)
+  Branch:        (not configured)
+
+Dry run only; nothing was changed.
+Using hub: http://127.0.0.1:37107
+Checking that 'agent-1' can move to broker 'b2'...
+Reincarnating 'agent-1'...
+Reincarnation plan:
+  Template:      (not configured) (unchanged)
+  Image:         (not configured) (unchanged)
+  Harness cfg:   (not configured) (unchanged)
+  Model:         (not configured) (unchanged)
+  Branch:        (not configured)
+
+Agent 'agent-1' is reincarnating: generation 2, state=pending.
+Using hub: http://127.0.0.1:43297
+Checking that 'agent-1' can move to broker 'b2'...
+Move eligibility: b1 -> b2
+  access:                      failed
+Using hub: http://127.0.0.1:42259
+Checking that 'agent-1' can move to broker 'b2'...
+Using hub: http://127.0.0.1:38267
+Checking that 'agent-1' can move to broker 'b2'...
+Reincarnating 'agent-1'...
+Reincarnation plan:
+  Template:      (not configured) (unchanged)
+  Image:         (not configured) (unchanged)
+  Harness cfg:   (not configured) (unchanged)
+  Model:         (not configured) (unchanged)
+  Branch:        (not configured)
+
+Agent 'agent-1' is reincarnating: generation 2, state=pending.
+Using hub: http://127.0.0.1:33897
+Checking that 'agent-1' can move to broker 'b2'...
+Using hub: http://127.0.0.1:46009
+Using hub: http://127.0.0.1:42015
+Reincarnating 'agent-1'...
+Reincarnation plan:
+  Template:      (not configured) (unchanged)
+  Image:         (not configured) (unchanged)
+  Harness cfg:   (not configured) (unchanged)
+  Model:         (not configured) (unchanged)
+  Branch:        (not configured)
+
+Agent 'agent-1' is reincarnating: generation 2, state=pending.
+Using hub: http://127.0.0.1:35609
+Resolving reincarnation plan for 'agent-1'...
+Using hub: http://127.0.0.1:40513
+Reincarnating 'agent-1'...
+Reincarnation plan:
+  Template:      (not configured) (unchanged)
+  Image:         (not configured) (unchanged)
+  Harness cfg:   (not configured) (unchanged)
+  Model:         (not configured) (unchanged)
+  Branch:        (not configured)
+
+Agent 'agent-1' is reincarnating: generation 2, state=pending.
+Using hub: http://127.0.0.1:34569
+Resolving reincarnation plan for 'agent-1'...
+Using hub: http://127.0.0.1:35383
+Using hub: http://127.0.0.1:36187
+Reincarnating 'agent-1'...
+Using hub: http://127.0.0.1:38681
+Using hub: http://127.0.0.1:44945
+Resolving reincarnation plan for 'agent-1'...
+Using hub: http://127.0.0.1:46229
+Resolving reincarnation plan for 'agent-1'...
+Using hub: http://127.0.0.1:40329
+Resolving reincarnation plan for 'agent-1'...
+Using hub: http://127.0.0.1:44431
+Checking that 'agent-1' can move to broker 'b2'...
+Using hub: http://127.0.0.1:46351
+Checking that 'agent-1' can move to broker 'b2'...
+Using hub: http://127.0.0.1:42847
+Checking that 'agent-1' can move to broker 'b2'...
+Reincarnating 'agent-1'...
+Move eligibility:  -> 
+Reincarnation plan:
+  Template:      (not configured) (unchanged)
+  Image:         (not configured) (unchanged)
+  Harness cfg:   (not configured) (unchanged)
+  Model:         (not configured) (unchanged)
+  Branch:        (not configured)
+
+Agent 'agent-1' is reincarnating: generation 2, state=planned.
+Linking project 'global' to the local hub at http://127.0.0.1:45353
+Created new project: global (ID: require-hub-project)
+
+Project 'global' is not linked to the Hub.
+Link project with Hub?: answered No (stdin is not a terminal; re-run with --yes to confirm)
+[hubsync] EnsureHubReady: projectPath=global, opts={AutoConfirm:false NonInteractive:false EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=global, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:40139 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:25.850 [DEBUG] Dev auth token: scion_dev_test (source: SCION_DEV_TOKEN env var)
+Using hub: http://127.0.0.1:37495
+Resetting auth for agent 'dev'...
+Using hub: http://127.0.0.1:42943
+Re-issuing scopes for agent 'dev'...
+m
+  role:      -> 
+  source:     ( ceiling)
+  added:    (none)
+  removed:  (none)
+  credentials revoked: 0; token dispatched: true
+Using hub: http://127.0.0.1:39725
+Re-issuing scopes for every agent on the Hub...
+dev (a1) changed
+  reload unconfirmed: credential issued and written; the running agent did not confirm the reload. If it keeps failing to authenticate, restart the agent
+1 agents: 1 changed, 0 unchanged, 0 refused, 0 token not delivered, 1 reload unconfirmed
+--- FAIL: TestExecuteUsageOnError_RunEUsageErrors (0.10s)
+    --- FAIL: TestExecuteUsageOnError_RunEUsageErrors/start:_telemetry_flags (0.00s)
+        root_test.go:560: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:560
+            	Error:      	"git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)" does not contain "--enable-telemetry and --disable-telemetry are mutually exclusive"
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_telemetry_flags
+        root_test.go:564: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:564
+            	Error:      	Should be true
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_telemetry_flags
+            	Messages:   	error: git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)
+        root_test.go:565: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:565
+            	Error:      	Should be true
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_telemetry_flags
+    --- FAIL: TestExecuteUsageOnError_RunEUsageErrors/start:_negative_--wait-timeout (0.00s)
+        root_test.go:560: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:560
+            	Error:      	"git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)" does not contain "--wait-timeout must not be negative"
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_negative_--wait-timeout
+        root_test.go:564: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:564
+            	Error:      	Should be true
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_negative_--wait-timeout
+            	Messages:   	error: git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)
+        root_test.go:565: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:565
+            	Error:      	Should be true
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_negative_--wait-timeout
+    --- FAIL: TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--template-scope (0.00s)
+        root_test.go:560: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:560
+            	Error:      	"git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)" does not contain "unknown template scope \"bogus\""
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--template-scope
+        root_test.go:564: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:564
+            	Error:      	Should be true
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--template-scope
+            	Messages:   	error: git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)
+        root_test.go:565: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:565
+            	Error:      	Should be true
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--template-scope
+    --- FAIL: TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--agent-log-level (0.00s)
+        root_test.go:560: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:560
+            	Error:      	"git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)" does not contain "invalid --agent-log-level value"
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--agent-log-level
+        root_test.go:564: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:564
+            	Error:      	Should be true
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--agent-log-level
+            	Messages:   	error: git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)
+        root_test.go:565: 
+            	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/root_test.go:565
+            	Error:      	Should be true
+            	Test:       	TestExecuteUsageOnError_RunEUsageErrors/start:_bad_--agent-log-level
+03:20:26.116 [DEBUG] agent mode detected, non-interactive mode auto-enabled
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunAgentSecretList_FormatJSON3415874318/001/project/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:41861 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:26.125 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:41861, projectID=test-project (local=test-project), brokerID=, projectPath=/dev/shm/TestRunAgentSecretList_FormatJSON3415874318/001/project/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunAgentSecretList_FormatJSONEmpty680250890/001/project/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:42047 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:26.130 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:42047, projectID=test-project (local=test-project), brokerID=, projectPath=/dev/shm/TestRunAgentSecretList_FormatJSONEmpty680250890/001/project/.scion, isGlobal=false
+03:20:26.133 [DEBUG] Hub client auth: none (source: )
+03:20:26.133 [DEBUG] Hub endpoint: http://127.0.0.1:33851
+03:20:26.133 [DEBUG] No dev auth token found
+03:20:26.134 [DEBUG] Hub client auth: none (source: )
+03:20:26.134 [DEBUG] Hub endpoint: http://127.0.0.1:39259
+03:20:26.134 [DEBUG] No dev auth token found
+03:20:26.136 [DEBUG] Hub client auth: none (source: )
+03:20:26.136 [DEBUG] Hub endpoint: http://127.0.0.1:41891
+03:20:26.136 [DEBUG] No dev auth token found
+03:20:26.138 [DEBUG] Hub client auth: none (source: )
+03:20:26.138 [DEBUG] Hub endpoint: http://127.0.0.1:42497
+03:20:26.138 [DEBUG] No dev auth token found
+03:20:26.140 [DEBUG] Hub client auth: none (source: )
+03:20:26.140 [DEBUG] Hub endpoint: http://127.0.0.1:38829
+03:20:26.140 [DEBUG] No dev auth token found
+03:20:26.141 [DEBUG] Hub client auth: none (source: )
+03:20:26.141 [DEBUG] Hub endpoint: http://127.0.0.1:38829
+03:20:26.141 [DEBUG] No dev auth token found
+03:20:26.143 [DEBUG] Hub client auth: none (source: )
+03:20:26.143 [DEBUG] Hub endpoint: http://127.0.0.1:34547
+03:20:26.143 [DEBUG] No dev auth token found
+03:20:26.144 [DEBUG] Hub client auth: none (source: )
+03:20:26.144 [DEBUG] Hub endpoint: http://127.0.0.1:34547
+03:20:26.144 [DEBUG] No dev auth token found
+03:20:26.146 [DEBUG] Hub client auth: none (source: )
+03:20:26.146 [DEBUG] Hub endpoint: http://127.0.0.1:43793
+03:20:26.146 [DEBUG] No dev auth token found
+03:20:26.148 [DEBUG] Hub client auth: none (source: )
+03:20:26.148 [DEBUG] Hub endpoint: http://127.0.0.1:38263
+03:20:26.148 [DEBUG] No dev auth token found
+03:20:26.150 [DEBUG] Hub client auth: none (source: )
+03:20:26.150 [DEBUG] Hub endpoint: http://127.0.0.1:44949
+03:20:26.150 [DEBUG] No dev auth token found
+03:20:26.152 [DEBUG] Hub client auth: none (source: )
+03:20:26.152 [DEBUG] Hub endpoint: http://127.0.0.1:35203
+03:20:26.152 [DEBUG] No dev auth token found
+03:20:26.154 [DEBUG] Hub client auth: none (source: )
+03:20:26.154 [DEBUG] Hub endpoint: http://127.0.0.1:39427
+03:20:26.154 [DEBUG] No dev auth token found
+03:20:26.156 [DEBUG] Hub client auth: none (source: )
+03:20:26.156 [DEBUG] Hub endpoint: http://127.0.0.1:34153
+03:20:26.156 [DEBUG] No dev auth token found
+03:20:26.158 [DEBUG] Hub client auth: none (source: )
+03:20:26.158 [DEBUG] Hub endpoint: http://127.0.0.1:37109
+03:20:26.158 [DEBUG] No dev auth token found
+03:20:26.160 [DEBUG] Hub client auth: none (source: )
+03:20:26.160 [DEBUG] Hub endpoint: http://127.0.0.1:44585
+03:20:26.160 [DEBUG] No dev auth token found
+03:20:26.162 [DEBUG] Hub client auth: none (source: )
+03:20:26.162 [DEBUG] Hub endpoint: http://127.0.0.1:40435
+03:20:26.162 [DEBUG] No dev auth token found
+03:20:26.164 [DEBUG] Hub client auth: none (source: )
+03:20:26.164 [DEBUG] Hub endpoint: http://127.0.0.1:37035
+03:20:26.164 [DEBUG] No dev auth token found
+03:20:26.166 [DEBUG] Hub client auth: none (source: )
+03:20:26.166 [DEBUG] Hub endpoint: http://127.0.0.1:46827
+03:20:26.166 [DEBUG] No dev auth token found
+03:20:26.171 [DEBUG] Hub client auth: none (source: )
+03:20:26.171 [DEBUG] Hub endpoint: http://127.0.0.1:46827
+03:20:26.171 [DEBUG] No dev auth token found
+03:20:26.173 [DEBUG] Hub client auth: none (source: )
+03:20:26.173 [DEBUG] Hub endpoint: http://127.0.0.1:33763
+03:20:26.173 [DEBUG] No dev auth token found
+03:20:26.175 [DEBUG] Hub client auth: none (source: )
+03:20:26.175 [DEBUG] Hub endpoint: http://127.0.0.1:33763
+03:20:26.175 [DEBUG] No dev auth token found
+03:20:26.176 [DEBUG] Hub client auth: none (source: )
+03:20:26.176 [DEBUG] Hub endpoint: http://127.0.0.1:40647
+03:20:26.176 [DEBUG] No dev auth token found
+03:20:26.178 [DEBUG] Hub client auth: none (source: )
+03:20:26.178 [DEBUG] Hub endpoint: http://127.0.0.1:46263
+03:20:26.178 [DEBUG] No dev auth token found
+03:20:26.180 [DEBUG] Hub client auth: none (source: )
+03:20:26.180 [DEBUG] Hub endpoint: http://127.0.0.1:36369
+03:20:26.180 [DEBUG] No dev auth token found
+03:20:26.182 [DEBUG] Hub client auth: none (source: )
+03:20:26.182 [DEBUG] Hub endpoint: http://127.0.0.1:41343
+03:20:26.182 [DEBUG] No dev auth token found
+03:20:26.183 [DEBUG] Hub client auth: none (source: )
+03:20:26.183 [DEBUG] Hub endpoint: http://127.0.0.1:32843
+03:20:26.183 [DEBUG] No dev auth token found
+03:20:26.185 [DEBUG] Hub client auth: none (source: )
+03:20:26.185 [DEBUG] Hub endpoint: http://127.0.0.1:32949
+03:20:26.185 [DEBUG] No dev auth token found
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunAgentSecretGet_NoContenttext3855778708/001/project/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:43609 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:26.187 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:43609, projectID=test-project (local=test-project), brokerID=, projectPath=/dev/shm/TestRunAgentSecretGet_NoContenttext3855778708/001/project/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunAgentSecretGet_NoContentformat_json2766264350/001/project/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:36203 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:20:26.188 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:36203, projectID=test-project (local=test-project), brokerID=, projectPath=/dev/shm/TestRunAgentSecretGet_NoContentformat_json2766264350/001/project/.scion, isGlobal=false
+Warning: broker embedded-keeps (cdc32e64-1eb4-54a1-ad3c-24be9c318934): the GCP host service account set through the update API ("configured@proj.iam.gserviceaccount.com") differs from the host's detected service account ("detected@proj.iam.gserviceaccount.com"); keeping the configured value
+WARN the configured GCP host service account differs from the host's identity; the configured value is used (change it through the Runtime Broker update API) runtime_broker_id=cdc32e64-1eb4-54a1-ad3c-24be9c318934 configured=configured@proj.iam.gserviceaccount.com observed=detected@proj.iam.gserviceaccount.com
+Warning: broker "shared-name" (ID: 8f548cc5-6c8e-5b36-b38e-94257ba996e1) has a recorded owner and is not adopted as the co-located broker; registering a new record
+INFO the host's GCP identity could not be read from the metadata server runtime_broker_id=ba5e9917-cf44-57c1-ae09-9e93715e9dc9
+INFO the host's GCP identity could not be read from the metadata server runtime_broker_id=b99c2b8c-26a6-5f49-9d63-ad545280012e
+Found existing broker by name "shared-name" (ID: b99c2b8c-26a6-5f49-9d63-ad545280012e), reusing instead of creating duplicate
+INFO the host's GCP identity could not be read from the metadata server runtime_broker_id=b99c2b8c-26a6-5f49-9d63-ad545280012e
+Warning: broker embedded-observed (8e52afdd-6d09-5868-ad3c-146ebe44fe03): the GCP host service account set through the update API ("configured@proj.iam.gserviceaccount.com") differs from the host's detected service account ("detected@proj.iam.gserviceaccount.com"); keeping the configured value
+WARN the configured GCP host service account differs from the host's identity; the configured value is used (change it through the Runtime Broker update API) runtime_broker_id=8e52afdd-6d09-5868-ad3c-146ebe44fe03 configured=configured@proj.iam.gserviceaccount.com observed=detected@proj.iam.gserviceaccount.com
+INFO the host's GCP identity could not be read from the metadata server runtime_broker_id=693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: re-assigned 1 orphaned agent(s) to broker 693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: updated 1 project(s) default broker from a3db8aec-b469-50ba-a29c-34540b3df85f to 693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: marked stale broker a3db8aec-b469-50ba-a29c-34540b3df85f as offline
+INFO the host's GCP identity could not be read from the metadata server runtime_broker_id=693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: re-assigned 1 orphaned agent(s) to broker 693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: updated 1 project(s) default broker from a3db8aec-b469-50ba-a29c-34540b3df85f to 693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: marked stale broker a3db8aec-b469-50ba-a29c-34540b3df85f as offline
+INFO the host's GCP identity could not be read from the metadata server runtime_broker_id=693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: re-assigned 2 orphaned agent(s) to broker 693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: updated 1 project(s) default broker from a3db8aec-b469-50ba-a29c-34540b3df85f to 693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: updated 1 project(s) default broker from 7ba0ae0d-ad96-5a98-baae-f09e32121b13 to 693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: marked stale broker 7ba0ae0d-ad96-5a98-baae-f09e32121b13 as offline
+NOTICE: marked stale broker a3db8aec-b469-50ba-a29c-34540b3df85f as offline
+INFO ensureSigningKey: resolving key key=agent_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=agent_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=agent_signing_key source=generated scope_id="" key_len=32 sha256_prefix=9df7a1fa07bb259a
+INFO Persisted new signing key to store key=agent_signing_key
+INFO Agent token service initialized key_fingerprint=9df7a1fa07bb259a
+INFO ensureSigningKey: resolving key key=user_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=user_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=user_signing_key source=generated scope_id="" key_len=32 sha256_prefix=eb3a7c6fa313f7d5
+INFO Persisted new signing key to store key=user_signing_key
+INFO User token service initialized key_fingerprint=eb3a7c6fa313f7d5
+INFO ensureSigningKey: resolving key key=download_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=download_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=download_signing_key source=generated scope_id="" key_len=32 sha256_prefix=548aeaac594aeb00
+INFO Persisted new signing key to store key=download_signing_key
+INFO ensureSigningKey: resolving key key=artifact_view_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=artifact_view_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=artifact_view_signing_key source=generated scope_id="" key_len=32 sha256_prefix=b1beedeb7c04fbfc
+INFO Persisted new signing key to store key=artifact_view_signing_key
+INFO ensureSigningKey: resolving key key=attachment_delivery_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=attachment_delivery_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=attachment_delivery_signing_key source=generated scope_id="" key_len=32 sha256_prefix=4bb5afdee555c8e2
+INFO Persisted new signing key to store key=attachment_delivery_signing_key
+INFO ensureSigningKey: resolving key key=list_cursor_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=list_cursor_key hub_id=""
+INFO ensureSigningKey: generated new key key=list_cursor_key source=generated scope_id="" key_len=32 sha256_prefix=5e022338ccb52226
+INFO Persisted new signing key to store key=list_cursor_key
+INFO OAuth service NOT configured - no providers available
+INFO To enable OAuth, set environment variables SCION_SERVER_OAUTH_CLI_GOOGLE_CLIENTID, etc.
+INFO Control channel manager initialized
+INFO migration: scanning projects for multi-role bindings subsystem=hub.membership project_count=2
+INFO D4 membership-only unique index installed on role_bindings subsystem=hub.projects
+INFO GCP deny-unknown fallback policy policy=fail-open failOpen=true
+WARN GCP caller-permission checking is OFF for agent service-account assignment: assignment is gated by Hub policy only, and no caller is checked for iam.serviceAccounts.actAs on the target account surface=agent-assign mode=off
+WARN GCP caller-permission checking is OFF for lifecycle-hook execution identity: any caller who may write a hook may run it as any in-scope verified service account, and no caller is checked for iam.serviceAccounts.actAs on it. Unlike agent service-account assignment, this surface has NO second policy layer to fall back on surface=hook-execution-identity mode=off
+INFO seeded role definition name=super-admin scope_type=system revision=10 perm_hash=b031a75dd8481d42
+INFO seeded role definition name=hub-admin scope_type=system revision=10 perm_hash=0582765ada69311e
+INFO seeded role definition name=global-catalog-author scope_type=system revision=1 perm_hash=8676a67d797fa10d
+INFO seeded role definition name=hub-member scope_type=system revision=5 perm_hash=08b4e6a88d31e60c
+INFO seeded role definition name=hub-viewer scope_type=system revision=3 perm_hash=c3145e4a31a5f751
+INFO seeded role definition name=project-owner scope_type=project revision=11 perm_hash=c7a9450726e7e5a6
+INFO seeded role definition name=project-admin scope_type=project revision=9 perm_hash=a4c9643deb4b95c0
+INFO seeded role definition name=project-member scope_type=project revision=6 perm_hash=0d16157c91eba100
+INFO seeded role definition name=project-visitor scope_type=project revision=1 perm_hash=1f6806f9e92a925c
+INFO seeded role definition name=agent-role-none scope_type=system revision=1 perm_hash=e3b0c44298fc1c14
+INFO seeded role definition name=agent-role-readonly scope_type=system revision=1 perm_hash=96e3a97fcf359da0
+INFO seeded role definition name=agent-role-baseline scope_type=system revision=3 perm_hash=ef540dee0e5d294a
+INFO seeded role definition name=agent-role-full scope_type=system revision=3 perm_hash=993ed47faab43c06
+INFO seeded hub-members group id=d3a9107b-0af7-4ea5-99b4-8830de2738ec
+INFO seeded hub-member role binding for hub-members group group_id=d3a9107b-0af7-4ea5-99b4-8830de2738ec role_definition_id=7531b985-97bb-4bc8-9bbc-d8570c31f97b
+INFO seeded limit definition name=max_agents_per_project resource_type=agent
+INFO seeded limit definition name=max_projects_per_user resource_type=project
+INFO seeded limit definition name=max_members_per_group resource_type=group
+INFO seeded limit definition name=max_agents_per_broker resource_type=agent
+WARN AdminEmails is nil or empty; all reconciliation disabled to prevent hub-wide lockout — verify config load
+INFO Seeded platform skills into hub injected_skills count=9
+INFO Seeded github_resolution_cache settings into hub_settings
+INFO the host's GCP identity could not be read from the metadata server runtime_broker_id=693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: re-assigned 1 orphaned agent(s) to broker 693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: updated 1 project(s) default broker from a3db8aec-b469-50ba-a29c-34540b3df85f to 693bb15e-397d-5312-8c6e-3e23a81448c3
+NOTICE: marked stale broker a3db8aec-b469-50ba-a29c-34540b3df85f as offline
+INFO ensureSigningKey: resolving key key=agent_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=agent_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=agent_signing_key source=generated scope_id="" key_len=32 sha256_prefix=89ea811a9bfd8494
+INFO Persisted new signing key to store key=agent_signing_key
+INFO Agent token service initialized key_fingerprint=89ea811a9bfd8494
+INFO ensureSigningKey: resolving key key=user_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=user_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=user_signing_key source=generated scope_id="" key_len=32 sha256_prefix=8e2af2011cc9521f
+INFO Persisted new signing key to store key=user_signing_key
+INFO User token service initialized key_fingerprint=8e2af2011cc9521f
+INFO ensureSigningKey: resolving key key=download_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=download_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=download_signing_key source=generated scope_id="" key_len=32 sha256_prefix=27c3e66905a8038c
+INFO Persisted new signing key to store key=download_signing_key
+INFO ensureSigningKey: resolving key key=artifact_view_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=artifact_view_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=artifact_view_signing_key source=generated scope_id="" key_len=32 sha256_prefix=61afee234d14d3e1
+INFO Persisted new signing key to store key=artifact_view_signing_key
+INFO ensureSigningKey: resolving key key=attachment_delivery_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=attachment_delivery_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=attachment_delivery_signing_key source=generated scope_id="" key_len=32 sha256_prefix=e17893fc7fdcfdb3
+INFO Persisted new signing key to store key=attachment_delivery_signing_key
+INFO ensureSigningKey: resolving key key=list_cursor_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=list_cursor_key hub_id=""
+INFO ensureSigningKey: generated new key key=list_cursor_key source=generated scope_id="" key_len=32 sha256_prefix=dd47ee9ded3fb8a8
+INFO Persisted new signing key to store key=list_cursor_key
+INFO OAuth service NOT configured - no providers available
+INFO To enable OAuth, set environment variables SCION_SERVER_OAUTH_CLI_GOOGLE_CLIENTID, etc.
+INFO Control channel manager initialized
+INFO migration: scanning projects for multi-role bindings subsystem=hub.membership project_count=0
+INFO D4 membership-only unique index installed on role_bindings subsystem=hub.projects
+INFO GCP deny-unknown fallback policy policy=fail-open failOpen=true
+WARN GCP caller-permission checking is OFF for agent service-account assignment: assignment is gated by Hub policy only, and no caller is checked for iam.serviceAccounts.actAs on the target account surface=agent-assign mode=off
+WARN GCP caller-permission checking is OFF for lifecycle-hook execution identity: any caller who may write a hook may run it as any in-scope verified service account, and no caller is checked for iam.serviceAccounts.actAs on it. Unlike agent service-account assignment, this surface has NO second policy layer to fall back on surface=hook-execution-identity mode=off
+INFO seeded role definition name=super-admin scope_type=system revision=10 perm_hash=b031a75dd8481d42
+INFO seeded role definition name=hub-admin scope_type=system revision=10 perm_hash=0582765ada69311e
+INFO seeded role definition name=global-catalog-author scope_type=system revision=1 perm_hash=8676a67d797fa10d
+INFO seeded role definition name=hub-member scope_type=system revision=5 perm_hash=08b4e6a88d31e60c
+INFO seeded role definition name=hub-viewer scope_type=system revision=3 perm_hash=c3145e4a31a5f751
+INFO seeded role definition name=project-owner scope_type=project revision=11 perm_hash=c7a9450726e7e5a6
+INFO seeded role definition name=project-admin scope_type=project revision=9 perm_hash=a4c9643deb4b95c0
+INFO seeded role definition name=project-member scope_type=project revision=6 perm_hash=0d16157c91eba100
+INFO seeded role definition name=project-visitor scope_type=project revision=1 perm_hash=1f6806f9e92a925c
+INFO seeded role definition name=agent-role-none scope_type=system revision=1 perm_hash=e3b0c44298fc1c14
+INFO seeded role definition name=agent-role-readonly scope_type=system revision=1 perm_hash=96e3a97fcf359da0
+INFO seeded role definition name=agent-role-baseline scope_type=system revision=3 perm_hash=ef540dee0e5d294a
+INFO seeded role definition name=agent-role-full scope_type=system revision=3 perm_hash=993ed47faab43c06
+INFO seeded hub-members group id=83493886-60b8-436a-a6ed-7fb6b4d77858
+INFO seeded hub-member role binding for hub-members group group_id=83493886-60b8-436a-a6ed-7fb6b4d77858 role_definition_id=dc405a91-9f6a-467f-9c5e-3e7854748b6e
+INFO seeded limit definition name=max_agents_per_project resource_type=agent
+INFO seeded limit definition name=max_projects_per_user resource_type=project
+INFO seeded limit definition name=max_members_per_group resource_type=group
+INFO seeded limit definition name=max_agents_per_broker resource_type=agent
+WARN AdminEmails is nil or empty; all reconciliation disabled to prevent hub-wide lockout — verify config load
+INFO Seeded platform skills into hub injected_skills count=9
+INFO Seeded github_resolution_cache settings into hub_settings
+INFO Hub API server shutting down...
+INFO Cleaning up Hub resources...
+INFO ensureSigningKey: resolving key key=agent_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=agent_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=agent_signing_key source=generated scope_id="" key_len=32 sha256_prefix=78cc1d81596b6ac3
+INFO Persisted new signing key to store key=agent_signing_key
+INFO Agent token service initialized key_fingerprint=78cc1d81596b6ac3
+INFO ensureSigningKey: resolving key key=user_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=user_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=user_signing_key source=generated scope_id="" key_len=32 sha256_prefix=5b2e6b5e8dae61e2
+INFO Persisted new signing key to store key=user_signing_key
+INFO User token service initialized key_fingerprint=5b2e6b5e8dae61e2
+INFO ensureSigningKey: resolving key key=download_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=download_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=download_signing_key source=generated scope_id="" key_len=32 sha256_prefix=87e4a6c263ba47af
+INFO Persisted new signing key to store key=download_signing_key
+INFO ensureSigningKey: resolving key key=artifact_view_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=artifact_view_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=artifact_view_signing_key source=generated scope_id="" key_len=32 sha256_prefix=f69776a64bc3a8f2
+INFO Persisted new signing key to store key=artifact_view_signing_key
+INFO ensureSigningKey: resolving key key=attachment_delivery_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=attachment_delivery_signing_key hub_id=""
+INFO ensureSigningKey: generated new key key=attachment_delivery_signing_key source=generated scope_id="" key_len=32 sha256_prefix=c92921b8d5beac86
+INFO Persisted new signing key to store key=attachment_delivery_signing_key
+INFO ensureSigningKey: resolving key key=list_cursor_key hub_id="" has_secret_backend=false is_gcp_backend=false
+WARN Signing key not found in any source, generating new key key=list_cursor_key hub_id=""
+INFO ensureSigningKey: generated new key key=list_cursor_key source=generated scope_id="" key_len=32 sha256_prefix=755b8cce7b25fea4
+INFO Persisted new signing key to store key=list_cursor_key
+INFO OAuth service NOT configured - no providers available
+INFO To enable OAuth, set environment variables SCION_SERVER_OAUTH_CLI_GOOGLE_CLIENTID, etc.
+INFO Control channel manager initialized
+INFO migration: scanning projects for multi-role bindings subsystem=hub.membership project_count=0
+INFO D4 membership-only unique index installed on role_bindings subsystem=hub.projects
+INFO GCP deny-unknown fallback policy policy=fail-open failOpen=true
+WARN GCP caller-permission checking is OFF for agent service-account assignment: assignment is gated by Hub policy only, and no caller is checked for iam.serviceAccounts.actAs on the target account surface=agent-assign mode=off
+WARN GCP caller-permission checking is OFF for lifecycle-hook execution identity: any caller who may write a hook may run it as any in-scope verified service account, and no caller is checked for iam.serviceAccounts.actAs on it. Unlike agent service-account assignment, this surface has NO second policy layer to fall back on surface=hook-execution-identity mode=off
+INFO seeded role definition name=super-admin scope_type=system revision=10 perm_hash=b031a75dd8481d42
+INFO seeded role definition name=hub-admin scope_type=system revision=10 perm_hash=0582765ada69311e
+INFO seeded role definition name=global-catalog-author scope_type=system revision=1 perm_hash=8676a67d797fa10d
+INFO seeded role definition name=hub-member scope_type=system revision=5 perm_hash=08b4e6a88d31e60c
+INFO seeded role definition name=hub-viewer scope_type=system revision=3 perm_hash=c3145e4a31a5f751
+INFO seeded role definition name=project-owner scope_type=project revision=11 perm_hash=c7a9450726e7e5a6
+INFO seeded role definition name=project-admin scope_type=project revision=9 perm_hash=a4c9643deb4b95c0
+INFO seeded role definition name=project-member scope_type=project revision=6 perm_hash=0d16157c91eba100
+INFO seeded role definition name=project-visitor scope_type=project revision=1 perm_hash=1f6806f9e92a925c
+INFO seeded role definition name=agent-role-none scope_type=system revision=1 perm_hash=e3b0c44298fc1c14
+INFO seeded role definition name=agent-role-readonly scope_type=system revision=1 perm_hash=96e3a97fcf359da0
+INFO seeded role definition name=agent-role-baseline scope_type=system revision=3 perm_hash=ef540dee0e5d294a
+INFO seeded role definition name=agent-role-full scope_type=system revision=3 perm_hash=993ed47faab43c06
+INFO seeded hub-members group id=834d3262-ee2d-4f49-8b0e-4ec5c3ba5cfc
+INFO seeded hub-member role binding for hub-members group group_id=834d3262-ee2d-4f49-8b0e-4ec5c3ba5cfc role_definition_id=075b40a9-32ae-45c0-8bdf-0bf87737f278
+INFO seeded limit definition name=max_agents_per_project resource_type=agent
+INFO seeded limit definition name=max_projects_per_user resource_type=project
+INFO seeded limit definition name=max_members_per_group resource_type=group
+INFO seeded limit definition name=max_agents_per_broker resource_type=agent
+WARN AdminEmails is nil or empty; all reconciliation disabled to prevent hub-wide lockout — verify config load
+INFO Seeded platform skills into hub injected_skills count=9
+INFO Seeded github_resolution_cache settings into hub_settings
+INFO Conduit internal listener started addr=[::]:43389 advertise=https://10.1.1.1:43389
+INFO Conduit relay started instance_id=server-a0c50377f20c peer_auth=hmac internal_endpoint=https://10.1.1.1:43389 hosted_ha=false
+INFO Hub API server shutting down...
+INFO Cleaning up Hub resources...
+http: TLS handshake error from 127.0.0.1:54180: client sent an HTTP request to an HTTPS server
+INFO Conduit relay-peer authentication mode=hmac
+03:20:56.599 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.601 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.629 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.630 [DEBUG] Start: calling GetAgent name=worker template="" image="" harnessConfig="" projectPath="/dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/projects/dispatch" profile=""
+03:20:56.630 [DEBUG] GetAgent: agentName=worker templateName="" harnessConfig="" projectPath="/dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/projects/dispatch" projectDir=/dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/project-configs/dispatch__ebe3ac82/.scion
+03:20:56.631 [DEBUG] GetAgent: agent dir does not exist, provisioning with template="default"
+03:20:56.637 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.637 [DEBUG] GetAgent: ProvisionAgent failed: failed to find harness-config "antigravity": harness-config "antigravity" not found (searched: /dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/templates/default/harness-configs/antigravity, /dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/project-configs/dispatch__ebe3ac82/.scion/harness-configs/antigravity, /dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/harness-configs/antigravity): harness-config not found
+03:20:56.643 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.644 [DEBUG] Start: calling GetAgent name=worker template="" image="" harnessConfig="" projectPath="/dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/projects/dispatch" profile=""
+03:20:56.644 [DEBUG] GetAgent: agentName=worker templateName="" harnessConfig="" projectPath="/dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/projects/dispatch" projectDir=/dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/project-configs/dispatch__ebe3ac82/.scion
+03:20:56.645 [DEBUG] GetAgent: agent dir does not exist, provisioning with template="default"
+03:20:56.655 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.655 [DEBUG] GetAgent: ProvisionAgent failed: failed to find harness-config "antigravity": harness-config "antigravity" not found (searched: /dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/templates/default/harness-configs/antigravity, /dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/project-configs/dispatch__ebe3ac82/.scion/harness-configs/antigravity, /dev/shm/TestFlatOwnership_RealHubDispatchCarriesBothIDs1387086358/001/.scion/harness-configs/antigravity): harness-config not found
+03:20:56.778 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.780 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.810 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.811 [DEBUG] Start: calling GetAgent name=worker template="" image="" harnessConfig="" projectPath="/dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/projects/dispatch" profile=""
+03:20:56.812 [DEBUG] GetAgent: agentName=worker templateName="" harnessConfig="" projectPath="/dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/projects/dispatch" projectDir=/dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/project-configs/dispatch__d0a01a01/.scion
+03:20:56.814 [DEBUG] GetAgent: agent dir does not exist, provisioning with template="default"
+03:20:56.818 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.818 [DEBUG] GetAgent: ProvisionAgent failed: failed to find harness-config "antigravity": harness-config "antigravity" not found (searched: /dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/templates/default/harness-configs/antigravity, /dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/project-configs/dispatch__d0a01a01/.scion/harness-configs/antigravity, /dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/harness-configs/antigravity): harness-config not found
+03:20:56.823 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.824 [DEBUG] Start: calling GetAgent name=worker template="" image="" harnessConfig="" projectPath="/dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/projects/dispatch" profile=""
+03:20:56.824 [DEBUG] GetAgent: agentName=worker templateName="" harnessConfig="" projectPath="/dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/projects/dispatch" projectDir=/dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/project-configs/dispatch__d0a01a01/.scion
+03:20:56.825 [DEBUG] GetAgent: agent dir does not exist, provisioning with template="default"
+03:20:56.829 [DEBUG] ResolveHarnessConfigName: name="antigravity" source=settings-default
+03:20:56.829 [DEBUG] GetAgent: ProvisionAgent failed: failed to find harness-config "antigravity": harness-config "antigravity" not found (searched: /dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/templates/default/harness-configs/antigravity, /dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/project-configs/dispatch__d0a01a01/.scion/harness-configs/antigravity, /dev/shm/TestFlatOwnership_RealControlChannelDispatchCarriesBothIDs71876346/001/.scion/harness-configs/antigravity): harness-config not found
+03:20:56.875 [DEBUG] Hub client auth: Dev auth (source: SCION_DEV_TOKEN env var)
+03:20:56.875 [DEBUG] Hub endpoint: http://127.0.0.1:38867
+03:20:56.875 [DEBUG] Dev auth token: scion_dev_join_token... (source: SCION_DEV_TOKEN env var)
+Registered flat Runtime Broker instance "remote-docker" as Runtime Broker f5afdeda-29a7-48f3-ba24-a0449ce5df7d (example-remote), runtime target e6cf9771-4452-4c6c-80b6-e04929d74d96
+Instance credentials saved to /dev/shm/TestBrokerRegisterInstance_RegistersAndSavesInstanceCredentials2232673792/001/.scion/runtime-brokers/remote-docker/hub-credentials
+03:20:57.847 [DEBUG] Hub client auth: Dev auth (source: SCION_DEV_TOKEN env var)
+03:20:57.847 [DEBUG] Hub endpoint: http://127.0.0.1:34479
+03:20:57.847 [DEBUG] Dev auth token: scion_dev_join_token... (source: SCION_DEV_TOKEN env var)
+Registered flat Runtime Broker instance "k8s-reg" as Runtime Broker b83eed7d-001f-4962-b738-420b8fda3186 (example-k8s), runtime target 6c496ec6-a76d-41aa-a9c3-5cc5c4a741c2
+Instance credentials saved to /dev/shm/TestFlatKubernetes_RegistrationCarriesNoKubeconfig3767439703/001/.scion/runtime-brokers/k8s-reg/hub-credentials
+03:20:58.131 [DEBUG] delete: stopping container cid-a1 before removal
+03:20:58.131 [DEBUG] delete: starting runtime delete for container cid-a1 (run_id="")
+03:20:58.131 [DEBUG] delete: runtime delete completed for container cid-a1
+03:20:58.131 [DEBUG] delete: stopping container cid-a1 before removal
+03:20:58.131 [DEBUG] delete: starting runtime delete for container cid-a1 (run_id="")
+03:20:58.131 [DEBUG] delete: runtime delete completed for container cid-a1
+03:20:58.131 [DEBUG] delete: stopping container cid-b1 before removal
+03:20:58.132 [DEBUG] delete: starting runtime delete for container cid-b1 (run_id="")
+03:20:58.132 [DEBUG] delete: runtime delete completed for container cid-b1
+03:20:58.132 [DEBUG] delete: stopping container cid-a1 before removal
+03:20:58.132 [DEBUG] delete: starting runtime delete for container cid-a1 (run_id="")
+03:20:58.132 [DEBUG] delete: runtime delete completed for container cid-a1
+03:20:58.132 [DEBUG] delete: stopping container cid-b1 before removal
+03:20:58.132 [DEBUG] delete: starting runtime delete for container cid-b1 (run_id="")
+03:20:58.132 [DEBUG] delete: runtime delete completed for container cid-b1
+03:20:58.132 [DEBUG] delete: stopping container cid-b1 before removal
+03:20:58.132 [DEBUG] delete: starting runtime delete for container cid-b1 (run_id="")
+03:20:58.132 [DEBUG] delete: runtime delete completed for container cid-b1
+03:20:58.132 [DEBUG] delete: stopping container cid-a1 before removal
+03:20:58.132 [DEBUG] delete: starting runtime delete for container cid-a1 (run_id="")
+03:20:58.132 [DEBUG] delete: runtime delete completed for container cid-a1
+03:20:58.132 [DEBUG] delete: stopping container cid-b1 before removal
+03:20:58.132 [DEBUG] delete: starting runtime delete for container cid-b1 (run_id="")
+03:20:58.132 [DEBUG] delete: runtime delete completed for container cid-b1
+03:20:58.137 [DEBUG] delete: stopping container cid-b1 before removal
+03:20:58.138 [DEBUG] delete: starting runtime delete for container cid-b1 (run_id="")
+03:20:58.138 [DEBUG] delete: runtime delete completed for container cid-b1
+03:20:58.138 [DEBUG] delete: stopping container cid-a1 before removal
+03:20:58.138 [DEBUG] delete: starting runtime delete for container cid-a1 (run_id="")
+03:20:58.138 [DEBUG] delete: runtime delete completed for container cid-a1
+03:20:58.138 [DEBUG] delete: stopping container cid-b1 before removal
+03:20:58.138 [DEBUG] delete: starting runtime delete for container cid-b1 (run_id="")
+03:20:58.138 [DEBUG] delete: runtime delete completed for container cid-b1
+03:20:58.138 [DEBUG] delete: stopping container cid-a1 before removal
+03:20:58.138 [DEBUG] delete: starting runtime delete for container cid-a1 (run_id="")
+03:20:58.138 [DEBUG] delete: runtime delete completed for container cid-a1
+03:20:58.138 [DEBUG] delete: stopping container cid-b1 before removal
+03:20:58.138 [DEBUG] delete: starting runtime delete for container cid-b1 (run_id="")
+03:20:58.138 [DEBUG] delete: runtime delete completed for container cid-b1
+03:20:58.138 [DEBUG] delete: stopping container cid-a1 before removal
+03:20:58.138 [DEBUG] delete: stopping container cid-a1 before removal
+03:20:58.138 [DEBUG] delete: stopping container cid-b1 before removal
+03:20:58.138 [DEBUG] delete: starting runtime delete for container cid-a1 (run_id="")
+03:20:58.138 [DEBUG] delete: starting runtime delete for container cid-a1 (run_id="")
+03:20:58.138 [DEBUG] delete: runtime delete completed for container cid-a1
+03:20:58.138 [DEBUG] delete: starting runtime delete for container cid-b1 (run_id="")
+03:20:58.138 [DEBUG] delete: runtime delete completed for container cid-b1
+03:20:58.138 [DEBUG] delete: runtime delete completed for container cid-a1
+03:20:58.203 [DEBUG] GetRuntime: projectPath="/dev/shm/TestResolveBrokerDefaultRuntime_InvalidSubstrateProfileRefusesSt1105097175/002", profileName="", projectDir="/dev/shm/TestResolveBrokerDefaultRuntime_InvalidSubstrateProfileRefusesSt1105097175/002/.scion", hasSettings=true
+03:20:58.203 [DEBUG] GetRuntime: resolved runtime from settings: substrate
+03:20:58.203 [DEBUG] GetRuntime: final runtime type: substrate
+03:20:58.204 [DEBUG] GetRuntime: substrate profile failed operator-only validation: substrate runtime "substrate-prod" (profile "substrate") is not defined identically in operator (global) settings: project or repo settings may only select an operator-defined substrate profile by name, never define or override its runtime block (api/router endpoints, CA/trust bundle, token_audience, egress_allow) — move this definition to the operator's own global settings
+03:20:58.205 [DEBUG] GetRuntime: projectPath="/dev/shm/TestResolveBrokerDefaultRuntime_NonSubstrateErrorRuntimeStartsDe4057551541/003", profileName="", projectDir="/dev/shm/TestResolveBrokerDefaultRuntime_NonSubstrateErrorRuntimeStartsDe4057551541/003/.scion", hasSettings=true
+03:20:58.205 [DEBUG] GetRuntime: resolved runtime from settings: kubernetes
+03:20:58.205 [DEBUG] GetRuntime: final runtime type: kubernetes
+03:20:58.206 [DEBUG] GetRuntime: projectPath="", profileName="", projectDir="/dev/shm/TestResolveBrokerDefaultRuntime_SubstrateConfigValidationFailure3271093134/001/.scion", hasSettings=true
+03:20:58.206 [DEBUG] GetRuntime: resolved runtime from settings: substrate
+03:20:58.206 [DEBUG] GetRuntime: final runtime type: substrate
+03:20:58.207 [DEBUG] GetRuntime: failed to create substrate runtime: substrate: runtimes.<name>.substrate.api_endpoint is required
+03:20:58.208 [DEBUG] GetRuntime: projectPath="", profileName="", projectDir="/dev/shm/TestResolveBrokerDefaultRuntime_SubstrateConfigValidationFailure972890930/001/.scion", hasSettings=true
+03:20:58.208 [DEBUG] GetRuntime: resolved runtime from settings: substrate
+03:20:58.208 [DEBUG] GetRuntime: final runtime type: substrate
+03:20:58.209 [DEBUG] GetRuntime: failed to create substrate runtime: substrate: runtimes.<name>.substrate.router_endpoint is required
+03:20:58.218 [DEBUG] GetRuntime: projectPath="", profileName="", projectDir="/dev/shm/TestResolveBrokerDefaultRuntime_SubstrateConfigValidationFailure466138715/001/.scion", hasSettings=true
+03:20:58.218 [DEBUG] GetRuntime: resolved runtime from settings: substrate
+03:20:58.218 [DEBUG] GetRuntime: final runtime type: substrate
+03:20:58.220 [DEBUG] GetRuntime: failed to create substrate runtime: runtimes.<name>.substrate.egress_trust_bundle: egress_trust_bundle "not-a-supported-bundle.example.com" is not supported; the only trust bundle name Substrate supports is "egress-mitm.ate.dev"
+03:20:58.222 [DEBUG] GetRuntime: projectPath="", profileName="", projectDir="/dev/shm/TestResolveBrokerDefaultRuntime_SubstrateBuildFailureStartsDegra2008376935/001/.scion", hasSettings=true
+03:20:58.222 [DEBUG] GetRuntime: resolved runtime from settings: substrate
+03:20:58.222 [DEBUG] GetRuntime: final runtime type: substrate
+03:20:58.223 [DEBUG] GetRuntime: failed to create substrate runtime: substrate: build Kubernetes client: simulated API server unavailable
+scion: migrated /dev/shm/TestNoWriteCommandHookleaves_off_list3206089695/001/.scion/groves/acme -> /dev/shm/TestNoWriteCommandHookleaves_off_list3206089695/001/.scion/projects/acme
+scion: migrated /dev/shm/TestNoWriteCommandHookleaves_off_server_status983145869/001/.scion/groves/acme -> /dev/shm/TestNoWriteCommandHookleaves_off_server_status983145869/001/.scion/projects/acme
+scion: migrated /dev/shm/TestNoWriteCommandHookthe_layout_hook_skips_server_preflight_on1671548542/001/.scion/groves/acme -> /dev/shm/TestNoWriteCommandHookthe_layout_hook_skips_server_preflight_on1671548542/001/.scion/projects/acme
+scion: migrated /dev/shm/TestNoWriteCommandHookPersistentPreRunE1359198796/003/.scion/groves/acme -> /dev/shm/TestNoWriteCommandHookPersistentPreRunE1359198796/003/.scion/projects/acme
+03:21:23.853 [DEBUG] GetRuntime: projectPath="/mnt/ssd/proyectos/SLDB_1/scion/.scion", profileName="local", projectDir="/mnt/ssd/proyectos/SLDB_1/scion/.scion", hasSettings=true
+03:21:23.853 [DEBUG] GetRuntime: resolved runtime from settings: docker
+03:21:23.853 [DEBUG] GetRuntime: final runtime type: docker
+03:21:23.854 [DEBUG] GetRuntime: projectPath="/mnt/ssd/proyectos/SLDB_1/scion/.scion", profileName="remote", projectDir="/mnt/ssd/proyectos/SLDB_1/scion/.scion", hasSettings=true
+03:21:23.854 [DEBUG] GetRuntime: resolved runtime from settings: kubernetes
+03:21:23.854 [DEBUG] GetRuntime: final runtime type: kubernetes
+Warning: PID 2860700 could not be confirmed as the scion server (its command line does not match); not killing it
+
+To install as a systemd user service:
+  mkdir -p ~/.config/systemd/user
+  scion server install > ~/.config/systemd/user/scion-server.service
+  systemctl --user daemon-reload
+  systemctl --user enable --now scion-server
+
+To install as a systemd user service:
+  mkdir -p ~/.config/systemd/user
+  scion server install > ~/.config/systemd/user/scion-server.service
+  systemctl --user daemon-reload
+  systemctl --user enable --now scion-server
+03:21:31.567 [DEBUG] Hub client auth: none (source: )
+03:21:31.567 [DEBUG] Hub endpoint: http://127.0.0.1:45415
+03:21:31.567 [DEBUG] No dev auth token found
+03:21:31.569 [DEBUG] Hub client auth: none (source: )
+03:21:31.569 [DEBUG] Hub endpoint: http://127.0.0.1:45523
+03:21:31.569 [DEBUG] No dev auth token found
+03:21:31.571 [DEBUG] Hub client auth: none (source: )
+03:21:31.571 [DEBUG] Hub endpoint: http://127.0.0.1:34175
+03:21:31.571 [DEBUG] No dev auth token found
+03:21:31.576 [DEBUG] Hub client auth: none (source: )
+03:21:31.576 [DEBUG] Hub endpoint: http://127.0.0.1:43901
+03:21:31.576 [DEBUG] No dev auth token found
+03:21:31.580 [DEBUG] Hub client auth: none (source: )
+03:21:31.580 [DEBUG] Hub endpoint: http://127.0.0.1:37289
+03:21:31.580 [DEBUG] No dev auth token found
+GCP Service Accounts (1):
+ID                                    EMAIL                                          SCOPE     GCP PROJECT           VERIFIED
+------------------------------------  ---------------------------------------------  --------  --------------------  --------
+hub-sa-1                              shared@x.iam.gserviceaccount.com               hub       gcp-proj              yes
+03:21:31.582 [DEBUG] Hub client auth: none (source: )
+03:21:31.582 [DEBUG] Hub endpoint: http://127.0.0.1:33705
+03:21:31.582 [DEBUG] No dev auth token found
+No GCP service accounts registered for this project.
+Use 'scion project service-accounts add' to register one.
+03:21:31.583 [DEBUG] Hub client auth: none (source: )
+03:21:31.583 [DEBUG] Hub endpoint: http://127.0.0.1:39491
+03:21:31.583 [DEBUG] No dev auth token found
+No hub-scoped GCP service accounts registered.
+03:21:31.585 [DEBUG] Hub client auth: none (source: )
+03:21:31.585 [DEBUG] Hub endpoint: http://127.0.0.1:45297
+03:21:31.585 [DEBUG] No dev auth token found
+No GCP service accounts registered for this project.
+Use 'scion project service-accounts add' to register one.
+03:21:31.586 [DEBUG] Hub client auth: none (source: )
+03:21:31.586 [DEBUG] Hub endpoint: http://127.0.0.1:34633
+03:21:31.586 [DEBUG] No dev auth token found
+No GCP service accounts registered for this project.
+Use 'scion project service-accounts add' to register one.
+03:21:31.588 [DEBUG] Hub client auth: none (source: )
+03:21:31.588 [DEBUG] Hub endpoint: http://127.0.0.1:38715
+03:21:31.588 [DEBUG] No dev auth token found
+Service account: shared@x.iam.gserviceaccount.com
+  ID:          hub-sa-1
+  Scope:       hub
+  GCP Project: 
+  Verified:    false
+  Managed:     false
+  You may:     [read]
+03:21:31.590 [DEBUG] Hub client auth: none (source: )
+03:21:31.590 [DEBUG] Hub endpoint: http://127.0.0.1:1
+03:21:31.590 [DEBUG] No dev auth token found
+03:21:31.591 [DEBUG] Hub client auth: none (source: )
+03:21:31.591 [DEBUG] Hub endpoint: http://127.0.0.1:1
+03:21:31.591 [DEBUG] No dev auth token found
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredlistno-hub-settings2136904605/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredliststale-hub-enabled1453089247/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredaddno-hub-settings1813853827/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredaddstale-hub-enabled654493369/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredshowno-hub-settings4242582636/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredshowstale-hub-enabled1739641907/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredupdateno-hub-settings1217641528/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredupdatestale-hub-enabled3886860819/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredremoveno-hub-settings3909314838/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredremovestale-hub-enabled1422155973/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredpinno-hub-settings526901425/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRegistriesCommands_NoHubConfiguredpinstale-hub-enabled1544470332/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+--- FAIL: TestRunSkillsList_TagsReachRequest (0.00s)
+    skills_list_tags_test.go:108: 
+        	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/skills_list_tags_test.go:108
+        	            				/mnt/ssd/proyectos/SLDB_1/scion/cmd/legacy_grove_migration_test.go:212
+        	            				/mnt/ssd/proyectos/SLDB_1/scion/cmd/skills_list_tags_test.go:107
+        	Error:      	Received unexpected error:
+        	            	failed to list skills: unauthorized: missing authorization header (status: 401, request: 95150375-5cb3-4bf3-aa62-1e4318a393e2)
+        	Test:       	TestRunSkillsList_TagsReachRequest
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfiguredlistno-hub-settings115688491/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfiguredliststale-hub-enabled1605497042/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfiguredshowno-hub-settings3209266574/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfiguredshowstale-hub-enabled619502805/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfiguredpublishno-hub-settings1869079872/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfiguredpublishstale-hub-enabled1481411512/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfigureddeleteno-hub-settings1105385892/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfigureddeletestale-hub-enabled352954146/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfigureddeprecateno-hub-settings434284965/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfigureddeprecatestale-hub-enabled2464525631/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfiguredversionsno-hub-settings626024525/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfiguredversionsstale-hub-enabled1235467808/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfiguredresolveno-hub-settings3004849867/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestSkillsCommands_NoHubConfiguredresolvestale-hub-enabled1772889334/001/project/.scion, opts={AutoConfirm:true NonInteractive:true EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+--- FAIL: TestStartHub400OnCreate_NoUsage (0.01s)
+    start_hub_400_usage_test.go:92: 
+        	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/start_hub_400_usage_test.go:92
+        	Error:      	Not equal: 
+        	            	expected: 1
+        	            	actual  : 0
+        	Test:       	TestStartHub400OnCreate_NoUsage
+        	Messages:   	the error must come from the hub's create response
+    start_hub_400_usage_test.go:94: 
+        	Error Trace:	/mnt/ssd/proyectos/SLDB_1/scion/cmd/start_hub_400_usage_test.go:94
+        	Error:      	"git check failed: git version 2.48.0 or newer is required; scion requires worktree support with relative paths (found 2.43.0 at /usr/bin/git)" does not contain "invalid agent configuration: harness is required"
+        	Test:       	TestStartHub400OnCreate_NoUsage
+        	Messages:   	the hub's error is reported
+Sending 1 environment value(s) to the Hub: START_OUTCOME_KEY
+Sending 1 environment value(s) to the Hub: START_OUTCOME_KEY
+Sending 1 environment value(s) to the Hub: START_OUTCOME_KEY
+Sending 1 environment value(s) to the Hub: START_OUTCOME_KEY
+Sending 1 environment value(s) to the Hub: START_OUTCOME_KEY
+
+Required variables for this agent were not provided in the template, hub, or broker, but are available in our current environment:
+  START_OUTCOME_KEY — found in local environment
+Sending 1 environment value(s) to the Hub: START_OUTCOME_KEY
+
+Required variables for this agent were not provided in the template, hub, or broker, but are available in our current environment:
+  START_OUTCOME_KEY — found in local environment
+Sending 1 environment value(s) to the Hub: START_OUTCOME_KEY
+
+Required variables for this agent were not provided in the template, hub, or broker, but are available in our current environment:
+  START_OUTCOME_KEY — found in local environment
+Sending 1 environment value(s) to the Hub: START_OUTCOME_KEY
+Sending 1 environment value(s) to the Hub: START_OUTCOME_KEY
+03:21:36.417 [DEBUG] delete: removing directory: /dev/shm/TestStopAllViaHub_StopWithRmCleansUpLocalFiles2241304698/002/.scion/agents/alpha
+03:21:36.417 [DEBUG] RemoveAllSafe: starting removal of /dev/shm/TestStopAllViaHub_StopWithRmCleansUpLocalFiles2241304698/002/.scion/agents/alpha
+03:21:36.417 [DEBUG] RemoveAllSafe: walk completed in 14.602µs (symlinks: 0, files: 1, dirs: 1)
+03:21:36.417 [DEBUG] RemoveAllSafe: completed in 35.387µs
+03:21:36.417 [DEBUG] delete: removal completed in 40.024µs
+Continue?: auto-confirmed Yes
+Continue?: auto-confirmed Yes
+Continue?: auto-confirmed Yes
+Continue?: auto-confirmed Yes
+Continue?: auto-confirmed Yes
+Continue?: auto-confirmed Yes
+Continue?: auto-confirmed Yes
+Requesting workspace sync from agent 'test-agent'...
+Downloading 1 files (7 B)...
+  file.txt (7 B) done
+Sync complete: 1 files, 7 B transferred
+Requesting workspace sync from agent 'test-agent'...
+Downloading 1 files (7 B)...
+Scanning local workspace...
+Would upload 2 changed files (21 B):
+  docs/readme.md (14 B)
+  main.go (7 B)
+Scanning local workspace...
+Uploading 2 files (12 B)...
+  docs/readme.md (7 B) done
+  main.go (5 B) done
+Applying workspace to agent...
+Sync complete: 2 files uploaded, 12 B transferred
+Applied 0 files to agent workspace
+Scanning local workspace...
+Uploading 2 files (12 B)...
+  docs/readme.md (7 B) done
+Scanning local workspace...
+Uploading 2 files (12 B)...
+  docs/readme.md (7 B) done
+Scanning local workspace...
+Uploading 2 files (12 B)...
+  docs/readme.md (7 B) done
+Scanning local workspace...
+Uploading 2 files (12 B)...
+Choice: auto-selected H
+Scanning template files in /dev/shm/TestSyncTemplateToHub_RefusesEmptyLocalDirectory851108476/001...
+Found 0 files
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunTemplateSync_PathArgumenthub_name_defaults_to_base_name3114284802/001/project/.scion, opts={AutoConfirm:true NonInteractive:false EndpointOverride:http://127.0.0.1:37455 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:true}
+03:21:36.766 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:37455, projectID=project-path-123 (local=project-path-123), brokerID=, projectPath=/dev/shm/TestRunTemplateSync_PathArgumenthub_name_defaults_to_base_name3114284802/001/project/.scion, isGlobal=false
+Using hub: http://127.0.0.1:37455
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunTemplateSync_PathArgument--name_overrides2176138185/001/project/.scion, opts={AutoConfirm:true NonInteractive:false EndpointOverride:http://127.0.0.1:43675 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:true}
+03:21:36.769 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:43675, projectID=project-path-123 (local=project-path-123), brokerID=, projectPath=/dev/shm/TestRunTemplateSync_PathArgument--name_overrides2176138185/001/project/.scion, isGlobal=false
+Using hub: http://127.0.0.1:43675
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunTemplateSync_PathArgumentdot_from_inside_the_template_di3609636883/001/project/.scion, opts={AutoConfirm:true NonInteractive:false EndpointOverride:http://127.0.0.1:35209 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:true}
+03:21:36.772 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:35209, projectID=project-path-123 (local=project-path-123), brokerID=, projectPath=/dev/shm/TestRunTemplateSync_PathArgumentdot_from_inside_the_template_di3609636883/001/project/.scion, isGlobal=false
+Using hub: http://127.0.0.1:35209
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunTemplateSync_PathArgumentcontent-hash_directory_with_--n2402184905/001/project/.scion, opts={AutoConfirm:true NonInteractive:false EndpointOverride:http://127.0.0.1:33431 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:true}
+03:21:36.775 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:33431, projectID=project-path-123 (local=project-path-123), brokerID=, projectPath=/dev/shm/TestRunTemplateSync_PathArgumentcontent-hash_directory_with_--n2402184905/001/project/.scion, isGlobal=false
+Using hub: http://127.0.0.1:33431
+Delete template 'test-tpl' from Local Global   (/dev/shm/TestRunTemplateDelete_LocalOnly_AutoConfirm1234590771/001/.scion/templates/test-tpl)?: auto-confirmed Yes
+03:21:36.777 [DEBUG] MakeWritableRecursive: walked 2 files, chmod'd 0
+Local template 'test-tpl' deleted successfully.
+Delete template 'default' from Local Global   (/dev/shm/TestRunTemplateDelete_ProtectedTemplate3332891010/001/.scion/templates/default)?: auto-confirmed Yes
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunTemplateDelete_HubOnly_AutoConfirm1387136473/001/project/.scion, opts={AutoConfirm:true NonInteractive:false EndpointOverride:http://127.0.0.1:38175 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:36.778 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:38175, projectID=project-test-123 (local=project-test-123), brokerID=, projectPath=/dev/shm/TestRunTemplateDelete_HubOnly_AutoConfirm1387136473/001/project/.scion, isGlobal=false
+Warning: settings file /dev/shm/TestRunTemplateDelete_HubOnly_AutoConfirm1387136473/001/project/.scion/settings.json uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+Delete template 'hub-only-tpl' from Hub Global     (scope=global, ID: hub-tpl-456)?: auto-confirmed Yes
+Hub template 'hub-only-tpl' deleted successfully.
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunTemplateDelete_Both_AutoConfirm1714406728/001/project/.scion, opts={AutoConfirm:true NonInteractive:false EndpointOverride:http://127.0.0.1:43551 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:36.800 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:43551, projectID=project-test-789 (local=project-test-789), brokerID=, projectPath=/dev/shm/TestRunTemplateDelete_Both_AutoConfirm1714406728/001/project/.scion, isGlobal=false
+Warning: settings file /dev/shm/TestRunTemplateDelete_Both_AutoConfirm1714406728/001/project/.scion/settings.json uses legacy format. Auto-migrating to v1 schema.
+  You can also run 'scion config migrate' to migrate manually.
+Delete template 'both-tpl' from Local Global   (/dev/shm/TestRunTemplateDelete_Both_AutoConfirm1714406728/001/.scion/templates/both-tpl)?: auto-confirmed Yes
+03:21:36.821 [DEBUG] MakeWritableRecursive: walked 2 files, chmod'd 0
+Local template 'both-tpl' deleted successfully.
+Delete template 'both-tpl' from Hub Global     (scope=global, ID: hub-both-456)?: auto-confirmed Yes
+Hub template 'both-tpl' deleted successfully.
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunTemplateSync_UpdatesExistingTemplate2863300031/001/project/.scion, opts={AutoConfirm:true NonInteractive:false EndpointOverride:http://127.0.0.1:42427 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:true}
+03:21:36.823 [DEBUG] No dev auth token found
+[hubsync] HubContext created: endpoint=http://127.0.0.1:42427, projectID=project-update-123 (local=project-update-123), brokerID=, projectPath=/dev/shm/TestRunTemplateSync_UpdatesExistingTemplate2863300031/001/project/.scion, isGlobal=false
+Using hub: http://127.0.0.1:42427
+Scanning template files in /dev/shm/TestRunTemplateSync_UpdatesExistingTemplate2863300031/001/.scion/templates/update-tpl...
+Found 1 files
+Checking for changes in template 'update-tpl'...
+Found 1 changed file(s), updating template...
+Uploading 1 file(s)...
+Finalizing template...
+Template 'update-tpl' synced successfully!
+  ID: new-tpl-id
+  Status: active
+  Content Hash: sha256:abc123
+[hubsync] EnsureHubReady: projectPath=x, opts={AutoConfirm:true NonInteractive:false EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] resolveHubProjectRef: ref=x
+[hubsync] resolveHubProjectRef: fallbackPath=/mnt/ssd/proyectos/SLDB_1/scion/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=x, opts={AutoConfirm:true NonInteractive:false EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] resolveHubProjectRef: ref=x
+[hubsync] resolveHubProjectRef: fallbackPath=/mnt/ssd/proyectos/SLDB_1/scion/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=x, opts={AutoConfirm:true NonInteractive:false EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] resolveHubProjectRef: ref=x
+[hubsync] resolveHubProjectRef: fallbackPath=/mnt/ssd/proyectos/SLDB_1/scion/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=x, opts={AutoConfirm:true NonInteractive:false EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] resolveHubProjectRef: ref=x
+[hubsync] resolveHubProjectRef: fallbackPath=/mnt/ssd/proyectos/SLDB_1/scion/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=x, opts={AutoConfirm:true NonInteractive:false EndpointOverride: ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+[hubsync] resolveHubProjectRef: ref=x
+[hubsync] resolveHubProjectRef: fallbackPath=/mnt/ssd/proyectos/SLDB_1/scion/.scion, isGlobal=false
+Updating "my-template" from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+Updated 1 template(s): [t1]
+Updating "my-template" from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+Updated 1 template(s): [t1]
+Updating "my-template" from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+Updated 1 template(s): [p]
+Updating "my-template" from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+Updating "a" (global) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+Updating "b" (project) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+Updating "bad" (user) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Failed: boom
+
+Updated 2, skipped 4 (no GitHub source URL), failed 1
+Updating "a" (global) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+Updating "b" (global) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+Updating "c" (global) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+
+Updated 3, skipped 0 (no GitHub source URL), failed 0
+Updating "proj" from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+Updated 1 template(s): [p2]
+Updating "shared" from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+Updated 1 template(s): [g]
+Updating "mine" from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+Updated 1 template(s): [u]
+Updating "shared" (global) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+Updating "mine" (user) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+Updating "proj" (project) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+
+Updated 3, skipped 0 (no GitHub source URL), failed 0
+Updating "shared" (global) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+Updating "mine" (user) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+Updating "proj" (project) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+Updating "proj" (project) from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+  Done.
+
+Updated 4, skipped 0 (no GitHub source URL), failed 0
+{
+  "status": "success",
+  "command": "templates update --all",
+  "message": "Updated 1, skipped 0 (no GitHub source URL), failed 0",
+  "details": {
+    "failed": 0,
+    "failures": [],
+    "skipped": 0,
+    "updated": 1
+  }
+}
+Updating "proj" from https://github.com/acme/repo/tree/main/.scion/templates/my-template...
+Updated 1 template(s): [p3]
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsList_Empty3621654799/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:32967 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.308 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:32967, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsList_Empty3621654799/001/proj/.scion, isGlobal=false
+No injected skills configured for your account.
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsList_WithEntries546217141/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:38055 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.311 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:38055, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsList_WithEntries546217141/001/proj/.scion, isGlobal=false
+ID                                    SKILL URI               ALIAS   OPTIONAL  ORDER  NAME
+aaaabbbb-cccc-dddd-eeee-ffffffffffff  skill://user-skill-one  -       no        0      -
+bbbbcccc-dddd-eeee-ffff-000000000000  skill://user-skill-two  skill2  yes       1      User Skill Two
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsList_JSONOutput3232909635/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:45919 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.314 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:45919, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsList_JSONOutput3232909635/001/proj/.scion, isGlobal=false
+{
+  "entries": [
+    {
+      "id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff",
+      "skillUri": "skill://user-skill-one"
+    },
+    {
+      "id": "bbbbcccc-dddd-eeee-ffff-000000000000",
+      "skillUri": "skill://user-skill-two",
+      "skillAs": "skill2",
+      "optional": true,
+      "sortOrder": 1,
+      "skillName": "User Skill Two",
+      "skillSlug": "user-skill-two"
+    }
+  ]
+}
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsAdd_BareSkillName2780107852/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:44851 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.317 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:44851, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsAdd_BareSkillName2780107852/001/proj/.scion, isGlobal=false
+Added injected skill (ID: new-user-entry-uuid)
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsAdd_Success3758810279/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:41527 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.320 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:41527, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsAdd_Success3758810279/001/proj/.scion, isGlobal=false
+Added injected skill (ID: new-user-entry-uuid)
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsAdd_WithAliasAndOptional75370509/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:40069 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.322 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:40069, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsAdd_WithAliasAndOptional75370509/001/proj/.scion, isGlobal=false
+Added injected skill (ID: new-user-entry-uuid)
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsRemove_ByID3113009085/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:33747 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.325 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:33747, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsRemove_ByID3113009085/001/proj/.scion, isGlobal=false
+Removed injected skill (ID: aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsRemove_ByURI265287005/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:33515 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.328 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:33515, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsRemove_ByURI265287005/001/proj/.scion, isGlobal=false
+Removed injected skill (ID: aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsRemove_URINotFound3043740753/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:39933 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.331 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:39933, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsRemove_URINotFound3043740753/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsFromDirectory_NonTTY_AddsAll3116374145/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:36533 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.334 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:36533, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsFromDirectory_NonTTY_AddsAll3116374145/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsFromDirectory_TTY_Abort1222250808/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:33419 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.338 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:33419, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsFromDirectory_TTY_Abort1222250808/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsFromDirectory_NoSkills1332195987/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:39973 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.342 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:39973, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsFromDirectory_NoSkills1332195987/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsFromDirectory_PartialFailure544843823/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:42603 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.345 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:42603, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsFromDirectory_PartialFailure544843823/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsFromDirectory_TTY_Yes_AddsAll3905305936/001/proj/.scion, opts={AutoConfirm:true NonInteractive:false EndpointOverride:http://127.0.0.1:44481 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.348 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:44481, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsFromDirectory_TTY_Yes_AddsAll3905305936/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsFromDirectory_DiscoverError3268752879/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:42365 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.351 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:42365, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsFromDirectory_DiscoverError3268752879/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsFromDirectory_StripsUserinfo3751292366/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:38921 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.354 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:38921, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsFromDirectory_StripsUserinfo3751292366/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsFromDirectory_TotalFailure1374887328/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:44105 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.357 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:44105, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsFromDirectory_TotalFailure1374887328/001/proj/.scion, isGlobal=false
+[hubsync] EnsureHubReady: projectPath=/dev/shm/TestRunUserSkillsList_APIError3373690037/001/proj/.scion, opts={AutoConfirm:false NonInteractive:false EndpointOverride:http://127.0.0.1:46613 ExplicitProject:true HubFromContext:false RecordLink:<nil> SkipProjectLink:false}
+03:21:40.360 [DEBUG] Dev auth token: scion_dev_a9f844fcb8... (source: ~/.scion/dev-token)
+[hubsync] HubContext created: endpoint=http://127.0.0.1:46613, projectID=test-project (local=test-project), brokerID=4fdc01da-0572-4658-8ed9-ead0ffb5a5dd, projectPath=/dev/shm/TestRunUserSkillsList_APIError3373690037/001/proj/.scion, isGlobal=false
+robocop
+
+To authenticate, visit:
+
+  https://github.com/login/device
+
+And enter the code: GH-1234
+
+Waiting for authorization...
+FAIL
+FAIL	github.com/GoogleCloudPlatform/scion/cmd	120.923s
+FAIL

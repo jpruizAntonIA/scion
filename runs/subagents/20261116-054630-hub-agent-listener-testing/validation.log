@@ -1,0 +1,23 @@
+## 2026-11-16T03:16:08-03:00 V1: go test ./cmd -run 'ContainerHubEndpoint|AgentAPI' -count=1 -v
+exit=0 (salida: v1-go-test-filter.txt)
+## 2026-11-16T03:16:40-03:00 V2: go vet ./cmd
+exit=0 (salida: v2-go-vet.txt, 0 líneas)
+## 2026-11-16T03:16:41-03:00 G1: git diff --stat -- cmd/server_web_base_url.go
+exit=0 salida='' (vacía = sin cambios)
+## 2026-11-16T03:19:35-03:00 V3 lab (detalle en agent-api-lab.txt)
+healthz=200 raíz=401 /api/v1/auth/login=401 Bearer scion_dev_x /api/v1/agents=401 -> exit=0 (todas según contrato)
+## V4 un solo flag (host sin port, port sin host): server no arranca, error nombra ambos flags -> exit=0 (PASS); sin flags: 18090 no escucha -> PASS
+## V5 limpieza: ls /dev/shm/scion-agentapi-test rc=2, ls /dev/shm/scion-agentapi-lab rc=2, ss sin 18080/18090/19800 -> PASS
+## 2026-11-16T03:19:40-03:00 S1: go test ./cmd -count=1 (con el diff, timeout 1500)
+exit=1 (salida: suite-cmd-with-diff.txt)
+## cmd/telegram_v2.db (sin trackear) quedó tras go test ./cmd; borrado
+## 2026-11-16T03:22:02-03:00 B1: baseline sin diff en clon /dev/shm/scion-baseline @ 34f2118feb9e3c9edd933182e5722e4a1328555d: go test ./cmd -run '^(TestDeleteCleanupOnly_PreserveBranch|TestExecuteUsageOnError_RunEUsageErrors|TestRunSkillsList_TagsReachRequest|TestStartHub400OnCreate_NoUsage)$' -count=1
+exit=1 (salida: suite-cmd-baseline-failures.txt)
+## 2026-11-16T03:23:49-03:00 S2: con diff, aislado: go test ./cmd -run '^TestRunSkillsList_TagsReachRequest$' -count=5 -v
+exit=0
+## 2026-11-16T03:24:13-03:00 S3: repetición go test ./cmd -count=1 (con el diff)
+exit=1 (salida: suite-cmd-with-diff-run2.txt)
+## cmd/telegram_v2.db borrado otra vez tras S3
+## 2026-11-16T03:26:30-03:00 B2: baseline sin diff, suite completa: (cd /dev/shm/scion-baseline) go test ./cmd -count=1
+exit=1 (salida: suite-cmd-baseline-full.txt)
+## clon /dev/shm/scion-baseline borrado

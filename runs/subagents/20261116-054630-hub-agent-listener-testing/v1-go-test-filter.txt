@@ -1,0 +1,246 @@
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=agent_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=agent_signing_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=agent_signing_key source=generated scope_id="" key_len=32 sha256_prefix=46bde1a4f0c37752
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=agent_signing_key
+2026/11/16 03:16:35 INFO Agent token service initialized key_fingerprint=46bde1a4f0c37752
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=user_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=user_signing_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=user_signing_key source=generated scope_id="" key_len=32 sha256_prefix=3001e352d1ca78ca
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=user_signing_key
+2026/11/16 03:16:35 INFO User token service initialized key_fingerprint=3001e352d1ca78ca
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=download_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=download_signing_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=download_signing_key source=generated scope_id="" key_len=32 sha256_prefix=49961d30e604fe22
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=download_signing_key
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=artifact_view_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=artifact_view_signing_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=artifact_view_signing_key source=generated scope_id="" key_len=32 sha256_prefix=fd269015787bde93
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=artifact_view_signing_key
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=attachment_delivery_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=attachment_delivery_signing_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=attachment_delivery_signing_key source=generated scope_id="" key_len=32 sha256_prefix=e42a4a54205e5ef9
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=attachment_delivery_signing_key
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=list_cursor_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=list_cursor_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=list_cursor_key source=generated scope_id="" key_len=32 sha256_prefix=707bd950ad12b7ee
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=list_cursor_key
+2026/11/16 03:16:35 INFO OAuth service NOT configured - no providers available
+2026/11/16 03:16:35 INFO To enable OAuth, set environment variables SCION_SERVER_OAUTH_CLI_GOOGLE_CLIENTID, etc.
+2026/11/16 03:16:35 INFO Broker HMAC authentication enabled
+2026/11/16 03:16:35 INFO Control channel manager initialized
+2026/11/16 03:16:35 INFO migration: scanning projects for multi-role bindings subsystem=hub.membership project_count=0
+2026/11/16 03:16:35 INFO D4 membership-only unique index installed on role_bindings subsystem=hub.projects
+2026/11/16 03:16:35 INFO GCP deny-unknown fallback policy policy=fail-open failOpen=true
+2026/11/16 03:16:35 WARN GCP caller-permission checking is OFF for agent service-account assignment: assignment is gated by Hub policy only, and no caller is checked for iam.serviceAccounts.actAs on the target account surface=agent-assign mode=off
+2026/11/16 03:16:35 WARN GCP caller-permission checking is OFF for lifecycle-hook execution identity: any caller who may write a hook may run it as any in-scope verified service account, and no caller is checked for iam.serviceAccounts.actAs on it. Unlike agent service-account assignment, this surface has NO second policy layer to fall back on surface=hook-execution-identity mode=off
+2026/11/16 03:16:35 INFO seeded role definition name=super-admin scope_type=system revision=10 perm_hash=b031a75dd8481d42
+2026/11/16 03:16:35 INFO seeded role definition name=hub-admin scope_type=system revision=10 perm_hash=0582765ada69311e
+2026/11/16 03:16:35 INFO seeded role definition name=global-catalog-author scope_type=system revision=1 perm_hash=8676a67d797fa10d
+2026/11/16 03:16:35 INFO seeded role definition name=hub-member scope_type=system revision=5 perm_hash=08b4e6a88d31e60c
+2026/11/16 03:16:35 INFO seeded role definition name=hub-viewer scope_type=system revision=3 perm_hash=c3145e4a31a5f751
+2026/11/16 03:16:35 INFO seeded role definition name=project-owner scope_type=project revision=11 perm_hash=c7a9450726e7e5a6
+2026/11/16 03:16:35 INFO seeded role definition name=project-admin scope_type=project revision=9 perm_hash=a4c9643deb4b95c0
+2026/11/16 03:16:35 INFO seeded role definition name=project-member scope_type=project revision=6 perm_hash=0d16157c91eba100
+2026/11/16 03:16:35 INFO seeded role definition name=project-visitor scope_type=project revision=1 perm_hash=1f6806f9e92a925c
+2026/11/16 03:16:35 INFO seeded role definition name=agent-role-none scope_type=system revision=1 perm_hash=e3b0c44298fc1c14
+2026/11/16 03:16:35 INFO seeded role definition name=agent-role-readonly scope_type=system revision=1 perm_hash=96e3a97fcf359da0
+2026/11/16 03:16:35 INFO seeded role definition name=agent-role-baseline scope_type=system revision=3 perm_hash=ef540dee0e5d294a
+2026/11/16 03:16:35 INFO seeded role definition name=agent-role-full scope_type=system revision=3 perm_hash=993ed47faab43c06
+2026/11/16 03:16:35 INFO seeded hub-members group id=457658ef-9a5e-4f95-ad8b-59aa7fd43959
+2026/11/16 03:16:35 INFO seeded hub-member role binding for hub-members group group_id=457658ef-9a5e-4f95-ad8b-59aa7fd43959 role_definition_id=4a4adaf2-311e-4889-af48-6739e7626532
+2026/11/16 03:16:35 INFO seeded limit definition name=max_agents_per_project resource_type=agent
+2026/11/16 03:16:35 INFO seeded limit definition name=max_projects_per_user resource_type=project
+2026/11/16 03:16:35 INFO seeded limit definition name=max_members_per_group resource_type=group
+2026/11/16 03:16:35 INFO seeded limit definition name=max_agents_per_broker resource_type=agent
+2026/11/16 03:16:35 WARN AdminEmails is nil or empty; all reconciliation disabled to prevent hub-wide lockout — verify config load
+2026/11/16 03:16:35 INFO Seeded platform skills into hub injected_skills count=9
+2026/11/16 03:16:35 INFO Seeded github_resolution_cache settings into hub_settings
+2026/11/16 03:16:35 INFO Request completed method=GET path=/api/v1/agents remote_addr=127.0.0.1:50468 status=200 duration=2.356892ms
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/healthz_without_token
+2026/11/16 03:16:35 INFO Request completed method=GET path=/healthz remote_addr=127.0.0.1:35426 status=200 duration=2.684526ms
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/readyz_without_token
+2026/11/16 03:16:35 INFO Request completed method=GET path=/readyz remote_addr=127.0.0.1:35426 status=200 duration=43.454µs
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/no_token
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/root_without_token_(no_web)
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/auth_login_without_token
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/auth_providers_without_token
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/bearer_scion_dev_x
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/bearer_real_dev_token
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/bearer_scion_pat
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/session_cookie_only
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/invalid_agent_header
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/valid_agent_header
+2026/11/16 03:16:35 WARN Agent token not found in credential store (legacy/pre-table token) subsystem=hub.auth agent_id=327e174b-7b9e-4ece-b723-5503103738ac jti_hash=df16ab5c
+2026/11/16 03:16:35 INFO Request completed method=GET path=/api/v1/agents remote_addr=127.0.0.1:35426 status=200 duration=750.51µs
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/valid_agent_bearer
+2026/11/16 03:16:35 WARN Agent token not found in credential store (legacy/pre-table token) subsystem=hub.auth agent_id=327e174b-7b9e-4ece-b723-5503103738ac jti_hash=df16ab5c
+2026/11/16 03:16:35 INFO Request completed method=GET path=/api/v1/agents remote_addr=127.0.0.1:35426 status=200 duration=715.26µs
+=== RUN   TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/valid_agent_header_with_a_dev_bearer
+2026/11/16 03:16:35 WARN Agent token not found in credential store (legacy/pre-table token) subsystem=hub.auth agent_id=327e174b-7b9e-4ece-b723-5503103738ac jti_hash=df16ab5c
+2026/11/16 03:16:35 INFO Request completed method=GET path=/api/v1/agents remote_addr=127.0.0.1:35426 status=200 duration=856.817µs
+2026/11/16 03:16:35 WARN Request completed method=GET path=/health remote_addr=127.0.0.1:35426 status=404 duration=12.339µs
+2026/11/16 03:16:35 INFO Hub API server shutting down...
+2026/11/16 03:16:35 INFO Cleaning up Hub resources...
+--- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI (0.07s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/healthz_without_token (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/readyz_without_token (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/no_token (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/root_without_token_(no_web) (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/auth_login_without_token (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/auth_providers_without_token (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/bearer_scion_dev_x (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/bearer_real_dev_token (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/bearer_scion_pat (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/session_cookie_only (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/invalid_agent_header (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/valid_agent_header (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/valid_agent_bearer (0.00s)
+    --- PASS: TestAgentAPIGuard_OnlyAgentsReachTheHubAPI/valid_agent_header_with_a_dev_bearer (0.00s)
+=== RUN   TestAgentAPIGuard_StripsOtherCredentials
+--- PASS: TestAgentAPIGuard_StripsOtherCredentials (0.00s)
+=== RUN   TestAgentAPIGuard_NilValidatorRefusesTokens
+--- PASS: TestAgentAPIGuard_NilValidatorRefusesTokens (0.00s)
+=== RUN   TestAgentAPIFlags_MustBeSetTogether
+--- PASS: TestAgentAPIFlags_MustBeSetTogether (0.00s)
+=== RUN   TestAgentAPIFlags_Registered
+--- PASS: TestAgentAPIFlags_Registered (0.00s)
+=== RUN   TestAgentAPIEndpointURL
+--- PASS: TestAgentAPIEndpointURL (0.00s)
+=== RUN   TestAgentAPIListener_NotOpenedWithoutFlags
+--- PASS: TestAgentAPIListener_NotOpenedWithoutFlags (0.00s)
+=== RUN   TestAgentAPIListener_ServesHubAPIToAgentsOnly
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=agent_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=agent_signing_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=agent_signing_key source=generated scope_id="" key_len=32 sha256_prefix=c34262d342b3d9fb
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=agent_signing_key
+2026/11/16 03:16:35 INFO Agent token service initialized key_fingerprint=c34262d342b3d9fb
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=user_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=user_signing_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=user_signing_key source=generated scope_id="" key_len=32 sha256_prefix=54bc4fdc6e77f51e
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=user_signing_key
+2026/11/16 03:16:35 INFO User token service initialized key_fingerprint=54bc4fdc6e77f51e
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=download_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=download_signing_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=download_signing_key source=generated scope_id="" key_len=32 sha256_prefix=c1b4790fa00041b9
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=download_signing_key
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=artifact_view_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=artifact_view_signing_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=artifact_view_signing_key source=generated scope_id="" key_len=32 sha256_prefix=9d906fe00d9097eb
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=artifact_view_signing_key
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=attachment_delivery_signing_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=attachment_delivery_signing_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=attachment_delivery_signing_key source=generated scope_id="" key_len=32 sha256_prefix=b8c7ca008bdea182
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=attachment_delivery_signing_key
+2026/11/16 03:16:35 INFO ensureSigningKey: resolving key key=list_cursor_key hub_id="" has_secret_backend=false is_gcp_backend=false
+2026/11/16 03:16:35 WARN Signing key not found in any source, generating new key key=list_cursor_key hub_id=""
+2026/11/16 03:16:35 INFO ensureSigningKey: generated new key key=list_cursor_key source=generated scope_id="" key_len=32 sha256_prefix=8681b28c22256b3c
+2026/11/16 03:16:35 INFO Persisted new signing key to store key=list_cursor_key
+2026/11/16 03:16:35 INFO OAuth service NOT configured - no providers available
+2026/11/16 03:16:35 INFO To enable OAuth, set environment variables SCION_SERVER_OAUTH_CLI_GOOGLE_CLIENTID, etc.
+2026/11/16 03:16:35 INFO Broker HMAC authentication enabled
+2026/11/16 03:16:35 INFO Control channel manager initialized
+2026/11/16 03:16:35 INFO migration: scanning projects for multi-role bindings subsystem=hub.membership project_count=0
+2026/11/16 03:16:35 INFO D4 membership-only unique index installed on role_bindings subsystem=hub.projects
+2026/11/16 03:16:35 INFO GCP deny-unknown fallback policy policy=fail-open failOpen=true
+2026/11/16 03:16:35 WARN GCP caller-permission checking is OFF for agent service-account assignment: assignment is gated by Hub policy only, and no caller is checked for iam.serviceAccounts.actAs on the target account surface=agent-assign mode=off
+2026/11/16 03:16:35 WARN GCP caller-permission checking is OFF for lifecycle-hook execution identity: any caller who may write a hook may run it as any in-scope verified service account, and no caller is checked for iam.serviceAccounts.actAs on it. Unlike agent service-account assignment, this surface has NO second policy layer to fall back on surface=hook-execution-identity mode=off
+2026/11/16 03:16:35 INFO seeded role definition name=super-admin scope_type=system revision=10 perm_hash=b031a75dd8481d42
+2026/11/16 03:16:35 INFO seeded role definition name=hub-admin scope_type=system revision=10 perm_hash=0582765ada69311e
+2026/11/16 03:16:35 INFO seeded role definition name=global-catalog-author scope_type=system revision=1 perm_hash=8676a67d797fa10d
+2026/11/16 03:16:35 INFO seeded role definition name=hub-member scope_type=system revision=5 perm_hash=08b4e6a88d31e60c
+2026/11/16 03:16:35 INFO seeded role definition name=hub-viewer scope_type=system revision=3 perm_hash=c3145e4a31a5f751
+2026/11/16 03:16:35 INFO seeded role definition name=project-owner scope_type=project revision=11 perm_hash=c7a9450726e7e5a6
+2026/11/16 03:16:35 INFO seeded role definition name=project-admin scope_type=project revision=9 perm_hash=a4c9643deb4b95c0
+2026/11/16 03:16:35 INFO seeded role definition name=project-member scope_type=project revision=6 perm_hash=0d16157c91eba100
+2026/11/16 03:16:35 INFO seeded role definition name=project-visitor scope_type=project revision=1 perm_hash=1f6806f9e92a925c
+2026/11/16 03:16:35 INFO seeded role definition name=agent-role-none scope_type=system revision=1 perm_hash=e3b0c44298fc1c14
+2026/11/16 03:16:35 INFO seeded role definition name=agent-role-readonly scope_type=system revision=1 perm_hash=96e3a97fcf359da0
+2026/11/16 03:16:35 INFO seeded role definition name=agent-role-baseline scope_type=system revision=3 perm_hash=ef540dee0e5d294a
+2026/11/16 03:16:35 INFO seeded role definition name=agent-role-full scope_type=system revision=3 perm_hash=993ed47faab43c06
+2026/11/16 03:16:35 INFO seeded hub-members group id=f2188107-e69e-4d8e-be98-68a15b4bff40
+2026/11/16 03:16:35 INFO seeded hub-member role binding for hub-members group group_id=f2188107-e69e-4d8e-be98-68a15b4bff40 role_definition_id=f43ecc3b-6344-43aa-888c-fe20265a47f5
+2026/11/16 03:16:35 INFO seeded limit definition name=max_agents_per_project resource_type=agent
+2026/11/16 03:16:35 INFO seeded limit definition name=max_projects_per_user resource_type=project
+2026/11/16 03:16:35 INFO seeded limit definition name=max_members_per_group resource_type=group
+2026/11/16 03:16:35 INFO seeded limit definition name=max_agents_per_broker resource_type=agent
+2026/11/16 03:16:35 WARN AdminEmails is nil or empty; all reconciliation disabled to prevent hub-wide lockout — verify config load
+2026/11/16 03:16:35 INFO Seeded platform skills into hub injected_skills count=9
+2026/11/16 03:16:35 INFO Seeded github_resolution_cache settings into hub_settings
+2026/11/16 03:16:35 INFO Agent API listener started (Hub API for agents only, no web, no dev auth) addr=127.0.0.1:35421
+2026/11/16 03:16:35 INFO Request completed method=GET path=/healthz remote_addr=127.0.0.1:56856 status=200 duration=3.855548ms
+2026/11/16 03:16:35 WARN Agent token not found in credential store (legacy/pre-table token) subsystem=hub.auth agent_id=07f7c8f6-397f-4865-ad9c-bd8d2c3bd6c8 jti_hash=569433a3
+2026/11/16 03:16:35 INFO Request completed method=GET path=/api/v1/agents remote_addr=127.0.0.1:56856 status=200 duration=756.605µs
+2026/11/16 03:16:35 INFO Hub API server shutting down...
+2026/11/16 03:16:35 INFO Cleaning up Hub resources...
+--- PASS: TestAgentAPIListener_ServesHubAPIToAgentsOnly (0.06s)
+=== RUN   TestComputeContainerHubEndpoint
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_docker_uses_the_local_hub_alias
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_alias_uses_the_hub_listen_port
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_forced_host_networking_rewrites_to_the_bridge_host
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_unknown_listen_port_never_routes_at_the_IAP_URL
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_without_host-gateway_support_rewrites_to_the_bridge_host
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_kubernetes_default_still_rewrites_docker_and_podman_profiles
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_kubernetes_default_without_host-gateway_uses_the_docker_bridge_host
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_podman_default_rewrites_to_the_podman_host_alias
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_podman_default_with_forced_host_networking
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_a_non-localhost_broker_endpoint_has_no_bridge_targets
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_a_non-localhost_broker_endpoint_uses_the_listen_port
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_a_non-localhost_broker_endpoint_and_host_networking_uses_the_listen_port
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_forced_host_networking_uses_the_listen_port_over_the_broker_endpoint_port
+=== RUN   TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_Apple_container_keeps_its_own_endpoint_and_adds_per-runtime_targets_only
+=== RUN   TestComputeContainerHubEndpoint/explicit_public_URL_on_kubernetes_default_adds_no_rewrite
+=== RUN   TestComputeContainerHubEndpoint/explicit_base_URL_with_Caddy_routes_docker_agents_at_the_public_domain
+=== RUN   TestComputeContainerHubEndpoint/explicit_public_url_with_Caddy_routes_docker_agents_at_the_public_domain
+=== RUN   TestComputeContainerHubEndpoint/explicit_run.app_base_URL_is_trusted_as_served_by_this_host
+=== RUN   TestComputeContainerHubEndpoint/localhost_public_URL_uses_the_legacy_bridge_host
+=== RUN   TestComputeContainerHubEndpoint/localhost_public_URL_on_podman_uses_host.containers.internal
+=== RUN   TestComputeContainerHubEndpoint/configured_container_endpoint_wins
+=== RUN   TestComputeContainerHubEndpoint/broker-only_mode_computes_nothing
+=== RUN   TestComputeContainerHubEndpoint/no_runtime_computes_nothing
+--- PASS: TestComputeContainerHubEndpoint (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_docker_uses_the_local_hub_alias (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_alias_uses_the_hub_listen_port (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_forced_host_networking_rewrites_to_the_bridge_host (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_unknown_listen_port_never_routes_at_the_IAP_URL (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_without_host-gateway_support_rewrites_to_the_bridge_host (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_kubernetes_default_still_rewrites_docker_and_podman_profiles (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_kubernetes_default_without_host-gateway_uses_the_docker_bridge_host (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_podman_default_rewrites_to_the_podman_host_alias (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_podman_default_with_forced_host_networking (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_a_non-localhost_broker_endpoint_has_no_bridge_targets (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_a_non-localhost_broker_endpoint_uses_the_listen_port (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_a_non-localhost_broker_endpoint_and_host_networking_uses_the_listen_port (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_with_forced_host_networking_uses_the_listen_port_over_the_broker_endpoint_port (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/IAP-derived_public_URL_on_Apple_container_keeps_its_own_endpoint_and_adds_per-runtime_targets_only (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/explicit_public_URL_on_kubernetes_default_adds_no_rewrite (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/explicit_base_URL_with_Caddy_routes_docker_agents_at_the_public_domain (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/explicit_public_url_with_Caddy_routes_docker_agents_at_the_public_domain (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/explicit_run.app_base_URL_is_trusted_as_served_by_this_host (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/localhost_public_URL_uses_the_legacy_bridge_host (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/localhost_public_URL_on_podman_uses_host.containers.internal (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/configured_container_endpoint_wins (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/broker-only_mode_computes_nothing (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint/no_runtime_computes_nothing (0.00s)
+=== RUN   TestContainerHubEndpointResultApplyTo
+--- PASS: TestContainerHubEndpointResultApplyTo (0.00s)
+=== RUN   TestComputeContainerHubEndpointHostGatewayLogLevel
+=== RUN   TestComputeContainerHubEndpointHostGatewayLogLevel/docker
+=== RUN   TestComputeContainerHubEndpointHostGatewayLogLevel/podman
+--- PASS: TestComputeContainerHubEndpointHostGatewayLogLevel (0.00s)
+    --- PASS: TestComputeContainerHubEndpointHostGatewayLogLevel/docker (0.00s)
+    --- PASS: TestComputeContainerHubEndpointHostGatewayLogLevel/podman (0.00s)
+=== RUN   TestComputeContainerHubEndpoint_AgentAPIListener
+=== RUN   TestComputeContainerHubEndpoint_AgentAPIListener/listener_wins_over_host.docker.internal
+=== RUN   TestComputeContainerHubEndpoint_AgentAPIListener/listener_wins_over_a_public_domain_and_IAP
+=== RUN   TestComputeContainerHubEndpoint_AgentAPIListener/configured_wins_over_the_listener
+=== RUN   TestComputeContainerHubEndpoint_AgentAPIListener/without_the_listener_nothing_changes
+=== RUN   TestComputeContainerHubEndpoint_AgentAPIListener/brokerContainerHubConfig_reads_the_flags
+--- PASS: TestComputeContainerHubEndpoint_AgentAPIListener (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint_AgentAPIListener/listener_wins_over_host.docker.internal (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint_AgentAPIListener/listener_wins_over_a_public_domain_and_IAP (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint_AgentAPIListener/configured_wins_over_the_listener (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint_AgentAPIListener/without_the_listener_nothing_changes (0.00s)
+    --- PASS: TestComputeContainerHubEndpoint_AgentAPIListener/brokerContainerHubConfig_reads_the_flags (0.00s)
+PASS
+ok  	github.com/GoogleCloudPlatform/scion/cmd	0.565s

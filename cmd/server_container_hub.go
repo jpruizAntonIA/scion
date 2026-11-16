@@ -38,6 +38,10 @@ const colocatedHubHostAlias = "scion-hub.internal"
 type containerHubEndpointInputs struct {
 	// Configured is runtime_broker.container_hub_endpoint; when set it wins.
 	Configured string
+	// AgentAPIEndpoint is the agents-only Hub API listener's URL
+	// (agentAPIEndpointURL), or "" when --agent-api-host/--agent-api-port
+	// are not set. It wins over everything but Configured.
+	AgentAPIEndpoint string
 	// HubEnabled reports whether the hub runs in this process (colocated).
 	HubEnabled bool
 	// BrokerHubEndpoint is the broker's own hub URL (localhost when colocated).
@@ -112,6 +116,7 @@ func brokerContainerHubConfig(cfg *config.GlobalConfig, p brokerContainerHubPara
 	in := containerHubEndpointInputs{
 		Configured:              cfg.RuntimeBroker.ContainerHubEndpoint,
 		HubEnabled:              enableHub,
+		AgentAPIEndpoint:        agentAPIEndpointURL(agentAPIHost, agentAPIPort),
 		BrokerHubEndpoint:       p.BrokerHubEndpoint,
 		RuntimeName:             p.RuntimeName,
 		PublicHubEndpoint:       p.PublicHubEndpoint,
@@ -125,6 +130,11 @@ func brokerContainerHubConfig(cfg *config.GlobalConfig, p brokerContainerHubPara
 
 // computeContainerHubEndpoint decides the hub URL colocated agents are
 // given in place of the broker's own (localhost) hub URL.
+//
+// The order is: runtime_broker.container_hub_endpoint when configured;
+// then the agents-only Hub API listener (--agent-api-host/--agent-api-port)
+// when the hub runs here, which agents on bridge networking reach directly;
+// then the routes below.
 //
 // For colocated Docker agents we prefer bridge networking, so each agent
 // runs in its own network namespace. This avoids the host-global
@@ -148,6 +158,10 @@ func brokerContainerHubConfig(cfg *config.GlobalConfig, p brokerContainerHubPara
 func computeContainerHubEndpoint(in containerHubEndpointInputs, logf func(format string, args ...any)) containerHubEndpointResult {
 	if logf == nil {
 		logf = func(string, ...any) {}
+	}
+	if in.Configured == "" && in.HubEnabled && in.AgentAPIEndpoint != "" {
+		logf("Colocated agents routed via the agent API listener %s", in.AgentAPIEndpoint)
+		return containerHubEndpointResult{Endpoint: in.AgentAPIEndpoint, HubListenPort: in.HubListenPort}
 	}
 	if in.Configured != "" || !in.HubEnabled || in.BrokerHubEndpoint == "" || in.RuntimeName == "" {
 		return containerHubEndpointResult{Endpoint: in.Configured, HubListenPort: in.HubListenPort}

@@ -1,0 +1,36 @@
+$ cd /mnt/ssd/proyectos/SLDB_1/scion && GOCACHE=/mnt/ssd/cache/go-build GOMODCACHE=/mnt/ssd/cache/go-mod TMPDIR=/dev/shm go test ./cmd -run 'ContainerHubEndpoint|AgentAPI' -count=1
+ok  	github.com/GoogleCloudPlatform/scion/cmd	1.244s
+exit=0
+
+$ cd /mnt/ssd/proyectos/SLDB_1/scion && GOCACHE=/mnt/ssd/cache/go-build GOMODCACHE=/mnt/ssd/cache/go-mod TMPDIR=/dev/shm go vet ./cmd
+exit=0
+
+$ bash lab.sh (lab en el host; salida completa en agent-api-lab.txt): healthz=200, /=401, /api/v1/auth/login=401, Bearer scion_dev_x /api/v1/agents=401; un solo flag exit=1 con error que nombra ambos flags; sin flags 18090 no listado; limpieza: ls exit=2, ss sin 18080/18090/19800
+exit=0
+
+$ cd /mnt/ssd/proyectos/SLDB_1/scion && GOCACHE=/mnt/ssd/cache/go-build GOMODCACHE=/mnt/ssd/cache/go-mod TMPDIR=/dev/shm go test ./cmd -count=1 -timeout 1500s
+--- FAIL: TestDeleteCleanupOnly_PreserveBranch (0.05s)
+--- FAIL: TestExecuteUsageOnError_RunEUsageErrors (0.19s)
+--- FAIL: TestRunSkillsList_TagsReachRequest (0.01s)
+--- FAIL: TestStartHub400OnCreate_NoUsage (0.01s)
+FAIL
+FAIL	github.com/GoogleCloudPlatform/scion/cmd	167.000s
+FAIL
+exit=1
+
+$ cd /dev/shm/agentapi-baseline && go test ./cmd -count=1 -timeout 1500s   # baseline: git archive HEAD 34f2118fe + git init, sin el diff
+--- FAIL: TestDeleteCleanupOnly_PreserveBranch (0.08s)
+--- FAIL: TestAgentImageDockerfilesDoNotSetTZ (0.01s)
+--- FAIL: TestGcloudIgnoreKeepsEmbeddedFiles (0.00s)
+--- FAIL: TestGcloudIgnoreContractCheckerDetectsViolations (0.01s)
+--- FAIL: TestCloudBuildCopySourcesSurviveIgnoreFile (0.00s)
+--- FAIL: TestCloudBuildConfigsDocumentTargetIgnoreFile (0.01s)
+--- FAIL: TestCloudBuildCopyContractDetectsViolations (0.00s)
+--- FAIL: TestExecuteUsageOnError_RunEUsageErrors (0.20s)
+--- FAIL: TestRunSkillsList_TagsReachRequest (0.06s)
+--- FAIL: TestStartHub400OnCreate_NoUsage (0.01s)
+FAIL
+FAIL	github.com/GoogleCloudPlatform/scion/cmd	154.533s
+FAIL
+exit=1
+
