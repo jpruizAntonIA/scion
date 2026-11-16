@@ -1,0 +1,38 @@
+# .sldb en un worktree de tarea de mepu
+
+$ git -C /mnt/ssd/proyectos/mepu-scion/mepu worktree add --detach /dev/shm/scion-pi-mepu-wt HEAD
+Preparing worktree (detached HEAD 58bf2607)
+HEAD is now at 58bf2607 base scion: dev 54fe8fdefd6b1dccb4a0d0e4d258e6b0cf946f1f sin datos de Teva (data/input, casos_revision, perfil_maestros, propuesta)
+exit: 0
+
+$ git -C /dev/shm/scion-pi-mepu-wt ls-files .sldb | awk -F/ '{print $1"/"$2"/"$3}' | sort | uniq -c
+    144 ".sldb/core/documents
+   3145 .sldb/core/documents
+     27 .sldb/core/models
+      1 .sldb/core/store_index.yaml
+
+Nota: .sldb/store.yaml NO está versionado en mepu HEAD 58bf2607 (rama dev): git ls-files .sldb/store.yaml vacío, tampoco existe en el checkout principal; solo .sldb/core/ (models, documents, store_index.yaml).
+
+## Montaje en contenedor de la imagen pi (NO lanzado por scion: el hub de lab no pudo arrancar, ver result-summary.md; --network none)
+$ docker run --rm --network none -v /dev/shm/scion-pi-mepu-wt:/workspace -w /workspace --entrypoint bash scion-pi:f6e623c69 -c 'ls .sldb/core; echo ls_rc=$?; command -v sldb; echo sldb_rc=$?'
+documents
+models
+store_index.yaml
+ls_rc=0
+sldb_rc=1
+exit: 0
+
+## Sustituto en el host (sldb no está en el PATH del contenedor: lo pone el hook deskops-tools de producción); sldb=/home/robocop/.local/bin/sldb (usage: sldb [-h])
+$ cd /dev/shm/scion-pi-mepu-wt && TMPDIR=/dev/shm timeout 900 make codigo-doc
+sldb selfdoc python-sync --source-root src --system mepu --store .sldb \
+  --graph-output .sldb/runtime/graphs/python-source.graph.json > /dev/null
+sldb selfdoc python-check --source-root src --system mepu --store .sldb \
+  --graph-output .sldb/runtime/graphs/python-source.graph.json > /dev/null
+spec2viz diagram from-graph .sldb/runtime/graphs/python-source.graph.json --node-type python_module \
+  --module-prefix mepu --drop-isolated --id mepu-codigo-modulos \
+  --title "MEPU: módulos de src/mepu y quién importa a quién (generado del grafo de código de sldb)" \
+  --out specs/mepu-codigo-modulos.yml
+Generated specs/mepu-codigo-modulos.yml (258 nodes, 849 edges)
+exit: 0
+
+$ git -C /dev/shm/scion-pi-mepu-wt status --short

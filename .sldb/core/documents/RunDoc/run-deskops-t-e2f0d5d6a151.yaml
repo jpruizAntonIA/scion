@@ -1,0 +1,32 @@
+name: run-deskops-t-e2f0d5d6a151
+path: runs/subagents/20261116-052313-harness-pi-red-bridge-testing/run.md
+source_hash: 038a87c7fbd30f587bf0eee4909f4fa092990396f16dc6a4a45af2c8c66db920
+content_hash: 185f13653104224d5879226c368aac630296f83969e1b8b44b282fd8f9f0aa16
+field_hashes:
+  id: 2c78ce4b2c0a93a94c6a89b6cf732d533e52ccc5643b44a7bb282302705b3b37
+  title: dfd49d303e0b039d6f42f00999981e05d49d8b958a18dce67ccc110f2cde36da
+  summary: 075706824540be510c26486cd63b8d8cf98796a95bf8876a3774cc34cd179efd
+  task_id: bcb6f226495230b6c8abf3eb99181402c9e9d918120e3f14b33d4cc04e2bf511
+  role_id: c5775f1b3fece1cbdd49c2d83cfe0eabb0af85b64185464b3b87f74b4620bfb6
+  kind: 389432cbf83f3d1b64029a75864ec96f8fd06451b4c99d7b28385d395d480bfa
+  run_dir: 9f6b293a767a22f66136de13acff86892fafbe3e2eba08a0313c785cb023f1c3
+  herdr_pane_id: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  session_path: b141f78d63c5a43991bb00ee037bee0018235d6c496f5ccefc1dcd39e2c64cfe
+  session_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  started_at: bf7810a6a1ee3d9f1a565931e2fef6a5ef79cfebff011237163cfbd88f0c59bb
+  ended_at: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  outcome: de2bc7968076346e1ae2e62d3fd6385361b3855025678cd2732d9132eb9965cb
+  commit_sha: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  tags: 82b76cc5dace91279820eb1061e36da0b31e379da526bb858ab6e54f6cff9ca8
+semantic_tags:
+- representation.markdown
+- runtime:scion
+- source.document.markdown
+- system:deskops
+- type.workflow.run
+- workspace.desk.runs
+provenance:
+  by: agent
+  at: '2026-11-16T05:41:17Z'
+  authority: generated
+  via: create_document

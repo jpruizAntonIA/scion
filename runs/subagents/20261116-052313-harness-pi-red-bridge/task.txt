@@ -1,0 +1,8 @@
+Task: task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor
+Title: Harness pi en desk real: red bridge para ejecutores, imagen con pytest/xdist/dagster (spec2viz fuera por G7), .sldb en el worktree
+Status: draft
+Current node: ritual-execution
+Task type: task.code
+From drawer: desk/drawer/tasks/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-worktree.md
+Lifecycle gates:
+- task_activates -> ritual-testing: open [(none)]

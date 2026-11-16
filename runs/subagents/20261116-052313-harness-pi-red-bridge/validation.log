@@ -1,0 +1,80 @@
+## lab hub intento 1 (comando del contrato + --runtime-broker-port 19800 para no chocar con el broker de producción en 127.0.0.1:9800)
+$ HOME=/dev/shm/scion-pi-lab/home $B server start --host 172.17.0.1 --web-port 18080 --runtime-broker-port 19800 --enable-hub=true --enable-runtime-broker=true --enable-web=true --dev-auth=true --auto-provide=true
+exit: server salió durante el arranque; server.log:
+
+
+## lab hub intento 2 (--dev-auth=false, resto igual)
+$ HOME=/dev/shm/scion-pi-lab/home $B server start --host 172.17.0.1 --web-port 18080 --runtime-broker-port 19800 --enable-hub=true --enable-runtime-broker=true --enable-web=true --dev-auth=false --auto-provide=true
+exit: 1; server.log:
+
+
+## imagen
+$ HOME=/dev/shm/scion-pi-lab/home $B build pi --global --base-image ghcr.io/jpruizantonia/scion-base:f6e623c69 --tag f6e623c69  (harness-config sembrado copiando harnesses/pi al HOME del lab: harness-config install exige hub)
+exit: 0
+
+$ docker run --rm --entrypoint python3 scion-pi:f6e623c69 -c 'import pytest, xdist, dagster; print(pytest.__version__, dagster.__version__)'
+9.2.0 1.13.24
+exit: 0
+
+$ docker run --rm --entrypoint python3 scion-pi:f6e623c69 -c 'import xdist; print(xdist.__version__)'
+3.8.0
+exit: 0
+
+$ TMPDIR=/dev/shm timeout 900 systemd-run --user --scope -q -p MemoryMax=2G -- python3 harnesses/pi/provision_test.py
+pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=auth-file provider=deepseek model=deepseek-flash
+.pi provision: method=auth-file provider=deepseek model=deepseek-flash
+..pi provision: method=api-key provider=deepseek model=deepseek-flash
+pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: warning: /dev/shm/tmpgy7b9riy/.pi/agent/models.json is not a JSON object and is left unchanged
+pi provision: warning: /dev/shm/tmpgy7b9riy/.pi/agent/settings.json is not a JSON object and is left unchanged
+pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-v4-pro
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-v4-pro
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=openai model=gpt-4o
+..pi provision: no auth candidates staged; running in no-auth mode (behavior=drop-to-shell)
+pi provision: method=none provider=deepseek model=deepseek-flash
+..
+----------------------------------------------------------------------
+Ran 19 tests in 0.025s
+
+OK
+exit: 0
+
+$ cmp harnesses/scion_harness.py harnesses/pi/scion_harness.py
+exit: 0
+
+## limpieza
+(scion stop/delete de pi-bridge-probe y pi-mepu-sldb: no aplican, nunca se lanzaron. $B server stop NO se corre: el daemon de lab nunca quedó arriba (sin PID file, 18080/19800 libres) y sin PID file 'server stop' sondea los puertos por defecto 8080/9800 = hub de producción y ofrece matarlos; cmd/server_daemon.go:313-336)
+$ git -C /mnt/ssd/proyectos/mepu-scion/mepu worktree remove /dev/shm/scion-pi-mepu-wt
+exit: 0
+
+$ rm -rf /dev/shm/scion-pi-lab
+exit: 0
+
+$ ls /dev/shm/scion-pi-lab /dev/shm/scion-pi-mepu-wt
+ls: cannot access '/dev/shm/scion-pi-lab': No such file or directory
+ls: cannot access '/dev/shm/scion-pi-mepu-wt': No such file or directory
+exit: 2
+
+$ git -C /mnt/ssd/proyectos/mepu-scion/mepu worktree list
+/mnt/ssd/proyectos/mepu-scion/mepu      58bf2607 [dev]
+/mnt/ssd/proyectos/mepu-scion/wt-adj-6  4b6ccf0e [wt/adj-6]
+/workspace/wt-adj-6b                    3b19b542 [wt/adj-6b] prunable
+/workspace/wt-adj-7                     6e86712c [wt/adj-7] prunable
+/workspace/wt-ui8-tests                 d8290a77 [wt/ui8-tests] prunable
+exit: 0
+
+$ test -s runs/subagents/20261116-052313-harness-pi-red-bridge/propuesta-endpoint-hub.md
+exit: 0
+
+## docker inspect <contenedor del ejecutor> | grep -c '"NetworkMode": "host"'
+NO EJECUTADA: no hubo contenedor pi-bridge-probe lanzado por scion (el hub de lab no arrancó).
+

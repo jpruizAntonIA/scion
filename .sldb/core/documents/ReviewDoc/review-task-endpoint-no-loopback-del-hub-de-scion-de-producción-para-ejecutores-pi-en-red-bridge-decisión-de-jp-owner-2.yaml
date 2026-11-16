@@ -1,0 +1,36 @@
+name: review-task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp-owner-2
+path: desk/reviews/task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp/owner-2.md
+source_hash: 0d5b97569b49ca3cea6edf84102e302d615551b6004b5b821997f9f16dd05e85
+content_hash: 056cc4ab2eb9ef2104904a4eff00381e180a22d3ad57c6cae5a5f22dea47b81e
+field_hashes:
+  id: 38927f267b56e127d1e62eacb0f77d7fcccf2181f9e3c12b4cdab7981de42677
+  title: d4535ab61a28a244ea67f834cbdda2cbe66b87181b6562323530448604d35155
+  kind: 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  fact: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  value: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  subject: f60a091b05cdc799bb8dafcf842be1593ae6e370bd7dad4658c60be89e75e7e3
+  subject_ref: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  engine: 11e25bab0df4bb9f63c6dde985fea5de0ef16abdb2ec640dc08e7e97ec6b1d15
+  actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  run_dir: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  input_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  output_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
+  reason: 33dadf68fc0106403da333340b53eac16932dd39fc5cdb79cb963fab5c1aaa4f
+  created_at: 017e2c2908c85f9a9668dd07e0af9dd89b9dd0017dff130afad6a95facad7a44
+  disposed_at: c11ebcb74979d5007a42feaffe99ce2ab3c9bcb4acbd10fbe14cbe46b60937b2
+  disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  summary: af31516ec437f4f89c61d4e489e9219c94b3d7219e4228dea94c240900beb427
+  disposition: 515bc6418909bf11a5fb81edba968803bd80af0e45b843f17376ccdc9a13ac1e
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.review
+- workspace.desk.runs
+- workspace:desk
+provenance:
+  by: agent
+  at: '2026-11-16T05:41:11Z'
+  authority: generated
+  via: save_document_payload

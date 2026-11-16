@@ -1,0 +1,15 @@
+# Probe de red (bridge)
+
+ESTADO: probe de RESPALDO. El contenedor NO lo lanzó scion: el hub de lab no pudo arrancar en 172.17.0.1:18080 (el fork rechaza --dev-auth fuera de loopback y, sin dev-auth, exige base URL https; ver validation.log y result-summary.md). No satisface la validación de NetworkMode del ejecutor.
+Gateway del bridge: 172.17.0.1
+
+$ docker run --rm --network bridge --entrypoint bash scion-pi:f6e623c69 -c '<probe>'
+probe: for hp in 127.0.0.1/15432 172.17.0.1/15432 172.17.0.1/8000; do timeout 3 bash -c "echo > /dev/tcp/$hp" && echo "$hp ABIERTO" || echo "$hp cerrado"; done; curl -s -o /dev/null -w '%{http_code}' http://172.17.0.1:18080/
+--- salida ---
+bash: connect: Connection refused
+bash: line 1: /dev/tcp/127.0.0.1/15432: Connection refused
+127.0.0.1/15432 cerrado
+172.17.0.1/15432 cerrado
+172.17.0.1/8000 cerrado
+000
+exit: 0

@@ -1,0 +1,241 @@
+# validation.log tester deskops-t-e2f0d5d6a151 (2026-11-16T05:41:58Z), cwd /mnt/ssd/proyectos/SLDB_1/scion, TMPDIR=/dev/shm
+## V1 imagen importa versiones
+$ docker run --rm --entrypoint python3 scion-pi:f6e623c69 -c 'import pytest, xdist, dagster; print(pytest.__version__, xdist.__version__, dagster.__version__)'
+9.2.0 3.8.0 1.13.24
+exit: 0
+
+## V2 provision_test
+$ timeout 900 systemd-run --user --scope -q -p MemoryMax=2G -- python3 harnesses/pi/provision_test.py
+pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=auth-file provider=deepseek model=deepseek-flash
+.pi provision: method=auth-file provider=deepseek model=deepseek-flash
+..pi provision: method=api-key provider=deepseek model=deepseek-flash
+pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: warning: /dev/shm/tmpq4qbawel/.pi/agent/models.json is not a JSON object and is left unchanged
+pi provision: warning: /dev/shm/tmpq4qbawel/.pi/agent/settings.json is not a JSON object and is left unchanged
+pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-v4-pro
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=deepseek model=deepseek-v4-pro
+.pi provision: method=api-key provider=deepseek model=deepseek-flash
+.pi provision: method=api-key provider=openai model=gpt-4o
+..pi provision: no auth candidates staged; running in no-auth mode (behavior=drop-to-shell)
+pi provision: method=none provider=deepseek model=deepseek-flash
+..
+----------------------------------------------------------------------
+Ran 19 tests in 0.033s
+
+OK
+exit: 0
+
+## V3 scion_harness idéntico
+$ cmp harnesses/scion_harness.py harnesses/pi/scion_harness.py
+
+exit: 0
+
+## V4 diff de harnesses
+$ git diff --stat -- harnesses/; git status --short -- harnesses/
+ harnesses/pi/Dockerfile | 13 +++++++++++++
+ harnesses/pi/README.md  |  7 +++++++
+ 2 files changed, 20 insertions(+)
+ M harnesses/pi/Dockerfile
+ M harnesses/pi/README.md
+exit: 0
+
+## V4b diff del ejecutor = harness-pi.diff
+$ diff <(git diff -- harnesses/pi/) runs/subagents/20261116-052313-harness-pi-red-bridge/harness-pi.diff && echo SAME
+SAME
+exit: 0
+
+## V4c nada fuera de desk/.sldb/harnesses/pi/runs en el árbol
+$ git status --short | grep -vE '^( M|\?\?) "?(desk/|\.sldb/|runs/subagents/|harnesses/pi/(Dockerfile|README\.md)$)'; echo grep_rc=$?
+grep_rc=1
+exit: 0
+
+## V4d commit local ahead y staged
+$ git log --stat --format='%h %s' origin/main..HEAD; git diff --cached --stat
+b834c57ab desk: tarea del harness pi en desk real corregida (ruta absoluta del lab, probe exacto, criterios de bloqueo); preflight-4 y bundle-3 aceptados e intactos [skip ci]
+
+ ...t-dagster-spec2viz-sldb-en-el-wor-bundle-2.yaml | 36 ++++++++++++++
+ ...t-dagster-spec2viz-sldb-en-el-wor-bundle-3.yaml | 36 ++++++++++++++
+ ...agster-spec2viz-sldb-en-el-wor-preflight-3.yaml | 36 ++++++++++++++
+ ...agster-spec2viz-sldb-en-el-wor-preflight-4.yaml | 36 ++++++++++++++
+ ...con-pytest-dagster-spec2viz-sldb-en-el-wor.yaml | 14 +++---
+ .sldb/core/models/ReviewDoc.yaml                   |  6 +--
+ .sldb/core/models/TaskCodeDoc.yaml                 |  4 +-
+ .sldb/core/store_index.yaml                        |  2 +-
+ .sldb/store.yaml                                   |  8 +++
+ .../bundle-2.md                                    | 55 +++++++++++++++++++++
+ .../bundle-3.md                                    | 57 ++++++++++++++++++++++
+ .../preflight-3.md                                 | 55 +++++++++++++++++++++
+ .../preflight-4.md                                 | 55 +++++++++++++++++++++
+ ...n-con-pytest-dagster-spec2viz-sldb-en-el-wor.md | 12 ++---
+ 14 files changed, 393 insertions(+), 19 deletions(-)
+exit: 0
+
+## V5 mepu-sldb ls_rc=0
+$ grep -c 'ls_rc=0' runs/subagents/20261116-052313-harness-pi-red-bridge/mepu-sldb.txt; grep -n -A12 'make codigo-doc' runs/subagents/20261116-052313-harness-pi-red-bridge/mepu-sldb.txt | grep -nE 'exit: [0-9]+'
+1
+11:36-exit: 0
+exit: 0
+
+## V6 propuesta y probe no vacíos
+$ test -s runs/subagents/20261116-052313-harness-pi-red-bridge/propuesta-endpoint-hub.md && test -s runs/subagents/20261116-052313-harness-pi-red-bridge/probe-red.txt
+
+exit: 0
+
+## V7a lab y worktree borrados (debe fallar)
+$ ls /dev/shm/scion-pi-lab /dev/shm/scion-pi-mepu-wt
+ls: cannot access '/dev/shm/scion-pi-lab': No such file or directory
+ls: cannot access '/dev/shm/scion-pi-mepu-wt': No such file or directory
+exit: 2
+
+## V7b worktree list sin el wt
+$ git -C /mnt/ssd/proyectos/mepu-scion/mepu worktree list; git -C /mnt/ssd/proyectos/mepu-scion/mepu worktree list | grep -c scion-pi-mepu-wt
+/mnt/ssd/proyectos/mepu-scion/mepu      58bf2607 [dev]
+/mnt/ssd/proyectos/mepu-scion/wt-adj-6  4b6ccf0e [wt/adj-6]
+/workspace/wt-adj-6b                    3b19b542 [wt/adj-6b] prunable
+/workspace/wt-adj-7                     6e86712c [wt/adj-7] prunable
+/workspace/wt-ui8-tests                 d8290a77 [wt/ui8-tests] prunable
+0
+exit: 1
+
+## V8 sin contenedores de la imagen
+$ docker ps -a --filter ancestor=scion-pi:f6e623c69 -q | wc -l
+0
+exit: 0
+
+## R1 imagen: id, fecha, base
+$ docker image inspect scion-pi:f6e623c69 --format '{{.Id}} {{.Created}}'; stat -c '%y %n' harnesses/pi/Dockerfile
+sha256:64f2f0799e7a6de3b345d73f9ab993f272b41768e6fc68cbe9b29dba24dcdecb 2026-11-16T02:27:56.0412091-03:00
+2026-11-16 02:24:22.711718920 -0300 harnesses/pi/Dockerfile
+exit: 0
+
+## R2 capas de la imagen (docker history, sin truncar, comandos)
+$ docker history --no-trunc --format '{{.CreatedBy}}' scion-pi:f6e623c69 | head -12 | cut -c1-400
+CMD ["pi"]
+RUN |1 PI_VERSION=0.73.1 /bin/sh -c mkdir -p /home/scion/.pi/agent &&   chown -R scion:scion /home/scion/.pi # buildkit
+RUN |1 PI_VERSION=0.73.1 /bin/sh -c pip install --no-cache-dir --break-system-packages --ignore-installed       pytest==9.2.0 pytest-xdist==3.8.0 dagster==1.13.24   && python3 -c 'import pytest, xdist, dagster; print(pytest.__version__, dagster.__version__)' # buildkit
+RUN |1 PI_VERSION=0.73.1 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends python3-pip   && apt-get clean && rm -rf /var/lib/apt/lists/* # buildkit
+RUN |1 PI_VERSION=0.73.1 /bin/sh -c npm install -g @mariozechner/pi-coding-agent@${PI_VERSION}   && npm cache clean --force   && pi --version # buildkit
+ARG PI_VERSION=0.73.1
+RUN /bin/sh -c node -e 'const [a,b]=process.versions.node.split(".").map(Number); if (a<20||(a===20&&b<6)) { console.error("pi needs node >= 20.6, found "+process.versions.node); process.exit(1) }' # buildkit
+CMD ["bash"]
+ENTRYPOINT ["sciontool" "init" "--"]
+RUN |1 GIT_COMMIT=f6e623c6911ce8f487495a2ddf16d5b8b4376416 /bin/sh -c chown -R scion:scion /usr/local/share/npm-global # buildkit
+RUN |1 GIT_COMMIT=f6e623c6911ce8f487495a2ddf16d5b8b4376416 /bin/sh -c mkdir -p /home/scion/.scion &&     chown -R scion:scion /home/scion # buildkit
+RUN |1 GIT_COMMIT=f6e623c6911ce8f487495a2ddf16d5b8b4376416 /bin/sh -c useradd -m -s /bin/zsh -u 1000 scion &&     echo "scion ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/scion &&     chmod 0440 /etc/sudoers.d/scion # buildkit
+exit: 0
+
+## C1 cita pkg/runtime/common.go:2098 ResolveHostNetworking
+$ sed -n '2090,2130p' pkg/runtime/common.go
+// rewrites any bridge hostnames back to localhost in the env map. This avoids
+// the need for the server to bind to 0.0.0.0.
+//
+// When the SCION_FORCE_HOST_NETWORK escape hatch is set, host networking is
+// forced for any runtime whenever a hub endpoint is configured, reverting to
+// the legacy behavior.
+//
+// For non-Docker runtimes (absent the escape hatch) or non-localhost endpoints,
+// returns "" (no override).
+func ResolveHostNetworking(runtimeName string, env map[string]string) string {
+	ep := env["SCION_HUB_ENDPOINT"]
+	if ep == "" {
+		ep = env["SCION_HUB_URL"]
+	}
+	if ep == "" {
+		return ""
+	}
+
+	// Escape hatch: force host networking regardless of the endpoint value, for
+	// any runtime, so a deployment can revert to the legacy behavior without a
+	// redeploy. Runtime-agnostic, so evaluated before the Docker-only endpoint
+	// heuristics below.
+	if forceHostNetworking() {
+		rewriteBridgeHostToLocalhost(env)
+		return "host"
+	}
+
+	if runtimeName != "docker" {
+		return ""
+	}
+
+	// If endpoint uses the Docker bridge hostname (translated from localhost),
+	// rewrite back to localhost since host networking makes it reachable directly.
+	if strings.Contains(ep, "host.docker.internal") {
+		rewriteBridgeHostToLocalhost(env)
+		return "host"
+	}
+
+	// If endpoint is localhost, containers need host networking to reach it.
+	u, err := url.Parse(ep)
+	if err != nil {
+exit: 0
+
+## C2 cita cmd/server_web_base_url.go:160-170 webStartupPreflight
+$ sed -n '150,175p' cmd/server_web_base_url.go
+	return raw
+}
+
+// webListenHost is the web server's listen host: cfg.Hub.Host, with an
+// empty value normalised to 0.0.0.0 (what the listener binds) before any
+// check.
+func webListenHost(cfg *config.GlobalConfig) string {
+	if cfg.Hub.Host == "" {
+		return "0.0.0.0"
+	}
+	return cfg.Hub.Host
+}
+
+// devAuthBindError is the refusal for dev auth on a non-loopback listen
+// host (the message initWebServer has always used).
+func devAuthBindError(webHost string) error {
+	return fmt.Errorf(
+		"dev auth cannot be enabled when the server is bound to a non-loopback address (%s). "+
+			"Dev auth signs browsers in as admin and must only be used on localhost. "+
+			"Either bind to 127.0.0.1/::1/localhost (--host 127.0.0.1) or disable dev auth", webHost)
+}
+
+// webStartupPreflight runs the web server's listener checks at startup,
+// before the store, dev auth and the hub are initialised: first the
+// dev-auth bind check (dev auth is enabled in the config), then the web
+// base URL check. It returns the web base URL, resolved once here and
+exit: 0
+
+## C3 cita cmd/server_container_hub.go:148 computeContainerHubEndpoint
+$ sed -n '140,152p' cmd/server_container_hub.go; grep -n 'host.docker.internal' cmd/server_helpers.go | head
+//     colocatedRuntimeHubEndpoints), whatever the default runtime is.
+//   - Otherwise agents fall back to the legacy host.docker.internal path
+//     (host networking).
+//
+// Kubernetes runtime profiles are never rewritten by the broker, so the
+// IAP URL still reaches GKE-dispatched agents in hybrid deployments.
+//
+// logf receives informational and warning messages.
+func computeContainerHubEndpoint(in containerHubEndpointInputs, logf func(format string, args ...any)) containerHubEndpointResult {
+	if logf == nil {
+		logf = func(string, ...any) {}
+	}
+	if in.Configured != "" || !in.HubEnabled || in.BrokerHubEndpoint == "" || in.RuntimeName == "" {
+90:		bridgeHost = "host.docker.internal"
+exit: 0
+
+## C4 server_helpers.go:84 y webStartupPreflight; mismos archivos en f6e623c69 que en HEAD
+$ sed -n '84p;90p' cmd/server_helpers.go; grep -n 'func webStartupPreflight\|func devAuthBindError' cmd/server_web_base_url.go; git diff --stat f6e623c69 HEAD -- cmd/server_web_base_url.go pkg/runtime/common.go cmd/server_container_hub.go cmd/server_helpers.go | wc -l
+func containerBridgeEndpoint(hubEndpoint, runtimeName string) string {
+		bridgeHost = "host.docker.internal"
+165:func devAuthBindError(webHost string) error {
+177:func webStartupPreflight(cfg *config.GlobalConfig, m serverEndpointMode, globalSettingsFile string) (resolvedWebBaseURL, error) {
+0
+exit: 0
+
+## L1 limpieza propia: nada de scion-pi en /dev/shm
+$ ls -d /dev/shm/scion-pi* 2>/dev/null | wc -l
+0
+exit: 0
+

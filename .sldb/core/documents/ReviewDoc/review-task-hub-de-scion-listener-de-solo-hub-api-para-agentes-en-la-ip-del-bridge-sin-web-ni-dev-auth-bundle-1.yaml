@@ -1,0 +1,36 @@
+name: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-bundle-1
+path: desk/reviews/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth/bundle-1.md
+source_hash: d0283f9d64562e449e3032f17e80ceb5b535c32f3df3e420bfe7fe5988551ca4
+content_hash: 0fa161991ab66c59191e5ef41cea5b33bb68f8348733dca2215162192ddaa483
+field_hashes:
+  id: 372fc33a860003d761396c2d0a8dc271c1c47f8ba5148f08dc00d0dd8b44f1a4
+  title: 168d7f24e1fb6c376062f84f612952f82645502e187b4868b76b972bfcb6607c
+  kind: 4c522949265daa3973b2389b594a235b5c6e47c70d2af6e23bd14f8173f56280
+  fact: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  value: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  subject: 334a79b56170b7da056dc1909a109b82ddbeab6fd1e47c11ce57ef0701383880
+  subject_ref: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  engine: 6874c40de9971944b9706ccc769074b7f77cb595ed78bafba748db5266461238
+  actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  run_dir: 3bda3263d6d381730574c32e7f782afde274095ff16c0223d0f218f4c9ca7c2f
+  input_sha256: 8790946c1d724e67c3a678afd443f2e8b8d45e305e4729d37532f9eac37abce6
+  output_sha256: 5e3735c1508583ae5bada0dc33ac905aff6ac770223d78c2133e378f5a26a645
+  verdict: 12adac54ac6f7140109391b670b3cbcd51f083d8f5ee62ce26857c794ed67d36
+  reason: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  created_at: d4213d73985a09769946f835f3ad915bf5484109a10968708430f594598f12c3
+  disposed_at: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  disposed_by: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  summary: 025cd6888bae8770153e0948e0eaa0c7a076d676b228296f3511b8cc3aa3cb0a
+  disposition: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.review
+- workspace.desk.runs
+- workspace:desk
+provenance:
+  by: agent
+  at: '2026-11-16T05:42:38Z'
+  authority: generated
+  via: create_document

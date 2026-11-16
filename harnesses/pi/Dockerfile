@@ -29,6 +29,19 @@ RUN --mount=type=secret,id=npmrc,target=/root/.npmrc,required=false \
   && npm cache clean --force \
   && pi --version
 
+# Desk tooling for the SLDB_1 desks, so an executor does not build a venv in
+# /tmp: pytest/pytest-xdist pinned to the SLDB_1 venv, dagster pinned to
+# mepu's requirements.txt. scion-base has no pip, so it comes from apt.
+# --ignore-installed: apt's python3-pip pulls dpkg-managed packages without a
+# pip RECORD file (see harnesses/hermes/Dockerfile); the pip-installed set
+# lands in /usr/local/lib/python3.X/dist-packages and shadows them.
+RUN apt-get update && apt-get install -y --no-install-recommends python3-pip \
+  && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN --mount=type=secret,id=pipconf,target=/etc/pip.conf,required=false \
+    pip install --no-cache-dir --break-system-packages --ignore-installed \
+      pytest==9.2.0 pytest-xdist==3.8.0 dagster==1.13.24 \
+  && python3 -c 'import pytest, xdist, dagster; print(pytest.__version__, dagster.__version__)'
+
 RUN mkdir -p /home/scion/.pi/agent && \
   chown -R scion:scion /home/scion/.pi
 

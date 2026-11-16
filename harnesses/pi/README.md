@@ -21,6 +21,13 @@ node 24), checks node >= 20.6 and installs pi pinned to `0.73.1`
 (`--build-arg PI_VERSION=...` to change it). No credential is baked into the
 image.
 
+The image also ships the desk tooling for the SLDB_1 desks, installed with
+pip into the system Python (so an executor does not build a venv in `/tmp`):
+
+- `pytest==9.2.0`
+- `pytest-xdist==3.8.0`
+- `dagster==1.13.24`
+
 ## Auth Modes
 
 | Mode | Env / File | Notes |
