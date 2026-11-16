@@ -1,0 +1,5 @@
+is-ancestor rc=0
+56a66098c hooks: deskops-tools arma el venv de test del repo de la tarea (pytest, pytest-xdist y su extra de test)
+748443c83 hooks: deskops-tools instala como el usuario del agente, no como root
+f6e623c69 build: scion build pasa el contexto por stdin a docker; hook deskops-tools editable desde /workspace
+45c4dbbaf deskops: template del executor y pre-start hook que instala sldb y deskops en el contenedor

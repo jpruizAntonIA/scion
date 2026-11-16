@@ -1,0 +1,6 @@
+ M .sldb/core/models/InboxNoteDoc.yaml
+ M .sldb/core/store_index.yaml
+ M tests/conftest.py
+ M tests/test_mcp_extension.py
+?? .sldb/core/documents/InboxNoteDoc/20261116-131509-suggestion-ir13-graph-ui-ya-no-depende-de-spec2viz-79d63ee-closeout-c9b09f7.yaml
+?? desk/inbox/20261116-131509-suggestion-ir13-graph-ui-ya-no-depende-de-spec2viz-79d63ee-closeout-c9b09f7.md

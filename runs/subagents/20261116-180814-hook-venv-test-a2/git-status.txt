@@ -1,0 +1,24 @@
+ M desk/tasks/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria.md
+?? runs/subagents/20261116-035144/
+?? runs/subagents/20261116-035453/
+?? runs/subagents/20261116-041036/
+?? runs/subagents/20261116-041310/
+?? runs/subagents/20261116-041411/
+?? runs/subagents/20261116-043000/
+?? runs/subagents/20261116-043116/
+?? runs/subagents/20261116-043412/
+?? runs/subagents/20261116-043520/
+?? runs/subagents/20261116-050427/
+?? runs/subagents/20261116-050439/
+?? runs/subagents/20261116-051756/
+?? runs/subagents/20261116-051915/
+?? runs/subagents/20261116-052114/
+?? runs/subagents/20261116-052151/
+?? runs/subagents/20261116-054139/
+?? runs/subagents/20261116-054222/
+?? runs/subagents/20261116-054514/
+?? runs/subagents/20261116-054529/
+?? runs/subagents/20261116-180814-hook-venv-test-a2/
+?? runs/subagents/20261116-180814-template-ir-lock-testing/
+?? runs/subagents/20261116-180814-template-ir-testing/
+?? tests/test_hook_venv_test.py

@@ -217,7 +217,6 @@ include:
 - model: TaskCodeDoc
   paths:
   - desk/tasks/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria.md
-  - desk/tasks/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del.md
   - desk/tasks/task-ejecutores-pi-en-red-bridge-contra-el-listener-de-agentes-del-hub.md
 - model: ReviewDoc
   paths:
@@ -373,6 +372,8 @@ include:
     name: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-evidence-tests-2
   - path: desk/reviews/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion/evidence-tests-2.md
     name: review-task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion-evidence-tests-2
+  - path: desk/reviews/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del/evidence-tests-2.md
+    name: review-task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del-evidence-tests-2
 - model: RuleDoc
   paths:
   - desk/lifecycle/rule-activation-task-aggregate.md

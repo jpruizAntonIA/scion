@@ -1,0 +1,14 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__________________________ test_ir_gets_no_new_files ___________________________
+
+    def test_ir_gets_no_new_files() -> None:
+        if int(_STATE["runs"]) < 2 or _STATE["before"] is None:
+>           pytest.fail("run the whole module: this check compares IR before and after the docker runs")
+E           Failed: run the whole module: this check compares IR before and after the docker runs
+
+tests/test_hook_venv_test.py:104: Failed
+=========================== short test summary info ============================
+FAILED tests/test_hook_venv_test.py::test_ir_gets_no_new_files - Failed: run ...
+1 failed in 0.10s
+$ TMPDIR=/dev/shm uv run --no-project --with pytest --with-editable /mnt/ssd/herramientas/deskops python -m pytest -q -p no:cacheprovider tests/test_hook_venv_test.py::test_ir_gets_no_new_files  rc=1 (esperado != 0)

@@ -1,0 +1,7 @@
+Task: task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del
+Title: Hook deskops-tools: venv de test del repo de la tarea (pytest, pytest-xdist y extras de test) dentro del contenedor
+Status: draft
+Current node: ritual-execution
+Task type: task.code
+Lifecycle gates:
+- task_activates -> ritual-testing: open [(none)]

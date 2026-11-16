@@ -1,0 +1,9 @@
+SKIP_LOG: [pre-start-deskops] skipping test venv: DESKOPS_DESK_ROOT='' has no pyproject.toml
+skip-real-text: rc=0 out="[pre-start-deskops] skipping test venv: DESKOPS_DESK_ROOT='' has no pyproject.toml"
+skip-other-text: rc=1 out='[pre-start-deskops] test venv: built'
+skip-right-text-rc1: rc=1 out="[pre-start-deskops] skipping test venv: DESKOPS_DESK_ROOT='' has no pyproject.toml"
+skip-hook-log-format: rc=0 out="[pre-start-deskops] skipping test venv: DESKOPS_DESK_ROOT='' has no pyproject.toml"
+venv-right-path: rc=0 out='/mnt/ssd/proyectos/SLDB_1/sldb/src/sldb/__init__.py'
+venv-wrong-path: rc=1 out='/tmp/h/.venvs/task/lib/python3.12/site-packages/sldb/__init__.py'
+NEGATIVE-CHECKS PASS
+$ python3 -I negative.py <tmp /dev/shm dir> (borrado)  rc=0
