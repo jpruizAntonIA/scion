@@ -1,0 +1,18 @@
+name: 20261116-150500-suggestion-c-mo-declarar-tests-vitest-o-go-para-el-closeout-de-deskops-puente-de-pytest
+path: desk/inbox/20261116-150500-suggestion-c-mo-declarar-tests-vitest-o-go-para-el-closeout-de-deskops-puente-de-pytest.md
+source_hash: d9d3e42fb2d306cd88f8c127c856b9baa189eb78f8028042b8308a70b9e84e10
+content_hash: d25acd7169fd2b7d255efb8488fb5f58647b9e1be28b2ddda5b72fa03fedc45a
+field_hashes:
+  kind: f4accece99081750b6b8b5089a3f24b11d5ceba70797c3eb49000d84b98344fc
+  sender_project: be1a918d36a26b50ff05a32144905fa0851e3a2c55c93b05726d8a3bab97b3e7
+  target_project: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  created_at: 1b823d694a2c48c5ed54cdd07ba017b08395b4718ab8f0744e5d4af39d176915
+  status: 35ff74aeea25311f4fe759a6b762c8cd41a79adb23dd5615b92cf215175a63e5
+  title: 74dea1774c12429550aaf9d21a623dd0ebd97b38ff8dfccdd2b6268ecfb958d7
+  body: f877174bcb632e3bcb6d58a517f31eb239c95c5433b27b97503175e7c23a4c9a
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.desk.inbox-note
+- workspace.desk.inbox
+provenance: null

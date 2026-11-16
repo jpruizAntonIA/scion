@@ -3,3 +3,4 @@
 {"task_id": "task-fase-0-ir-ra\u00edz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisi\u00f3n-de-jp", "run_id": null, "run_dir": null, "session_sha256": null, "mode": "manual", "commit": null}
 {"task_id": "task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor", "run_id": null, "run_dir": "runs/subagents/20261116-052313-harness-pi-red-bridge", "session_sha256": null, "commit": null}
 {"task_id": "task-endpoint-no-loopback-del-hub-de-scion-de-producci\u00f3n-para-ejecutores-pi-en-red-bridge-decisi\u00f3n-de-jp", "run_id": null, "run_dir": null, "session_sha256": null, "mode": "manual", "commit": null}
+{"task_id": "task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace", "run_id": null, "run_dir": "runs/subagents/20261116-180814-hook-editables", "session_sha256": null, "commit": null}

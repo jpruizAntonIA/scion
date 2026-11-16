@@ -1,0 +1,11 @@
+downloading uv 0.13.8 x86_64-unknown-linux-gnu
+[pre-start-deskops] uv 0.13.8
+[pre-start-deskops] skipping test venv: DESKOPS_DESK_ROOT='' has no pyproject.toml
+[pre-start-deskops] ready: sldb 0.1.13 (archive/wt/h47-94-ge138ff19-dirty at /workspace/sldb) · deskops · python /workspace/.venv/bin/python
+/workspace/deskops/deskops/__init__.py /workspace/sldb/src/sldb/__init__.py
+usage: deskops [-h] [--debug]
+               {about,doctor,status,faq,bootstrap,init,inbox,message,review,promote,drawer,retire,issue,add,edit,bind,next,list,show,advance,repo,desk,atoms,graph,materialize,drift,closeout,view,runtime} ...
+
+SLDB CLI
+
+Run commands as `sldb ...` or `python -m sldb ...`, not `bash sldb ...`.

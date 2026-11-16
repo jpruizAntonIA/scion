@@ -1,0 +1,13 @@
+.F                                                                       [100%]
+=================================== FAILURES ===================================
+______________ test_hook_installs_editable_tools_in_claude_image _______________
+foreign suite failed: exit code 1
+command: timeout 600 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h -e SCION_WORKSPACE=/workspace -v /dev/shm/hook-neg-E3inVo:/workspace -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c mkdir -p /tmp/h && bash /hook.sh && cd /tmp && out=$(/tmp/h/.local/share/uv/tools/deskops/bin/python -c "import deskops,sldb;print(deskops.__file__, sldb.__file__)") && echo "$out" && grep -qF /workspace/deskops/deskops/__init__.py <<<"$out" && grep -qF /workspace/sldb/src/sldb/__init__.py <<<"$out" && /tmp/h/.local/bin/deskops --help >/dev/null && /tmp/h/.local/bin/sldb --help >/dev/null
+cwd: /mnt/ssd/proyectos/SLDB_1/scion
+--- stdout (last 200 lines) ---
+[pre-start-deskops] missing /workspace/sldb/pyproject.toml: the workspace must be the SLDB_1 root (shared-plain)
+--- stderr (last 200 lines) ---
+
+=========================== short test summary info ============================
+FAILED tests/test_hook_pre_start_deskops.py::test_hook_installs_editable_tools_in_claude_image
+1 failed, 1 passed in 2.38s

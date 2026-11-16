@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T06:30:58Z'
+  at: '2026-11-16T18:17:30Z'
   authority: generated
   via: save_document_payload
 # board-xxx
@@ -11,7 +11,6 @@ scope: desk
 # List of task-xxx paths
 tasks:
 - desk/tasks/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion.md
-- desk/tasks/task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace.md
 - desk/tasks/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria.md
 - desk/tasks/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del.md
 - desk/tasks/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth.md
@@ -50,7 +49,6 @@ Bootstrap complete. Add active task docs under `desk/tasks/` and route them here
 _Generated from the task references above._
 
 - Fase 0 IR: scion build pasa el contexto por stdin (el docker snap no lee ~/.scion) [draft] - `scion build <harness-config>` construye con docker aunque el CLI de docker no pueda leer ~/.scion: scion empaqueta el directorio del harness-config como tar y lo pasa por stdin (`docker build ... -`). podman y Apple container conservan el directorio como argumento. `--dry-run` muestra el comando equivalente (`tar -C <dir> -cf - . | docker build ... -`).
-- Fase 0 IR: hook pre-start deskops-tools instala sldb y deskops editables desde /workspace [draft] - hooks/pre-start-deskops.sh instala sldb y deskops con `uv tool install --editable` directamente desde $SCION_WORKSPACE/sldb y $SCION_WORKSPACE/deskops (por defecto /workspace), con sldb también editable dentro del venv de deskops (`--with-editable`). Un cambio en /workspace/sldb o /workspace/deskops se ve en el siguiente comando del agente sin reinstalar.
 - Fase 0 IR: template del ejecutor de IR con tmp en RAM, lock de tests compartido y tope de memoria [draft] - 1) deskops: `deskops add|edit|list|show role` y `... runtime-profile`; el --context-file de `deskops runtime template` acepta claves opcionales memory_limit, cpu_limit, shared_paths y env, que salen como resources.limits, volúmenes con la misma ruta y env en scion-agent.yaml. 2) Desk de IR: un RoleDoc del ejecutor (kind claude, con las reglas del brief dentro del rol) y un RuntimeProfileDoc claude, creados con deskops. 3) Template generado con deskops runtime template + context file (TMPDIR=/dev/shm, /dev/shm compartido, tope de memoria). 4) Medición: un test real de sldb que hace fsync, dentro del contenedor de la imagen del fork con esos montajes, dura < 2 s.
 - Hook deskops-tools: venv de test del repo de la tarea (pytest, pytest-xdist y extras de test) dentro del contenedor [draft] - Al terminar el hook, dentro del contenedor existe un venv de test del repo de la tarea en $HOME/.venvs/task, con ese repo instalado editable con su extra de test, sldb editable con los extras mcp y code, pytest-xdist==3.8.0, y enlaces pytest y task-python en $HOME/.local/bin que apuntan a ese venv. Con eso, cd $DESKOPS_DESK_ROOT && pytest -q -n 2 <archivo> funciona sin PYTHONPATH a mano.
 - Hub de scion: listener de solo Hub API para agentes en la IP del bridge, sin web ni dev-auth [draft] - scion server start acepta --agent-api-host <ip> y --agent-api-port <puerto>, que van juntos (uno solo es error de arranque con un mensaje que nombre ambos flags). Con ambos, el hub abre un http.Server extra en <ip>:<puerto> con el mismo handler de Hub API, detrás de un guard de solo agentes: /healthz, /health y /readyz responden sin auth; cualquier otro path exige un token de agente válido (lo que reconoce extractAgentToken en pkg/hub/auth.go: header X-Scion-Agent-Token o JWT de agente en Bearer) y, si no lo trae, da 401, incluso /api/v1/auth/* y los tokens scion_dev_*, scion_pat_* o de sesión web. Lo que un agente puede hacer sigue limitado por los scopes de su token (authz, sin cambios). No se sirve la web. computeContainerHubEndpoint usa el orden: runtime_broker.container_hub_endpoint configurado > listener de agentes > dominio público o IAP (lo de hoy) > host.docker.internal (lo de hoy). Sin los flags, el comportamiento es idéntico al actual.

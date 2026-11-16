@@ -1,0 +1,10 @@
+ M .sldb/core/models/RunDoc.yaml
+ M .sldb/core/store_index.yaml
+ M .sldb/store.yaml
+ M deskops/cli/commands/desk.py
+ M deskops/workspace.py
+ M tests/test_legacy_task_states.py
+?? .sldb/core/documents/RunDoc/run-deskops-e-79646a51295e.yaml
+?? runs/subagents/20261116-170649/
+?? runs/subagents/20261116-170855/
+?? runs/subagents/exec-deskops-e-79646a51295e/
