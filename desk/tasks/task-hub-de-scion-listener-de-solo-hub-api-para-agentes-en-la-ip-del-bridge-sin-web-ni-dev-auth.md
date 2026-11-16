@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T05:43:42Z'
+  at: '2026-11-16T06:30:39Z'
   authority: generated
   via: save_document_payload
 id: task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth
@@ -15,6 +15,10 @@ current_node: ritual-execution
 history: []
 references:
 - runs/subagents/20261116-052313-harness-pi-red-bridge/propuesta-endpoint-hub.md
+- fc771c045
+- cmd/server_agent_api_test.go
+- runs/subagents/20261116-054630-hub-agent-listener/result-summary.md
+- runs/subagents/20261116-054630-hub-agent-listener-testing/result-summary.md
 depends_on: []
 pills: []
 files:
