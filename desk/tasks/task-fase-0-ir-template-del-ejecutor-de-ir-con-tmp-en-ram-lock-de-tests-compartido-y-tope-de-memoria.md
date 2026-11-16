@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T00:57:04Z'
+  at: '2026-11-16T01:04:27Z'
   authority: generated
   via: save_document_payload
 id: task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria
@@ -28,7 +28,7 @@ atoms: []
 
 _Explain why this task exists or the business driver behind it._
 
-Los ejecutores scion del piloto en IR tienen que correr tests con TMPDIR en RAM (el disco de docker está en el HDD lento), compartir /dev/shm/sldb1-tests.lock con el host (lo toman las suites completas y `sldb stores build --check`) y no pasar de un tope de memoria (31 GB en la máquina, 3-4 agentes como máximo). deskops runtime template no sabía emitir montajes extra, variables ni límites, y deskops no tenía cómo crear RoleDoc/RuntimeProfileDoc en un desk sin editar a mano.
+Los ejecutores scion del piloto en IR tienen que correr tests con TMPDIR en RAM (medido el 15-11: el test de fsync de sldb tarda 0.27 s con TMPDIR en /dev/shm, 0.57 s en el /tmp del contenedor, cuya capa está en el SSD, y 7.4 s en el HDD del host), compartir /dev/shm/sldb1-tests.lock con el host (lo toman las suites completas y `sldb stores build --check`) y no pasar de un tope de memoria (31 GB en la máquina, 3-4 agentes como máximo). deskops runtime template no sabía emitir montajes extra, variables ni límites, y deskops no tenía cómo crear RoleDoc/RuntimeProfileDoc en un desk sin editar a mano.
 
 ## Goal
 
