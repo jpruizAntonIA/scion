@@ -321,6 +321,14 @@ include:
     name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-evidence-commit-2
   - path: desk/reviews/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp/evidence-document-2.md
     name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-evidence-document-2
+  - path: desk/reviews/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del/evidence-tests-1.md
+    name: review-task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del-evidence-tests-1
+  - path: desk/reviews/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del/evidence-commit-1.md
+    name: review-task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del-evidence-commit-1
+  - path: desk/reviews/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del/evidence-atom-1.md
+    name: review-task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del-evidence-atom-1
+  - path: desk/reviews/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del/evidence-commit-2.md
+    name: review-task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del-evidence-commit-2
 - model: RuleDoc
   paths:
   - desk/lifecycle/rule-activation-task-aggregate.md

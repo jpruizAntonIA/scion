@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T05:03:41Z'
+  at: '2026-11-16T05:16:11Z'
   authority: generated
   via: save_document_payload
 id: task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del
@@ -16,6 +16,9 @@ history: []
 references:
 - desk/inbox/20261116-011045-suggestion-piloto-scion-fase-1-el-hook-deskops-tools-no-instala-los-extras-de-test-ni-pi.md
 - 748443c83
+- 56a66098c
+- runs/subagents/20261116-050552-hook-venv-test/result-summary.md
+- runs/subagents/20261116-050552-hook-venv-test-testing/result-summary.md
 depends_on: []
 pills: []
 files:

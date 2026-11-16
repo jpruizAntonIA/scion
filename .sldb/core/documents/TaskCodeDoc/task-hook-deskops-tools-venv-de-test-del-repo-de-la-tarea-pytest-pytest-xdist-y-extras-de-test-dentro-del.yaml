@@ -1,7 +1,7 @@
 name: task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del
 path: desk/tasks/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del.md
-source_hash: edfcee22f5f64dea63b4dbeff708e8f75fb013484d38fae92561b53a030a8dcf
-content_hash: f42377889727295297ab37e291464f1417ceeca43e4c76a4dba647870a6bea12
+source_hash: 31d29bddd404b5113ecaec725412be91f353e11e440313735a074c7fd534610f
+content_hash: 1764e54f3e04a3d689e9e1a38bc11906c962f60522f8784b0729be9aceed3b6a
 field_hashes:
   title: d5519a7ee2057429c8f413f06d25d18b3d12216e45d1ecf1abd1403e86df5f3e
   id: c0bd2ca14c5c65350c553fd281eb11fb88e8bfd044598c1e025a871e692bff22
@@ -13,7 +13,7 @@ field_hashes:
   why: dde7e4e5619ecc09066ab3a84bdce76d2cf7ce94026164258fa0de702e181b95
   goal: e587f8006617e62f0c6b762fadf50095a90ba86ba294788e8fba72df70846b83
   scope: ccf97ea395f2330089a1b9195b1b0ce25a40afa0e289a54e990ca624e6772380
-  references: 3d19daa7c966dc0af0f7abee1d17493e71beabc6712d01cc900daed99e216c92
+  references: 47222c7fe1444c96a3a535822d252b1344d6903c59425ccc0a6072bdc35936d4
   depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: d5d2448cafb6f3d47ba1ab8604c3859d3fe4971a77fd07a862ef44d252f83354
@@ -34,6 +34,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-16T05:03:41Z'
+  at: '2026-11-16T05:16:11Z'
   authority: generated
   via: save_document_payload
