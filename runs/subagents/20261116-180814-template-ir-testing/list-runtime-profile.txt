@@ -1,0 +1,3 @@
+usage: deskops list [-h]
+                    {tasks,pills,rituals,boards,atoms,materializations,repositories,reviews,inbox-notes,faq-docs,steps,roles,runtime-profiles} ...
+deskops list: error: argument subject: invalid choice: 'runtime-profile' (choose from 'tasks', 'pills', 'rituals', 'boards', 'atoms', 'materializations', 'repositories', 'reviews', 'inbox-notes', 'faq-docs', 'steps', 'roles', 'runtime-profiles')

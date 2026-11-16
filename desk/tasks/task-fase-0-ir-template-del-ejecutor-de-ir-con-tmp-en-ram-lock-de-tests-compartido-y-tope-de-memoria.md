@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T05:04:15Z'
+  at: '2026-11-16T19:38:53Z'
   authority: generated
   via: save_document_payload
 id: task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria
@@ -17,6 +17,9 @@ references:
 - https://github.com/jpcosec/opsys/commit/4a7707a5ce8a1ed373a0b1f61197faa1a86b479f
 - https://github.com/jpcosec/opsys/commit/4c745c184d7797783f98294047d02687b616dad7
 - https://github.com/jpcosec/opsys/commit/881e177adc7add0c8ae51384ff3381951f998dbd
+- runs/subagents/20261116-180814-template-ir-testing/result-summary.md
+- runs/subagents/20261116-180814-template-ir-lock-testing/result-summary.md
+- desk/inbox/20261116-153743-suggestion-lock-de-tests-compartido-un-contenedor-que-corre-como-root-no-puede-abrir-dev-shm-sldb1-tests-lock-protected-regular-2.md
 depends_on: []
 pills: []
 files: []
@@ -59,7 +62,7 @@ _List the checks required before this task can close._
 - En el repo deskops (/mnt/ssd/proyectos/SLDB_1/deskops), de a uno con TMPDIR=/dev/shm: python -m pytest -q sobre los archivos de test test_scion_runtime, test_role_runtime_artifacts y test_command_registry (el contrato CLI de role/runtime-profile sale de los modelos y queda fijado en los goldens de help deskops_{add,edit,list,show}_{role,runtime-profile}.txt)
 - En el repo deskops: el test test_help_goldens del archivo test_output_goldens pasa
 - Medición: docker run --rm --memory 6g -v /dev/shm:/dev/shm -e TMPDIR=/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 ghcr.io/jpruizantonia/scion-claude:f6e623c69, con cwd en la raíz del repo sldb (no src/), corre el archivo de test test_io_atomic_write de la carpeta store de sldb: debe durar < 2 s
-- Lock: con el host sosteniendo flock /dev/shm/sldb1-tests.lock, flock -n /dev/shm/sldb1-tests.lock dentro del contenedor falla (rc 1); sin el host, toma el lock (rc 0)
+- Lock, con el uid del host como corre el agente scion (sciontool lo remapea con SCION_HOST_UID; en el docker run de la prueba, --user 1001:1001): con el host sosteniendo flock /dev/shm/sldb1-tests.lock, flock -n /dev/shm/sldb1-tests.lock dentro del contenedor falla (rc 1); sin el host, toma el lock (rc 0). Como root falla con rc 66 (EACCES) por fs.protected_regular=2 del host: no es la condición que se prueba
 
 ## Done When
 

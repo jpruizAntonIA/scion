@@ -1,0 +1,17 @@
+Runtime-profile: runtime-claude-en-scion
+Title: Claude en scion
+status: active
+summary: Claude Code (OAuth de suscripción, secret CLAUDE_AUTH) como harness de scion para los ejecutores del desk de IR.
+kind: claude
+binary: claude
+model_flag: 
+fallback_models_flag: 
+fallback_models_join: comma
+tools_flag: --allowedTools
+tools_join: comma
+system_prompt_flag: 
+system_prompt_delivery: inline
+session_flag: 
+extra_args: 
+unsupported_role_fields: 
+notes: Sin API key: el hub usa el secret CLAUDE_AUTH (OAuth de suscripción). El template lo genera deskops runtime template con --harness claude; model va como alias de tamaño (medium) y lo resuelve el harness-config claude del fork.

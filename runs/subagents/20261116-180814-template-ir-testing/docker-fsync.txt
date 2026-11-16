@@ -1,0 +1,31 @@
+[sciontool] INFO: sciontool init starting as PID 1 (uid=0, gid=0, euid=0, egid=0)
+[sciontool] INFO: Child command: [python3 -m pytest -q -p no:cacheprovider --durations=0 tests/store/test_io_atomic_write.py]
+[sciontool] INFO: Grace period: 10s
+[sciontool] INFO: Operating mode: local (no hub configured)
+[sciontool] INFO: setupHostUser result: targetUID=0, targetGID=0, rootless=false (now euid=0, egid=0)
+[sciontool] INFO: Telemetry delivery snapshot state=failed queue_bytes=0 queue_records=0 queue_entries=0 spans={Accepted:0 Filtered:0 Rejected:0 Queued:0 Delivered:0 Dropped:0 Unconfirmed:0 Permanent:0 Partial:0 AttemptLimit:0 AgeLimit:0 Canceled:0 BackendRejected:0 Attempts:0 Failed:0 Retries:0 SDKErrors:0 LastSuccess:0001-01-01 00:00:00 +0000 UTC} metrics={Accepted:0 Filtered:0 Rejected:0 Queued:0 Delivered:0 Dropped:0 Unconfirmed:0 Permanent:0 Partial:0 AttemptLimit:0 AgeLimit:0 Canceled:0 BackendRejected:0 Attempts:0 Failed:0 Retries:0 SDKErrors:0 LastSuccess:0001-01-01 00:00:00 +0000 UTC} logs={Accepted:0 Filtered:0 Rejected:0 Queued:0 Delivered:0 Dropped:0 Unconfirmed:0 Permanent:0 Partial:0 AttemptLimit:0 AgeLimit:0 Canceled:0 BackendRejected:0 Attempts:0 Failed:0 Retries:0 SDKErrors:0 LastSuccess:0001-01-01 00:00:00 +0000 UTC} usage={Derived:0 Duplicate:0 Malformed:0 ClampedInput:0 StaleBackwards:0 BaselinedAfterCap:0 LogRecordsReceived:0 LogRecordsRecognized:0 LogRecordsMalformed:0 MetricBatchesReceived:0 MetricBatchesMalformed:0 MetricIncrements:0 Ignored:0 HarnessVersion:} analytics=disabled metric_reject_reasons={}
+[sciontool] ERROR: Failed to start telemetry: cloud telemetry enabled but destination is not configured
+[sciontool] INFO: [slog] sciontool init: clone step complete elapsed_ms=0 ok=true
+[sciontool] INFO: Running pre-start hooks...
+[sciontool] INFO: [starting] Container initializing
+[sciontool] INFO: [slog] sciontool init: pre-start hooks complete elapsed_ms=4 ok=true
+[sciontool] INFO: Harness readiness: SCION_HARNESS_READY not set (broker predates the ready spec); using strategy delay with settle 8s
+[sciontool] INFO: [slog] sciontool init: launching harness since_init_ms=10
+[sciontool] INFO: Running post-start hooks...
+[sciontool] INFO: [working] Container ready
+..                                                                       [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /mnt/ssd/proyectos/SLDB_1/sldb/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_default_fixture_loop_scope
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================== slowest durations ===============================
+0.02s call     tests/store/test_io_atomic_write.py::test_atomic_write_survives_concurrent_writers
+
+(5 durations < 0.005s hidden.  Use -vv to show these durations.)
+2 passed, 1 warning in 0.53s
+[sciontool] INFO: Running session-end hooks...
+[sciontool] INFO: [stopped] Session ended
+[sciontool] INFO: Child exited with code 0

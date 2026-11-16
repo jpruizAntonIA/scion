@@ -1,4 +1,9 @@
 ---
+sldb:
+  by: agent
+  at: '2026-11-16T19:39:13Z'
+  authority: generated
+  via: save_document_payload
 # unclear | suggestion
 kind: suggestion
 # e.g., other_repo
@@ -8,9 +13,11 @@ target_project: scion
 # ISO 8601 timestamp
 created_at: '2026-11-16T15:05:00'
 # open | closed
-status: open
+status: closed
 # project identity that acknowledged the note
+acknowledged_by: scion
 # ISO 8601 timestamp, set when acknowledged
+acknowledged_at: '2026-11-16T16:39:07'
 ---
 
 # Cómo declarar tests vitest o go para el closeout de deskops (puente de pytest)
