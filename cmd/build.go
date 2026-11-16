@@ -17,6 +17,7 @@ package cmd
 import (
 	"errors"
 	"fmt"
+	"io"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -117,24 +118,32 @@ field is updated to reference the built image.`,
 			outputImage = imageRegistry + "/" + imageBaseName + ":" + tag
 		}
 
-		buildArgs := []string{"build",
-			"--build-arg", "BASE_IMAGE=" + baseImage,
-			"-t", outputImage,
-		}
-		if buildPlatform != "" {
-			buildArgs = append(buildArgs, "--platform", buildPlatform)
-		}
-		buildArgs = append(buildArgs, hcDir.Path)
+		buildArgs, contextOnStdin := localBuildArgs(runtimeBin, baseImage, outputImage, buildPlatform, hcDir.Path)
 
 		if buildDryRun {
-			fmt.Println(runtimeBin + " " + strings.Join(buildArgs, " "))
+			line := runtimeBin + " " + strings.Join(buildArgs, " ")
+			if contextOnStdin {
+				line = "tar -C " + hcDir.Path + " -cf - . | " + line
+			}
+			fmt.Println(line)
 			return nil
 		}
 
 		buildExec := exec.CommandContext(cmd.Context(), runtimeBin, buildArgs...)
 		buildExec.Stdout = os.Stdout
 		buildExec.Stderr = os.Stderr
-		if err := buildExec.Run(); err != nil {
+		if contextOnStdin {
+			pr, pw := io.Pipe()
+			buildExec.Stdin = pr
+			go func() {
+				pw.CloseWithError(writeBuildContextTar(pw, hcDir.Path))
+			}()
+			err := buildExec.Run()
+			_ = pr.Close()
+			if err != nil {
+				return fmt.Errorf("build failed: %w", err)
+			}
+		} else if err := buildExec.Run(); err != nil {
 			return fmt.Errorf("build failed: %w", err)
 		}
 

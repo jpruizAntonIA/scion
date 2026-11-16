@@ -8,7 +8,7 @@
 #
 # The stock harness images ship Python 3.11 without pip; sldb and deskops need
 # 3.12+. So the hook installs `uv`, lets uv fetch a Python 3.13 of its own, and
-# installs both packages as uv tools. Nothing is written into the checkout.
+# installs both packages as editable uv tools from the workspace checkouts.
 # A non-zero exit aborts the agent start, on purpose: an executor without its
 # tools is not an executor, and a silent fallback would hide that.
 #
@@ -45,22 +45,14 @@ fi
 UV="$(command -v uv 2>/dev/null || echo "$UV_BIN")"
 log "uv $("$UV" --version | awk '{print $2}')"
 
-# Build from throwaway copies: setuptools writes *.egg-info next to the sources,
-# and the shared checkout is not ours to dirty (nor writable when mounted ro).
-BUILD_DIR="$(mktemp -d "${TMPDIR:-/tmp}/deskops-tools.XXXXXX")"
-trap 'rm -rf "$BUILD_DIR"' EXIT
-for name in sldb deskops; do
-  mkdir -p "$BUILD_DIR/$name"
-  tar -C "$WORKSPACE/$name" \
-    --exclude=.git --exclude=.sldb --exclude=node_modules --exclude=.venv \
-    --exclude=runs --exclude=.tmp --exclude='*.egg-info' --exclude=__pycache__ \
-    -cf - . | tar -C "$BUILD_DIR/$name" -xf -
-done
-
+# Editable installs straight from the shared workspace: a task that changes
+# sldb or deskops under /workspace is what the agent runs on its next command,
+# with no reinstall. setuptools writes *.egg-info next to the sources; both
+# repos ignore it (.gitignore), so the checkouts stay clean for git.
 # uv tool install = one isolated venv per tool, entry points in $TOOL_BIN.
-# deskops imports sldb, so sldb goes into the deskops venv too (--with).
-"$UV" tool install --quiet --python "$PYTHON_SPEC" --reinstall "$BUILD_DIR/sldb"
-"$UV" tool install --quiet --python "$PYTHON_SPEC" --reinstall --with "$BUILD_DIR/sldb" "$BUILD_DIR/deskops"
+# deskops imports sldb, so sldb goes into the deskops venv too, also editable.
+"$UV" tool install --quiet --python "$PYTHON_SPEC" --reinstall --editable "$SLDB_SRC"
+"$UV" tool install --quiet --python "$PYTHON_SPEC" --reinstall --editable "$DESKOPS_SRC" --with-editable "$SLDB_SRC"
 
 for tool in sldb deskops; do
   if [ ! -x "$TOOL_BIN/$tool" ]; then
