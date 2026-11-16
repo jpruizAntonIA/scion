@@ -1,0 +1,1 @@
+tar -C /home/robocop/.scion/harness-configs/pi -cf - . | docker build --build-arg BASE_IMAGE=ghcr.io/jpruizantonia/scion-base:latest -t scion-pi:latest -

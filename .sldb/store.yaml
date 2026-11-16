@@ -213,9 +213,9 @@ include:
   - desk/inbox/20261104-233658-suggestion-sldb-el-store-pasa-a-sldb-versionado-y-sldb-cache-ignorada-journal-retirado.md
   - desk/inbox/20261116-011045-suggestion-piloto-scion-fase-1-el-hook-deskops-tools-no-instala-los-extras-de-test-ni-pi.md
   - desk/inbox/20261116-150500-suggestion-c-mo-declarar-tests-vitest-o-go-para-el-closeout-de-deskops-puente-de-pytest.md
+  - desk/inbox/20261116-153743-suggestion-lock-de-tests-compartido-un-contenedor-que-corre-como-root-no-puede-abrir-dev-shm-sldb1-tests-lock-protected-regular-2.md
 - model: TaskCodeDoc
   paths:
-  - desk/tasks/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion.md
   - desk/tasks/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria.md
   - desk/tasks/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del.md
   - desk/tasks/task-ejecutores-pi-en-red-bridge-contra-el-listener-de-agentes-del-hub.md
@@ -371,6 +371,8 @@ include:
     name: review-task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace-evidence-tests-2
   - path: desk/reviews/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth/evidence-tests-2.md
     name: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-evidence-tests-2
+  - path: desk/reviews/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion/evidence-tests-2.md
+    name: review-task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion-evidence-tests-2
 - model: RuleDoc
   paths:
   - desk/lifecycle/rule-activation-task-aggregate.md
@@ -423,6 +425,10 @@ include:
     name: run-deskops-t-84111236a008-a2
   - path: runs/subagents/20261116-180814-hook-venv-test-a2/run.md
     name: run-deskops-e-a6de4211680d-a2
+  - path: runs/subagents/20261116-180814-stdin-build-testing/run.md
+    name: run-deskops-t-eb68704bb5de
+  - path: runs/subagents/20261116-180814-template-ir-lock-testing/run.md
+    name: run-deskops-t-746aca240a1f
 graph_backend: networkx
 policy: {}
 tag_models:

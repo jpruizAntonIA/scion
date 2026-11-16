@@ -1,0 +1,15 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________________________ test_neg ___________________________________
+foreign suite failed: exit code 1
+command: go test ./no_such_pkg_xyz -count=1
+cwd: /mnt/ssd/proyectos/SLDB_1/scion
+--- stdout (last 200 lines) ---
+FAIL	./no_such_pkg_xyz [setup failed]
+FAIL
+--- stderr (last 200 lines) ---
+# ./no_such_pkg_xyz
+stat /mnt/ssd/proyectos/SLDB_1/scion/no_such_pkg_xyz: directory not found
+=========================== short test summary info ============================
+FAILED ../../../../../dev/shm/neg-stdin-build.7Rcu/test_neg_foreign.py::test_neg
+1 failed in 0.03s

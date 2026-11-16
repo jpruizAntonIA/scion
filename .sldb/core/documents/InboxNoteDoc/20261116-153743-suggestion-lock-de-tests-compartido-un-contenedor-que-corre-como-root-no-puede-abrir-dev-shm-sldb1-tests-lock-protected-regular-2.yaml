@@ -1,0 +1,18 @@
+name: 20261116-153743-suggestion-lock-de-tests-compartido-un-contenedor-que-corre-como-root-no-puede-abrir-dev-shm-sldb1-tests-lock-protected-regular-2
+path: desk/inbox/20261116-153743-suggestion-lock-de-tests-compartido-un-contenedor-que-corre-como-root-no-puede-abrir-dev-shm-sldb1-tests-lock-protected-regular-2.md
+source_hash: 1d746f6cc118735ac310ae29b5c2068e63d9f1229b783b35175b9568dde9758f
+content_hash: fe4fda135c44dd987bab4a33c35b79b6ea5fdbcac8d3092c14421ed6ce1fe00a
+field_hashes:
+  kind: f4accece99081750b6b8b5089a3f24b11d5ceba70797c3eb49000d84b98344fc
+  sender_project: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  target_project: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  created_at: 2e3f074d2043e0a04799021f7c5f847fff052734fdbe5b26cd0cb2e31a52bbfb
+  status: 35ff74aeea25311f4fe759a6b762c8cd41a79adb23dd5615b92cf215175a63e5
+  title: 6fe08f13b092c7654e75acc56c1d8c2adfcb2b037c1d02483028eb1c7623c1b8
+  body: a043041faa5b96bc27cf990e937c38f19c284a76092a6a78c4fab199910a467c
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.desk.inbox-note
+- workspace.desk.inbox
+provenance: null

@@ -1,0 +1,1 @@
+tar -C /home/robocop/.scion/harness-configs/stdin-probe -cf - . | docker build --build-arg BASE_IMAGE=scion-pi-fork:e9ba9e2 -t scion-stdin-probe:stdin-probe-t153935 -

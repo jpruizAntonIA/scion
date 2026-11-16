@@ -1,7 +1,7 @@
 name: task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria
 path: desk/tasks/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria.md
-source_hash: d1aceb54e4d0fb0f6ff36c0f0a6a671e595d802fff6cec3b521ba6dc9fcf6a71
-content_hash: a31c961563383780ebedd4cdf6cfa8912d4714f18ee220ab523df147b89ec5e5
+source_hash: 2f5369b3a303fede399536398f2d1baedf36e53a367eb4c82a8c36276f7486eb
+content_hash: 4c24973ebb312a970934d7f99c9acdb3142405499b7647736327b7573a85fd38
 field_hashes:
   title: 658ffddc22efd606da52a9cfe505842d2643e55c3d834f93d361d5572c215388
   id: 21eb050ff716fd8ef171b573a8f08d1c0e3fe2ad269f1679191c0c8cbae1eaa2
@@ -18,7 +18,7 @@ field_hashes:
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   implementation_path: d5e26ad7d4d2c7452ad63134cf24e4bd684a88ba7edfb156af625d563902029e
-  validation: 93ca4f7ebe8ff8ee655ce45a6e36baaaf0ccb23af3d38813e74cfa03ed076c12
+  validation: 1a493c4b99193aa486ff6515e502fd70267aa3f0927cb0c5089177674b0d401e
   done_when: 30b65e41bb1dcf00bb1f4f0fedf27dd42eb0f1602c7424aca31982c91c27b190
   task_type: 430e281fc3506e5a61bf187bc4220dab834ca38806ca4f603f817cc82f9791bb
   inherits_from: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
@@ -34,6 +34,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-16T05:04:15Z'
+  at: '2026-11-16T18:37:13Z'
   authority: generated
   via: save_document_payload

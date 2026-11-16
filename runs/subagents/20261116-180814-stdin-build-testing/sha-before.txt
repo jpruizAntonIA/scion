@@ -1,0 +1,2 @@
+a33fe3cf61264b8bfd63ec00ab10eb6391a88a51399944092f2c7e19373e0e1d  /home/robocop/.scion/harness-configs/pi/config.yaml
+c9ba6baedc89bdba182bd5b3a5793043ca7e7efac61ff0f928c710463d57a42e  /home/robocop/.scion/settings.yaml

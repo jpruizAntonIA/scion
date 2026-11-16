@@ -1,0 +1,38 @@
+FFF.                                                                     [100%]
+=================================== FAILURES ===================================
+_____________________________ test_missing_package _____________________________
+foreign suite failed: exit code 1
+command: go test ./cmd/nonexistent_pkg_xyz -count=1
+cwd: /mnt/ssd/proyectos/SLDB_1/scion
+--- stdout (last 200 lines) ---
+FAIL	./cmd/nonexistent_pkg_xyz [setup failed]
+FAIL
+--- stderr (last 200 lines) ---
+# ./cmd/nonexistent_pkg_xyz
+stat /mnt/ssd/proyectos/SLDB_1/scion/cmd/nonexistent_pkg_xyz: directory not found
+___________________________ test_missing_executable ____________________________
+[Errno 2] No such file or directory: 'go-does-not-exist-xyz'
+
+During handling of the above exception, another exception occurred:
+foreign suite failed: executable or cwd not found: go-does-not-exist-xyz
+command: go-does-not-exist-xyz test
+cwd: /mnt/ssd/proyectos/SLDB_1/scion
+--- stdout (last 200 lines) ---
+
+--- stderr (last 200 lines) ---
+
+_____________________ test_shell_metachar_not_interpreted ______________________
+foreign suite failed: exit code 1
+command: go test ./cmd/nonexistent_pkg_xyz; true
+cwd: /mnt/ssd/proyectos/SLDB_1/scion
+--- stdout (last 200 lines) ---
+FAIL	./cmd/nonexistent_pkg_xyz; true [setup failed]
+FAIL
+--- stderr (last 200 lines) ---
+# ./cmd/nonexistent_pkg_xyz; true
+stat /mnt/ssd/proyectos/SLDB_1/scion/cmd/nonexistent_pkg_xyz; true: directory not found
+=========================== short test summary info ============================
+FAILED ../../../../../dev/shm/stdin-build-tester-yPRj/test_neg.py::test_missing_package
+FAILED ../../../../../dev/shm/stdin-build-tester-yPRj/test_neg.py::test_missing_executable
+FAILED ../../../../../dev/shm/stdin-build-tester-yPRj/test_neg.py::test_shell_metachar_not_interpreted
+3 failed, 1 passed in 15.87s

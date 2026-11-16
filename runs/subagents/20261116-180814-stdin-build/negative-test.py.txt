@@ -1,0 +1,3 @@
+from deskops.testing.foreign_suites import run_foreign_suite
+def test_neg():
+    run_foreign_suite(["go", "test", "./no_such_pkg_xyz", "-count=1"], cwd="/mnt/ssd/proyectos/SLDB_1/scion", timeout=120)

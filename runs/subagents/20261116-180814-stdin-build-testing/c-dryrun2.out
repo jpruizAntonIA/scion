@@ -1,0 +1,1 @@
+tar -C /home/robocop/.scion/harness-configs/pi -cf - . | docker build --build-arg BASE_IMAGE=b:1 -t scion-pi:x --platform linux/amd64 -

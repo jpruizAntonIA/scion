@@ -1,0 +1,8 @@
+=== RUN   TestLocalBuildArgsStreamsContextOnlyForDocker
+--- PASS: TestLocalBuildArgsStreamsContextOnlyForDocker (0.00s)
+=== RUN   TestWriteBuildContextTarPacksRelativeTreeWithLinks
+--- PASS: TestWriteBuildContextTarPacksRelativeTreeWithLinks (0.00s)
+=== RUN   TestWriteBuildContextTarRefusesSpecialFiles
+--- PASS: TestWriteBuildContextTarRefusesSpecialFiles (0.00s)
+PASS
+ok  	github.com/GoogleCloudPlatform/scion/cmd	0.716s
