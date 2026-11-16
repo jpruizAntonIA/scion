@@ -1,0 +1,23 @@
+$ TMPDIR=/dev/shm bash -n hooks/pre-start-deskops.sh
+rc=0
+
+$ TMPDIR=/dev/shm timeout 900 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h -e TMPDIR=/dev/shm -e SCION_WORKSPACE=/mnt/ssd/proyectos/SLDB_1 -e DESKOPS_DESK_ROOT=/mnt/ssd/proyectos/SLDB_1/IR -v /dev/shm:/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c "mkdir -p /tmp/h && bash /hook.sh && cd /mnt/ssd/proyectos/SLDB_1/IR && /tmp/h/.local/bin/pytest -q -n 2 -p no:cacheprovider /mnt/ssd/proyectos/SLDB_1/IR/tests/test_imports.py && /tmp/h/.local/bin/task-python -c 'import xdist, sldb, yaml; print(sldb.__file__)'"
+rc=1 (output: docker-ir.out)
+
+# attempt 1 above failed: task-python symlink did not activate the venv; hook changed to a wrapper, rerunning all
+
+$ TMPDIR=/dev/shm bash -n hooks/pre-start-deskops.sh
+rc=0
+
+$ TMPDIR=/dev/shm timeout 900 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h -e TMPDIR=/dev/shm -e SCION_WORKSPACE=/mnt/ssd/proyectos/SLDB_1 -e DESKOPS_DESK_ROOT=/mnt/ssd/proyectos/SLDB_1/IR -v /dev/shm:/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c "mkdir -p /tmp/h && bash /hook.sh && cd /mnt/ssd/proyectos/SLDB_1/IR && /tmp/h/.local/bin/pytest -q -n 2 -p no:cacheprovider /mnt/ssd/proyectos/SLDB_1/IR/tests/test_imports.py && /tmp/h/.local/bin/task-python -c 'import xdist, sldb, yaml; print(sldb.__file__)'"
+rc=0 (output: docker-ir.out)
+
+$ TMPDIR=/dev/shm timeout 900 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h -e TMPDIR=/dev/shm -e SCION_WORKSPACE=/mnt/ssd/proyectos/SLDB_1 -e DESKOPS_DESK_ROOT= -v /dev/shm:/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c "mkdir -p /tmp/h && bash /hook.sh"
+rc=0 (output: docker-empty.out)
+
+$ git -C /mnt/ssd/proyectos/SLDB_1/IR status --short   (saved to ir-status-after.txt)
+rc=0
+$ diff ir-status-before.txt ir-status-after.txt
+rc=1 (0 = no new entries)
+
+# IR diff entries come from concurrent IR desk activity (IR13 task edits by deskops, run dir 20261116-050927 of another run), none from the hook: no new egg-info/__pycache__ entries

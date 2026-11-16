@@ -1,0 +1,24 @@
+## V1 2026-11-16T05:11:30Z
+$ bash -n hooks/pre-start-deskops.sh
+rc=0
+## V2 2026-11-16T05:11:37Z
+$ timeout 900 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h -e TMPDIR=/dev/shm -e SCION_WORKSPACE=/mnt/ssd/proyectos/SLDB_1 -e DESKOPS_DESK_ROOT=/mnt/ssd/proyectos/SLDB_1/IR -v /dev/shm:/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c "mkdir -p /tmp/h && bash /hook.sh && cd /mnt/ssd/proyectos/SLDB_1/IR && /tmp/h/.local/bin/pytest -q -n 2 -p no:cacheprovider /mnt/ssd/proyectos/SLDB_1/IR/tests/test_imports.py && /tmp/h/.local/bin/task-python -c 'import xdist, sldb, yaml; print(sldb.__file__)'"
+rc=0 (output: v2.out)
+## V3 2026-11-16T05:12:00Z
+$ timeout 900 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h -e TMPDIR=/dev/shm -e SCION_WORKSPACE=/mnt/ssd/proyectos/SLDB_1 -e DESKOPS_DESK_ROOT= -v /dev/shm:/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c "mkdir -p /tmp/h && bash /hook.sh; rc=\$?; ls /tmp/h/.local/bin; ls -d /tmp/h/.venvs/task 2>&1; exit \$rc"
+rc=0 (output: v3.out)
+## NEG-baddep 2026-11-16T05:12:21Z
+$ timeout 900 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h -e TMPDIR=/dev/shm -e SCION_WORKSPACE=/mnt/ssd/proyectos/SLDB_1 -e DESKOPS_DESK_ROOT=/dev/shm/hookneg.lama7K/baddep -v /dev/shm:/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c 'mkdir -p /tmp/h && bash /hook.sh'
+rc=1 (output: neg-baddep.out)
+## NEG-badtoml 2026-11-16T05:12:29Z
+$ timeout 900 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h -e TMPDIR=/dev/shm -e SCION_WORKSPACE=/mnt/ssd/proyectos/SLDB_1 -e DESKOPS_DESK_ROOT=/dev/shm/hookneg.lama7K/badtoml -v /dev/shm:/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c 'mkdir -p /tmp/h && bash /hook.sh'
+rc=1 (output: neg-badtoml.out)
+## V4 2026-11-16T05:12:43Z
+$ git -C /mnt/ssd/proyectos/SLDB_1/IR status --short (diff vs ir-status-before.txt)
+diff rc=1 (output: ir-status-diff.txt)
+## EXTRA-root-runuser 2026-11-16T05:13:26Z
+$ timeout 900 docker run --rm --entrypoint bash --user 0:0 -e HOME=/tmp/h -e TMPDIR=/dev/shm -e SCION_WORKSPACE=/mnt/ssd/proyectos/SLDB_1 -e DESKOPS_DESK_ROOT=/mnt/ssd/proyectos/SLDB_1/IR -v /dev/shm:/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c "groupmod -g 1003 scion && usermod -u 1001 -g 1003 scion && mkdir -p /tmp/h && chown scion:scion /tmp/h && bash /hook.sh && ls -l /tmp/h/.local/bin /usr/local/bin/sldb && stat -c %U /tmp/h/.venvs/task && runuser -u scion -- /tmp/h/.local/bin/task-python -c 'import xdist, sldb, specir; print(sldb.__file__)'"
+rc=0 (output: extra-root.out)
+## EXTRA-symlink-vs-wrapper 2026-11-16T05:13:55Z
+$ timeout 600 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c "mkdir -p /tmp/h/bin && curl -LsSf https://astral.sh/uv/install.sh | env UV_NO_MODIFY_PATH=1 sh >/dev/null && /tmp/h/.local/bin/uv venv -q --python 3.13 /tmp/h/v && ln -s /tmp/h/v/bin/python /tmp/h/bin/sym && printf \"#!/bin/sh\nexec /tmp/h/v/bin/python \\\"\\\$@\\\"\n\" > /tmp/h/bin/wrap && chmod +x /tmp/h/bin/wrap && for p in sym wrap; do echo \$p; /tmp/h/bin/\$p -c \"import sys; print(sys.prefix, sys.prefix != sys.base_prefix)\"; done"
+rc=0 (output: extra-symlink.out)

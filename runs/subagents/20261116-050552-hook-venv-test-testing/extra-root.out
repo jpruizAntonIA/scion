@@ -1,0 +1,16 @@
+downloading uv 0.13.8 x86_64-unknown-linux-gnu
+[pre-start-deskops] uv 0.13.8
+[pre-start-deskops] test venv: /tmp/h/.venvs/task for /mnt/ssd/proyectos/SLDB_1/IR (extra: test); pytest and task-python in /tmp/h/.local/bin
+[pre-start-deskops] ready: sldb · deskops · python /usr/bin/python3.13
+lrwxrwxrwx 1 root  root    22 Nov 16 05:13 /usr/local/bin/sldb -> /tmp/h/.local/bin/sldb
+
+/tmp/h/.local/bin:
+total 37432
+lrwxrwxrwx 1 scion scion       48 Nov 16 05:13 deskops -> /tmp/h/.local/share/uv/tools/deskops/bin/deskops
+lrwxrwxrwx 1 scion scion       29 Nov 16 05:13 pytest -> /tmp/h/.venvs/task/bin/pytest
+lrwxrwxrwx 1 scion scion       58 Nov 16 05:13 sldb -> /tmp/h/.local/share/uv/tools/structuredlanguagedb/bin/sldb
+-rwxr-xr-x 1 scion scion       52 Nov 16 05:13 task-python
+-rwxr-xr-x 1 scion scion 37991656 Nov 12 16:19 uv
+-rwxr-xr-x 1 scion scion   330456 Nov 12 16:19 uvx
+scion
+/mnt/ssd/proyectos/SLDB_1/sldb/src/sldb/__init__.py

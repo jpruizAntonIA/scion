@@ -1,0 +1,50 @@
+diff --git a/hooks/pre-start-deskops.sh b/hooks/pre-start-deskops.sh
+index 9ba946b80..b2f992b72 100755
+--- a/hooks/pre-start-deskops.sh
++++ b/hooks/pre-start-deskops.sh
+@@ -76,6 +76,45 @@ for tool in sldb deskops; do
+   fi
+ done
+ 
++# Test venv for the task's repo ($DESKOPS_DESK_ROOT, set by the deskops scion
++# template): the tool venvs above carry neither pytest nor the repo's deps, so
++# an executor could not run `pytest -n N` without a hand-made PYTHONPATH.
++# $HOME/.venvs/task gets the repo editable with its test extra (else dev, else
++# none), sldb editable with [mcp,code], and pytest-xdist; `pytest` and
++# `task-python` in $TOOL_BIN point at it. Editable installs may write *.egg-info
++# next to the sources; nothing else is written into the task repo.
++TASK_ROOT="${DESKOPS_DESK_ROOT:-}"
++if [ -n "$TASK_ROOT" ] && [ -f "$TASK_ROOT/pyproject.toml" ]; then
++  TASK_VENV="$HOME/.venvs/task"
++  if ! EXTRA="$("$UV" run --quiet --no-project --python "$PYTHON_SPEC" python -c '
++import sys, tomllib
++with open(sys.argv[1], "rb") as fh:
++    extras = tomllib.load(fh).get("project", {}).get("optional-dependencies", {})
++print(next((name for name in ("test", "dev") if name in extras), ""))
++' "$TASK_ROOT/pyproject.toml")"; then
++    log "cannot read $TASK_ROOT/pyproject.toml to pick the test extra"
++    exit 1
++  fi
++  TASK_SPEC="$TASK_ROOT"
++  [ -n "$EXTRA" ] && TASK_SPEC="$TASK_ROOT[$EXTRA]"
++  if ! "$UV" venv --quiet --python "$PYTHON_SPEC" --allow-existing "$TASK_VENV" \
++    || ! "$UV" pip install --quiet --python "$TASK_VENV/bin/python" \
++      -e "$TASK_SPEC" -e "$SLDB_SRC[mcp,code]" pytest-xdist==3.8.0; then
++    log "test venv install failed for $TASK_SPEC in $TASK_VENV"
++    exit 1
++  fi
++  ln -sf "$TASK_VENV/bin/pytest" "$TOOL_BIN/pytest"
++  # Not a symlink: Python finds pyvenv.cfg next to the path it was started
++  # from, and a symlink in $TOOL_BIN resolves past the venv to the base
++  # interpreter, which would run without the venv's packages.
++  rm -f "$TOOL_BIN/task-python"
++  printf '#!/bin/sh\nexec "%s/bin/python" "$@"\n' "$TASK_VENV" > "$TOOL_BIN/task-python"
++  chmod +x "$TOOL_BIN/task-python"
++  log "test venv: $TASK_VENV for $TASK_ROOT (extra: ${EXTRA:-none}); pytest and task-python in $TOOL_BIN"
++else
++  log "skipping test venv: DESKOPS_DESK_ROOT='$TASK_ROOT' has no pyproject.toml"
++fi
++
+ # Make the entry points reachable for the harness process: shell rc files for
+ # login/interactive shells, a symlink in /usr/local/bin when it is writable.
+ PATH_LINE="export PATH=\"$TOOL_BIN:\$PATH\""

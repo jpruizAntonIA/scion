@@ -1,0 +1,6 @@
+downloading uv 0.13.8 x86_64-unknown-linux-gnu
+[pre-start-deskops] uv 0.13.8
+error: No solution found when resolving dependencies
+  cause: Because no-such-package-zzz-hookneg was not found in the package registry and hookneg-baddep==0.0.1 depends on no-such-package-zzz-hookneg==9.9.9, we can conclude that hookneg-baddep==0.0.1 cannot be used.
+         And because only hookneg-baddep[dev]==0.0.1 is available and you require hookneg-baddep[dev], we can conclude that your requirements are unsatisfiable.
+[pre-start-deskops] test venv install failed for /dev/shm/hookneg.lama7K/baddep[dev] in /tmp/h/.venvs/task
