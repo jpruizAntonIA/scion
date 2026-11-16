@@ -285,6 +285,8 @@ include:
     name: review-task-add-pi-harness-config-bundle-harnesses-pi-evidence-tests-2
   - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/evidence-commit-2.md
     name: review-task-add-pi-harness-config-bundle-harnesses-pi-evidence-commit-2
+  - path: desk/reviews/task-fase-0-ir-binario-de-scion-e-imágenes-del-mismo-commit-del-fork-registry-ghcr-io-jpruizantonia/evidence-external-2.md
+    name: review-task-fase-0-ir-binario-de-scion-e-imágenes-del-mismo-commit-del-fork-registry-ghcr-io-jpruizantonia-evidence-external-2
 - model: RuleDoc
   paths:
   - desk/lifecycle/rule-activation-task-aggregate.md
@@ -306,9 +308,6 @@ include:
 - model: BoardDoc
   paths:
   - desk/tasks/Board.md
-- model: TaskExternalDoc
-  paths:
-  - desk/tasks/task-fase-0-ir-binario-de-scion-e-imágenes-del-mismo-commit-del-fork-registry-ghcr-io-jpruizantonia.md
 - model: TaskDecisionDoc
   paths:
   - desk/tasks/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp.md
