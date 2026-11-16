@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T04:14:01Z'
+  at: '2026-11-16T04:32:51Z'
   authority: generated
   via: save_document_payload
 id: task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del
@@ -56,7 +56,7 @@ Variables que el hook ya define y se reutilizan: SLDB_SRC=$WORKSPACE/sldb (líne
 _List the checks required before this task can close._
 
 - bash -n hooks/pre-start-deskops.sh
-- timeout 900 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h -e TMPDIR=/dev/shm -e SCION_WORKSPACE=/mnt/ssd/proyectos/SLDB_1 -e DESKOPS_DESK_ROOT=/mnt/ssd/proyectos/SLDB_1/IR -v /dev/shm:/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c "mkdir -p /tmp/h && bash /hook.sh && cd /mnt/ssd/proyectos/SLDB_1/IR && /tmp/h/.local/bin/pytest -q -n 2 -p no:cacheprovider tests/test_imports.py && /tmp/h/.local/bin/task-python -c 'import xdist, sldb, yaml; print(sldb.__file__)'": rc 0, los tests pasan e imprime /mnt/ssd/proyectos/SLDB_1/sldb/src/sldb/__init__.py (-n 2 porque el contenedor tiene cpu_limit 2; en el host las suites usan -n 4)
+- timeout 900 docker run --rm --entrypoint bash --user 1001:1003 -e HOME=/tmp/h -e TMPDIR=/dev/shm -e SCION_WORKSPACE=/mnt/ssd/proyectos/SLDB_1 -e DESKOPS_DESK_ROOT=/mnt/ssd/proyectos/SLDB_1/IR -v /dev/shm:/dev/shm -v /mnt/ssd/proyectos/SLDB_1:/mnt/ssd/proyectos/SLDB_1 -v /mnt/ssd/proyectos/SLDB_1/scion/hooks/pre-start-deskops.sh:/hook.sh:ro ghcr.io/jpruizantonia/scion-claude:f6e623c69 -c "mkdir -p /tmp/h && bash /hook.sh && cd /mnt/ssd/proyectos/SLDB_1/IR && /tmp/h/.local/bin/pytest -q -n 2 -p no:cacheprovider /mnt/ssd/proyectos/SLDB_1/IR/tests/test_imports.py && /tmp/h/.local/bin/task-python -c 'import xdist, sldb, yaml; print(sldb.__file__)'": rc 0, los tests pasan e imprime /mnt/ssd/proyectos/SLDB_1/sldb/src/sldb/__init__.py (-n 2 porque el contenedor tiene cpu_limit 2; en el host las suites usan -n 4)
 - Mismo docker run con -e DESKOPS_DESK_ROOT= (vacío) y el comando reducido a bash /hook.sh: rc 0 y el log dice que salta el venv de test
 - git -C /mnt/ssd/proyectos/SLDB_1/IR status --short no muestra archivos nuevos tras las corridas
 
@@ -64,4 +64,4 @@ _List the checks required before this task can close._
 
 _Name the observable condition that makes the task complete._
 
-El hook commiteado en main de este repo deja, con DESKOPS_DESK_ROOT apuntando a IR, un pytest con xdist que corre tests/test_imports.py de IR en verde dentro de scion-claude:f6e623c69 sin PYTHONPATH manual; con DESKOPS_DESK_ROOT vacío el hook sigue terminando en rc 0; IR queda sin archivos nuevos.
+El hook commiteado en main de este repo deja, con DESKOPS_DESK_ROOT apuntando a IR, un pytest con xdist que corre /mnt/ssd/proyectos/SLDB_1/IR/tests/test_imports.py en verde dentro de scion-claude:f6e623c69 sin PYTHONPATH manual; con DESKOPS_DESK_ROOT vacío el hook sigue terminando en rc 0; IR queda sin archivos nuevos.
