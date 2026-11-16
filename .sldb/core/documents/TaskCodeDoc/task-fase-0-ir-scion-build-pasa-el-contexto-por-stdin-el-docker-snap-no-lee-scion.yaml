@@ -1,0 +1,38 @@
+name: task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion
+path: desk/tasks/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion.md
+source_hash: ff89b9a678b4ee78ef890e8a779832bc6c9d7f974bbcc9c9ea79fbc3bd044883
+content_hash: 2de082d53727d22adda4ce1264cfb70f564147d47945f65f3c12d22cd5e9f7a9
+field_hashes:
+  title: ba24d45e36a96aa59199941ab76ab8dbf8a45a79d257e9c16248ea64c14ee609
+  id: 85ce2ea526c508d286199b5f735005491f634c2bc9fbe7ba496a3cf09def87a2
+  status: 6ae048f08fcab44bfbc8463f074bfdb40f94c6bdf56d3aad9a7e1c05e5d5b5c1
+  summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  tags: 9e7e8be2998f87dfcbb538781d827f202722ef7dad630b93bca343e20f247db8
+  current_node: ff5161892aac34735bf10c411f7230b62b7b56446e230a5d26fb75afde4704b6
+  history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  why: 4bf74f72ca359b80a55e89102148adb5558b78d650e681171ed96d0a3920ca3f
+  goal: 6343c48debeca0380df5f86a66a07f17c37ec12b282f861a0788b9ea8591c118
+  scope: 330741755a9c4817876bd5bbf8c0e566224730360800ac3fddd3151ab90943e7
+  references: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  files: e6408b5c9a7f739eea13c77c1f5a341d5319d4bab17dc72b21eaaec47cca5010
+  implementation_path: 0388b8202fe89109ebc9480ad5e335a66f5a95d5402a38b3e6b03ef483eb3e93
+  validation: 014568625bcaa8e895d71d0fbbfd60e60f76467fd229abb4b9776260cb6cf2f0
+  done_when: 71f7b61e8472eb75cf5c6b341c1c906dd389cbc3fc47c94b2f13b6299bbe1682
+  task_type: 430e281fc3506e5a61bf187bc4220dab834ca38806ca4f603f817cc82f9791bb
+  inherits_from: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  inherit_acceptance_context: fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa
+  atoms: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+semantic_tags:
+- artifact:task
+- representation.markdown
+- source.document.markdown
+- type.workflow.task
+- workspace.desk
+- workspace:desk
+provenance:
+  by: agent
+  at: '2026-11-16T00:52:36Z'
+  authority: generated
+  via: save_document_payload

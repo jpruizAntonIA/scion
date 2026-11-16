@@ -1,0 +1,9 @@
+{
+  "key": "task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace/bundle",
+  "technical_ok": true,
+  "returncode": 0,
+  "input_sha256": "65d70814f6370c2cb8996bb1de67b16f4129f2a91c9eb1ef32c2068c58bde571",
+  "output_sha256": "615c8d9f94c1e890f9483195913b0fce76ddec9302898fe71b8cd7362b5f390b",
+  "start": "2026-11-16T00:50:39.938747+00:00",
+  "end": "2026-11-16T00:50:53.695290+00:00"
+}

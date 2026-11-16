@@ -1,0 +1,9 @@
+{
+  "key": "task-fase-0-ir-binario-de-scion-e-imágenes-del-mismo-commit-del-fork-registry-ghcr-io-jpruizantonia/bundle",
+  "technical_ok": true,
+  "returncode": 0,
+  "input_sha256": "a65e0ab34317b053db85cfe0d4717afc57c9298c166ec7028371cdb2f2440a8b",
+  "output_sha256": "b4ffe525330e09ee3c7a36ebc87d0d8e77d25b2a5bb000af71e964d5d2dc23fa",
+  "start": "2026-11-16T00:50:55.557847+00:00",
+  "end": "2026-11-16T00:51:09.770055+00:00"
+}

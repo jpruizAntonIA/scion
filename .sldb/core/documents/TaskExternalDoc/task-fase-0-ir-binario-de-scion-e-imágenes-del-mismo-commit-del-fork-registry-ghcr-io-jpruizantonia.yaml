@@ -1,0 +1,38 @@
+name: task-fase-0-ir-binario-de-scion-e-imágenes-del-mismo-commit-del-fork-registry-ghcr-io-jpruizantonia
+path: desk/tasks/task-fase-0-ir-binario-de-scion-e-imágenes-del-mismo-commit-del-fork-registry-ghcr-io-jpruizantonia.md
+source_hash: 5fb3c92e04bcce8f32ee8446b59ab341ad7f414a0d477f70381bf359baf2aa5c
+content_hash: f1c5eaebc520e682a7fb1f8a565cca7cd42280840bf5ae5c6cc68f7d512f7349
+field_hashes:
+  title: 0b992cf59d1fa85f0e8ef097ba74bbd020afba06388931703465af0fe4a0e60a
+  id: 861f4a32bb0d5e52e685c7520a6c2ddfe805db3823096bf76779f5bc2bd8ce52
+  status: 6ae048f08fcab44bfbc8463f074bfdb40f94c6bdf56d3aad9a7e1c05e5d5b5c1
+  summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  tags: 9e7e8be2998f87dfcbb538781d827f202722ef7dad630b93bca343e20f247db8
+  current_node: ff5161892aac34735bf10c411f7230b62b7b56446e230a5d26fb75afde4704b6
+  history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  why: 9642b02939dafdb5a4ccdd147fc3e673a67506ecf39aa23e064fc7f3d3d7951c
+  goal: bec97a256ceddab2d31d538921e0c466802a322649cc6ffae41bf23d1ce8af0c
+  scope: 38fe28c6dfec61d30a5337b6bf48b7be142a6419f5fba5cb6da470d1fdcc9e50
+  references: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  files: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  implementation_path: 001437865239f84d1c5ca6d99c83a37ad3d8af164c78cfbdc6be1ec08cf51c23
+  validation: d885b7b7353b7503d34fe9d3a22e46de3cea3f18976674c73c4a40a5da93824a
+  done_when: 947f2223be214be6828d5d9fb785b8b3fcd78d81845ce95d228440f6c5a25479
+  task_type: 5619d24174620ad487a0abcf96f8cf76f2194860f28794d1d441226cd2d613dd
+  inherits_from: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  inherit_acceptance_context: fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa
+  atoms: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+semantic_tags:
+- artifact:task
+- representation.markdown
+- source.document.markdown
+- type.workflow.task
+- workspace.desk
+- workspace:desk
+provenance:
+  by: agent
+  at: '2026-11-16T00:52:46Z'
+  authority: generated
+  via: save_document_payload

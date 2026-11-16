@@ -1,0 +1,36 @@
+name: review-task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion-bundle-1
+path: desk/reviews/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion/bundle-1.md
+source_hash: 5ad02ba6b31ed37a36e44ef59930d75224707bfc0aac8017a7b406726b4ae2ab
+content_hash: eef4486cca810fd7161ee2bffe916bd33273ec2290b32ae80db06e31b4f5689f
+field_hashes:
+  id: 59a272d23c935aabc83359a0fafb29794035553366040b47806bf8adf3d0e092
+  title: 9e8fbea2b608771e295ea54b543b4cd399ce8746eb3f477fc8f559899774a007
+  kind: 4c522949265daa3973b2389b594a235b5c6e47c70d2af6e23bd14f8173f56280
+  fact: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  value: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  subject: abf46d79f156628fcbf0db71b477c8fecaea1227979cadd033c68282102ff734
+  subject_ref: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  engine: 6874c40de9971944b9706ccc769074b7f77cb595ed78bafba748db5266461238
+  actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  run_dir: c6f1e59e8d272922a00f9b178e0dfb292efe24cd3a32d388a244b5a374f90810
+  input_sha256: 22a172b14caf91064e7d9f27babe4d291a704af7982dd5729b6fdef4d83500d1
+  output_sha256: 13873313deb2fb8a034141ec6eae771acec58751b673f3f46906678dcc3c6dcd
+  verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
+  reason: c4bb3a17e24c7eac4ce76698b6af138ba437f418de27f54c7a7329dabc883c26
+  created_at: 904ad556ca140d16067099fdd18d864291a6b74b28974abc5716b8102575c88b
+  disposed_at: 267f1ab1917befc5e9fec6de961207e11c034439a2e41689676f1a7c4e5d4d42
+  disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  summary: a6481cd64c130bf3a0a1327353a826cdb3a3c1946962f4f2d20f62efae6787d7
+  disposition: fd5075a534e569e9e761e53e90569450078d87d5497bdcc00b3e5aacc0a3c8ee
+  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.workflow.review
+- workspace.desk.runs
+- workspace:desk
+provenance:
+  by: agent
+  at: '2026-11-16T00:53:24Z'
+  authority: generated
+  via: save_document_payload

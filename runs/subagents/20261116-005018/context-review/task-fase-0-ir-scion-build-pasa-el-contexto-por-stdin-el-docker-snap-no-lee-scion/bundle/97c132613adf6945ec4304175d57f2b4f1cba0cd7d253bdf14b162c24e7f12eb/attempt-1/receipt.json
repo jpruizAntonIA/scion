@@ -1,0 +1,9 @@
+{
+  "key": "task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion/bundle",
+  "technical_ok": true,
+  "returncode": 0,
+  "input_sha256": "97c132613adf6945ec4304175d57f2b4f1cba0cd7d253bdf14b162c24e7f12eb",
+  "output_sha256": "a781a90a852d4ed753eee470cebe95972f04eeea0fea438fa10812593e48888a",
+  "start": "2026-11-16T00:50:18.873902+00:00",
+  "end": "2026-11-16T00:50:38.029966+00:00"
+}
