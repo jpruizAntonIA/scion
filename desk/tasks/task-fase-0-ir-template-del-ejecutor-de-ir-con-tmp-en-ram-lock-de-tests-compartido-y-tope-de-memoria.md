@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T19:38:53Z'
+  at: '2026-11-17T01:23:06Z'
   authority: generated
   via: save_document_payload
 id: task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria
@@ -19,7 +19,7 @@ references:
 - https://github.com/jpcosec/opsys/commit/881e177adc7add0c8ae51384ff3381951f998dbd
 - runs/subagents/20261116-180814-template-ir-testing/result-summary.md
 - runs/subagents/20261116-180814-template-ir-lock-testing/result-summary.md
-- desk/inbox/20261116-153743-suggestion-lock-de-tests-compartido-un-contenedor-que-corre-como-root-no-puede-abrir-dev-shm-sldb1-tests-lock-protected-regular-2.md
+- desk/tasks/task-los-agentes-scion-toman-el-lock-de-tests-compartido-con-el-uid-del-host-protected-regular-2.md
 depends_on: []
 pills: []
 files: []

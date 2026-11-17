@@ -213,11 +213,13 @@ include:
   - desk/inbox/20261104-233658-suggestion-sldb-el-store-pasa-a-sldb-versionado-y-sldb-cache-ignorada-journal-retirado.md
   - desk/inbox/20261116-011045-suggestion-piloto-scion-fase-1-el-hook-deskops-tools-no-instala-los-extras-de-test-ni-pi.md
   - desk/inbox/20261116-150500-suggestion-c-mo-declarar-tests-vitest-o-go-para-el-closeout-de-deskops-puente-de-pytest.md
-  - desk/inbox/20261116-153743-suggestion-lock-de-tests-compartido-un-contenedor-que-corre-como-root-no-puede-abrir-dev-shm-sldb1-tests-lock-protected-regular-2.md
+  - desk/inbox/20261116-182436-suggestion-deskops-la-evidencia-de-commit-repo-id-sha-resuelve-tambi-n-por-el-registro-del-ecosistema.md
+  - desk/inbox/20261116-202232-suggestion-ya-en-origin-la-evidencia-de-commit-repo-id-sha-resuelve-por-el-registro-del-ecosistema.md
 - model: TaskCodeDoc
   paths:
   - desk/tasks/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria.md
   - desk/tasks/task-ejecutores-pi-en-red-bridge-contra-el-listener-de-agentes-del-hub.md
+  - desk/tasks/task-los-agentes-scion-toman-el-lock-de-tests-compartido-con-el-uid-del-host-protected-regular-2.md
 - model: ReviewDoc
   paths:
   - path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/preflight-1.md
