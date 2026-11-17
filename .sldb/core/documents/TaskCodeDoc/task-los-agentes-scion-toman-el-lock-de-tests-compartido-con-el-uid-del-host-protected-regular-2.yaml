@@ -1,7 +1,7 @@
 name: task-los-agentes-scion-toman-el-lock-de-tests-compartido-con-el-uid-del-host-protected-regular-2
 path: desk/tasks/task-los-agentes-scion-toman-el-lock-de-tests-compartido-con-el-uid-del-host-protected-regular-2.md
-source_hash: 3a5eda6457bcaa4e5bb880a3b23fbddd22b4897e71a572f29b2688f2106e35dc
-content_hash: e973ebf5bd14dc5e24ee0f13b629cf0e1f7755f78114a6b791431200367d38ab
+source_hash: 3fd04fac79d4a8678bc5170ae6519dccff6c0d8f690fbba28e9db52bbce857e6
+content_hash: 069d304a1d7de59e9bd5102ff23101c914a8c0b9ff28c66fb88defb0cce41b00
 field_hashes:
   title: 67ada15a6a6f99c659f85a6f0309c069269f02f5c3d8e093c0b2f5c07ecbfd2e
   id: 7ba787a86d51c5ebc5313b4bad86ee4fe1831f8a706d5c39b3f3418867e2997f
@@ -13,7 +13,7 @@ field_hashes:
   why: 8f0bd1a82760f69c1255f2560cbd47fd39973f2d6426ab9696c0775c95105aa8
   goal: cc0e660d1e6fa23ca8c63c29c00d666b2464c23cc55a85457839969228dbe113
   scope: 60aff385c68efc120235874a0ec4545122a7626613c8310bcdd70d7540e423a6
-  references: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  references: c4b2de5d88418541d8352772935642cb2c5a4002ad0ca6297d6a658fbbf3f025
   depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
@@ -34,6 +34,6 @@ semantic_tags:
 - workspace:desk
 provenance:
   by: agent
-  at: '2026-11-17T01:22:57Z'
+  at: '2026-11-17T01:26:14Z'
   authority: generated
   via: save_document_payload

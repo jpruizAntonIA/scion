@@ -434,6 +434,8 @@ include:
     name: run-deskops-t-746aca240a1f
   - path: runs/subagents/20261116-180814-hook-venv-test-a2-testing/run.md
     name: run-deskops-t-df963d64464a-a2
+  - path: runs/subagents/20261116-180814-template-ir-suite/run.md
+    name: run-deskops-e-c84637e8b566
 graph_backend: networkx
 policy: {}
 tag_models:

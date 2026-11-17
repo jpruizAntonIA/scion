@@ -1,7 +1,7 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-17T01:22:57Z'
+  at: '2026-11-17T01:26:14Z'
   authority: generated
   via: save_document_payload
 id: task-los-agentes-scion-toman-el-lock-de-tests-compartido-con-el-uid-del-host-protected-regular-2
@@ -12,7 +12,10 @@ tags:
 - artifact:task
 current_node: ritual-execution
 history: []
-references: []
+references:
+- 68c35e329
+- runs/subagents/20261116-180814-template-ir-testing/result-summary.md
+- runs/subagents/20261116-180814-template-ir-lock-testing/result-summary.md
 depends_on: []
 pills: []
 files: []
