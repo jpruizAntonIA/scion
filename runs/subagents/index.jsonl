@@ -7,3 +7,4 @@
 {"task_id": "task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth", "run_id": null, "run_dir": "runs/subagents/20261116-180814-hub-agent-listener-a2", "session_sha256": null, "commit": null}
 {"task_id": "task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion", "run_id": null, "run_dir": "runs/subagents/20261116-180814-stdin-build", "session_sha256": null, "commit": null}
 {"task_id": "task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del", "run_id": null, "run_dir": "runs/subagents/20261116-180814-hook-venv-test-a2", "session_sha256": null, "commit": null}
+{"task_id": "task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria", "run_id": null, "run_dir": null, "session_sha256": null, "mode": "resolved-by", "commit": null}

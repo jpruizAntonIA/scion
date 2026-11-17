@@ -217,7 +217,6 @@ include:
   - desk/inbox/20261116-202232-suggestion-ya-en-origin-la-evidencia-de-commit-repo-id-sha-resuelve-por-el-registro-del-ecosistema.md
 - model: TaskCodeDoc
   paths:
-  - desk/tasks/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria.md
   - desk/tasks/task-ejecutores-pi-en-red-bridge-contra-el-listener-de-agentes-del-hub.md
   - desk/tasks/task-los-agentes-scion-toman-el-lock-de-tests-compartido-con-el-uid-del-host-protected-regular-2.md
 - model: ReviewDoc
@@ -436,6 +435,8 @@ include:
     name: run-deskops-t-df963d64464a-a2
   - path: runs/subagents/20261116-180814-template-ir-suite/run.md
     name: run-deskops-e-c84637e8b566
+  - path: runs/subagents/20261116-180814-template-ir-suite-testing/run.md
+    name: run-deskops-t-746aca240a1f-a2
 graph_backend: networkx
 policy: {}
 tag_models:
