@@ -1,0 +1,19 @@
+name: 20261120-212728-suggestion-un-solo-canal-entre-personas-y-agentes-con-el-plugin-de-discord
+path: desk/inbox/20261120-212728-suggestion-un-solo-canal-entre-personas-y-agentes-con-el-plugin-de-discord.md
+source_hash: b58ea1b9b99937d4b672361c905e66e40377b8b6a6238b203ef29a2ae1c1d696
+content_hash: 8867a54a319292aee5e9e0b1cfca2e671c1ceafd27873a07083d2c833094c604
+field_hashes:
+  kind: f4accece99081750b6b8b5089a3f24b11d5ceba70797c3eb49000d84b98344fc
+  sender_project: 3c894b699286d85f1511fdbcb79fa8e20b368f377466132c43b01c94611d9e89
+  target_project: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  created_at: 9fe6e2151c41e5e9f77929b7fd59792a3d580a21bb59a0affc2d54418d26c0c4
+  status: 35ff74aeea25311f4fe759a6b762c8cd41a79adb23dd5615b92cf215175a63e5
+  ack_reason: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  title: 3be111eb1193be9049369b4e4bc4f0679cc88976172ae9b765091a25b4eb8185
+  body: 0a658f7d93c6aec7c4d8da21c5dca003e9f69c71ed02b1f67ec237910efcbf31
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.desk.inbox-note
+- workspace.desk.inbox
+provenance: null

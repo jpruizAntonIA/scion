@@ -1,0 +1,19 @@
+name: 20261120-212731-suggestion-concilio-y-pruebas-sin-contexto-como-agentes-de-scion-con-plantilla-propia
+path: desk/inbox/20261120-212731-suggestion-concilio-y-pruebas-sin-contexto-como-agentes-de-scion-con-plantilla-propia.md
+source_hash: 7fbc9859a909d603df2fe27397f174d6672fe58c0a4393c91378b937becd698a
+content_hash: a99295e5f0bd3c4d6ed2b4131a61fbdae74f4aa3c7007ad730a929dd15ca5b19
+field_hashes:
+  kind: f4accece99081750b6b8b5089a3f24b11d5ceba70797c3eb49000d84b98344fc
+  sender_project: 3c894b699286d85f1511fdbcb79fa8e20b368f377466132c43b01c94611d9e89
+  target_project: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  created_at: 19ed0840fcff30009f3fa0a84632fa425ef944f883959ed4025171a2c681f06a
+  status: 35ff74aeea25311f4fe759a6b762c8cd41a79adb23dd5615b92cf215175a63e5
+  ack_reason: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  title: 08b102c429d91426fcfbac1af32e67d044654ee1ae121d60aff1fbf73005cf97
+  body: 8448e6e621c9c12975681ea1cfe6708fa169c7b169172c81941a7621b1637ca5
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.desk.inbox-note
+- workspace.desk.inbox
+provenance: null
