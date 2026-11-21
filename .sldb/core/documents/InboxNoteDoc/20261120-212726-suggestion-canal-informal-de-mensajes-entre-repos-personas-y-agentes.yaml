@@ -1,0 +1,19 @@
+name: 20261120-212726-suggestion-canal-informal-de-mensajes-entre-repos-personas-y-agentes
+path: desk/inbox/20261120-212726-suggestion-canal-informal-de-mensajes-entre-repos-personas-y-agentes.md
+source_hash: bd4d9996fdcabe354e6ed676741b31aba5b6249a6bbe290bc5f62d40fc9536aa
+content_hash: a9ecfb000326d31c54b24a4c76e36720f0b51c1432f471e05eb8ffc57d2eedcb
+field_hashes:
+  kind: f4accece99081750b6b8b5089a3f24b11d5ceba70797c3eb49000d84b98344fc
+  sender_project: 3c894b699286d85f1511fdbcb79fa8e20b368f377466132c43b01c94611d9e89
+  target_project: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  created_at: 2732c3f4ac51004bcce1043b1e2b33281f188db6deefa8fbfb47e0e1443b89d6
+  status: 35ff74aeea25311f4fe759a6b762c8cd41a79adb23dd5615b92cf215175a63e5
+  ack_reason: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  title: c372dee782a010ccda8f441e847c75505892f193c1a336ecc3db87d20601373a
+  body: 2beb9c6a05fac22fc23282a406e53a75974943075253064e9509c280eafe4042
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.desk.inbox-note
+- workspace.desk.inbox
+provenance: null
