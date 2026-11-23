@@ -1,0 +1,19 @@
+name: 20261122-233912-suggestion-bloqueante-resume-reincarnate-y-wake-fallan-con-the-hub-issued-no-agent-token-falta-1350-en-el-hub
+path: desk/inbox/20261122-233912-suggestion-bloqueante-resume-reincarnate-y-wake-fallan-con-the-hub-issued-no-agent-token-falta-1350-en-el-hub.md
+source_hash: 8a1a2eb14b70a4a4cd9b546e151e46571b90de3c3c75e27ff309ff1cccc81ca6
+content_hash: dc4a5c0a770a5bf8d40af4e0d20501cc6557a7279b2121ec8cd951b5de26a188
+field_hashes:
+  kind: f4accece99081750b6b8b5089a3f24b11d5ceba70797c3eb49000d84b98344fc
+  sender_project: be1a918d36a26b50ff05a32144905fa0851e3a2c55c93b05726d8a3bab97b3e7
+  target_project: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
+  created_at: 6e8860c1db4d9d37713e978460e7e779e4d8bafb475478e46d8d66c06ab5b2f1
+  status: 35ff74aeea25311f4fe759a6b762c8cd41a79adb23dd5615b92cf215175a63e5
+  ack_reason: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  title: bbbb1bd38fe4d61066cee01c2f8d1a2526d7b960d8314f1a1820f54d6b2a9238
+  body: a978f6fa820a75b0ea939760e98d4d1fe236062904f6fff46b4e8086c35c9122
+semantic_tags:
+- representation.markdown
+- source.document.markdown
+- type.desk.inbox-note
+- workspace.desk.inbox
+provenance: null
