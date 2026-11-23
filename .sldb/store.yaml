@@ -166,6 +166,36 @@ include:
   - desk/lifecycle/type-task_activates.md
   - desk/lifecycle/type-task_completes.md
   - desk/lifecycle/type-task_hands_to_closeout.md
+  - path: sldb/relation_types/applies_to_source.md
+    name: reltype-applies_to_source
+  - path: sldb/relation_types/applies_to_target.md
+    name: reltype-applies_to_target
+  - path: sldb/relation_types/composes.md
+    name: reltype-composes
+  - path: sldb/relation_types/contains.md
+    name: reltype-contains
+  - path: sldb/relation_types/extends.md
+    name: reltype-extends
+  - path: sldb/relation_types/has_document.md
+    name: reltype-has_document
+  - path: sldb/relation_types/has_field.md
+    name: reltype-has_field
+  - path: sldb/relation_types/has_model.md
+    name: reltype-has_model
+  - path: sldb/relation_types/has_section.md
+    name: reltype-has_section
+  - path: sldb/relation_types/links_to.md
+    name: reltype-links_to
+  - path: sldb/relation_types/names.md
+    name: reltype-names
+  - path: sldb/relation_types/references.md
+    name: reltype-references
+  - path: sldb/relation_types/semantic_equivalent.md
+    name: reltype-semantic_equivalent
+  - path: sldb/relation_types/semantic_parent.md
+    name: reltype-semantic_parent
+  - path: sldb/relation_types/tagged_as.md
+    name: reltype-tagged_as
 - model: RelationTypeDoc
   paths:
   - path: sldb/relation_types/applies_to_source.md
@@ -219,6 +249,10 @@ include:
   - desk/inbox/20261122-233912-suggestion-bloqueante-resume-reincarnate-y-wake-fallan-con-the-hub-issued-no-agent-token-falta-1350-en-el-hub.md
   - desk/inbox/20261123-014315-suggestion-el-hook-pre-start-deskops-instala-sldb-y-deskops-como-editables-desde-sldb-1-no-sirve-para-desks-ajenos.md
   - desk/inbox/20261123-014920-suggestion-tras-resume-wake-o-reincarnate-no-se-vuelve-a-ejecutar-el-hook-pre-start-del-proyecto.md
+  - desk/inbox/20261120-212719-suggestion-poner-el-fork-al-d-a-con-el-original-y-traer-extras-herdr-scion.md
+  - desk/inbox/20261120-212726-suggestion-canal-informal-de-mensajes-entre-repos-personas-y-agentes.md
+  - desk/inbox/20261120-212728-suggestion-un-solo-canal-entre-personas-y-agentes-con-el-plugin-de-discord.md
+  - desk/inbox/20261120-212731-suggestion-concilio-y-pruebas-sin-contexto-como-agentes-de-scion-con-plantilla-propia.md
 - model: TaskCodeDoc
   paths:
   - desk/tasks/task-ejecutores-pi-en-red-bridge-contra-el-listener-de-agentes-del-hub.md
