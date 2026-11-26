@@ -1,13 +1,13 @@
 name: task-ejecutores-pi-en-red-bridge-contra-el-listener-de-agentes-del-hub
 path: desk/tasks/task-ejecutores-pi-en-red-bridge-contra-el-listener-de-agentes-del-hub.md
 source_hash: 17fe802dd422deee00ba73ea54b4b230b93b37472dd9338e96af51d496e87bb0
-content_hash: 46095d5bae6c04e0fb585de93a3ec3d0b4bbca9a463e0059e40cbcf89ba468bb
+content_hash: 36ddbf5978ccf62bff5e160ddd0930f6415ed9397312cc1ffe8b74e1a6b754a6
 field_hashes:
   title: ae71f55439f943b146d77efe65c23dc9728b88008190d283736ac61b759d021d
   id: cbd000233a83dd8243e0642b87347b4c65ec1fb6dd346584c0c0ce35efe14016
   status: 6ae048f08fcab44bfbc8463f074bfdb40f94c6bdf56d3aad9a7e1c05e5d5b5c1
   summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
-  tags: cdc41ecb0faeea4fd54d89a0af9704fa317051793e9578e08cc68ba3342d3caa
+  tags: 11bb1031122f37d8732140cbea164dabb926ef21d6bfde10ce845b776ef0913c
   current_node: ff5161892aac34735bf10c411f7230b62b7b56446e230a5d26fb75afde4704b6
   history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   why: b99629b86fc6d787b9ab3b4a72ef9eccae7cdb344509466d69b3a6618276b631
@@ -17,6 +17,7 @@ field_hashes:
   depends_on: 0273eca46b9f41219449260f79090e0e620b451a21a567292f264a0337327608
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: a0a08b4b75bfba944b759b2a4f5a655f299171fff5884163019d43102caef1d7
+  pointers: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   implementation_path: 89e4ba61d0333ddcb7296c1714a8ced97735a1cec2282f8a5829987604ca5a0f
   validation: 80a894051cba9779af4e8eebf88d9f3c2862077291a55d7f3fb12232eebb24f2
   done_when: 449055469fb70c052d58334c021c5495209936cf73d8a3269238016c37fb8630

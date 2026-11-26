@@ -1,7 +1,7 @@
 name: review-task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor-bundle-2
 path: desk/reviews/task-harness-pi-en-desk-real-red-bridge-para-ejecutores-imagen-con-pytest-dagster-spec2viz-sldb-en-el-wor/bundle-2.md
 source_hash: b316dccba7d97850ee3a9ca527ea8adfccfe4526c8a2b35a6bf85aafdaf2d7b6
-content_hash: 97f4e6de19a1e62c6bb5b2688a769a92ce9abfd936e2d5b565cce096f9494b29
+content_hash: 68c2a54e48c3176f70696655acf42c00cb70c0f98c1e45f0068b8b59ce5f20ed
 field_hashes:
   id: 6fb4c4f6ee0e40d4bb32b1479753ba50a7472006a49ade3a8d0a3b7abd5b7f23
   title: a34226215ee24cb647d12e6f48b260a99545829c225698bde6152ee897a877b5
@@ -14,6 +14,7 @@ field_hashes:
   actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   run_dir: 8a19ed4ca345fbf05434e764134efd05820f57f3640d78b3855c8c511167b2c7
   input_sha256: 1140f232f50ccac3f6efdd641c338cd065932315df3bb3691079c62642e229da
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: 282f8d859606e4027d98656912e80f2bb6ac6841e392c270e2c074e59ed63f4e
   verdict: b93e167bbe964a29c927882c2bc868922a912d6e74592730258b222da98b8c6c
   reason: 718c2e92fb9c9799149b431ee15faf6679a2a9c98529419315b9d3db8a687af9
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: a7cf61cf200b564d6aab6cfac860e59aa7fb317cdd49e7ab6273e747c4d27bf6
   disposition: 283badd0fc3c901036b8dd3cf58129bf885106b6adda6651fa9c6a3b44eeb70f
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown

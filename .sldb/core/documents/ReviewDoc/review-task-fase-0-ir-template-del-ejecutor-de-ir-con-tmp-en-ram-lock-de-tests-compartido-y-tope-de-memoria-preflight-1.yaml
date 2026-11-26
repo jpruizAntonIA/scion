@@ -1,7 +1,7 @@
 name: review-task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria-preflight-1
 path: desk/reviews/task-fase-0-ir-template-del-ejecutor-de-ir-con-tmp-en-ram-lock-de-tests-compartido-y-tope-de-memoria/preflight-1.md
 source_hash: 28d6d5adfc8516f8c0b84d858228d74812e4333da4d9da36203de197f540e121
-content_hash: 283ce681070229128e184555908385d3677ef85d1a1874af9aa571c91df3ec79
+content_hash: 440d4225abbd26593de76f3d2e1800cb5942515e7a7df4f5fb5cb498821851b5
 field_hashes:
   id: e80ac6262026422551d3b22fa0dae2c0c14d9a9d49343dd52ac6215e73275d1c
   title: e36fc8b92d9e51fa20b7dbf3121251a24ba908bc37e15145b25f8eca49913480
@@ -14,6 +14,7 @@ field_hashes:
   actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   run_dir: b44396f576b762d0e4eaa5ad3db8a2e58b122e8e393b9ded85a71f660f366e85
   input_sha256: d251691c101c56ea9ddcd60cffd4e260af96ddf9a7c8ced157138bd4e33c4b60
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: 1fefd8a47289509f7b600ea17fcadae9b60e35534a08b59ac5f6aebd9c77500c
   verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
   reason: 5fd273e5263f5b5c8b79f10f1207a45a94b9cd354f02cf15523ee22cd767febb
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: b0e077bc4d96678c713e22f0e64e74ab3b77e39f154a02a53930ebc3f1e7d4e3
   disposition: ac992918451fa109658dc04c9496be4d52944856a52da6ed41351c9f86f82865
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown

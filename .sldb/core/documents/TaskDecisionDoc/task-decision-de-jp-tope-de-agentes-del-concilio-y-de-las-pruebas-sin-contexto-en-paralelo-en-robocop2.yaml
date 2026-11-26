@@ -1,7 +1,7 @@
 name: task-decision-de-jp-tope-de-agentes-del-concilio-y-de-las-pruebas-sin-contexto-en-paralelo-en-robocop2
 path: desk/tasks/task-decision-de-jp-tope-de-agentes-del-concilio-y-de-las-pruebas-sin-contexto-en-paralelo-en-robocop2.md
 source_hash: 17b739883a9291ba99955283f15976a2d3c10a7688b9950405e9a9866209bf3d
-content_hash: ea26653b05fbe77b7dfd15ba9336324d7f439ac6754dac5a355ad5d644bff169
+content_hash: 03398d4f5358d9dae844bcb0880fc82c45ea34a8033f27d5c958311be61eff2c
 field_hashes:
   title: 5e856dc3589a8dee735ec49ee21f94a99709d5498f56f6e5eb4267d24068ad53
   id: 8c5d80870166751eaa7f2d08cf09c8a996ce68cec417c14096d1ffeccf61358a
@@ -17,6 +17,7 @@ field_hashes:
   depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  pointers: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   implementation_path: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   validation: 44d1021727dedaa4caedbbbf52c64d44ca80e22cc3b948d49910d8a4fb30352b
   done_when: 5e7c545e348bc247947178711b44e5a47ea2bd6dd6f7c4958dc4f3dbaaa1b8fa

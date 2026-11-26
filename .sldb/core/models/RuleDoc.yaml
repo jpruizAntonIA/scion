@@ -3,10 +3,10 @@ model_ref: sldb.models.rule_doc:RuleDoc
 path: /home/robocop/herramientas/sldb/src/sldb/models/rule_doc.py
 documents_index: .sldb/core/documents/RuleDoc.yaml
 sections_index: .sldb/runtime/sections/RuleDoc.yaml
-model_hash: 8c2358d62c63e76cf2aeea85bb75e9b88f2de50b9cb02e2b2402d6ffd4270869
-roster_hash: 1f69f84d511eef23b0fa047236f6c904cb0f658cc16a6dbe86d00e520561e14c
+model_hash: cc511657babe3b8242af95a18634a283d3d8f83384b8a392a561cc621bdee199
+roster_hash: 1a6cec5b918bdbc5adae97278e2187095ce94470b94aa05eac7fc43f7ebe97fa
 contract_hash: 411e41fc4ed0641c8436fc5c5c32aef148da868661d58951614298568a237fd2
-documents_count: 16
+documents_count: 18
 version: 1
 canonical: false
 family: rule

@@ -1,7 +1,7 @@
 name: review-task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth-bundle-1
 path: desk/reviews/task-hub-de-scion-listener-de-solo-hub-api-para-agentes-en-la-ip-del-bridge-sin-web-ni-dev-auth/bundle-1.md
 source_hash: 22bb4ee26f03cf31f37b6a2ff09acf32f60fdedd5f608d33a504d73dab65bfad
-content_hash: e0f4271c76ae5f1830e54a7b2ac680880364031e465ae6ee37b5ffb590864a28
+content_hash: 20009890d11ee020cdcffd51faa96b39278592692551d5f2c057aba068b0ea7f
 field_hashes:
   id: 372fc33a860003d761396c2d0a8dc271c1c47f8ba5148f08dc00d0dd8b44f1a4
   title: 168d7f24e1fb6c376062f84f612952f82645502e187b4868b76b972bfcb6607c
@@ -14,6 +14,7 @@ field_hashes:
   actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   run_dir: 3bda3263d6d381730574c32e7f782afde274095ff16c0223d0f218f4c9ca7c2f
   input_sha256: 8790946c1d724e67c3a678afd443f2e8b8d45e305e4729d37532f9eac37abce6
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: 5e3735c1508583ae5bada0dc33ac905aff6ac770223d78c2133e378f5a26a645
   verdict: b93e167bbe964a29c927882c2bc868922a912d6e74592730258b222da98b8c6c
   reason: 6abac1d8ab160577e8172e4765b75b8b8522b7d12a6c56219e8d15e5e8d540a5
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: 025cd6888bae8770153e0948e0eaa0c7a076d676b228296f3511b8cc3aa3cb0a
   disposition: 25ba30b10f8375db8be74ccb9567b9ece19aa9da62a311df994d7f23f03fdd02
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown

@@ -1,7 +1,7 @@
 name: review-task-fase-0-ir-binario-de-scion-e-imágenes-del-mismo-commit-del-fork-registry-ghcr-io-jpruizantonia-bundle-1
 path: desk/reviews/task-fase-0-ir-binario-de-scion-e-imágenes-del-mismo-commit-del-fork-registry-ghcr-io-jpruizantonia/bundle-1.md
 source_hash: a25dfe6bb2a9f67d947ca60700a9807496d3c5802da717efaf43d23f057720ce
-content_hash: 97f25b11df9150cd54ce52b3b3bc170edfa981850c8848befa7d72fc9e635b14
+content_hash: cea16d91d1482266181ce73915dea7aec033a61be0b9a7fa3c97c36ffa85c29c
 field_hashes:
   id: 423fef5f485aa98d693779333c5f2081062c05e69a064ad31881c6528f47c01c
   title: 9e126ebf1bd9da0e050dc6970b7b5ba40af2d06437cb455bb7e169d16b7d31a9
@@ -14,6 +14,7 @@ field_hashes:
   actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   run_dir: 5d73c48c7d6dc447a1d198dc97d4e73df4f63649fedeebae13da9e274bb23076
   input_sha256: cf5bb73df8a2f51054069fc6f6baae43f0aee0e833bdfc89a8e3a3b78d96d4cd
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: c72f2359ed59cd35e39bce4b5cfcb5064258b793c8f5511fa9b2828eddaca155
   verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
   reason: b6778f7f4bcaaf1bdb78543343f2d343f55579be870931075ab88f524b8379a1
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: 599e66e04eaa2067eee89bc5ef3c254c4f6846f1644426f7913cb042bf550824
   disposition: a444e8c4c2f47abea0a0a9d1f20fc97bd533587d2f0dafd99ab5b2825437997e
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown

@@ -1,7 +1,7 @@
 name: review-task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del-bundle-2
 path: desk/reviews/task-hook-deskops-tools-venv-de-test-del-repo-de-la-tarea-pytest-pytest-xdist-y-extras-de-test-dentro-del/bundle-2.md
 source_hash: 5d067d3c4f7f03621eaa9a1d6215972508a364a8dc28c1706275a891b6cca865
-content_hash: 09db03aa8447677da69ad02f5e5c0a71c187d5eacf9043c0cc9e8e8e242c2997
+content_hash: dccc60847cff8caba85b4428a15366393ddbd3f05fd92337cbda47f5e5d52522
 field_hashes:
   id: c781681f2627ac307b649b2dd9e9646ec5136bb3cffb2b0706610b947d91dd7a
   title: 4ed549bcd97b3e5abc1e09ce0b7374f211ad489fee165c9238de80cac3a68e83
@@ -14,6 +14,7 @@ field_hashes:
   actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   run_dir: 68698289fddd468425b545bda02699677a2e87a88b12897712847910aeda7c1f
   input_sha256: 60c5127e43ebd52171ddfff0af6ae4f13cf61a6e1ed104544b25bf6e853757c7
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: 11a82c10edb4bc2d0992ac24cc887d39445de97b2e6cb8184705dc57ae9b1157
   verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
   reason: aafd2450cb8ac369dc29726520b8500ffec8a59007cd25d77e5cc122384ab2f7
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: 61e7506f78e7601fff40c0c86f13a0031199a82901cc257f294dd870bd452264
   disposition: b5d12ba3fc8ceb0c36f1c3b318b0d15e33d77fe1bbb65b76231aed9662e62416
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown

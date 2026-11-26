@@ -1,7 +1,7 @@
 name: review-task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace-evidence-tests-2
 path: desk/reviews/task-fase-0-ir-hook-pre-start-deskops-tools-instala-sldb-y-deskops-editables-desde-workspace/evidence-tests-2.md
 source_hash: 8460d920771fd17686d5130a43a5223453eb00cfa60b5eed537d2eb8eb8f54f5
-content_hash: 26b24295ebe61969dbb92ae7c034a98d2e69048c1a3835b274aaa72f0d26a956
+content_hash: 1ecf58b248303451aaf17d1f519dd1d2a899d19938a5e05d0daf5fec9ce32994
 field_hashes:
   id: 1614afc681c676079accc62da3df0fbd1bf2d577042f7329cd9792c1b943744c
   title: 012307159ca6e0a07e849fcdbd13892ddf41867956b2b409c5dc28bd2f520b86
@@ -14,6 +14,7 @@ field_hashes:
   actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   run_dir: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   input_sha256: c0d59b67d9f351760c29e3af170897c70e557697c69979da1959cfc388799a27
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
   reason: 5de5f828df280c14c62e9e7a87983bcdb12bc55810d91d205ea4bcc6b47c49e0
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: 856ae982e77d107f6524617b18d6ccc90c0cd99f59f5d9d48892ec75a5a47384
   disposition: 74eff8ef04d0ae87a91251caa84e806ad522322408c021cb940034bafa522eb0
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown

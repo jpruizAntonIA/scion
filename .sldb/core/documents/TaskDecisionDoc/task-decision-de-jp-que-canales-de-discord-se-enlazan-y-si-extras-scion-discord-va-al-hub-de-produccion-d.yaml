@@ -1,7 +1,7 @@
 name: task-decision-de-jp-que-canales-de-discord-se-enlazan-y-si-extras-scion-discord-va-al-hub-de-produccion-d
 path: desk/tasks/task-decision-de-jp-que-canales-de-discord-se-enlazan-y-si-extras-scion-discord-va-al-hub-de-produccion-d.md
 source_hash: 87c927f6014292250be46c420e957a2d948f167a729c6644910a8c267aade53e
-content_hash: 3ed82140e285329247e9760fbf8457da8bbf408855615ba5bea7956f5a8efd2e
+content_hash: 6dc2a5b4a645202f603b44c186466dc592fa1665715ebf796e37ca54ea6188cf
 field_hashes:
   title: 3a74e5a6c95367e2c4e6b29f38c4a49946ae893a4d0fc79f7a03f2d1ec55c4c9
   id: dc223595237c7ed80799f701043336a8b56187edf61d87bbb6580e4d9491a5b6
@@ -17,6 +17,7 @@ field_hashes:
   depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  pointers: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   implementation_path: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   validation: 5f94b4fbaacc3feaad2b40683b8e120df3338ea04ae1c2cd9a73aca5e90f7b55
   done_when: d30216b155974bb579ec3c8f4ee9745583f5bedfd169a30668c85a9bed08a4ca

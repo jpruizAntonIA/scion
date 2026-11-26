@@ -1,7 +1,7 @@
 name: review-task-add-pi-harness-config-bundle-harnesses-pi-evidence-tests-2
 path: desk/reviews/task-add-pi-harness-config-bundle-harnesses-pi/evidence-tests-2.md
 source_hash: 2dfa452ece5404f453375450180b98579f2dcf56776db62818ba180275552918
-content_hash: b756ad14f6c7e45dbf54e338aae4fba59af7194cc0afcc86dc053e4c1347d022
+content_hash: 99fd9e26a5a7747a6dc26455201024086c6b310323403bb6fb55462a5ba484a2
 field_hashes:
   id: d646552e6914330eb9157a76151cdda99b268425ea44811839e471c44a819630
   title: 60474ec51e6d9f3fcbf4fc880834b0d6141d1aaae564632333f18edd0481d0cc
@@ -14,6 +14,7 @@ field_hashes:
   actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   run_dir: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   input_sha256: fc6b079c95066998d8740459eb9a39b6e582201c2b53309e9a35305dd81a9888
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
   reason: e5892c94b36e9b43f4fd9f62860c4de5572df0d64eb6fdfb03f73bf96cf4d4af
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: 84a5f9338057fa583b90fc766264867d6bc44bc8eabf9a8ceb3622645f4f95b0
   disposition: 95d07dbb358c664b689e7bc5bf82ec6a60dfd54111cc90d8d9e1f130b7ccb203
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown

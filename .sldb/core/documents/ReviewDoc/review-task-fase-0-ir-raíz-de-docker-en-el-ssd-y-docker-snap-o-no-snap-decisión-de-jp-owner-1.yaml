@@ -1,7 +1,7 @@
 name: review-task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp-owner-1
 path: desk/reviews/task-fase-0-ir-raíz-de-docker-en-el-ssd-y-docker-snap-o-no-snap-decisión-de-jp/owner-1.md
 source_hash: 527c69e884758f8b4a7150516524466ceac4cf6748cc2cc7dea8c5c32dfd4f51
-content_hash: 33073e940a98744abbd99770756364693ce2cf246b927c6e4f29d5f7d1505db0
+content_hash: dea7541d3863a5d8369a27c98180cabf9cbbd2ea5af6e42d7204aea168cec710
 field_hashes:
   id: 9f285658eb105b976f5aa7c3729af253dabe992e68837b56f1d62f0831480bbd
   title: ab9039ab5885af5da4bf9cc67de41c6d2e8d0a06c17cb62365961ecb8e1830d6
@@ -14,6 +14,7 @@ field_hashes:
   actor: 8a04ba293c5c2684429ebca3f43b247095ee4428cc59bb2ccb2174f19e719a39
   run_dir: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   input_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
   reason: 636da6e58bde1c3a1656c641c9333745304ca57b2f27bfc16bb6a97e69395fe3
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: 2cb7f8015b12fdbee39bb7bbfefc93b3e0889c5b6ccee5e873e08014b6fa67fe
   disposition: f1f665913e635cbcdd1262b3a1f5ba02bfb8a4968b9332e2040ccfbb8800e97b
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown

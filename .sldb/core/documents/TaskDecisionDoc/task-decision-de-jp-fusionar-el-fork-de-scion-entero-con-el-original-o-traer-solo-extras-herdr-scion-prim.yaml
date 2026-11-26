@@ -1,7 +1,7 @@
 name: task-decision-de-jp-fusionar-el-fork-de-scion-entero-con-el-original-o-traer-solo-extras-herdr-scion-prim
 path: desk/tasks/task-decision-de-jp-fusionar-el-fork-de-scion-entero-con-el-original-o-traer-solo-extras-herdr-scion-prim.md
 source_hash: 7d7026498f3893860a85c21ab63b9eab8cba2d73baae82381366ffcab47dae59
-content_hash: 011e450a22cc84f351cd4c8ae2dcafdf06a34a87795fda4ef9397d83b468cfaa
+content_hash: 7ca5e5902605997ee9685754760360ec4225743348efc931bc2ec80cf37720b3
 field_hashes:
   title: f90cc280dc93228d6447b7a7f75a30375bf6f08193e4ac5bb70da54ff7a7d0ea
   id: 87813441f4f490aa97937d300af9e6f660c191680a8aadac2b678eec261aa14d
@@ -17,6 +17,7 @@ field_hashes:
   depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  pointers: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   implementation_path: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   validation: 233ca70aaecb43eba3ab8e103fc0d98e7c39d72b45eff90533b556c9d4bb8045
   done_when: 7ef0b7d4973524a2e76bdb3dc99589bd289e189865f2cf1932de8a6a6964a502

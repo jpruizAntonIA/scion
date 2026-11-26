@@ -1,7 +1,7 @@
 name: 20261116-150500-suggestion-c-mo-declarar-tests-vitest-o-go-para-el-closeout-de-deskops-puente-de-pytest
 path: desk/inbox/20261116-150500-suggestion-c-mo-declarar-tests-vitest-o-go-para-el-closeout-de-deskops-puente-de-pytest.md
 source_hash: 324008fe2f39e60b7f7395332297e54f5d6340c1134ac21090dfeda143afbd84
-content_hash: b6eca03e7a3a5a69f6577069d59c7708635ed03f6af10620b11a263f889dde72
+content_hash: a86dfd8975ea1d8153ae8d2abc9e05d763fd78e58f84cdbe3df0399dfd021541
 field_hashes:
   kind: f4accece99081750b6b8b5089a3f24b11d5ceba70797c3eb49000d84b98344fc
   sender_project: be1a918d36a26b50ff05a32144905fa0851e3a2c55c93b05726d8a3bab97b3e7
@@ -10,6 +10,7 @@ field_hashes:
   status: 02e31f51aa8b1b6a622c4f7c30fab328d711cad4c9da74b9965ada8aa15d9df2
   acknowledged_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   acknowledged_at: 1eb1190b6c17314b37f75208b0bda42f2149f5630507b9ba637c0755cf4436e7
+  ack_reason: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   title: 74dea1774c12429550aaf9d21a623dd0ebd97b38ff8dfccdd2b6268ecfb958d7
   body: f877174bcb632e3bcb6d58a517f31eb239c95c5433b27b97503175e7c23a4c9a
 semantic_tags:

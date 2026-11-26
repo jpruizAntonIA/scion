@@ -1,7 +1,7 @@
 name: review-task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion-preflight-1
 path: desk/reviews/task-fase-0-ir-scion-build-pasa-el-contexto-por-stdin-el-docker-snap-no-lee-scion/preflight-1.md
 source_hash: 11ba7a5c5d2cafa5627fc5134aa27ced5ff340e046495a49b123c5d68ea2db5e
-content_hash: ee788c96e76953f99e2330fb5e1d44152f8be0c6895abcd613b380e4b6642dc7
+content_hash: da55813eef08db1b0913f3bd2277aeee2c6dde268ca0365c360c7d52bd783a51
 field_hashes:
   id: 6523ce649dd906770a4ec76bbb0ee8fdd2716b5a29e6812a2a72a3e85c3104aa
   title: b96df22b29bc2cae844af28f5e6396c7b44d6536120ca480e10dbde569e96363
@@ -14,6 +14,7 @@ field_hashes:
   actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   run_dir: f48e01aefa3da1bc3e3014d9b7a55a7eb62b3b286017379bc358be24e573bb59
   input_sha256: da5b82419785b6d36366816b46d8590bf8048ce247227d84e73ebfbf3fb049ab
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: ae7a1a015d4b67129a7f707e4e48e4333f07525f0de08bff3ade8c5d4b8536ed
   verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
   reason: 32b922df69da8a9d44963d59f39950919ba8618329129a22549337581a3b1c33
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: ed73a9ca71c92b8dfd76ecbc49067a2edff5cf3205361954bc16b84f290e597c
   disposition: d4881cfd05115a027b78ee9c40b8104a3d017adf47e1d6d257d57fe30de5c16a
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown

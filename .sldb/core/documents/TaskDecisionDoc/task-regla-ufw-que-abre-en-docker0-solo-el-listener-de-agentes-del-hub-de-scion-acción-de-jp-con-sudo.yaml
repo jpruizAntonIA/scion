@@ -1,7 +1,7 @@
 name: task-regla-ufw-que-abre-en-docker0-solo-el-listener-de-agentes-del-hub-de-scion-acción-de-jp-con-sudo
 path: desk/tasks/task-regla-ufw-que-abre-en-docker0-solo-el-listener-de-agentes-del-hub-de-scion-acción-de-jp-con-sudo.md
 source_hash: 694687869e721dbdef645cbf0285a23251215c70cd140d0b8629f75cf0416a68
-content_hash: 23d240e62d50dea53f37356fa16c484a9ce212076436d5b4aa18af8f361e4f98
+content_hash: 67438e2a0a86dafcc8b29bcf5b109c6903ad0f581e6decdcc99b988bd15a25b1
 field_hashes:
   title: 8a68f1a299db48b3ab29a42ae8207b3beea4e0d61a96cd1883b90e5cf8bf64fd
   id: 6addb7c08350814726147a228aa506ce5816e883d43753333a51e6d3aa519672
@@ -17,6 +17,7 @@ field_hashes:
   depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   files: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  pointers: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   implementation_path: 7844975ec61244b3420f65a124aa5a165054cebb1e29cb5b612d11293df924af
   validation: 60ffa10a3a3c4eaf487e52c0198b0dfc54b006fbc1ad5e221dab195e5c96929d
   done_when: 6b4dd6924689fe6a430aedff7d397b5b4bb10b8ffdff93584d9ed55b563badb9

@@ -1,7 +1,7 @@
 name: review-task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp-owner-1
 path: desk/reviews/task-endpoint-no-loopback-del-hub-de-scion-de-producción-para-ejecutores-pi-en-red-bridge-decisión-de-jp/owner-1.md
 source_hash: 3dca9afe1d22000aada216b2352cd9a72a6a8d791746d48d270227333222bc36
-content_hash: 7195519d3f1912b0925ee22230a1d885f47327654e7541c6a01863399fc97236
+content_hash: bdcb8934270bfbf73102154337b111f6713a60c1520e80d1c6c5d55b6093cd79
 field_hashes:
   id: 255e66323292bafdbff0234189aeca016f0f7c0512c98c169758739182ee6af9
   title: d4535ab61a28a244ea67f834cbdda2cbe66b87181b6562323530448604d35155
@@ -14,6 +14,7 @@ field_hashes:
   actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   run_dir: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   input_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   verdict: d288c584af270151f7b7cd7977b94160ce1d7b501dee2d6308f2ac84ebaacc99
   reason: 0acdac71458bceb52cea7ea0431e59623431f9b0435217206247db5ceeeaf80d
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   summary: af31516ec437f4f89c61d4e489e9219c94b3d7219e4228dea94c240900beb427
   disposition: 0326a7d7a5996b7db41300b5fa5e8627ac6410abef34f11cccc4d5561bfec089
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown

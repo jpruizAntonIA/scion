@@ -1,7 +1,7 @@
 name: review-task-regla-ufw-que-abre-en-docker0-solo-el-listener-de-agentes-del-hub-de-scion-acción-de-jp-con-sudo-owner-1
 path: desk/reviews/task-regla-ufw-que-abre-en-docker0-solo-el-listener-de-agentes-del-hub-de-scion-acción-de-jp-con-sudo/owner-1.md
 source_hash: c5b002a417541ecca28c93b7a944872ee1fe74a844b6643db1e01507c7fc9c57
-content_hash: b2103bee415365119ad0ecca16076985a8fc46998b6114434a7c23301cd5cd14
+content_hash: 5951ece9c918b2f058da396b825b51419360cc42eb87f2eaa2779491fa24ea74
 field_hashes:
   id: 055bd0832475f18ff3e24db940cf7e84f9bf1dd24ae169e04a09fe7050476533
   title: 1e0669b11f03ce238107c6205e2a5472975be382790cd300b2d18b4cb8a6ebd1
@@ -14,6 +14,7 @@ field_hashes:
   actor: 1321d9efcb48ac8350a2345a4fb62a20719e69787bd4152b777b80ff17daa46a
   run_dir: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   input_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  contract_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   output_sha256: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   verdict: 12adac54ac6f7140109391b670b3cbcd51f083d8f5ee62ce26857c794ed67d36
   reason: c177ca8d84eb215dbff680836956652cd07e441ee44ea4380d5604416d6c53ec
@@ -22,7 +23,7 @@ field_hashes:
   disposed_by: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
   summary: af31516ec437f4f89c61d4e489e9219c94b3d7219e4228dea94c240900beb427
   disposition: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
-  tags: 26f66ebae91f717518f0d0c6585e99f1cbd539bcb3504598ddeb732dec3a0af9
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
 - representation.markdown
 - source.document.markdown
