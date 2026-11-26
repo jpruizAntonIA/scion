@@ -1,0 +1,38 @@
+name: task-decision-de-jp-tope-de-agentes-del-concilio-y-de-las-pruebas-sin-contexto-en-paralelo-en-robocop2
+path: desk/tasks/task-decision-de-jp-tope-de-agentes-del-concilio-y-de-las-pruebas-sin-contexto-en-paralelo-en-robocop2.md
+source_hash: 17b739883a9291ba99955283f15976a2d3c10a7688b9950405e9a9866209bf3d
+content_hash: ea26653b05fbe77b7dfd15ba9336324d7f439ac6754dac5a355ad5d644bff169
+field_hashes:
+  title: 5e856dc3589a8dee735ec49ee21f94a99709d5498f56f6e5eb4267d24068ad53
+  id: 8c5d80870166751eaa7f2d08cf09c8a996ce68cec417c14096d1ffeccf61358a
+  status: 6ae048f08fcab44bfbc8463f074bfdb40f94c6bdf56d3aad9a7e1c05e5d5b5c1
+  summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  current_node: ff5161892aac34735bf10c411f7230b62b7b56446e230a5d26fb75afde4704b6
+  history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  why: fe978deafb0a1b07d2b5a1c2e0823a5581496aa77d8179745523c1e3cfaba508
+  goal: c8657d77ec096ad9dd38cc6a81b2243203a399a9573b2da73e3d83780c6ad7be
+  scope: f93b4f0e5df1b0436f91243484e021fe5f77980bf4d14be2d3b1b3ad9a401cd1
+  references: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  files: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  implementation_path: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  validation: 44d1021727dedaa4caedbbbf52c64d44ca80e22cc3b948d49910d8a4fb30352b
+  done_when: 5e7c545e348bc247947178711b44e5a47ea2bd6dd6f7c4958dc4f3dbaaa1b8fa
+  task_type: a4df8849de4c7c42dff3bfe95bbeb8759b5ca37238136b51e418b9d2f5ef311c
+  inherits_from: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  inherit_acceptance_context: fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa
+  atoms: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  closeout_evidence: 90037496ebfa53d4d27e6a2feeba9956dabf2b0379c0b871a2c8d93050875641
+semantic_tags:
+- board.tareas
+- representation.markdown
+- source.document.markdown
+- type.workflow.task
+- workspace.desk
+provenance:
+  by: agent
+  at: '2026-11-26T02:36:54Z'
+  authority: generated
+  via: create_document

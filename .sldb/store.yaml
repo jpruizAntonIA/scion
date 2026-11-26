@@ -437,6 +437,9 @@ include:
 - model: TaskDecisionDoc
   paths:
   - desk/tasks/task-regla-ufw-que-abre-en-docker0-solo-el-listener-de-agentes-del-hub-de-scion-acción-de-jp-con-sudo.md
+  - desk/tasks/task-decision-de-jp-fusionar-el-fork-de-scion-entero-con-el-original-o-traer-solo-extras-herdr-scion-prim.md
+  - desk/tasks/task-decision-de-jp-que-canales-de-discord-se-enlazan-y-si-extras-scion-discord-va-al-hub-de-produccion-d.md
+  - desk/tasks/task-decision-de-jp-tope-de-agentes-del-concilio-y-de-las-pruebas-sin-contexto-en-paralelo-en-robocop2.md
 - model: RunDoc
   paths:
   - path: runs/subagents/20261116-050552-hook-venv-test/run.md

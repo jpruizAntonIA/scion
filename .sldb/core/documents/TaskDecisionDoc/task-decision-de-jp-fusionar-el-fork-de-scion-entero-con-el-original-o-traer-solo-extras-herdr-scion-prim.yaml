@@ -1,0 +1,38 @@
+name: task-decision-de-jp-fusionar-el-fork-de-scion-entero-con-el-original-o-traer-solo-extras-herdr-scion-prim
+path: desk/tasks/task-decision-de-jp-fusionar-el-fork-de-scion-entero-con-el-original-o-traer-solo-extras-herdr-scion-prim.md
+source_hash: 7d7026498f3893860a85c21ab63b9eab8cba2d73baae82381366ffcab47dae59
+content_hash: 011e450a22cc84f351cd4c8ae2dcafdf06a34a87795fda4ef9397d83b468cfaa
+field_hashes:
+  title: f90cc280dc93228d6447b7a7f75a30375bf6f08193e4ac5bb70da54ff7a7d0ea
+  id: 87813441f4f490aa97937d300af9e6f660c191680a8aadac2b678eec261aa14d
+  status: 6ae048f08fcab44bfbc8463f074bfdb40f94c6bdf56d3aad9a7e1c05e5d5b5c1
+  summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  tags: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  current_node: ff5161892aac34735bf10c411f7230b62b7b56446e230a5d26fb75afde4704b6
+  history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  why: 78dc14da41a7a1a3898054f3eed6db098c0ea02f87f613d1f7f76d71a6e1ce14
+  goal: 7728ce826e99f0b2d5f421dbca8900c4e4bdbc8a89b82431e61b9473e78b797c
+  scope: 9277149e066a658ff7904f2cbe8af1ec9f542c87648cce85eaef12ce9add51a7
+  references: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  depends_on: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  pills: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  files: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  implementation_path: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
+  validation: 233ca70aaecb43eba3ab8e103fc0d98e7c39d72b45eff90533b556c9d4bb8045
+  done_when: 7ef0b7d4973524a2e76bdb3dc99589bd289e189865f2cf1932de8a6a6964a502
+  task_type: a4df8849de4c7c42dff3bfe95bbeb8759b5ca37238136b51e418b9d2f5ef311c
+  inherits_from: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  inherit_acceptance_context: fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa
+  atoms: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+  closeout_evidence: 90037496ebfa53d4d27e6a2feeba9956dabf2b0379c0b871a2c8d93050875641
+semantic_tags:
+- board.tareas
+- representation.markdown
+- source.document.markdown
+- type.workflow.task
+- workspace.desk
+provenance:
+  by: agent
+  at: '2026-11-26T02:36:50Z'
+  authority: generated
+  via: create_document

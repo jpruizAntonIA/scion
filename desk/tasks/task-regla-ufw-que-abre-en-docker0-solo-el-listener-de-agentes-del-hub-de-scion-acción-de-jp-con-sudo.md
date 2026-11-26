@@ -1,15 +1,18 @@
 ---
 sldb:
   by: agent
-  at: '2026-11-16T05:40:42Z'
+  at: '2026-11-26T02:36:44Z'
   authority: generated
   via: save_document_payload
 id: task-regla-ufw-que-abre-en-docker0-solo-el-listener-de-agentes-del-hub-de-scion-acción-de-jp-con-sudo
 status: draft
-summary: ''
+summary: '2026-11-25: JP dijo al coordinador de SLDB_1 que aplicó la regla con sudo
+  en robocop2 (palabra de JP, relayed). No verificado: sin root no pude leer ufw y
+  el listener de agentes (8090/18090) no escucha hoy en robocop2, así que una prueba
+  de conexión desde el bridge no discrimina. Falta el recibo owner de JP con la salida
+  de sudo ufw status numbered que muestra la regla (o con el rechazo y su razón);
+  no se registró.'
 tags:
-- workspace:desk
-- artifact:task
 - host:robocop2
 current_node: ritual-execution
 history: []

@@ -1,13 +1,13 @@
 name: task-regla-ufw-que-abre-en-docker0-solo-el-listener-de-agentes-del-hub-de-scion-acción-de-jp-con-sudo
 path: desk/tasks/task-regla-ufw-que-abre-en-docker0-solo-el-listener-de-agentes-del-hub-de-scion-acción-de-jp-con-sudo.md
-source_hash: 16a793aee42277fb8f20d70897b9610dc714819441a80f6d42cb2724ed8f5952
-content_hash: e006b1c5a42f92ef5aadbce7540ae4bbd9c7a6491271726ced98c42f85ce2c57
+source_hash: 694687869e721dbdef645cbf0285a23251215c70cd140d0b8629f75cf0416a68
+content_hash: 23d240e62d50dea53f37356fa16c484a9ce212076436d5b4aa18af8f361e4f98
 field_hashes:
   title: 8a68f1a299db48b3ab29a42ae8207b3beea4e0d61a96cd1883b90e5cf8bf64fd
   id: 6addb7c08350814726147a228aa506ce5816e883d43753333a51e6d3aa519672
   status: 6ae048f08fcab44bfbc8463f074bfdb40f94c6bdf56d3aad9a7e1c05e5d5b5c1
-  summary: 12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126
-  tags: cdc41ecb0faeea4fd54d89a0af9704fa317051793e9578e08cc68ba3342d3caa
+  summary: eb3306a807ed7edd8db84873ef13536d31063500bd5d4d4d7f38c47608ae4d05
+  tags: 11bb1031122f37d8732140cbea164dabb926ef21d6bfde10ce845b776ef0913c
   current_node: ff5161892aac34735bf10c411f7230b62b7b56446e230a5d26fb75afde4704b6
   history: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
   why: 152dbff57eede8ce63f856d8b42ea7f4199064755c4a85c1524a30ef034a5815
@@ -25,15 +25,14 @@ field_hashes:
   inherit_acceptance_context: fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa
   atoms: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 semantic_tags:
-- artifact:task
+- board.tareas
 - host:robocop2
 - representation.markdown
 - source.document.markdown
 - type.workflow.task
 - workspace.desk
-- workspace:desk
 provenance:
   by: agent
-  at: '2026-11-16T05:40:42Z'
+  at: '2026-11-26T02:36:44Z'
   authority: generated
   via: save_document_payload
